@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source": "https://artificialanalysis.ai/leaderboards/models",
-    "methodology": "18 evaluation metrics normalized [0,1], averaged → composite ability; Pareto = non-dominated by parameter count; X-axis: totalParameters (log scale); Y-axis: composite ability (linear, direct average); Parameter count from AA's model metadata",
+    "methodology": "18 evaluation metrics normalized [0,1], averaged → composite ability; Pareto = non-dominated by parameter count; X-axis: totalParameters (linear scale); Y-axis: composite ability (linear, direct average); Parameter count from AA's model metadata",
     "param_source": "totalParameters from AA RSC payload — total model parameters in billions",
     "total_models": 208,
     "pareto_count": 11

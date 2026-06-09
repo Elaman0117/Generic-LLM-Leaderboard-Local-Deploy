@@ -315,41 +315,21 @@ def plot_analysis(models, pareto):
     pareto_names = {m["model"] for m in pareto}
     others = [m for m in plot_models if m["model"] not in pareto_names]
 
-    fig, ax = plt.subplots(figsize=(14, 14))
+    fig, ax = plt.subplots(figsize=(16, 10))
     fig.patch.set_facecolor("#000000")
     ax.set_facecolor("#000000")
 
-    # Use log scale for parameter axis (ranges from <1B to >1000B)
-    ax.set_xscale('log')
-
     # Grid
-    ax.grid(True, which='major', color='#333333', alpha=0.5, linewidth=0.4, zorder=0)
-    ax.grid(True, which='minor', color='#1A1A1A', alpha=0.3, linewidth=0.2, zorder=0)
+    for v in [i / 10 for i in range(1, 10)]:
+        ax.axhline(y=v, color='#333333', alpha=0.5, linewidth=0.4, zorder=0)
 
-    # Scatter: other models — color by size class
-    size_colors = {
-        "tiny": "#666666",
-        "small": "#4A90D9",
-        "medium": "#D4A017",
-        "large": "#D94A4A",
-    }
-    for sc, color in size_colors.items():
-        group = [m for m in others if m.get("size_class") == sc]
-        if group:
-            ax.scatter(
-                [float(m["param_count"]) for m in group],
-                [float(m["composite_ability"]) for m in group],
-                c=color, s=25, alpha=0.5, zorder=2,
-                label=f"{sc.capitalize()} ({len(group)})",
-            )
-    uncategorized = [m for m in others if m.get("size_class") not in size_colors]
-    if uncategorized:
-        ax.scatter(
-            [float(m["param_count"]) for m in uncategorized],
-            [float(m["composite_ability"]) for m in uncategorized],
-            c="#4A4A4A", s=20, alpha=0.35, zorder=2,
-            label=f"未知大小 ({len(uncategorized)})",
-        )
+    # Scatter: other models (same style as cost-based leaderboard)
+    ax.scatter(
+        [float(m["param_count"]) for m in others],
+        [float(m["composite_ability"]) for m in others],
+        c="#4A4A4A", s=20, alpha=0.45, zorder=2,
+        label=f"其他模型 ({len(others)})",
+    )
 
     # Scatter: Pareto frontier
     ax.scatter(
@@ -399,7 +379,7 @@ def plot_analysis(models, pareto):
                     force_points=(0.1, 0.1),
                     lim=200)
 
-    ax.set_xlabel("模型参数量 (B = 十亿参数, 对数刻度)",
+    ax.set_xlabel("模型总参数量 (B = 十亿参数)",
                   fontsize=13, color="#FFFFFF", labelpad=10, fontweight="bold")
     ax.set_ylabel("综合能力 (0=最低, 1=最高)",
                   fontsize=13, color="#FFFFFF", labelpad=10, fontweight="bold")
@@ -409,28 +389,16 @@ def plot_analysis(models, pareto):
         fontsize=15, color="#FFFFFF", fontweight="bold", pad=16,
     )
 
-    # Custom x-axis ticks for parameter counts
-    import matplotlib.ticker as ticker
-    ax.xaxis.set_major_formatter(ticker.FuncFormatter(
-        lambda x, p: f"{x:.0f}B" if x >= 1 else f"{x*1000:.0f}M"
-    ))
-
-    # Set reasonable x-axis limits
-    all_params = [float(m["param_count"]) for m in plot_models]
-    if all_params:
-        ax.set_xlim(min(all_params) * 0.5, max(all_params) * 2)
-
     for spine in ax.spines.values():
         spine.set_color('#444444')
     ax.tick_params(axis='both', colors='#FFFFFF', length=5, width=1.2)
-    ax.tick_params(axis='x', which='minor', colors='#666666', length=3, width=0.5)
 
-    legend = ax.legend(loc="lower right", fontsize=10.5,
+    legend = ax.legend(loc="best", fontsize=10.5,
                        framealpha=0.85, edgecolor="#FFFFFF",
                        facecolor="#1A1A1A", labelcolor="#FFFFFF")
 
     method = (
-        f"X轴: 模型总参数量totalParameters (对数刻度) | Y轴: 综合能力(18指标均值)\n"
+        f"X轴: 模型总参数量totalParameters (线性刻度) | Y轴: 综合能力(18指标均值)\n"
         f"★ 参数越小能力越高 → 训练效率越高 | 共{len(plot_models)}模型"
     )
     ax.text(0.98, 0.02, method, transform=ax.transAxes, fontsize=6,
@@ -468,7 +436,7 @@ def save_results(models, pareto, metric_ranges):
             "methodology": (
                 "18 evaluation metrics normalized [0,1], averaged → composite ability; "
                 "Pareto = non-dominated by parameter count; "
-                "X-axis: totalParameters (log scale); "
+                "X-axis: totalParameters (linear scale); "
                 "Y-axis: composite ability (linear, direct average); "
                 "Parameter count from AA's model metadata"
             ),
@@ -577,7 +545,7 @@ def generate_readme(pareto, models):
     lines.append("")
     lines.append("参数数据来自 Artificial Analysis 的模型元数据 (`totalParameters`)，")
     lines.append("即模型的总参数量（单位：十亿/B）。对于 MoE 模型，总参数量包含所有专家参数。")
-    lines.append("对数刻度展示，因为参数量跨越多个数量级（0.3B 到 1600B+）。")
+    lines.append("线性刻度展示，按实际参数量1:1排布。")
     lines.append("")
     lines.append("Pareto 前沿上的模型代表了**最高训练效率**——用更少的参数实现更高的能力。")
     lines.append("")
