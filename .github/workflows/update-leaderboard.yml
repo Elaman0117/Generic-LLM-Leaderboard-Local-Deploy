@@ -1,0 +1,84 @@
+name: LLM Leaderboard Analysis (Parameter Count)
+
+on:
+  schedule:
+    # Daily at 04:00 UTC (12:00 Beijing time)
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape-and-analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          playwright install chromium --with-deps
+
+      - name: Install CJK fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fontconfig
+
+          # src/analyze.py sets Matplotlib to use "Sarasa Mono SC" / "Noto Serif SC".
+          # Install Noto Serif SC subset OTF for Chinese rendering.
+          sudo mkdir -p /usr/share/fonts/truetype/noto-serif-sc
+          sudo curl -fsSL \
+            -o /usr/share/fonts/truetype/noto-serif-sc/NotoSerifSC-Regular.otf \
+            https://raw.githubusercontent.com/notofonts/noto-cjk/f8d157532fbfaeda587e826d4cd5b21a49186f7c/Serif/SubsetOTF/SC/NotoSerifSC-Regular.otf
+          sudo ln -sf \
+            /usr/share/fonts/truetype/noto-serif-sc/NotoSerifSC-Regular.otf \
+            /usr/share/fonts/truetype/noto-serif-sc/NotoSerifSC-Regular.ttf
+          sudo fc-cache -f
+          fc-match "Noto Serif SC" || true
+
+          # Install Sarasa Mono SC for code/Chinese mixed rendering
+          sudo mkdir -p /usr/share/fonts/truetype/sarasa
+          sudo curl -fsSL \
+            -o /tmp/sarasa.zip \
+            https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.19/sarasa-mono-sc-ttf-1.0.19.zip
+          if [ -f /tmp/sarasa.zip ]; then
+            sudo unzip -j /tmp/sarasa.zip "sarasa-mono-sc-regular.ttf" "sarasa-mono-sc-bold.ttf" "sarasa-mono-sc-semibold.ttf" \
+              -d /usr/share/fonts/truetype/sarasa/ 2>/dev/null || true
+          fi
+          sudo fc-cache -f
+          fc-match "Sarasa Mono SC" || true
+
+      - name: Scrape leaderboard data
+        run: python src/scrape.py
+
+      - name: Run analysis
+        run: python src/analyze.py
+
+      - name: Commit and push results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/ README.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🔄 Update leaderboard analysis $(date +'%Y-%m-%d')"
+            git push
+          fi
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: analysis-results
+          path: output/
+          retention-days: 90
