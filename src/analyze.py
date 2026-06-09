@@ -27,21 +27,36 @@ import matplotlib.font_manager as fm
 # ══════════════════════════════════════════════════════════════════════
 # Font setup
 # ══════════════════════════════════════════════════════════════════════
-_HEITI_FONTS = [
-    "/usr/share/fonts/truetype/chinese/SarasaMonoSC-Bold.ttf",
-    "/usr/share/fonts/truetype/chinese/SarasaMonoSC-SemiBold.ttf",
-    "/usr/share/fonts/truetype/chinese/SarasaMonoSC-Regular.ttf",
+# Register fonts that exist on this system
+_CJK_FONT_DIRS = [
+    "/usr/share/fonts/truetype/chinese",
+    "/usr/share/fonts/truetype/noto-serif-sc",
+    "/usr/share/fonts/opentype/noto",
 ]
-_LATIN = ["/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"]
-for fp in _HEITI_FONTS:
+_CJK_PATTERNS = ["SarasaMonoSC", "NotoSansSC", "NotoSerifSC", "NotoSansCJK"]
+_LATIN_FONTS = ["/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"]
+
+# Try to register CJK fonts from known directories
+import glob as _glob
+for d in _CJK_FONT_DIRS:
+    if os.path.isdir(d):
+        for f in sorted(_glob.glob(os.path.join(d, "*.ttf")) + _glob.glob(os.path.join(d, "*.otf"))):
+            try:
+                fm.fontManager.addfont(f)
+            except Exception:
+                pass  # Skip fonts that can't be loaded
+
+for fp in _LATIN_FONTS:
     if os.path.exists(fp):
         fm.fontManager.addfont(fp)
-        break
-for fp in _LATIN:
-    if os.path.exists(fp):
-        fm.fontManager.addfont(fp)
-        break
-plt.rcParams["font.sans-serif"] = ["Sarasa Mono SC", "Noto Serif SC", "DejaVu Sans"]
+
+# Font fallback chain: Sarasa Mono SC (local) → Noto Sans CJK SC (Ubuntu package) → DejaVu Sans
+plt.rcParams["font.sans-serif"] = [
+    "Sarasa Mono SC",      # Local dev environment
+    "Noto Sans CJK SC",    # Ubuntu fonts-noto-cjk package
+    "Noto Serif SC",       # Fallback serif
+    "DejaVu Sans",         # Latin/symbol fallback
+]
 plt.rcParams["axes.unicode_minus"] = False
 
 # ── Paths ──

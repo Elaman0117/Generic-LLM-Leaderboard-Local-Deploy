@@ -32,31 +32,9 @@ jobs:
       - name: Install CJK fonts
         run: |
           sudo apt-get update
-          sudo apt-get install -y fontconfig
-
-          # src/analyze.py sets Matplotlib to use "Sarasa Mono SC" / "Noto Serif SC".
-          # Install Noto Serif SC subset OTF for Chinese rendering.
-          sudo mkdir -p /usr/share/fonts/truetype/noto-serif-sc
-          sudo curl -fsSL \
-            -o /usr/share/fonts/truetype/noto-serif-sc/NotoSerifSC-Regular.otf \
-            https://raw.githubusercontent.com/notofonts/noto-cjk/f8d157532fbfaeda587e826d4cd5b21a49186f7c/Serif/SubsetOTF/SC/NotoSerifSC-Regular.otf
-          sudo ln -sf \
-            /usr/share/fonts/truetype/noto-serif-sc/NotoSerifSC-Regular.otf \
-            /usr/share/fonts/truetype/noto-serif-sc/NotoSerifSC-Regular.ttf
+          sudo apt-get install -y fontconfig fonts-noto-cjk
           sudo fc-cache -f
-          fc-match "Noto Serif SC" || true
-
-          # Install Sarasa Mono SC for code/Chinese mixed rendering
-          sudo mkdir -p /usr/share/fonts/truetype/sarasa
-          sudo curl -fsSL \
-            -o /tmp/sarasa.zip \
-            https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.19/sarasa-mono-sc-ttf-1.0.19.zip
-          if [ -f /tmp/sarasa.zip ]; then
-            sudo unzip -j /tmp/sarasa.zip "sarasa-mono-sc-regular.ttf" "sarasa-mono-sc-bold.ttf" "sarasa-mono-sc-semibold.ttf" \
-              -d /usr/share/fonts/truetype/sarasa/ 2>/dev/null || true
-          fi
-          sudo fc-cache -f
-          fc-match "Sarasa Mono SC" || true
+          fc-match "Noto Sans CJK SC" || true
 
       - name: Scrape leaderboard data
         run: python src/scrape.py
