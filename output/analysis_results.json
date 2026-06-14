@@ -113,10 +113,10 @@
       "intelligence_index_cost_usd": 947.8680308500001,
       "input_price": 0.95,
       "output_price": 4.0,
-      "speed": 46.8603569170983,
-      "ttft": 2.67139566699962,
-      "total_response": 108.32573391198832,
-      "reasoning_time": 94.98433842222677,
+      "speed": 40.9254959993576,
+      "ttft": 2.84384876099966,
+      "total_response": 123.81978024580597,
+      "reasoning_time": 108.758608571778,
       "valid_metrics": 18
     },
     {
@@ -133,10 +133,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 1.4,
       "output_price": 4.4,
-      "speed": 72.0819457229063,
-      "ttft": 1.47320280999997,
-      "total_response": 61.00267245688271,
-      "reasoning_time": 52.59291993272722,
+      "speed": 76.4648091322241,
+      "ttft": 1.40232015650008,
+      "total_response": 57.51963802725992,
+      "reasoning_time": 49.57836216454219,
       "valid_metrics": 16
     },
     {
@@ -153,10 +153,10 @@
       "intelligence_index_cost_usd": 49.29693986000001,
       "input_price": 0.14,
       "output_price": 0.28,
-      "speed": 81.2981352004544,
-      "ttft": 3.23099207550012,
-      "total_response": 33.98200492266844,
-      "reasoning_time": 24.600810277734656,
+      "speed": 82.4164915896397,
+      "ttft": 3.25593987650018,
+      "total_response": 33.58967468831139,
+      "reasoning_time": 24.26698784944897,
       "valid_metrics": 16
     },
     {
@@ -173,10 +173,10 @@
       "intelligence_index_cost_usd": 112.85661212000002,
       "input_price": 0.14,
       "output_price": 0.28,
-      "speed": 93.9611553545502,
-      "ttft": 1.24084023899999,
-      "total_response": 66.29964009020861,
-      "reasoning_time": 59.73745191638049,
+      "speed": 98.5458112787733,
+      "ttft": 1.25686362200008,
+      "total_response": 63.28892688958146,
+      "reasoning_time": 56.95828089660302,
       "valid_metrics": 16
     },
     {
@@ -193,10 +193,10 @@
       "intelligence_index_cost_usd": 175.5065994,
       "input_price": 0.3,
       "output_price": 1.2,
-      "speed": 43.5270103946256,
-      "ttft": 2.51929906950005,
-      "total_response": 70.56899908670422,
-      "reasoning_time": 56.562579825238586,
+      "speed": 43.9650693106947,
+      "ttft": 2.59368331650001,
+      "total_response": 69.96535010651414,
+      "reasoning_time": 55.99900190311101,
       "valid_metrics": 17
     },
     {
@@ -213,10 +213,10 @@
       "intelligence_index_cost_usd": 658.6691916,
       "input_price": 0.6,
       "output_price": 3.6,
-      "speed": 58.4528590747502,
-      "ttft": 3.97765180149986,
-      "total_response": 109.63544335797546,
-      "reasoning_time": 97.10389003797854,
+      "speed": 58.6959777617496,
+      "ttft": 4.04123644399987,
+      "total_response": 109.26139352305465,
+      "reasoning_time": 96.7016858129396,
       "valid_metrics": 16
     },
     {
@@ -233,10 +233,10 @@
       "intelligence_index_cost_usd": 82.05955230000001,
       "input_price": 0.1,
       "output_price": 0.15,
-      "speed": 69.1828674810594,
-      "ttft": 1.73534123300033,
-      "total_response": 37.87145543330345,
-      "reasoning_time": 28.9088913602425,
+      "speed": 70.987415680058,
+      "ttft": 1.68691403199955,
+      "total_response": 36.904423727909034,
+      "reasoning_time": 28.17400775672759,
       "valid_metrics": 16
     },
     {
@@ -253,10 +253,10 @@
       "intelligence_index_cost_usd": 44.87134005,
       "input_price": 0.03,
       "output_price": 0.15,
-      "speed": 177.562985591549,
-      "ttft": 0.474483041999974,
-      "total_response": 14.55399399227646,
-      "reasoning_time": 11.263608760221189,
+      "speed": 21.5993477907258,
+      "ttft": 0.885183982500052,
+      "total_response": 116.62941960582916,
+      "reasoning_time": 92.59538849866328,
       "valid_metrics": 16
     },
     {
@@ -293,10 +293,10 @@
       "intelligence_index_cost_usd": 14.65616937,
       "input_price": 0.01,
       "output_price": 0.05,
-      "speed": 18.7483237574188,
+      "speed": 18.7928427969591,
       "ttft": 0.816145197999504,
-      "total_response": 134.16139954431077,
-      "reasoning_time": 106.67620347704901,
+      "total_response": 133.84551318720702,
+      "reasoning_time": 106.42349439136602,
       "valid_metrics": 16
     },
     {
