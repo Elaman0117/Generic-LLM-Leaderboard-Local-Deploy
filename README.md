@@ -11,7 +11,7 @@
 | 3 | MiMo-V2.5 | 0.6743 | 310B | 15B | large | Y | Y |
 | 4 | DeepSeek V4 Flash (Reasoning, Max Effort) | 0.6468 | 284B | 13B | large | Y | Y |
 | 5 | MiniMax-M2.7 | 0.6454 | 230B | 10B | large | Y | Y |
-| 6 | Qwen3.6 27B (Reasoning) | 0.6303 | 28B | 28B | small | Y | Y |
+| 6 | Qwen3.6 27B (Reasoning) | 0.6304 | 28B | 28B | small | Y | Y |
 | 7 | Qwen3.5 9B (Reasoning) | 0.4589 | 10B | 10B | small | Y | Y |
 | 8 | Qwen3.5 4B (Reasoning) | 0.3850 | 5B | 5B | small | Y | Y |
 | 9 | MiniCPM5-1B (Reasoning) | 0.2502 | 1B | 1B | tiny | Y | Y |
