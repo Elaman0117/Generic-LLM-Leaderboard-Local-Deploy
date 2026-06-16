@@ -6,17 +6,17 @@
 
 | # | 模型 | 综合能力 | 总参数量 | 活跃参数量 | 大小类 | 开源 | 推理 |
 |---|------|---------|---------|-----------|--------|------|------|
-| 1 | Kimi K2.6 | 0.7464 | 1000B | 32B | large | Y | Y |
-| 2 | GLM-5.1 (Reasoning) | 0.7132 | 744B | 40B | large | Y | Y |
-| 3 | MiMo-V2.5 | 0.6743 | 310B | 15B | large | Y | Y |
-| 4 | DeepSeek V4 Flash (Reasoning, Max Effort) | 0.6468 | 284B | 13B | large | Y | Y |
-| 5 | MiniMax-M2.7 | 0.6454 | 230B | 10B | large | Y | Y |
-| 6 | Qwen3.6 27B (Reasoning) | 0.6304 | 28B | 28B | small | Y | Y |
-| 7 | Qwen3.5 9B (Reasoning) | 0.4589 | 10B | 10B | small | Y | Y |
-| 8 | Qwen3.5 4B (Reasoning) | 0.3850 | 5B | 5B | small | Y | Y |
-| 9 | MiniCPM5-1B (Reasoning) | 0.2502 | 1B | 1B | tiny | Y | Y |
-| 10 | Qwen3.5 0.8B (Reasoning) | 0.1380 | 873M | 873M | tiny | Y | Y |
-| 11 | Gemma 3 270M | 0.1077 | 268M | 268M | tiny | Y | N |
+| 1 | Kimi K2.6 | 0.7320 | 1000B | 32B | large | Y | Y |
+| 2 | MiniMax-M3 | 0.7264 | 428B | 23B | large | Y | Y |
+| 3 | MiMo-V2.5 | 0.6658 | 310B | 15B | large | Y | Y |
+| 4 | DeepSeek V4 Flash (Reasoning, Max Effort) | 0.6398 | 284B | 13B | large | Y | Y |
+| 5 | MiniMax-M2.7 | 0.6277 | 230B | 10B | large | Y | Y |
+| 6 | Qwen3.6 27B (Reasoning) | 0.6178 | 28B | 28B | small | Y | Y |
+| 7 | Qwen3.5 9B (Reasoning) | 0.4761 | 10B | 10B | small | Y | Y |
+| 8 | Qwen3.5 4B (Reasoning) | 0.4070 | 5B | 5B | small | Y | Y |
+| 9 | MiniCPM5-1B (Reasoning) | 0.2654 | 1B | 1B | tiny | Y | Y |
+| 10 | Qwen3.5 0.8B (Reasoning) | 0.1453 | 873M | 873M | tiny | Y | Y |
+| 11 | Gemma 3 270M | 0.1059 | 268M | 268M | tiny | Y | N |
 
 ### 评分方法
 
