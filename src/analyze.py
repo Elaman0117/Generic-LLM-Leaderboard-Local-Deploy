@@ -533,6 +533,35 @@ def generate_readme(pareto, models):
         )
 
     lines.append("")
+    lines.append("## 综合性能排行榜（抛开参数量）\n")
+    lines.append("| # | 模型 | 综合能力 | 总参数量 | 活跃参数量 | 大小类 | 开源 | 推理 |")
+    lines.append("|---|------|---------|---------|-----------|--------|------|------|")
+
+    all_models_sorted = sorted(models, key=lambda x: float(x.get("composite_ability", 0)), reverse=True)
+    for i, m in enumerate(all_models_sorted):
+        param = m.get("param_count")
+        if param is not None:
+            pb = float(param)
+            param_str = f"{pb:.0f}B" if pb >= 1 else f"{pb*1000:.0f}M"
+        else:
+            param_str = "--"
+
+        active = m.get("active_parameters")
+        if active is not None:
+            ab = float(active)
+            active_str = f"{ab:.0f}B" if ab >= 1 else f"{ab*1000:.0f}M"
+        else:
+            active_str = "--"
+
+        sc = m.get("size_class", "--") or "--"
+        ow = "Y" if m.get("is_open_weights") else "N"
+        reas = "Y" if m.get("is_reasoning") else "N"
+        lines.append(
+            f"| {i+1} | {m['model']} | {float(m['composite_ability']):.4f} "
+            f"| {param_str} | {active_str} | {sc} | {ow} | {reas} |"
+        )
+
+    lines.append("")
     lines.append("### 评分方法")
     lines.append("")
     lines.append("1. **18项评估指标**各自线性归一化到 [0,1]")
