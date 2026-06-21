@@ -15,12 +15,12 @@
     "AA Agentic Index": {
       "min": 1.09965635738832,
       "max": 52.8147079037801,
-      "count": 46
+      "count": 49
     },
     "AA Coding Index": {
       "min": 0.6944444444444444,
       "max": 76.4911915660979,
-      "count": 58
+      "count": 61
     },
     "GPQA Diamond": {
       "min": 0.1111111111111111,
@@ -95,7 +95,7 @@
     "GDPval-AA Normalized": {
       "min": 0.0,
       "max": 0.6416649999999999,
-      "count": 49
+      "count": 51
     }
   },
   "pareto_frontier": [
@@ -113,10 +113,10 @@
       "intelligence_index_cost_usd": 868.8411714644401,
       "input_price": 1.4,
       "output_price": 4.4,
-      "speed": 92.0458900956649,
-      "ttft": 1.52343274099985,
-      "total_response": 28.683798047932147,
-      "reasoning_time": 21.728292245545838,
+      "speed": 96.3529669652992,
+      "ttft": 1.43857607400014,
+      "total_response": 27.384845075766904,
+      "reasoning_time": 20.757015201413413,
       "valid_metrics": 15
     },
     {
@@ -133,10 +133,10 @@
       "intelligence_index_cost_usd": 235.22781850071513,
       "input_price": 0.3,
       "output_price": 1.2,
-      "speed": 59.8859616569349,
-      "ttft": 3.08695076999993,
-      "total_response": 44.83296153495348,
-      "reasoning_time": 33.39680861196284,
+      "speed": 57.6607912023645,
+      "ttft": 3.09669098299991,
+      "total_response": 46.45370964106998,
+      "reasoning_time": 34.685614926456054,
       "valid_metrics": 15
     },
     {
@@ -153,10 +153,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.14,
       "output_price": 0.28,
-      "speed": 80.1339976712653,
-      "ttft": 2.53708210549996,
-      "total_response": 33.734826791292136,
-      "reasoning_time": 24.95819574863374,
+      "speed": 81.2963356650158,
+      "ttft": 2.65704096799959,
+      "total_response": 33.40873450436427,
+      "reasoning_time": 24.601354829091743,
       "valid_metrics": 13
     },
     {
@@ -173,10 +173,10 @@
       "intelligence_index_cost_usd": 78.42103644414452,
       "input_price": 0.14,
       "output_price": 0.28,
-      "speed": 108.315194663107,
-      "ttft": 1.40513499650024,
-      "total_response": 57.84227679376403,
-      "reasoning_time": 51.820984280720054,
+      "speed": 110.174657748494,
+      "ttft": 1.42634953950005,
+      "total_response": 56.91097844531174,
+      "reasoning_time": 50.94638018130558,
       "valid_metrics": 16
     },
     {
@@ -194,8 +194,8 @@
       "input_price": 0.3,
       "output_price": 1.2,
       "speed": 48.1651222748422,
-      "ttft": 2.2839258250001,
-      "total_response": 63.78070731551702,
+      "ttft": 2.32640510900006,
+      "total_response": 63.82318659951699,
       "reasoning_time": 51.115825803393875,
       "valid_metrics": 17
     },
@@ -213,10 +213,10 @@
       "intelligence_index_cost_usd": 668.077305,
       "input_price": 0.6,
       "output_price": 3.6,
-      "speed": 57.0785542674215,
-      "ttft": 3.716188575,
-      "total_response": 111.91794804957469,
-      "reasoning_time": 99.44190200415899,
+      "speed": 58.3175972850604,
+      "ttft": 3.59160283750009,
+      "total_response": 109.49445699336131,
+      "reasoning_time": 97.32911272484914,
       "valid_metrics": 16
     },
     {
@@ -233,10 +233,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.1,
       "output_price": 0.15,
-      "speed": 62.7010576083091,
+      "speed": 62.2976703026086,
       "ttft": 1.51859213199987,
-      "total_response": 41.39032787874589,
-      "reasoning_time": 31.897388597396823,
+      "total_response": 41.648503697815144,
+      "reasoning_time": 32.10392925265222,
       "valid_metrics": 14
     },
     {
@@ -253,10 +253,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.03,
       "output_price": 0.15,
-      "speed": 38.5949188494212,
-      "ttft": 0.872554340999613,
-      "total_response": 65.64792049097902,
-      "reasoning_time": 51.82029291998352,
+      "speed": 47.5539537620661,
+      "ttft": 0.895016065000049,
+      "total_response": 53.466880278617886,
+      "reasoning_time": 42.05749137089427,
       "valid_metrics": 14
     },
     {
@@ -293,10 +293,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.01,
       "output_price": 0.05,
-      "speed": 45.5932098728081,
-      "ttft": 0.709084443999927,
-      "total_response": 55.541810785801225,
-      "reasoning_time": 43.86618107344104,
+      "speed": 50.4464380316239,
+      "ttft": 0.760056265999992,
+      "total_response": 50.317569096396426,
+      "reasoning_time": 39.64601026431715,
       "valid_metrics": 14
     },
     {
@@ -396,7 +396,7 @@
     {
       "model": "GPT-5.5 (medium)",
       "creator": "OpenAI",
-      "composite_ability": 0.8054000558276753,
+      "composite_ability": 0.8032495161570792,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -466,18 +466,6 @@
       "is_pareto": false
     },
     {
-      "model": "GPT-5.5 (low)",
-      "creator": "OpenAI",
-      "composite_ability": 0.7280410305631534,
-      "normalized_param": null,
-      "total_parameters_B": null,
-      "active_parameters_B": null,
-      "size_class": null,
-      "is_reasoning": true,
-      "is_open_weights": false,
-      "is_pareto": false
-    },
-    {
       "model": "Muse Spark",
       "creator": "Meta",
       "composite_ability": 0.7224673855417026,
@@ -517,6 +505,18 @@
       "model": "Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)",
       "creator": "Anthropic",
       "composite_ability": 0.7146675127385006,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": null,
+      "is_reasoning": true,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
+      "model": "GPT-5.5 (low)",
+      "creator": "OpenAI",
+      "composite_ability": 0.7125476314955519,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -886,6 +886,18 @@
       "is_pareto": false
     },
     {
+      "model": "GPT-5.5 (Non-reasoning)",
+      "creator": "OpenAI",
+      "composite_ability": 0.5699323768703145,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": null,
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
       "model": "Qwen3.6 35B A3B (Reasoning)",
       "creator": "Alibaba",
       "composite_ability": 0.5649018535829716,
@@ -907,18 +919,6 @@
       "size_class": "large",
       "is_reasoning": false,
       "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
-      "model": "GPT-5.5 (Non-reasoning)",
-      "creator": "OpenAI",
-      "composite_ability": 0.5618948015464478,
-      "normalized_param": null,
-      "total_parameters_B": null,
-      "active_parameters_B": null,
-      "size_class": null,
-      "is_reasoning": false,
-      "is_open_weights": false,
       "is_pareto": false
     },
     {
