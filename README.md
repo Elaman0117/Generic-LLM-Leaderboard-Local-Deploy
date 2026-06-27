@@ -6,10 +6,10 @@
 
 | # | 模型 | 综合能力 | 总参数量 | 活跃参数量 | 大小类 | 开源 | 推理 |
 |---|------|---------|---------|-----------|--------|------|------|
-| 1 | GLM-5.2 (max) | 0.8099 | 753B | 40B | large | Y | Y |
-| 2 | MiniMax-M3 | 0.7302 | 428B | 23B | large | Y | Y |
+| 1 | GLM-5.2 (max) | 0.8041 | 753B | 40B | large | Y | Y |
+| 2 | MiniMax-M3 | 0.7301 | 428B | 23B | large | Y | Y |
 | 3 | MiMo-V2.5 | 0.6534 | 310B | 15B | large | Y | Y |
-| 4 | DeepSeek V4 Flash (Reasoning, Max Effort) | 0.6354 | 284B | 13B | large | Y | Y |
+| 4 | DeepSeek V4 Flash (Reasoning, Max Effort) | 0.6353 | 284B | 13B | large | Y | Y |
 | 5 | MiniMax-M2.7 | 0.6116 | 230B | 10B | large | Y | Y |
 | 6 | Qwen3.6 27B (Reasoning) | 0.6077 | 28B | 28B | small | Y | Y |
 | 7 | Qwen3.5 9B (Reasoning) | 0.4741 | 10B | 10B | small | Y | Y |
