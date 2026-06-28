@@ -113,10 +113,10 @@
       "intelligence_index_cost_usd": 982.9012311594456,
       "input_price": 1.4,
       "output_price": 4.4,
-      "speed": 116.287567584866,
-      "ttft": 1.57543814950008,
-      "total_response": 23.073867017878587,
-      "reasoning_time": 17.198743094702806,
+      "speed": 118.599027949276,
+      "ttft": 1.44845736299976,
+      "total_response": 22.527888141043178,
+      "reasoning_time": 16.863544622434734,
       "valid_metrics": 17
     },
     {
@@ -133,10 +133,10 @@
       "intelligence_index_cost_usd": 203.85795386627436,
       "input_price": 0.3,
       "output_price": 1.2,
-      "speed": 90.8254456392315,
-      "ttft": 1.69618111099999,
-      "total_response": 29.221507107530417,
-      "reasoning_time": 22.020260797224342,
+      "speed": 85.9262466537206,
+      "ttft": 1.68369713749985,
+      "total_response": 30.778416124527197,
+      "reasoning_time": 23.275775189621882,
       "valid_metrics": 16
     },
     {
@@ -153,10 +153,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.14,
       "output_price": 0.28,
-      "speed": 87.6880790558423,
-      "ttft": 2.69521813500069,
-      "total_response": 31.205364860964753,
-      "reasoning_time": 22.80811738077125,
+      "speed": 86.5942312645469,
+      "ttft": 2.95853897300094,
+      "total_response": 31.82882240288042,
+      "reasoning_time": 23.096226743903582,
       "valid_metrics": 13
     },
     {
@@ -165,7 +165,7 @@
       "creator": "DeepSeek",
       "is_reasoning": true,
       "is_open_weights": true,
-      "composite_ability": 0.6353248928639252,
+      "composite_ability": 0.6351284030873031,
       "total_parameters_B": 284.0,
       "active_parameters_B": 13.0,
       "size_class": "large",
@@ -173,10 +173,10 @@
       "intelligence_index_cost_usd": 72.4213984676,
       "input_price": 0.14,
       "output_price": 0.28,
-      "speed": 102.751057487075,
-      "ttft": 1.46178698300002,
-      "total_response": 60.95509196206508,
-      "reasoning_time": 54.6271750118587,
+      "speed": 97.2217793436145,
+      "ttft": 1.43053199799988,
+      "total_response": 64.30738985095688,
+      "reasoning_time": 57.733977282618625,
       "valid_metrics": 16
     },
     {
@@ -193,10 +193,10 @@
       "intelligence_index_cost_usd": 137.45746710659347,
       "input_price": 0.3,
       "output_price": 1.2,
-      "speed": 49.7989964371102,
-      "ttft": 2.16563324549986,
-      "total_response": 61.64474350710181,
-      "reasoning_time": 49.43874728698987,
+      "speed": 55.5274296472683,
+      "ttft": 2.62701345800042,
+      "total_response": 55.97001922678477,
+      "reasoning_time": 44.338447063722846,
       "valid_metrics": 17
     },
     {
@@ -213,10 +213,10 @@
       "intelligence_index_cost_usd": 668.077305,
       "input_price": 0.6,
       "output_price": 3.6,
-      "speed": 53.6351916594609,
-      "ttft": 3.83788435399993,
-      "total_response": 118.98616310375235,
-      "reasoning_time": 105.82604115667013,
+      "speed": 53.8352251867642,
+      "ttft": 3.83596559650005,
+      "total_response": 118.5563922051811,
+      "reasoning_time": 105.43282730422177,
       "valid_metrics": 16
     },
     {
@@ -233,10 +233,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.1,
       "output_price": 0.15,
-      "speed": 57.305427161014,
-      "ttft": 1.33677709999983,
-      "total_response": 44.96266253272894,
-      "reasoning_time": 34.90070834618329,
+      "speed": 59.3927035683713,
+      "ttft": 1.10353431399977,
+      "total_response": 43.196246883011995,
+      "reasoning_time": 33.67417005520978,
       "valid_metrics": 14
     },
     {
@@ -253,10 +253,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.03,
       "output_price": 0.15,
-      "speed": 27.238582543371,
-      "ttft": 1.0121015279999,
-      "total_response": 92.79367628576644,
-      "reasoning_time": 73.42525980621323,
+      "speed": 39.4894629051808,
+      "ttft": 0.783446136000293,
+      "total_response": 64.0914735458138,
+      "reasoning_time": 50.64642192785081,
       "valid_metrics": 14
     },
     {
@@ -293,10 +293,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.01,
       "output_price": 0.05,
-      "speed": 27.0545151179175,
-      "ttft": 0.971260814000061,
-      "total_response": 93.37727840861277,
-      "reasoning_time": 73.92481407569016,
+      "speed": 38.1389596433347,
+      "ttft": 0.809807137000007,
+      "total_response": 66.35957628066119,
+      "reasoning_time": 52.43981531492894,
       "valid_metrics": 14
     },
     {
@@ -696,7 +696,7 @@
     {
       "model": "DeepSeek V4 Flash (Reasoning, Max Effort)",
       "creator": "DeepSeek",
-      "composite_ability": 0.6353248928639252,
+      "composite_ability": 0.6351284030873031,
       "normalized_param": 0.37715803452855245,
       "total_parameters_B": 284.0,
       "active_parameters_B": 13.0,
