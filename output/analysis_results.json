@@ -3,34 +3,34 @@
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "methodology": "18 evaluation metrics normalized [0,1], averaged → composite ability; Pareto = non-dominated by parameter count; X-axis: totalParameters (linear scale); Y-axis: composite ability (linear, direct average); Parameter count from AA's model metadata",
     "param_source": "totalParameters from AA RSC payload — total model parameters in billions",
-    "total_models": 216,
+    "total_models": 219,
     "pareto_count": 11
   },
   "metric_ranges": {
     "AA Intelligence Index": {
       "min": 1.0,
       "max": 59.8606463217303,
-      "count": 216
+      "count": 219
     },
     "AA Agentic Index": {
       "min": 1.09965635738832,
       "max": 52.8147079037801,
-      "count": 63
+      "count": 64
     },
     "AA Coding Index": {
       "min": 0.6944444444444444,
       "max": 76.4911915660979,
-      "count": 74
+      "count": 75
     },
     "GPQA Diamond": {
       "min": 0.1111111111111111,
       "max": 0.9414141414141414,
-      "count": 216
+      "count": 219
     },
     "Humanity's Last Exam": {
       "min": 0.012048192771084338,
       "max": 0.53336422613531,
-      "count": 216
+      "count": 219
     },
     "MMMU Pro": {
       "min": 0.14508670520231215,
@@ -40,47 +40,47 @@
     "IFBench Instruction Following": {
       "min": 0.12108843537414966,
       "max": 0.8333333333333334,
-      "count": 213
+      "count": 216
     },
     "SciCode Coding": {
       "min": 0.0,
       "max": 0.6018518518518519,
-      "count": 216
+      "count": 219
     },
     "CritPt Physics": {
       "min": 0.0,
       "max": 0.3057142857142857,
-      "count": 215
+      "count": 218
     },
     "AA-LCR Long Context": {
       "min": 0.0,
       "max": 0.7433333333333333,
-      "count": 214
+      "count": 217
     },
     "τ²-Bench Telecom": {
       "min": 0.0,
       "max": 0.9912280701754386,
-      "count": 213
+      "count": 216
     },
     "Terminal-Bench Hard": {
       "min": 0.0,
       "max": 0.6287878787878788,
-      "count": 212
+      "count": 215
     },
     "AA Omniscience Index": {
       "min": -89.0,
       "max": 40.15,
-      "count": 213
+      "count": 216
     },
     "AA-Omniscience Accuracy": {
       "min": 0.0006666666666666666,
       "max": 0.6135,
-      "count": 213
+      "count": 216
     },
     "AA-Omniscience Non-Hallucination": {
       "min": 0.012223515715948778,
       "max": 0.9914943295530354,
-      "count": 213
+      "count": 216
     },
     "APEX-Agents-AA": {
       "min": 0.007374631268436578,
@@ -95,7 +95,7 @@
     "GDPval-AA Normalized": {
       "min": 0.0,
       "max": 0.634575,
-      "count": 66
+      "count": 67
     }
   },
   "pareto_frontier": [
@@ -105,18 +105,18 @@
       "creator": "Z AI",
       "is_reasoning": true,
       "is_open_weights": true,
-      "composite_ability": 0.8040649226942577,
+      "composite_ability": 0.8040287706610535,
       "total_parameters_B": 753.0,
       "active_parameters_B": 40.0,
       "size_class": "large",
       "normalized_param": 1.0,
-      "intelligence_index_cost_usd": 982.9012311594456,
+      "intelligence_index_cost_usd": 932.6795968599051,
       "input_price": 1.4,
       "output_price": 4.4,
-      "speed": 118.599027949276,
-      "ttft": 1.44845736299976,
-      "total_response": 22.527888141043178,
-      "reasoning_time": 16.863544622434734,
+      "speed": 132.597757478807,
+      "ttft": 1.44884585300042,
+      "total_response": 20.302860034948957,
+      "reasoning_time": 15.08321134555883,
       "valid_metrics": 17
     },
     {
@@ -133,10 +133,10 @@
       "intelligence_index_cost_usd": 203.85795386627436,
       "input_price": 0.3,
       "output_price": 1.2,
-      "speed": 85.9262466537206,
-      "ttft": 1.68369713749985,
-      "total_response": 30.778416124527197,
-      "reasoning_time": 23.275775189621882,
+      "speed": 92.2258075859976,
+      "ttft": 1.85502194349988,
+      "total_response": 28.962401812945107,
+      "reasoning_time": 21.68590389555618,
       "valid_metrics": 16
     },
     {
@@ -153,10 +153,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.14,
       "output_price": 0.28,
-      "speed": 86.5942312645469,
-      "ttft": 2.95853897300094,
-      "total_response": 31.82882240288042,
-      "reasoning_time": 23.096226743903582,
+      "speed": 87.1649715273085,
+      "ttft": 2.99797233250047,
+      "total_response": 31.679218436237893,
+      "reasoning_time": 22.944996882989937,
       "valid_metrics": 13
     },
     {
@@ -165,7 +165,7 @@
       "creator": "DeepSeek",
       "is_reasoning": true,
       "is_open_weights": true,
-      "composite_ability": 0.6351284030873031,
+      "composite_ability": 0.6351766637341928,
       "total_parameters_B": 284.0,
       "active_parameters_B": 13.0,
       "size_class": "large",
@@ -173,10 +173,10 @@
       "intelligence_index_cost_usd": 72.4213984676,
       "input_price": 0.14,
       "output_price": 0.28,
-      "speed": 97.2217793436145,
-      "ttft": 1.43053199799988,
-      "total_response": 64.30738985095688,
-      "reasoning_time": 57.733977282618625,
+      "speed": 103.927758241715,
+      "ttft": 1.41568940050024,
+      "total_response": 60.23539362025639,
+      "reasoning_time": 54.00867001234929,
       "valid_metrics": 16
     },
     {
@@ -190,13 +190,13 @@
       "active_parameters_B": 10.0,
       "size_class": "large",
       "normalized_param": 0.3054448871181939,
-      "intelligence_index_cost_usd": 137.45746710659347,
+      "intelligence_index_cost_usd": 143.73074207653644,
       "input_price": 0.3,
       "output_price": 1.2,
-      "speed": 55.5274296472683,
-      "ttft": 2.62701345800042,
-      "total_response": 55.97001922678477,
-      "reasoning_time": 44.338447063722846,
+      "speed": 44.6824930660218,
+      "ttft": 2.802253917,
+      "total_response": 69.09219874222313,
+      "reasoning_time": 55.09987986485461,
       "valid_metrics": 17
     },
     {
@@ -213,10 +213,10 @@
       "intelligence_index_cost_usd": 668.077305,
       "input_price": 0.6,
       "output_price": 3.6,
-      "speed": 53.8352251867642,
-      "ttft": 3.83596559650005,
-      "total_response": 118.5563922051811,
-      "reasoning_time": 105.43282730422177,
+      "speed": 55.6158741717526,
+      "ttft": 3.74344607549983,
+      "total_response": 114.79087798185294,
+      "reasoning_time": 102.05719292429733,
       "valid_metrics": 16
     },
     {
@@ -233,10 +233,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.1,
       "output_price": 0.15,
-      "speed": 59.3927035683713,
-      "ttft": 1.10353431399977,
-      "total_response": 43.196246883011995,
-      "reasoning_time": 33.67417005520978,
+      "speed": 58.9316807563294,
+      "ttft": 1.58382267700017,
+      "total_response": 44.00582673178006,
+      "reasoning_time": 33.937603243823915,
       "valid_metrics": 14
     },
     {
@@ -253,10 +253,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.03,
       "output_price": 0.15,
-      "speed": 39.4894629051808,
-      "ttft": 0.783446136000293,
-      "total_response": 64.0914735458138,
-      "reasoning_time": 50.64642192785081,
+      "speed": 35.2583235934929,
+      "ttft": 0.769471704499892,
+      "total_response": 71.6747146429755,
+      "reasoning_time": 56.724194350780486,
       "valid_metrics": 14
     },
     {
@@ -293,10 +293,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.01,
       "output_price": 0.05,
-      "speed": 38.1389596433347,
-      "ttft": 0.809807137000007,
-      "total_response": 66.35957628066119,
-      "reasoning_time": 52.43981531492894,
+      "speed": 37.5068994924515,
+      "ttft": 0.771743600999798,
+      "total_response": 67.42614675962774,
+      "reasoning_time": 53.32352252690235,
       "valid_metrics": 14
     },
     {
@@ -328,7 +328,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -336,11 +336,11 @@
     {
       "model": "GPT-5.5 (xhigh)",
       "creator": "OpenAI",
-      "composite_ability": 0.8658820880074672,
+      "composite_ability": 0.8658356877483262,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -348,11 +348,11 @@
     {
       "model": "Claude Opus 4.8 (Adaptive Reasoning, Max Effort)",
       "creator": "Anthropic",
-      "composite_ability": 0.8568738782100723,
+      "composite_ability": 0.8566868764109679,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -364,7 +364,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -376,7 +376,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -384,11 +384,11 @@
     {
       "model": "Gemini 3.5 Flash (high)",
       "creator": "Google",
-      "composite_ability": 0.8099859957351627,
+      "composite_ability": 0.8098708705638976,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -396,7 +396,7 @@
     {
       "model": "GLM-5.2 (max)",
       "creator": "Z AI",
-      "composite_ability": 0.8040649226942577,
+      "composite_ability": 0.8040287706610535,
       "normalized_param": 1.0,
       "total_parameters_B": 753.0,
       "active_parameters_B": 40.0,
@@ -412,7 +412,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -420,11 +420,11 @@
     {
       "model": "Gemini 3.1 Pro Preview",
       "creator": "Google",
-      "composite_ability": 0.7873523271350835,
+      "composite_ability": 0.7872853531761347,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -436,7 +436,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -448,7 +448,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -456,11 +456,11 @@
     {
       "model": "Qwen3.7 Max",
       "creator": "Alibaba",
-      "composite_ability": 0.7731704749073758,
+      "composite_ability": 0.7728277258233431,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -492,7 +492,7 @@
     {
       "model": "Kimi K2.6",
       "creator": "Kimi",
-      "composite_ability": 0.7168806934510413,
+      "composite_ability": 0.7167379907672679,
       "normalized_param": 1.3280212483399734,
       "total_parameters_B": 1000.0,
       "active_parameters_B": 32.0,
@@ -504,11 +504,11 @@
     {
       "model": "Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)",
       "creator": "Anthropic",
-      "composite_ability": 0.7142912256897197,
+      "composite_ability": 0.7141410814549518,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -520,7 +520,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -532,7 +532,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -540,7 +540,7 @@
     {
       "model": "DeepSeek V4 Pro (Reasoning, Max Effort)",
       "creator": "DeepSeek",
-      "composite_ability": 0.6982115345780804,
+      "composite_ability": 0.6980789771229982,
       "normalized_param": 2.1248339973439574,
       "total_parameters_B": 1600.0,
       "active_parameters_B": 49.0,
@@ -556,7 +556,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
@@ -576,11 +576,11 @@
     {
       "model": "Grok 4.3 (high)",
       "creator": "xAI",
-      "composite_ability": 0.6809301443429457,
+      "composite_ability": 0.6807629283147204,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -592,7 +592,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -600,11 +600,11 @@
     {
       "model": "Qwen3.7 Plus",
       "creator": "Alibaba",
-      "composite_ability": 0.6728185212074039,
+      "composite_ability": 0.6728240830586661,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "medium",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -624,7 +624,7 @@
     {
       "model": "MiMo-V2.5-Pro",
       "creator": "Xiaomi",
-      "composite_ability": 0.6708761454628411,
+      "composite_ability": 0.6704599335933871,
       "normalized_param": 1.3585657370517927,
       "total_parameters_B": 1023.0,
       "active_parameters_B": 42.0,
@@ -636,11 +636,11 @@
     {
       "model": "GPT-5.4 mini (xhigh)",
       "creator": "OpenAI",
-      "composite_ability": 0.6633127934807703,
+      "composite_ability": 0.6631263169676185,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -652,7 +652,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -660,7 +660,7 @@
     {
       "model": "Kimi K2.7 Code",
       "creator": "Kimi",
-      "composite_ability": 0.6599291585325022,
+      "composite_ability": 0.6597227211531539,
       "normalized_param": 1.3280212483399734,
       "total_parameters_B": 1000.0,
       "active_parameters_B": 32.0,
@@ -676,7 +676,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -696,7 +696,7 @@
     {
       "model": "DeepSeek V4 Flash (Reasoning, Max Effort)",
       "creator": "DeepSeek",
-      "composite_ability": 0.6351284030873031,
+      "composite_ability": 0.6351766637341928,
       "normalized_param": 0.37715803452855245,
       "total_parameters_B": 284.0,
       "active_parameters_B": 13.0,
@@ -736,19 +736,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
-      "is_reasoning": true,
-      "is_open_weights": false,
-      "is_pareto": false
-    },
-    {
-      "model": "GPT-5.5 Instant (May 2026)",
-      "creator": "OpenAI",
-      "composite_ability": 0.6118035007490994,
-      "normalized_param": null,
-      "total_parameters_B": null,
-      "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "medium",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -804,11 +792,11 @@
     {
       "model": "GPT-5.4 nano (xhigh)",
       "creator": "OpenAI",
-      "composite_ability": 0.6048445658490363,
+      "composite_ability": 0.6047346935372967,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "medium",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -820,7 +808,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
@@ -832,7 +820,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -892,7 +880,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
@@ -904,7 +892,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
@@ -916,7 +904,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
@@ -988,7 +976,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
@@ -1008,7 +996,7 @@
     {
       "model": "Step 3.7 Flash",
       "creator": "StepFun",
-      "composite_ability": 0.5381652986034027,
+      "composite_ability": 0.5379127236078894,
       "normalized_param": 0.26294820717131473,
       "total_parameters_B": 198.0,
       "active_parameters_B": 11.0,
@@ -1024,7 +1012,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -1036,7 +1024,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "medium",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -1068,7 +1056,7 @@
     {
       "model": "Mistral Medium 3.5",
       "creator": "Mistral",
-      "composite_ability": 0.5146995606250969,
+      "composite_ability": 0.5148152876865161,
       "normalized_param": 0.1699867197875166,
       "total_parameters_B": 128.0,
       "active_parameters_B": 128.0,
@@ -1084,7 +1072,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "medium",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -1092,11 +1080,11 @@
     {
       "model": "Claude 4.5 Haiku (Reasoning)",
       "creator": "Anthropic",
-      "composite_ability": 0.5079734526198374,
+      "composite_ability": 0.5081926822570888,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -1168,7 +1156,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -1200,11 +1188,11 @@
     {
       "model": "Gemini 3.1 Flash-Lite",
       "creator": "Google",
-      "composite_ability": 0.46346574986223943,
+      "composite_ability": 0.464420997816521,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "medium",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -1216,7 +1204,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -1252,7 +1240,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "medium",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -1288,7 +1276,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "medium",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -1336,7 +1324,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
@@ -1372,7 +1360,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -1420,7 +1408,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "medium",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -1432,7 +1420,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
@@ -1528,7 +1516,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "medium",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -1540,7 +1528,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "medium",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -1552,7 +1540,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "medium",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -1572,7 +1560,7 @@
     {
       "model": "gpt-oss-120b (high)",
       "creator": "OpenAI",
-      "composite_ability": 0.38032803998555137,
+      "composite_ability": 0.3809009106655572,
       "normalized_param": 0.1553784860557769,
       "total_parameters_B": 117.0,
       "active_parameters_B": 5.1,
@@ -1606,6 +1594,18 @@
       "is_pareto": false
     },
     {
+      "model": "K2 Think V2",
+      "creator": "MBZUAI Institute of Foundation Models",
+      "composite_ability": 0.3732164547463378,
+      "normalized_param": 0.09296148738379814,
+      "total_parameters_B": 70.0,
+      "active_parameters_B": 70.0,
+      "size_class": "medium",
+      "is_reasoning": true,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "Qwen3.5 9B (Non-reasoning)",
       "creator": "Alibaba",
       "composite_ability": 0.3715134670718006,
@@ -1624,7 +1624,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": true,
       "is_open_weights": false,
       "is_pareto": false
@@ -1636,7 +1636,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "medium",
       "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
@@ -1696,7 +1696,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
@@ -1780,7 +1780,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "medium",
       "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
@@ -1807,6 +1807,18 @@
       "size_class": null,
       "is_reasoning": false,
       "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
+      "model": "K2-V2 (high)",
+      "creator": "MBZUAI Institute of Foundation Models",
+      "composite_ability": 0.3107588042309733,
+      "normalized_param": 0.09296148738379814,
+      "total_parameters_B": 70.0,
+      "active_parameters_B": 70.0,
+      "size_class": "medium",
+      "is_reasoning": true,
+      "is_open_weights": true,
       "is_pareto": false
     },
     {
@@ -1912,7 +1924,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
@@ -1924,7 +1936,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "large",
       "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
@@ -1960,7 +1972,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "medium",
       "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
@@ -1975,6 +1987,18 @@
       "size_class": "small",
       "is_reasoning": true,
       "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
+      "model": "K2-V2 (medium)",
+      "creator": "MBZUAI Institute of Foundation Models",
+      "composite_ability": 0.28214574093350114,
+      "normalized_param": 0.09296148738379814,
+      "total_parameters_B": 70.0,
+      "active_parameters_B": 70.0,
+      "size_class": "medium",
+      "is_reasoning": true,
+      "is_open_weights": true,
       "is_pareto": false
     },
     {
@@ -2038,18 +2062,6 @@
       "is_pareto": false
     },
     {
-      "model": "Magistral Small 1.2",
-      "creator": "Mistral",
-      "composite_ability": 0.2730280586874876,
-      "normalized_param": 0.03187250996015936,
-      "total_parameters_B": 24.0,
-      "active_parameters_B": 24.0,
-      "size_class": "small",
-      "is_reasoning": true,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "Devstral Small 2",
       "creator": "Mistral",
       "composite_ability": 0.2695946437603071,
@@ -2068,7 +2080,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "medium",
       "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
@@ -2224,6 +2236,30 @@
       "normalized_param": 0.1407702523240372,
       "total_parameters_B": 106.0,
       "active_parameters_B": 10.3,
+      "size_class": "medium",
+      "is_reasoning": true,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
+      "model": "Magistral Small 1.2",
+      "creator": "Mistral",
+      "composite_ability": 0.23862129483880046,
+      "normalized_param": 0.03187250996015936,
+      "total_parameters_B": 24.0,
+      "active_parameters_B": 24.0,
+      "size_class": "small",
+      "is_reasoning": true,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
+      "model": "K2-V2 (low)",
+      "creator": "MBZUAI Institute of Foundation Models",
+      "composite_ability": 0.23482898938625615,
+      "normalized_param": 0.09296148738379814,
+      "total_parameters_B": 70.0,
+      "active_parameters_B": 70.0,
       "size_class": "medium",
       "is_reasoning": true,
       "is_open_weights": true,
@@ -2572,7 +2608,7 @@
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
-      "size_class": null,
+      "size_class": "small",
       "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
