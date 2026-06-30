@@ -6,11 +6,11 @@
 
 | # | 模型 | 综合能力 | 总参数量 | 活跃参数量 | 大小类 | 开源 | 推理 |
 |---|------|---------|---------|-----------|--------|------|------|
-| 1 | GLM-5.2 (max) | 0.8040 | 753B | 40B | large | Y | Y |
-| 2 | MiniMax-M3 | 0.7301 | 428B | 23B | large | Y | Y |
+| 1 | GLM-5.2 (max) | 0.8045 | 753B | 40B | large | Y | Y |
+| 2 | MiniMax-M3 | 0.7305 | 428B | 23B | large | Y | Y |
 | 3 | MiMo-V2.5 | 0.6534 | 310B | 15B | large | Y | Y |
-| 4 | DeepSeek V4 Flash (Reasoning, Max Effort) | 0.6352 | 284B | 13B | large | Y | Y |
-| 5 | MiniMax-M2.7 | 0.6116 | 230B | 10B | large | Y | Y |
+| 4 | DeepSeek V4 Flash (Reasoning, Max Effort) | 0.6355 | 284B | 13B | large | Y | Y |
+| 5 | MiniMax-M2.7 | 0.6115 | 230B | 10B | large | Y | Y |
 | 6 | Qwen3.6 27B (Reasoning) | 0.6077 | 28B | 28B | small | Y | Y |
 | 7 | Qwen3.5 9B (Reasoning) | 0.4741 | 10B | 10B | small | Y | Y |
 | 8 | Qwen3.5 4B (Reasoning) | 0.4078 | 5B | 5B | small | Y | Y |
@@ -38,4 +38,4 @@ Pareto 前沿上的模型代表了**最高训练效率**——用更少的参数
 
 **数据来源**: [Artificial Analysis](https://artificialanalysis.ai/leaderboards/models)  
 **方法论**: [AA Methodology](https://artificialanalysis.ai/methodology)  
-**模型总数**: 219  
+**模型总数**: 221  
