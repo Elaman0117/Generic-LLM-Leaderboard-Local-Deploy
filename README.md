@@ -7,16 +7,16 @@
 | # | 模型 | 综合能力 | 总参数量 | 活跃参数量 | 大小类 | 开源 | 推理 |
 |---|------|---------|---------|-----------|--------|------|------|
 | 1 | GLM-5.2 (max) | 0.8045 | 753B | 40B | large | Y | Y |
-| 2 | MiniMax-M3 | 0.7305 | 428B | 23B | large | Y | Y |
+| 2 | MiniMax-M3 | 0.7306 | 428B | 23B | large | Y | Y |
 | 3 | MiMo-V2.5 | 0.6534 | 310B | 15B | large | Y | Y |
-| 4 | DeepSeek V4 Flash (Reasoning, Max Effort) | 0.6355 | 284B | 13B | large | Y | Y |
-| 5 | MiniMax-M2.7 | 0.6116 | 230B | 10B | large | Y | Y |
-| 6 | Qwen3.6 27B (Reasoning) | 0.6077 | 28B | 28B | small | Y | Y |
+| 4 | DeepSeek V4 Flash (Reasoning, Max Effort) | 0.6358 | 284B | 13B | large | Y | Y |
+| 5 | MiniMax-M2.7 | 0.6115 | 230B | 10B | large | Y | Y |
+| 6 | Qwen3.6 27B (Reasoning) | 0.6076 | 28B | 28B | small | Y | Y |
 | 7 | Gemma 4 12B (Reasoning) | 0.4467 | 12B | 12B | small | Y | Y |
 | 8 | Qwen3.5 9B (Reasoning) | 0.4257 | 10B | 10B | small | Y | Y |
 | 9 | Qwen3.5 4B (Reasoning) | 0.4078 | 5B | 5B | small | Y | Y |
 | 10 | MiniCPM5-1B (Non-reasoning) | 0.2801 | 1B | 1B | tiny | Y | N |
-| 11 | Qwen3.5 0.8B (Reasoning) | 0.1550 | 873M | 873M | tiny | Y | Y |
+| 11 | Qwen3.5 0.8B (Reasoning) | 0.1513 | 873M | 873M | tiny | Y | Y |
 | 12 | Gemma 3 270M | 0.1204 | 268M | 268M | tiny | Y | N |
 
 ### 评分方法
@@ -39,4 +39,4 @@ Pareto 前沿上的模型代表了**最高训练效率**——用更少的参数
 
 **数据来源**: [Artificial Analysis](https://artificialanalysis.ai/leaderboards/models)  
 **方法论**: [AA Methodology](https://artificialanalysis.ai/methodology)  
-**模型总数**: 221  
+**模型总数**: 236  
