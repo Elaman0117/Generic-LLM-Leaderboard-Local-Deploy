@@ -15,12 +15,12 @@
     "AA Agentic Index": {
       "min": 0.3436426116838488,
       "max": 52.8147079037801,
-      "count": 76
+      "count": 83
     },
     "AA Coding Index": {
       "min": 0.0,
       "max": 76.4911915660979,
-      "count": 90
+      "count": 91
     },
     "GPQA Diamond": {
       "min": 0.1111111111111111,
@@ -95,7 +95,7 @@
     "GDPval-AA Normalized": {
       "min": 0.0,
       "max": 0.629995,
-      "count": 88
+      "count": 91
     }
   },
   "pareto_frontier": [
@@ -103,9 +103,9 @@
       "rank": 1,
       "model": "GLM-5.2 (max)",
       "creator": "Z AI",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
-      "composite_ability": 0.8047495787558688,
+      "composite_ability": 0.8047019593303179,
       "total_parameters_B": 753.0,
       "active_parameters_B": 40.0,
       "size_class": "large",
@@ -113,17 +113,17 @@
       "intelligence_index_cost_usd": 820.3840342068177,
       "input_price": 1.4,
       "output_price": 4.4,
-      "speed": 205.691796953197,
-      "ttft": 1.43396608049989,
-      "total_response": 13.58807254965018,
-      "reasoning_time": 9.723285175320234,
+      "speed": 214.936261274545,
+      "ttft": 1.39965280199999,
+      "total_response": 13.031008000863665,
+      "reasoning_time": 9.30508415909094,
       "valid_metrics": 17
     },
     {
       "rank": 2,
       "model": "MiniMax-M3",
       "creator": "MiniMax",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "composite_ability": 0.7311480579207037,
       "total_parameters_B": 428.0,
@@ -133,17 +133,17 @@
       "intelligence_index_cost_usd": 203.85795386627436,
       "input_price": 0.3,
       "output_price": 1.2,
-      "speed": 94.5830255846473,
-      "ttft": 1.44167772699939,
-      "total_response": 27.873481790643126,
-      "reasoning_time": 21.14544325091499,
+      "speed": 92.804083365181,
+      "ttft": 1.67597215299992,
+      "total_response": 28.61444198479151,
+      "reasoning_time": 21.55077586543327,
       "valid_metrics": 16
     },
     {
       "rank": 3,
       "model": "MiMo-V2.5",
       "creator": "Xiaomi",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "composite_ability": 0.653429212399925,
       "total_parameters_B": 310.0,
@@ -153,17 +153,17 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.14,
       "output_price": 0.28,
-      "speed": 92.3762566275353,
-      "ttft": 2.67648132099976,
-      "total_response": 29.739712623823582,
-      "reasoning_time": 21.65058504225906,
+      "speed": 83.4277910362732,
+      "ttft": 2.82658221700012,
+      "total_response": 32.79261594445475,
+      "reasoning_time": 23.972826981963706,
       "valid_metrics": 13
     },
     {
       "rank": 4,
       "model": "DeepSeek V4 Flash (Reasoning, Max Effort)",
       "creator": "DeepSeek",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "composite_ability": 0.636349890570266,
       "total_parameters_B": 284.0,
@@ -173,17 +173,17 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.14,
       "output_price": 0.28,
-      "speed": 107.494030573589,
-      "ttft": 1.14756302149988,
-      "total_response": 58.01583717012919,
-      "reasoning_time": 52.21685306662135,
+      "speed": 112.968769303952,
+      "ttft": 1.26409249300013,
+      "total_response": 55.37639306655473,
+      "reasoning_time": 49.686298563612304,
       "valid_metrics": 16
     },
     {
       "rank": 5,
       "model": "MiniMax-M2.7",
       "creator": "MiniMax",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "composite_ability": 0.6122285590490546,
       "total_parameters_B": 230.0,
@@ -193,17 +193,17 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.3,
       "output_price": 1.2,
-      "speed": 50.1475647386794,
-      "ttft": 1.94779032100018,
-      "total_response": 61.01347008900245,
-      "reasoning_time": 49.095105870635244,
+      "speed": 51.0919016630578,
+      "ttft": 2.01322471449999,
+      "total_response": 59.987187389326124,
+      "reasoning_time": 48.187675930257235,
       "valid_metrics": 17
     },
     {
       "rank": 6,
       "model": "Qwen3.6 27B (Reasoning)",
       "creator": "Alibaba",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "composite_ability": 0.6083132860445,
       "total_parameters_B": 27.8,
@@ -213,17 +213,17 @@
       "intelligence_index_cost_usd": 668.077305,
       "input_price": 0.6,
       "output_price": 3.6,
-      "speed": 61.0284258321461,
-      "ttft": 3.66809942700002,
-      "total_response": 104.86684273043379,
-      "reasoning_time": 93.00583986241745,
+      "speed": 61.3078044585666,
+      "ttft": 3.67051100299977,
+      "total_response": 104.40809334741239,
+      "reasoning_time": 92.58201382559683,
       "valid_metrics": 16
     },
     {
       "rank": 7,
       "model": "Gemma 4 12B (Reasoning)",
       "creator": "Google",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "composite_ability": 0.4467237584489707,
       "total_parameters_B": 12.0,
@@ -233,17 +233,17 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.1,
       "output_price": 0.3,
-      "speed": 119.734469955449,
-      "ttft": 2.42072667650018,
-      "total_response": 23.30026120761895,
-      "reasoning_time": 16.703627624895013,
+      "speed": 121.909667819086,
+      "ttft": 2.36561435800013,
+      "total_response": 22.872601578324616,
+      "reasoning_time": 16.40558977625959,
       "valid_metrics": 13
     },
     {
       "rank": 8,
       "model": "Qwen3.5 9B (Reasoning)",
       "creator": "Alibaba",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "composite_ability": 0.42643949100064144,
       "total_parameters_B": 9.65,
@@ -253,17 +253,17 @@
       "intelligence_index_cost_usd": 178.7470683,
       "input_price": 0.1,
       "output_price": 0.15,
-      "speed": 54.856852383438,
+      "speed": 57.7831309301777,
       "ttft": 1.74718396300068,
-      "total_response": 47.320341943803506,
-      "reasoning_time": 36.45852638464226,
+      "total_response": 45.01240617847525,
+      "reasoning_time": 34.61217777237966,
       "valid_metrics": 16
     },
     {
       "rank": 9,
       "model": "Qwen3.5 4B (Reasoning)",
       "creator": "Alibaba",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "composite_ability": 0.40829878005724024,
       "total_parameters_B": 4.66,
@@ -274,8 +274,8 @@
       "input_price": 0.03,
       "output_price": 0.15,
       "speed": 24.6848990773737,
-      "ttft": 0.916917558000023,
-      "total_response": 102.19341020898729,
+      "ttft": 0.799757500500391,
+      "total_response": 102.07625015148766,
       "reasoning_time": 81.02119412078981,
       "valid_metrics": 14
     },
@@ -303,9 +303,9 @@
       "rank": 11,
       "model": "Qwen3.5 0.8B (Reasoning)",
       "creator": "Alibaba",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
-      "composite_ability": 0.14155776233037995,
+      "composite_ability": 0.13947476642828893,
       "total_parameters_B": 0.873,
       "active_parameters_B": 0.873,
       "size_class": "tiny",
@@ -317,7 +317,7 @@
       "ttft": null,
       "total_response": null,
       "reasoning_time": null,
-      "valid_metrics": 14
+      "valid_metrics": 15
     },
     {
       "rank": 12,
@@ -349,7 +349,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -361,7 +361,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -373,7 +373,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -385,7 +385,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -397,7 +397,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -409,7 +409,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -421,19 +421,19 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
     {
       "model": "GLM-5.2 (max)",
       "creator": "Z AI",
-      "composite_ability": 0.8047495787558688,
+      "composite_ability": 0.8047019593303179,
       "normalized_param": 1.0,
       "total_parameters_B": 753.0,
       "active_parameters_B": 40.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": true
     },
@@ -445,7 +445,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -457,7 +457,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -469,7 +469,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -481,7 +481,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -493,7 +493,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -505,7 +505,7 @@
       "total_parameters_B": 428.0,
       "active_parameters_B": 23.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": true
     },
@@ -517,19 +517,19 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": null,
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
     {
       "model": "Kimi K2.6",
       "creator": "Kimi",
-      "composite_ability": 0.717561140998726,
+      "composite_ability": 0.7229770409101469,
       "normalized_param": 1.3280212483399734,
       "total_parameters_B": 1000.0,
       "active_parameters_B": 32.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -541,7 +541,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -553,7 +553,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -565,7 +565,7 @@
       "total_parameters_B": 1600.0,
       "active_parameters_B": 49.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -589,7 +589,7 @@
       "total_parameters_B": 744.0,
       "active_parameters_B": 40.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -601,7 +601,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -613,7 +613,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -625,7 +625,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -637,7 +637,7 @@
       "total_parameters_B": 1600.0,
       "active_parameters_B": 49.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -649,7 +649,7 @@
       "total_parameters_B": 1023.0,
       "active_parameters_B": 42.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -661,7 +661,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -673,7 +673,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -685,7 +685,7 @@
       "total_parameters_B": 1000.0,
       "active_parameters_B": 32.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -697,7 +697,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -709,7 +709,7 @@
       "total_parameters_B": 310.0,
       "active_parameters_B": 15.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": true
     },
@@ -721,7 +721,7 @@
       "total_parameters_B": 284.0,
       "active_parameters_B": 13.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": true
     },
@@ -733,7 +733,7 @@
       "total_parameters_B": 550.0,
       "active_parameters_B": 55.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -757,7 +757,7 @@
       "total_parameters_B": 397.0,
       "active_parameters_B": 17.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -769,7 +769,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -781,7 +781,7 @@
       "total_parameters_B": 230.0,
       "active_parameters_B": 10.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": true
     },
@@ -793,7 +793,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": null,
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -805,7 +805,7 @@
       "total_parameters_B": 284.0,
       "active_parameters_B": 13.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -817,7 +817,7 @@
       "total_parameters_B": 27.8,
       "active_parameters_B": 27.8,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": true
     },
@@ -829,7 +829,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -853,7 +853,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -865,7 +865,7 @@
       "total_parameters_B": 397.0,
       "active_parameters_B": 17.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -877,7 +877,7 @@
       "total_parameters_B": 309.0,
       "active_parameters_B": 15.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -889,7 +889,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": null,
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -901,7 +901,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": null,
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -937,7 +937,7 @@
       "total_parameters_B": 36.0,
       "active_parameters_B": 3.0,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -961,7 +961,7 @@
       "total_parameters_B": 125.0,
       "active_parameters_B": 10.0,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -973,7 +973,7 @@
       "total_parameters_B": 295.0,
       "active_parameters_B": 21.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1009,7 +1009,7 @@
       "total_parameters_B": 198.0,
       "active_parameters_B": 11.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1021,7 +1021,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -1033,7 +1033,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -1045,7 +1045,7 @@
       "total_parameters_B": 30.7,
       "active_parameters_B": 30.7,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1069,7 +1069,7 @@
       "total_parameters_B": 128.0,
       "active_parameters_B": 128.0,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1081,7 +1081,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -1093,7 +1093,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -1105,7 +1105,7 @@
       "total_parameters_B": 1000.0,
       "active_parameters_B": 63.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1117,7 +1117,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -1129,7 +1129,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": null,
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -1153,7 +1153,7 @@
       "total_parameters_B": 218.0,
       "active_parameters_B": 25.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1165,7 +1165,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -1213,7 +1213,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -1225,7 +1225,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -1249,7 +1249,7 @@
       "total_parameters_B": 12.0,
       "active_parameters_B": 12.0,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": true
     },
@@ -1261,7 +1261,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -1273,7 +1273,7 @@
       "total_parameters_B": 34.4,
       "active_parameters_B": 34.4,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1297,7 +1297,7 @@
       "total_parameters_B": 25.2,
       "active_parameters_B": 3.8,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1309,7 +1309,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -1321,7 +1321,7 @@
       "total_parameters_B": 236.0,
       "active_parameters_B": 23.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1333,7 +1333,7 @@
       "total_parameters_B": 399.0,
       "active_parameters_B": 13.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1381,7 +1381,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -1393,7 +1393,7 @@
       "total_parameters_B": 9.65,
       "active_parameters_B": 9.65,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": true
     },
@@ -1441,7 +1441,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -1453,7 +1453,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": null,
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -1465,7 +1465,7 @@
       "total_parameters_B": 31.6,
       "active_parameters_B": 3.0,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1477,7 +1477,7 @@
       "total_parameters_B": 4.66,
       "active_parameters_B": 4.66,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": true
     },
@@ -1489,7 +1489,7 @@
       "total_parameters_B": 15.0,
       "active_parameters_B": 15.0,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1513,7 +1513,7 @@
       "total_parameters_B": 120.6,
       "active_parameters_B": 12.7,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1525,7 +1525,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -1537,7 +1537,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -1549,7 +1549,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -1561,7 +1561,7 @@
       "total_parameters_B": 671.0,
       "active_parameters_B": 37.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1573,7 +1573,7 @@
       "total_parameters_B": 117.0,
       "active_parameters_B": 5.1,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1602,18 +1602,6 @@
       "is_pareto": false
     },
     {
-      "model": "HyperNova 60B 2605",
-      "creator": "Multiverse Computing",
-      "composite_ability": 0.37304398538565753,
-      "normalized_param": 0.07795484727755644,
-      "total_parameters_B": 58.7,
-      "active_parameters_B": 4.8,
-      "size_class": "medium",
-      "is_reasoning": true,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "Mistral Small 4 (Reasoning)",
       "creator": "Mistral",
       "composite_ability": 0.37223131203891907,
@@ -1621,7 +1609,7 @@
       "total_parameters_B": 119.0,
       "active_parameters_B": 6.5,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1645,7 +1633,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -1657,7 +1645,7 @@
       "total_parameters_B": 30.0,
       "active_parameters_B": 3.0,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1674,12 +1662,12 @@
       "is_pareto": false
     },
     {
-      "model": "Qwen3 Coder Next",
-      "creator": "Alibaba",
-      "composite_ability": 0.35282175251604264,
-      "normalized_param": 0.10584329349269589,
-      "total_parameters_B": 79.7,
-      "active_parameters_B": 3.0,
+      "model": "HyperNova 60B 2605",
+      "creator": "Multiverse Computing",
+      "composite_ability": 0.3514472469351365,
+      "normalized_param": 0.07795484727755644,
+      "total_parameters_B": 58.7,
+      "active_parameters_B": 4.8,
       "size_class": "medium",
       "is_reasoning": false,
       "is_open_weights": true,
@@ -1693,7 +1681,19 @@
       "total_parameters_B": 117.0,
       "active_parameters_B": 5.1,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
+      "model": "Qwen3 Coder Next",
+      "creator": "Alibaba",
+      "composite_ability": 0.3400632286661629,
+      "normalized_param": 0.10584329349269589,
+      "total_parameters_B": 79.7,
+      "active_parameters_B": 3.0,
+      "size_class": "medium",
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1705,7 +1705,7 @@
       "total_parameters_B": 8.0,
       "active_parameters_B": 4.5,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1717,7 +1717,7 @@
       "total_parameters_B": 80.0,
       "active_parameters_B": 3.0,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1765,7 +1765,7 @@
       "total_parameters_B": 70.0,
       "active_parameters_B": 70.0,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1777,7 +1777,7 @@
       "total_parameters_B": 30.0,
       "active_parameters_B": 3.0,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1789,7 +1789,7 @@
       "total_parameters_B": 32.0,
       "active_parameters_B": 32.0,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -1800,18 +1800,6 @@
       "normalized_param": 0.13545816733067728,
       "total_parameters_B": 102.0,
       "active_parameters_B": 12.0,
-      "size_class": "medium",
-      "is_reasoning": true,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
-      "model": "Ling 2.6 Flash",
-      "creator": "InclusionAI",
-      "composite_ability": 0.3168215475446187,
-      "normalized_param": 0.14209827357237717,
-      "total_parameters_B": 107.0,
-      "active_parameters_B": 7.4,
       "size_class": "medium",
       "is_reasoning": false,
       "is_open_weights": true,
@@ -1837,7 +1825,7 @@
       "total_parameters_B": 107.0,
       "active_parameters_B": 12.0,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1873,7 +1861,7 @@
       "total_parameters_B": 32.0,
       "active_parameters_B": 32.0,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1885,7 +1873,7 @@
       "total_parameters_B": 102.0,
       "active_parameters_B": 12.0,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -1897,7 +1885,7 @@
       "total_parameters_B": 70.0,
       "active_parameters_B": 70.0,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1909,7 +1897,7 @@
       "total_parameters_B": 21.0,
       "active_parameters_B": 3.6,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1921,7 +1909,7 @@
       "total_parameters_B": 49.0,
       "active_parameters_B": 49.0,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -1945,7 +1933,7 @@
       "total_parameters_B": 31.6,
       "active_parameters_B": 3.6,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2005,7 +1993,7 @@
       "total_parameters_B": 25.2,
       "active_parameters_B": 3.8,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2034,6 +2022,18 @@
       "is_pareto": false
     },
     {
+      "model": "Ling 2.6 Flash",
+      "creator": "InclusionAI",
+      "composite_ability": 0.2923917272067634,
+      "normalized_param": 0.14209827357237717,
+      "total_parameters_B": 107.0,
+      "active_parameters_B": 7.4,
+      "size_class": "medium",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "Llama 4 Maverick",
       "creator": "Meta",
       "composite_ability": 0.2906926955859718,
@@ -2053,7 +2053,7 @@
       "total_parameters_B": 21.0,
       "active_parameters_B": 21.0,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2065,7 +2065,7 @@
       "total_parameters_B": 406.0,
       "active_parameters_B": 406.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2089,7 +2089,7 @@
       "total_parameters_B": 12.7,
       "active_parameters_B": 12.7,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -2101,7 +2101,7 @@
       "total_parameters_B": 70.0,
       "active_parameters_B": 70.0,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2113,7 +2113,7 @@
       "total_parameters_B": 21.0,
       "active_parameters_B": 3.6,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2137,7 +2137,7 @@
       "total_parameters_B": 1.0,
       "active_parameters_B": 1.0,
       "size_class": "tiny",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2149,7 +2149,7 @@
       "total_parameters_B": 10.2,
       "active_parameters_B": 10.2,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2161,7 +2161,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": null,
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -2185,7 +2185,7 @@
       "total_parameters_B": 21.0,
       "active_parameters_B": 21.0,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2209,7 +2209,7 @@
       "total_parameters_B": 5.1,
       "active_parameters_B": 2.3,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2233,7 +2233,7 @@
       "total_parameters_B": 35.3,
       "active_parameters_B": 3.0,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2269,7 +2269,7 @@
       "total_parameters_B": 13.2,
       "active_parameters_B": 13.2,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2305,7 +2305,7 @@
       "total_parameters_B": 253.0,
       "active_parameters_B": 253.0,
       "size_class": "large",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2317,7 +2317,7 @@
       "total_parameters_B": 3.93,
       "active_parameters_B": 3.93,
       "size_class": "tiny",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2329,7 +2329,7 @@
       "total_parameters_B": 32.0,
       "active_parameters_B": 32.0,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2341,7 +2341,7 @@
       "total_parameters_B": 7.0,
       "active_parameters_B": 7.0,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2353,7 +2353,7 @@
       "total_parameters_B": 70.6,
       "active_parameters_B": 70.6,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2365,7 +2365,7 @@
       "total_parameters_B": 32.2,
       "active_parameters_B": 32.2,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2377,7 +2377,7 @@
       "total_parameters_B": 106.0,
       "active_parameters_B": 10.3,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2389,7 +2389,7 @@
       "total_parameters_B": 24.0,
       "active_parameters_B": 24.0,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2401,19 +2401,7 @@
       "total_parameters_B": 70.0,
       "active_parameters_B": 70.0,
       "size_class": "medium",
-      "is_reasoning": true,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
-      "model": "Qwen3.5 2B (Reasoning)",
-      "creator": "Alibaba",
-      "composite_ability": 0.23393823230021607,
-      "normalized_param": 0.00301460823373174,
-      "total_parameters_B": 2.27,
-      "active_parameters_B": 2.27,
-      "size_class": "tiny",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2425,7 +2413,7 @@
       "total_parameters_B": 8.3,
       "active_parameters_B": 1.5,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2449,7 +2437,7 @@
       "total_parameters_B": 9.0,
       "active_parameters_B": 9.0,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2461,7 +2449,7 @@
       "total_parameters_B": null,
       "active_parameters_B": null,
       "size_class": null,
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
     },
@@ -2473,7 +2461,7 @@
       "total_parameters_B": 103.0,
       "active_parameters_B": 6.1,
       "size_class": "medium",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2486,18 +2474,6 @@
       "active_parameters_B": 111.0,
       "size_class": "medium",
       "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
-      "model": "NVIDIA Nemotron 3 Nano 4B",
-      "creator": "NVIDIA",
-      "composite_ability": 0.21707219781405565,
-      "normalized_param": 0.005272244355909695,
-      "total_parameters_B": 3.97,
-      "active_parameters_B": 3.97,
-      "size_class": "tiny",
-      "is_reasoning": true,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2550,9 +2526,9 @@
       "is_pareto": false
     },
     {
-      "model": "Qwen3.5 2B (Non-reasoning)",
+      "model": "Qwen3.5 2B (Reasoning)",
       "creator": "Alibaba",
-      "composite_ability": 0.20235196716487824,
+      "composite_ability": 0.20250476114138785,
       "normalized_param": 0.00301460823373174,
       "total_parameters_B": 2.27,
       "active_parameters_B": 2.27,
@@ -2634,6 +2610,18 @@
       "is_pareto": false
     },
     {
+      "model": "Qwen3.5 2B (Non-reasoning)",
+      "creator": "Alibaba",
+      "composite_ability": 0.18836223925213275,
+      "normalized_param": 0.00301460823373174,
+      "total_parameters_B": 2.27,
+      "active_parameters_B": 2.27,
+      "size_class": "tiny",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "Granite 4.1 30B",
       "creator": "IBM",
       "composite_ability": 0.18754551377358059,
@@ -2665,6 +2653,18 @@
       "total_parameters_B": 32.0,
       "active_parameters_B": 32.0,
       "size_class": "small",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
+      "model": "NVIDIA Nemotron 3 Nano 4B",
+      "creator": "NVIDIA",
+      "composite_ability": 0.18309133770186867,
+      "normalized_param": 0.005272244355909695,
+      "total_parameters_B": 3.97,
+      "active_parameters_B": 3.97,
+      "size_class": "tiny",
       "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
@@ -2713,7 +2713,7 @@
       "total_parameters_B": 32.2,
       "active_parameters_B": 2.4,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2797,7 +2797,7 @@
       "total_parameters_B": 21.0,
       "active_parameters_B": 21.0,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2809,7 +2809,7 @@
       "total_parameters_B": 7.0,
       "active_parameters_B": 7.0,
       "size_class": "small",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2828,12 +2828,12 @@
     {
       "model": "Qwen3.5 0.8B (Reasoning)",
       "creator": "Alibaba",
-      "composite_ability": 0.14155776233037995,
+      "composite_ability": 0.13947476642828893,
       "normalized_param": 0.0011593625498007968,
       "total_parameters_B": 0.873,
       "active_parameters_B": 0.873,
       "size_class": "tiny",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": true
     },
@@ -2845,7 +2845,7 @@
       "total_parameters_B": 3.0,
       "active_parameters_B": 3.0,
       "size_class": "tiny",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -2958,18 +2958,6 @@
       "is_pareto": false
     },
     {
-      "model": "Phi-4 Mini Instruct",
-      "creator": "Microsoft",
-      "composite_ability": 0.11185873653670168,
-      "normalized_param": 0.005099601593625498,
-      "total_parameters_B": 3.84,
-      "active_parameters_B": 3.84,
-      "size_class": "tiny",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "Olmo 3 7B Instruct",
       "creator": "Allen Institute for AI",
       "composite_ability": 0.11097895487778334,
@@ -2994,6 +2982,18 @@
       "is_pareto": false
     },
     {
+      "model": "Phi-4 Mini Instruct",
+      "creator": "Microsoft",
+      "composite_ability": 0.10778536870685425,
+      "normalized_param": 0.005099601593625498,
+      "total_parameters_B": 3.84,
+      "active_parameters_B": 3.84,
+      "size_class": "tiny",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "Exaone 4.0 1.2B (Reasoning)",
       "creator": "LG AI Research",
       "composite_ability": 0.10620677937658012,
@@ -3001,7 +3001,7 @@
       "total_parameters_B": 1.28,
       "active_parameters_B": 1.28,
       "size_class": "tiny",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -3018,18 +3018,6 @@
       "is_pareto": false
     },
     {
-      "model": "Qwen3.5 0.8B (Non-reasoning)",
-      "creator": "Alibaba",
-      "composite_ability": 0.10449075905694073,
-      "normalized_param": 0.0011593625498007968,
-      "total_parameters_B": 0.873,
-      "active_parameters_B": 0.873,
-      "size_class": "tiny",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "LFM2.5-1.2B-Thinking",
       "creator": "Liquid AI",
       "composite_ability": 0.10400334230288265,
@@ -3037,7 +3025,7 @@
       "total_parameters_B": 1.17,
       "active_parameters_B": 1.17,
       "size_class": "tiny",
-      "is_reasoning": true,
+      "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
@@ -3060,6 +3048,18 @@
       "normalized_param": 0.001699867197875166,
       "total_parameters_B": 1.28,
       "active_parameters_B": 1.28,
+      "size_class": "tiny",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
+      "model": "Qwen3.5 0.8B (Non-reasoning)",
+      "creator": "Alibaba",
+      "composite_ability": 0.09752470845314468,
+      "normalized_param": 0.0011593625498007968,
+      "total_parameters_B": 0.873,
+      "active_parameters_B": 0.873,
       "size_class": "tiny",
       "is_reasoning": false,
       "is_open_weights": true,
