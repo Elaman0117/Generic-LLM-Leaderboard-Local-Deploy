@@ -16,7 +16,7 @@
 | 8 | Qwen3.5 9B (Reasoning) | 0.4264 | 10B | 10B | small | Y | N |
 | 9 | Qwen3.5 4B (Reasoning) | 0.4083 | 5B | 5B | small | Y | N |
 | 10 | MiniCPM5-1B (Non-reasoning) | 0.2801 | 1B | 1B | tiny | Y | N |
-| 11 | Qwen3.5 0.8B (Reasoning) | 0.1395 | 873M | 873M | tiny | Y | N |
+| 11 | Qwen3.5 0.8B (Reasoning) | 0.1308 | 873M | 873M | tiny | Y | N |
 | 12 | Gemma 3 270M | 0.1204 | 268M | 268M | tiny | Y | N |
 
 ### 评分方法
