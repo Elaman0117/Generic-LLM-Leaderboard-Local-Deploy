@@ -3,39 +3,39 @@
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "methodology": "18 evaluation metrics normalized [0,1], averaged → composite ability; Pareto = non-dominated by parameter count; X-axis: totalParameters (linear scale); Y-axis: composite ability (linear, direct average); Parameter count from AA's model metadata",
     "param_source": "totalParameters from AA RSC payload — total model parameters in billions",
-    "total_models": 261,
+    "total_models": 262,
     "pareto_count": 11
   },
   "metric_ranges": {
     "AA Intelligence Index": {
       "min": 1.0,
       "max": 59.8606463217303,
-      "count": 262
+      "count": 263
     },
     "AA Agentic Index": {
       "min": 0.0,
       "max": 54.0035635738832,
-      "count": 113
+      "count": 115
     },
     "AA Coding Index": {
       "min": 0.0,
       "max": 78.3482452489943,
-      "count": 120
+      "count": 121
     },
     "GPQA Diamond": {
       "min": 0.1111111111111111,
       "max": 0.9414141414141414,
-      "count": 263
+      "count": 264
     },
     "Humanity's Last Exam": {
       "min": 0.012048192771084338,
       "max": 0.53336422613531,
-      "count": 263
+      "count": 264
     },
     "MMMU Pro": {
       "min": 0.14508670520231215,
       "max": 0.8427745664739884,
-      "count": 128
+      "count": 129
     },
     "IFBench Instruction Following": {
       "min": 0.12108843537414966,
@@ -45,17 +45,17 @@
     "SciCode Coding": {
       "min": 0.0,
       "max": 0.6018518518518519,
-      "count": 263
+      "count": 264
     },
     "CritPt Physics": {
       "min": 0.0,
       "max": 0.32285714285714284,
-      "count": 259
+      "count": 260
     },
     "AA-LCR Long Context": {
       "min": 0.0,
       "max": 0.7433333333333333,
-      "count": 259
+      "count": 260
     },
     "τ²-Bench Telecom": {
       "min": 0.0,
@@ -70,17 +70,17 @@
     "AA Omniscience Index": {
       "min": -89.0,
       "max": 40.15,
-      "count": 257
+      "count": 258
     },
     "AA-Omniscience Accuracy": {
       "min": 0.0006666666666666666,
       "max": 0.6135,
-      "count": 257
+      "count": 258
     },
     "AA-Omniscience Non-Hallucination": {
       "min": 0.012223515715948778,
       "max": 0.9914943295530354,
-      "count": 257
+      "count": 258
     },
     "APEX-Agents-AA": {
       "min": 0.007374631268436578,
@@ -95,7 +95,7 @@
     "GDPval-AA Normalized": {
       "min": 0.0,
       "max": 0.6298,
-      "count": 126
+      "count": 128
     }
   },
   "pareto_frontier": [
@@ -110,13 +110,13 @@
       "active_parameters_B": 40.0,
       "size_class": "large",
       "normalized_param": 1.0,
-      "intelligence_index_cost_usd": 826.5058202762576,
+      "intelligence_index_cost_usd": 924.7118407048374,
       "input_price": 1.4,
       "output_price": 4.4,
-      "speed": 190.703208467488,
-      "ttft": 1.40131659300005,
-      "total_response": 14.510692256316235,
-      "reasoning_time": 10.487500530652948,
+      "speed": 161.653299557465,
+      "ttft": 1.40366121599993,
+      "total_response": 16.86885745290874,
+      "reasoning_time": 12.372156989527046,
       "valid_metrics": 17
     },
     {
@@ -133,10 +133,10 @@
       "intelligence_index_cost_usd": 203.85795386627436,
       "input_price": 0.3,
       "output_price": 1.2,
-      "speed": 103.025287394928,
-      "ttft": 1.77428596899995,
-      "total_response": 26.04017314305579,
-      "reasoning_time": 19.412709739244672,
+      "speed": 94.3627414671609,
+      "ttft": 1.93890239500001,
+      "total_response": 28.432409907920487,
+      "reasoning_time": 21.194806010336382,
       "valid_metrics": 16
     },
     {
@@ -153,10 +153,10 @@
       "intelligence_index_cost_usd": 25.192869198091103,
       "input_price": 0.14,
       "output_price": 0.28,
-      "speed": 89.1653493689949,
-      "ttft": 2.56469269099989,
-      "total_response": 30.602490083058502,
-      "reasoning_time": 22.430237913646888,
+      "speed": 88.2832920859682,
+      "ttft": 2.8272727799999,
+      "total_response": 31.145201811979796,
+      "reasoning_time": 22.65434322558392,
       "valid_metrics": 16
     },
     {
@@ -173,10 +173,10 @@
       "intelligence_index_cost_usd": 74.3126277163192,
       "input_price": 0.14,
       "output_price": 0.28,
-      "speed": 101.756520866109,
-      "ttft": 1.25380911000002,
-      "total_response": 61.32858316839645,
-      "reasoning_time": 55.161084048712446,
+      "speed": 103.527929362044,
+      "ttft": 1.2400153735,
+      "total_response": 60.286883572925056,
+      "reasoning_time": 54.217253591260075,
       "valid_metrics": 16
     },
     {
@@ -193,10 +193,10 @@
       "intelligence_index_cost_usd": 668.077305,
       "input_price": 0.6,
       "output_price": 3.6,
-      "speed": 58.2174574951998,
-      "ttft": 4.02341574900018,
-      "total_response": 110.10843329737438,
-      "reasoning_time": 97.49652843338276,
+      "speed": 53.4539057961008,
+      "ttft": 3.97292920200016,
+      "total_response": 119.51172675139287,
+      "reasoning_time": 106.18494412084732,
       "valid_metrics": 16
     },
     {
@@ -213,10 +213,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.1,
       "output_price": 0.3,
-      "speed": 110.30967539805,
-      "ttft": 2.43857029300034,
-      "total_response": 25.10204011991086,
-      "reasoning_time": 18.130775861528416,
+      "speed": 107.624929101101,
+      "ttft": 2.47421943200004,
+      "total_response": 25.70303845079394,
+      "reasoning_time": 18.58305521503512,
       "valid_metrics": 13
     },
     {
@@ -233,10 +233,10 @@
       "intelligence_index_cost_usd": 179.09621755000003,
       "input_price": 0.1,
       "output_price": 0.15,
-      "speed": 63.3673431192278,
-      "ttft": 1.06886299499985,
-      "total_response": 40.521361347284646,
-      "reasoning_time": 31.561998681827838,
+      "speed": 74.1105597657326,
+      "ttft": 1.42460875549994,
+      "total_response": 35.157993146369904,
+      "reasoning_time": 26.986707512695975,
       "valid_metrics": 16
     },
     {
@@ -253,10 +253,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.03,
       "output_price": 0.15,
-      "speed": 29.6546241326718,
-      "ttft": 0.694927071000166,
-      "total_response": 84.99881130892717,
-      "reasoning_time": 67.44310739034161,
+      "speed": 33.7341174366259,
+      "ttft": 0.671705141999951,
+      "total_response": 74.78065447783445,
+      "reasoning_time": 59.287159468667596,
       "valid_metrics": 14
     },
     {
@@ -1114,6 +1114,18 @@
       "is_pareto": false
     },
     {
+      "model": "JT-4.1 Flash 236B A21B",
+      "creator": "China Mobile",
+      "composite_ability": 0.5711327853811784,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": null,
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
       "model": "GPT-5.5 (Non-reasoning)",
       "creator": "OpenAI",
       "composite_ability": 0.5669850018279,
@@ -1147,18 +1159,6 @@
       "size_class": "large",
       "is_reasoning": false,
       "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
-      "model": "JT-4.1 Flash 236B A21B",
-      "creator": "China Mobile",
-      "composite_ability": 0.5594086910900468,
-      "normalized_param": null,
-      "total_parameters_B": null,
-      "active_parameters_B": null,
-      "size_class": null,
-      "is_reasoning": false,
-      "is_open_weights": false,
       "is_pareto": false
     },
     {
@@ -1354,6 +1354,18 @@
       "is_pareto": false
     },
     {
+      "model": "LongCat 2.0",
+      "creator": "LongCat",
+      "composite_ability": 0.5032162590820586,
+      "normalized_param": 2.1248339973439574,
+      "total_parameters_B": 1600.0,
+      "active_parameters_B": 48.0,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "Claude 4.5 Haiku (Reasoning)",
       "creator": "Anthropic",
       "composite_ability": 0.5015144891641055,
@@ -1416,7 +1428,7 @@
     {
       "model": "Command A+",
       "creator": "Cohere",
-      "composite_ability": 0.48258963766141094,
+      "composite_ability": 0.4825330720850375,
       "normalized_param": 0.28950863213811423,
       "total_parameters_B": 218.0,
       "active_parameters_B": 25.0,
@@ -1954,18 +1966,6 @@
       "is_pareto": false
     },
     {
-      "model": "gpt-oss-120b (low)",
-      "creator": "OpenAI",
-      "composite_ability": 0.3417686093264279,
-      "normalized_param": 0.1553784860557769,
-      "total_parameters_B": 117.0,
-      "active_parameters_B": 5.1,
-      "size_class": "medium",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "Qwen3 Coder Next",
       "creator": "Alibaba",
       "composite_ability": 0.3385495928679927,
@@ -2287,6 +2287,18 @@
       "size_class": "large",
       "is_reasoning": false,
       "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
+      "model": "gpt-oss-120b (low)",
+      "creator": "OpenAI",
+      "composite_ability": 0.2942228662995424,
+      "normalized_param": 0.1553784860557769,
+      "total_parameters_B": 117.0,
+      "active_parameters_B": 5.1,
+      "size_class": "medium",
+      "is_reasoning": false,
+      "is_open_weights": true,
       "is_pareto": false
     },
     {
