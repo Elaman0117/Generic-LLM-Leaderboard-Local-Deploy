@@ -15,12 +15,12 @@
     "AA Agentic Index": {
       "min": 0.0,
       "max": 54.0035635738832,
-      "count": 118
+      "count": 120
     },
     "AA Coding Index": {
       "min": 0.0,
       "max": 78.3482452489943,
-      "count": 123
+      "count": 124
     },
     "GPQA Diamond": {
       "min": 0.1111111111111111,
@@ -90,7 +90,7 @@
     "ITBench-SRE": {
       "min": 0.005649717514124294,
       "max": 0.5621468926553672,
-      "count": 28
+      "count": 29
     },
     "GDPval-AA Normalized": {
       "min": 0.0,
@@ -105,19 +105,19 @@
       "creator": "Kimi",
       "is_reasoning": false,
       "is_open_weights": false,
-      "composite_ability": 0.8705298627158445,
+      "composite_ability": 0.8697976390281451,
       "total_parameters_B": 2800.0,
       "active_parameters_B": 2800.0,
       "size_class": "large",
       "normalized_param": 1.0,
-      "intelligence_index_cost_usd": 2690.8035949200003,
+      "intelligence_index_cost_usd": 2709.7489470450005,
       "input_price": 3.0,
       "output_price": 15.0,
       "speed": 62.0258445284843,
       "ttft": 1.99060714337975,
       "total_response": 42.29638643594413,
       "reasoning_time": 32.244623434051505,
-      "valid_metrics": 13
+      "valid_metrics": 14
     },
     {
       "rank": 2,
@@ -133,10 +133,10 @@
       "intelligence_index_cost_usd": 924.7118407048374,
       "input_price": 1.4,
       "output_price": 4.4,
-      "speed": 158.620232235774,
-      "ttft": 1.55305924149997,
-      "total_response": 17.31397425695642,
-      "reasoning_time": 12.608732012365161,
+      "speed": 168.207535802859,
+      "ttft": 1.5573065210001,
+      "total_response": 16.41989866389925,
+      "reasoning_time": 11.890073714319321,
       "valid_metrics": 17
     },
     {
@@ -153,10 +153,10 @@
       "intelligence_index_cost_usd": 203.85795386627436,
       "input_price": 0.3,
       "output_price": 1.2,
-      "speed": 83.9563299952378,
-      "ttft": 1.93681879250002,
-      "total_response": 31.714204251604844,
-      "reasoning_time": 23.821908367283857,
+      "speed": 83.7370995810506,
+      "ttft": 1.84877940849998,
+      "total_response": 31.704124440843813,
+      "reasoning_time": 23.884276025875067,
       "valid_metrics": 16
     },
     {
@@ -173,10 +173,10 @@
       "intelligence_index_cost_usd": 25.192869198091103,
       "input_price": 0.14,
       "output_price": 0.28,
-      "speed": 69.5992075448603,
-      "ttft": 3.22568772649999,
-      "total_response": 39.14563693552827,
-      "reasoning_time": 28.735959367222623,
+      "speed": 63.75035868595,
+      "ttft": 3.37310977449993,
+      "total_response": 42.58857540529923,
+      "reasoning_time": 31.372372504639443,
       "valid_metrics": 16
     },
     {
@@ -194,8 +194,8 @@
       "input_price": 0.14,
       "output_price": 0.28,
       "speed": 102.865419076483,
-      "ttft": 1.16377323949996,
-      "total_response": 60.590935981673134,
+      "ttft": 1.17294975250002,
+      "total_response": 60.60011249467319,
       "reasoning_time": 54.56644274035957,
       "valid_metrics": 16
     },
@@ -213,10 +213,10 @@
       "intelligence_index_cost_usd": 668.077305,
       "input_price": 0.6,
       "output_price": 3.6,
-      "speed": 54.505590691386,
-      "ttft": 3.82145677500001,
-      "total_response": 117.13093423702573,
-      "reasoning_time": 104.13610655350679,
+      "speed": 54.6332337420353,
+      "ttft": 3.79363765699998,
+      "total_response": 116.83838307993345,
+      "reasoning_time": 103.89280683623225,
       "valid_metrics": 16
     },
     {
@@ -233,10 +233,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.1,
       "output_price": 0.3,
-      "speed": 105.583089377229,
-      "ttft": 2.540050962,
-      "total_response": 26.218085150485987,
-      "reasoning_time": 18.94242735078879,
+      "speed": 106.010753135153,
+      "ttft": 2.55473580650004,
+      "total_response": 26.13724914656426,
+      "reasoning_time": 18.866010672051374,
       "valid_metrics": 13
     },
     {
@@ -253,10 +253,10 @@
       "intelligence_index_cost_usd": 179.09621755000003,
       "input_price": 0.1,
       "output_price": 0.15,
-      "speed": 58.8312599831374,
-      "ttft": 1.65198728400003,
-      "total_response": 44.1464026801103,
-      "reasoning_time": 33.995532316888216,
+      "speed": 55.4157415535648,
+      "ttft": 1.69802209199997,
+      "total_response": 46.811557161877225,
+      "reasoning_time": 36.0908280559018,
       "valid_metrics": 16
     },
     {
@@ -273,10 +273,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.03,
       "output_price": 0.15,
-      "speed": 20.9182822501146,
-      "ttft": 0.725314118000028,
-      "total_response": 120.23799542271394,
-      "reasoning_time": 95.61014504377113,
+      "speed": 20.454884484611,
+      "ttft": 0.946045126999991,
+      "total_response": 123.1662415735185,
+      "reasoning_time": 97.77615715721481,
       "valid_metrics": 14
     },
     {
@@ -380,7 +380,7 @@
     {
       "model": "Kimi K3",
       "creator": "Kimi",
-      "composite_ability": 0.8705298627158445,
+      "composite_ability": 0.8697976390281451,
       "normalized_param": 1.0,
       "total_parameters_B": 2800.0,
       "active_parameters_B": 2800.0,
@@ -680,7 +680,7 @@
     {
       "model": "Kimi K2.6",
       "creator": "Kimi",
-      "composite_ability": 0.7122357908270195,
+      "composite_ability": 0.7121868334860647,
       "normalized_param": 0.35714285714285715,
       "total_parameters_B": 1000.0,
       "active_parameters_B": 32.0,
@@ -1064,7 +1064,7 @@
     {
       "model": "GPT-5.6 Luna (medium)",
       "creator": "OpenAI",
-      "composite_ability": 0.6013635922334312,
+      "composite_ability": 0.6013617601499859,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1758,18 +1758,6 @@
       "is_pareto": false
     },
     {
-      "model": "Qwen3.5 35B A3B (Non-reasoning)",
-      "creator": "Alibaba",
-      "composite_ability": 0.41030503595100754,
-      "normalized_param": 0.012857142857142857,
-      "total_parameters_B": 36.0,
-      "active_parameters_B": 3.0,
-      "size_class": "small",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "Gemma 4 31B (Non-reasoning)",
       "creator": "Google",
       "composite_ability": 0.4098664286980067,
@@ -1825,6 +1813,18 @@
       "total_parameters_B": 399.0,
       "active_parameters_B": 13.0,
       "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
+      "model": "Qwen3.5 35B A3B (Non-reasoning)",
+      "creator": "Alibaba",
+      "composite_ability": 0.4024356140139215,
+      "normalized_param": 0.012857142857142857,
+      "total_parameters_B": 36.0,
+      "active_parameters_B": 3.0,
+      "size_class": "small",
       "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
@@ -3402,18 +3402,6 @@
       "is_pareto": false
     },
     {
-      "model": "Qwen3.5 0.8B (Non-reasoning)",
-      "creator": "Alibaba",
-      "composite_ability": 0.09747293309686555,
-      "normalized_param": 0.00031178571428571426,
-      "total_parameters_B": 0.873,
-      "active_parameters_B": 0.873,
-      "size_class": "tiny",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "LFM2 8B A1B",
       "creator": "Liquid AI",
       "composite_ability": 0.09257584712220394,
@@ -3421,6 +3409,18 @@
       "total_parameters_B": 8.34,
       "active_parameters_B": 1.5,
       "size_class": "small",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
+      "model": "Qwen3.5 0.8B (Non-reasoning)",
+      "creator": "Alibaba",
+      "composite_ability": 0.09068049348577639,
+      "normalized_param": 0.00031178571428571426,
+      "total_parameters_B": 0.873,
+      "active_parameters_B": 0.873,
+      "size_class": "tiny",
       "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
