@@ -85,7 +85,7 @@
     "APEX-Agents-AA": {
       "min": 0.007374631268436578,
       "max": 0.47050147492625366,
-      "count": 18
+      "count": 19
     },
     "ITBench-SRE": {
       "min": 0.005649717514124294,
@@ -105,7 +105,7 @@
       "creator": "Kimi",
       "is_reasoning": false,
       "is_open_weights": false,
-      "composite_ability": 0.8697976390281451,
+      "composite_ability": 0.8701276782004849,
       "total_parameters_B": 2800.0,
       "active_parameters_B": 2800.0,
       "size_class": "large",
@@ -117,7 +117,7 @@
       "ttft": 1.99060714337975,
       "total_response": 42.29638643594413,
       "reasoning_time": 32.244623434051505,
-      "valid_metrics": 14
+      "valid_metrics": 15
     },
     {
       "rank": 2,
@@ -133,10 +133,10 @@
       "intelligence_index_cost_usd": 924.7118407048374,
       "input_price": 1.4,
       "output_price": 4.4,
-      "speed": 168.207535802859,
-      "ttft": 1.5573065210001,
-      "total_response": 16.41989866389925,
-      "reasoning_time": 11.890073714319321,
+      "speed": 181.29820573062,
+      "ttft": 1.52501929099999,
+      "total_response": 15.314455264318989,
+      "reasoning_time": 11.031548778655198,
       "valid_metrics": 17
     },
     {
@@ -153,10 +153,10 @@
       "intelligence_index_cost_usd": 203.85795386627436,
       "input_price": 0.3,
       "output_price": 1.2,
-      "speed": 83.7370995810506,
+      "speed": 83.8765235614611,
       "ttft": 1.84877940849998,
-      "total_response": 31.704124440843813,
-      "reasoning_time": 23.884276025875067,
+      "total_response": 31.65449731200975,
+      "reasoning_time": 23.844574322807816,
       "valid_metrics": 16
     },
     {
@@ -173,10 +173,10 @@
       "intelligence_index_cost_usd": 25.192869198091103,
       "input_price": 0.14,
       "output_price": 0.28,
-      "speed": 63.75035868595,
-      "ttft": 3.37310977449993,
-      "total_response": 42.58857540529923,
-      "reasoning_time": 31.372372504639443,
+      "speed": 63.7881750398101,
+      "ttft": 3.68760371299999,
+      "total_response": 42.87982074130898,
+      "reasoning_time": 31.353773622647193,
       "valid_metrics": 16
     },
     {
@@ -193,10 +193,10 @@
       "intelligence_index_cost_usd": 74.3126277163192,
       "input_price": 0.14,
       "output_price": 0.28,
-      "speed": 102.865419076483,
-      "ttft": 1.17294975250002,
-      "total_response": 60.60011249467319,
-      "reasoning_time": 54.56644274035957,
+      "speed": 103.696274198469,
+      "ttft": 1.21862031199998,
+      "total_response": 60.16962937429331,
+      "reasoning_time": 54.12923505098192,
       "valid_metrics": 16
     },
     {
@@ -233,10 +233,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.1,
       "output_price": 0.3,
-      "speed": 106.010753135153,
-      "ttft": 2.55473580650004,
-      "total_response": 26.13724914656426,
-      "reasoning_time": 18.866010672051374,
+      "speed": 108.24160198951,
+      "ttft": 2.44386044149991,
+      "total_response": 25.540340482901016,
+      "reasoning_time": 18.477184033120885,
       "valid_metrics": 13
     },
     {
@@ -253,10 +253,10 @@
       "intelligence_index_cost_usd": 179.09621755000003,
       "input_price": 0.1,
       "output_price": 0.15,
-      "speed": 55.4157415535648,
-      "ttft": 1.69802209199997,
-      "total_response": 46.811557161877225,
-      "reasoning_time": 36.0908280559018,
+      "speed": 56.0765775993921,
+      "ttft": 1.77201596399993,
+      "total_response": 46.35390927888548,
+      "reasoning_time": 35.665514651908445,
       "valid_metrics": 16
     },
     {
@@ -273,10 +273,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.03,
       "output_price": 0.15,
-      "speed": 20.454884484611,
-      "ttft": 0.946045126999991,
-      "total_response": 123.1662415735185,
-      "reasoning_time": 97.77615715721481,
+      "speed": 19.9914867191074,
+      "ttft": 0.814055387999929,
+      "total_response": 125.8672860519584,
+      "reasoning_time": 100.04258453116678,
       "valid_metrics": 14
     },
     {
@@ -380,7 +380,7 @@
     {
       "model": "Kimi K3",
       "creator": "Kimi",
-      "composite_ability": 0.8697976390281451,
+      "composite_ability": 0.8701276782004849,
       "normalized_param": 1.0,
       "total_parameters_B": 2800.0,
       "active_parameters_B": 2800.0,
