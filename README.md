@@ -6,7 +6,7 @@
 
 | # | 模型 | 综合能力 | 总参数量 | 活跃参数量 | 大小类 | 开源 | 推理 |
 |---|------|---------|---------|-----------|--------|------|------|
-| 1 | Kimi K3 | 0.8701 | 2800B | 2800B | large | N | N |
+| 1 | Kimi K3 | 0.8699 | 2800B | 2800B | large | N | N |
 | 2 | GLM-5.2 (max) | 0.7887 | 753B | 40B | large | Y | N |
 | 3 | MiniMax-M3 | 0.7266 | 428B | 23B | large | Y | N |
 | 4 | MiMo-V2.5 | 0.6300 | 310B | 15B | large | Y | N |
@@ -39,4 +39,4 @@ Pareto 前沿上的模型代表了**最高训练效率**——用更少的参数
 
 **数据来源**: [Artificial Analysis](https://artificialanalysis.ai/leaderboards/models)  
 **方法论**: [AA Methodology](https://artificialanalysis.ai/methodology)  
-**模型总数**: 264  
+**模型总数**: 245  
