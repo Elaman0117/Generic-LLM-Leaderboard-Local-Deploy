@@ -6,18 +6,18 @@
 
 | # | 模型 | 综合能力 | 总参数量 | 活跃参数量 | 大小类 | 开源 | 推理 |
 |---|------|---------|---------|-----------|--------|------|------|
-| 1 | Kimi K3 | 0.8709 | 2800B | 2800B | large | N | N |
-| 2 | GLM-5.2 (max) | 0.7890 | 753B | 40B | large | Y | N |
-| 3 | MiniMax-M3 | 0.7268 | 428B | 23B | large | Y | N |
-| 4 | MiMo-V2.5 | 0.6302 | 310B | 15B | large | Y | N |
-| 5 | DeepSeek V4 Flash (Reasoning, Max Effort) | 0.6252 | 284B | 13B | large | Y | N |
-| 6 | Qwen3.6 27B (Reasoning) | 0.6050 | 28B | 28B | small | Y | N |
-| 7 | Gemma 4 26B A4B (Reasoning) | 0.4344 | 25B | 4B | small | Y | N |
-| 8 | Qwen3.5 9B (Reasoning) | 0.4255 | 10B | 10B | small | Y | N |
-| 9 | Qwen3.5 4B (Reasoning) | 0.3968 | 5B | 5B | small | Y | N |
-| 10 | G9v3-3B | 0.3148 | 3B | 3B | tiny | Y | N |
-| 11 | MiniCPM5-1B (Non-reasoning) | 0.2794 | 1B | 1B | tiny | Y | N |
-| 12 | Qwen3.5 0.8B (Reasoning) | 0.1305 | 873M | 873M | tiny | Y | N |
+| 1 | Kimi K3 | 0.8629 | 2800B | 2800B | large | N | N |
+| 2 | GLM-5.2 (max) | 0.7832 | 753B | 40B | large | Y | N |
+| 3 | MiniMax-M3 | 0.7211 | 428B | 23B | large | Y | N |
+| 4 | MiMo-V2.5 | 0.6260 | 310B | 15B | large | Y | N |
+| 5 | DeepSeek V4 Flash (Reasoning, Max Effort) | 0.6209 | 284B | 13B | large | Y | N |
+| 6 | Qwen3.6 27B (Reasoning) | 0.6007 | 28B | 28B | small | Y | N |
+| 7 | Gemma 4 26B A4B (Reasoning) | 0.4324 | 25B | 4B | small | Y | N |
+| 8 | Qwen3.5 9B (Reasoning) | 0.4241 | 10B | 10B | small | Y | N |
+| 9 | Qwen3.5 4B (Reasoning) | 0.3961 | 5B | 5B | small | Y | N |
+| 10 | G9v3-3B | 0.3120 | 3B | 3B | tiny | Y | N |
+| 11 | MiniCPM5-1B (Non-reasoning) | 0.2792 | 1B | 1B | tiny | Y | N |
+| 12 | Qwen3.5 0.8B (Reasoning) | 0.1302 | 873M | 873M | tiny | Y | N |
 | 13 | Gemma 3 270M | 0.1196 | 268M | 268M | tiny | Y | N |
 
 ### 评分方法
@@ -40,4 +40,4 @@ Pareto 前沿上的模型代表了**最高训练效率**——用更少的参数
 
 **数据来源**: [Artificial Analysis](https://artificialanalysis.ai/leaderboards/models)  
 **方法论**: [AA Methodology](https://artificialanalysis.ai/methodology)  
-**模型总数**: 249  
+**模型总数**: 254  
