@@ -6,18 +6,19 @@
 
 | # | 模型 | 综合能力 | 总参数量 | 活跃参数量 | 大小类 | 开源 | 推理 |
 |---|------|---------|---------|-----------|--------|------|------|
-| 1 | Kimi K3 (max) | 0.8630 | 2800B | 104B | large | Y | N |
-| 2 | GLM-5.2 (max) | 0.7833 | 753B | 40B | large | Y | N |
-| 3 | MiniMax-M3 | 0.7211 | 428B | 23B | large | Y | N |
-| 4 | Inkling Small | 0.6372 | 266B | 12B | large | Y | N |
-| 5 | Qwen3.6 27B (Reasoning) | 0.6008 | 28B | 28B | small | Y | N |
-| 6 | Gemma 4 26B A4B (Reasoning) | 0.4325 | 25B | 4B | small | Y | N |
-| 7 | Qwen3.5 9B (Reasoning) | 0.4242 | 10B | 10B | small | Y | N |
-| 8 | Qwen3.5 4B (Reasoning) | 0.4059 | 5B | 5B | small | Y | N |
-| 9 | G9v3-3B | 0.3126 | 3B | 3B | tiny | Y | N |
-| 10 | MiniCPM5-1B (Non-reasoning) | 0.2799 | 1B | 1B | tiny | Y | N |
-| 11 | Qwen3.5 0.8B (Reasoning) | 0.1307 | 873M | 873M | tiny | Y | N |
-| 12 | Gemma 3 270M | 0.1204 | 268M | 268M | tiny | Y | N |
+| 1 | Kimi K3 (max) | 0.8631 | 2800B | 104B | large | Y | N |
+| 2 | GLM-5.2 (max) | 0.7834 | 753B | 40B | large | Y | N |
+| 3 | MiniMax-M3 | 0.7212 | 428B | 23B | large | Y | N |
+| 4 | DeepSeek V4 Flash 0731 (Reasoning, Max Effort) | 0.7078 | 284B | 13B | large | Y | N |
+| 5 | Inkling Small | 0.6373 | 266B | 12B | large | Y | N |
+| 6 | Qwen3.6 27B (Reasoning) | 0.6009 | 28B | 28B | small | Y | N |
+| 7 | Gemma 4 26B A4B (Reasoning) | 0.4325 | 25B | 4B | small | Y | N |
+| 8 | Qwen3.5 9B (Reasoning) | 0.4240 | 10B | 10B | small | Y | N |
+| 9 | Qwen3.5 4B (Reasoning) | 0.4059 | 5B | 5B | small | Y | N |
+| 10 | G9v3-3B | 0.3126 | 3B | 3B | tiny | Y | N |
+| 11 | MiniCPM5-1B (Non-reasoning) | 0.2799 | 1B | 1B | tiny | Y | N |
+| 12 | Qwen3.5 0.8B (Reasoning) | 0.1307 | 873M | 873M | tiny | Y | N |
+| 13 | Gemma 3 270M | 0.1204 | 268M | 268M | tiny | Y | N |
 
 ### 评分方法
 
