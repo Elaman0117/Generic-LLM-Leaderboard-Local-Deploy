@@ -113,10 +113,10 @@
       "intelligence_index_cost_usd": 2437.406835042445,
       "input_price": 3.0,
       "output_price": 15.0,
-      "speed": 34.9063312616332,
-      "ttft": 3.93529744049999,
-      "total_response": 75.55554252617704,
-      "reasoning_time": 57.29619606854163,
+      "speed": 35.0190409047972,
+      "ttft": 3.50417300500004,
+      "total_response": 74.8939065729896,
+      "reasoning_time": 57.111786854391646,
       "valid_metrics": 15
     },
     {
@@ -133,10 +133,10 @@
       "intelligence_index_cost_usd": 1061.1847584621237,
       "input_price": 1.4,
       "output_price": 4.4,
-      "speed": 107.417430411767,
-      "ttft": 1.52574397799981,
-      "total_response": 24.799434201426887,
-      "reasoning_time": 18.61895217874166,
+      "speed": 143.236159976688,
+      "ttft": 1.48198691099998,
+      "total_response": 18.93568017118568,
+      "reasoning_time": 13.96295460814856,
       "valid_metrics": 17
     },
     {
@@ -153,10 +153,10 @@
       "intelligence_index_cost_usd": 203.85795386627436,
       "input_price": 0.3,
       "output_price": 1.2,
-      "speed": 70.1815708719978,
-      "ttft": 1.31662312799997,
-      "total_response": 36.93851031202553,
-      "reasoning_time": 28.497509747220445,
+      "speed": 77.6865525128468,
+      "ttft": 1.29064098950007,
+      "total_response": 33.471242639786745,
+      "reasoning_time": 25.744481320229337,
       "valid_metrics": 16
     },
     {
@@ -193,10 +193,10 @@
       "intelligence_index_cost_usd": 192.3679560443566,
       "input_price": 0.3,
       "output_price": 1.2,
-      "speed": 95.0796015667885,
-      "ttft": 1.67013796799995,
-      "total_response": 27.963895606896653,
-      "reasoning_time": 21.03500611111736,
+      "speed": 104.272772995412,
+      "ttft": 1.61423302699995,
+      "total_response": 25.589811005634893,
+      "reasoning_time": 19.18046238290795,
       "valid_metrics": 13
     },
     {
@@ -213,10 +213,10 @@
       "intelligence_index_cost_usd": 668.077305,
       "input_price": 0.6,
       "output_price": 3.6,
-      "speed": 55.4263910099967,
-      "ttft": 3.84494631999996,
-      "total_response": 115.27200998875114,
-      "reasoning_time": 102.40609024997275,
+      "speed": 56.1884311020165,
+      "ttft": 3.77541721299997,
+      "total_response": 113.6912820782561,
+      "reasoning_time": 101.01723590919588,
       "valid_metrics": 16
     },
     {
@@ -245,7 +245,7 @@
       "creator": "Alibaba",
       "is_reasoning": false,
       "is_open_weights": true,
-      "composite_ability": 0.42400236325824403,
+      "composite_ability": 0.4239669198939783,
       "total_parameters_B": 9.65,
       "active_parameters_B": 9.65,
       "size_class": "small",
@@ -253,10 +253,10 @@
       "intelligence_index_cost_usd": 241.26318859500003,
       "input_price": 0.135,
       "output_price": 0.2,
-      "speed": 59.6229418704332,
-      "ttft": 1.61884661649998,
-      "total_response": 43.54901513171276,
-      "reasoning_time": 33.54413481217022,
+      "speed": 67.277642688471,
+      "ttft": 2.23264001299998,
+      "total_response": 39.39208704618819,
+      "reasoning_time": 29.727557626550563,
       "valid_metrics": 16
     },
     {
@@ -273,10 +273,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.03,
       "output_price": 0.15,
-      "speed": 28.5363173347776,
-      "ttft": 0.680554247999964,
-      "total_response": 88.2882147134664,
-      "reasoning_time": 70.08612837237315,
+      "speed": 44.6161694086238,
+      "ttft": 0.66759545900004,
+      "total_response": 56.70109257757559,
+      "reasoning_time": 44.82679769486044,
       "valid_metrics": 14
     },
     {
@@ -1540,7 +1540,7 @@
     {
       "model": "Qwen3.5 9B (Reasoning)",
       "creator": "Alibaba",
-      "composite_ability": 0.42400236325824403,
+      "composite_ability": 0.4239669198939783,
       "normalized_param": 0.0034464285714285716,
       "total_parameters_B": 9.65,
       "active_parameters_B": 9.65,
@@ -1660,7 +1660,7 @@
     {
       "model": "NVIDIA Nemotron 3 Super 120B A12B (Reasoning)",
       "creator": "NVIDIA",
-      "composite_ability": 0.39597675074080246,
+      "composite_ability": 0.3959611545774586,
       "normalized_param": 0.04307142857142857,
       "total_parameters_B": 120.6,
       "active_parameters_B": 12.7,
