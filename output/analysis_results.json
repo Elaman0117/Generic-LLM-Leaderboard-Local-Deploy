@@ -113,10 +113,10 @@
       "intelligence_index_cost_usd": 2437.406835042445,
       "input_price": 3.0,
       "output_price": 15.0,
-      "speed": 35.0190409047972,
-      "ttft": 3.50417300500004,
-      "total_response": 74.8939065729896,
-      "reasoning_time": 57.111786854391646,
+      "speed": 34.8770806153433,
+      "ttft": 2.778077016,
+      "total_response": 74.45838843805713,
+      "reasoning_time": 57.344249137645704,
       "valid_metrics": 15
     },
     {
@@ -130,13 +130,13 @@
       "active_parameters_B": 40.0,
       "size_class": "large",
       "normalized_param": 0.2689285714285714,
-      "intelligence_index_cost_usd": 1061.1847584621237,
+      "intelligence_index_cost_usd": 974.8071769758876,
       "input_price": 1.4,
       "output_price": 4.4,
-      "speed": 143.236159976688,
-      "ttft": 1.48198691099998,
-      "total_response": 18.93568017118568,
-      "reasoning_time": 13.96295460814856,
+      "speed": 176.419384699214,
+      "ttft": 1.50466111349999,
+      "total_response": 15.675439479280893,
+      "reasoning_time": 11.336622692624722,
       "valid_metrics": 17
     },
     {
@@ -153,10 +153,10 @@
       "intelligence_index_cost_usd": 203.85795386627436,
       "input_price": 0.3,
       "output_price": 1.2,
-      "speed": 77.6865525128468,
-      "ttft": 1.29064098950007,
-      "total_response": 33.471242639786745,
-      "reasoning_time": 25.744481320229337,
+      "speed": 82.1617625840509,
+      "ttft": 1.30954266200004,
+      "total_response": 31.737322219948517,
+      "reasoning_time": 24.34222364635878,
       "valid_metrics": 16
     },
     {
@@ -194,8 +194,8 @@
       "input_price": 0.3,
       "output_price": 1.2,
       "speed": 104.272772995412,
-      "ttft": 1.61423302699995,
-      "total_response": 25.589811005634893,
+      "ttft": 1.67148588549998,
+      "total_response": 25.64706386413492,
       "reasoning_time": 19.18046238290795,
       "valid_metrics": 13
     },
@@ -213,10 +213,10 @@
       "intelligence_index_cost_usd": 668.077305,
       "input_price": 0.6,
       "output_price": 3.6,
-      "speed": 56.1884311020165,
-      "ttft": 3.77541721299997,
-      "total_response": 113.6912820782561,
-      "reasoning_time": 101.01723590919588,
+      "speed": 57.4186442354334,
+      "ttft": 3.63418070649999,
+      "total_response": 111.19506240681629,
+      "reasoning_time": 98.8529087647337,
       "valid_metrics": 16
     },
     {
@@ -253,10 +253,10 @@
       "intelligence_index_cost_usd": 241.26318859500003,
       "input_price": 0.135,
       "output_price": 0.2,
-      "speed": 67.277642688471,
-      "ttft": 2.23264001299998,
-      "total_response": 39.39208704618819,
-      "reasoning_time": 29.727557626550563,
+      "speed": 79.8314377353651,
+      "ttft": 1.98722904900003,
+      "total_response": 33.3032127130711,
+      "reasoning_time": 25.052786931256854,
       "valid_metrics": 16
     },
     {
@@ -273,10 +273,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.03,
       "output_price": 0.15,
-      "speed": 44.6161694086238,
-      "ttft": 0.66759545900004,
-      "total_response": 56.70109257757559,
-      "reasoning_time": 44.82679769486044,
+      "speed": 44.7073796295054,
+      "ttft": 0.653759125000079,
+      "total_response": 56.57293892747909,
+      "reasoning_time": 44.735343841983216,
       "valid_metrics": 14
     },
     {
@@ -376,7 +376,7 @@
     {
       "model": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
       "creator": "Anthropic",
-      "composite_ability": 0.9171938006070497,
+      "composite_ability": 0.917096093531879,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -508,7 +508,7 @@
     {
       "model": "Claude Sonnet 5 (Adaptive Reasoning, Max Effort)",
       "creator": "Anthropic",
-      "composite_ability": 0.8044947909985128,
+      "composite_ability": 0.8044211424493892,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -544,7 +544,7 @@
     {
       "model": "GPT-5.6 Terra (xhigh)",
       "creator": "OpenAI",
-      "composite_ability": 0.7920286285875264,
+      "composite_ability": 0.7919646464104753,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -772,7 +772,7 @@
     {
       "model": "Kimi K3 (low)",
       "creator": "Kimi",
-      "composite_ability": 0.6700145085383514,
+      "composite_ability": 0.670054165449418,
       "normalized_param": 0.9928571428571429,
       "total_parameters_B": 2780.0,
       "active_parameters_B": 104.0,
@@ -844,7 +844,7 @@
     {
       "model": "Kimi K2.7 Code",
       "creator": "Kimi",
-      "composite_ability": 0.6510778416725325,
+      "composite_ability": 0.6512010802447326,
       "normalized_param": 0.35714285714285715,
       "total_parameters_B": 1000.0,
       "active_parameters_B": 32.0,
@@ -868,7 +868,7 @@
     {
       "model": "Inkling (xhigh)",
       "creator": "Thinking Machines",
-      "composite_ability": 0.6355403850131396,
+      "composite_ability": 0.6356372611816021,
       "normalized_param": 0.3482142857142857,
       "total_parameters_B": 975.0,
       "active_parameters_B": 41.0,
@@ -1012,7 +1012,7 @@
     {
       "model": "GPT-5.6 Luna (medium)",
       "creator": "OpenAI",
-      "composite_ability": 0.5959946475430534,
+      "composite_ability": 0.5959300634307451,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1084,7 +1084,7 @@
     {
       "model": "Agnes 2.5 Pro Alpha",
       "creator": "Sapiens AI",
-      "composite_ability": 0.5723859531847713,
+      "composite_ability": 0.5724915161051818,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1420,7 +1420,7 @@
     {
       "model": "Qwen3.5 122B A10B (Non-reasoning)",
       "creator": "Alibaba",
-      "composite_ability": 0.4608781617150773,
+      "composite_ability": 0.46098403150444245,
       "normalized_param": 0.044642857142857144,
       "total_parameters_B": 125.0,
       "active_parameters_B": 10.0,
@@ -1804,7 +1804,7 @@
     {
       "model": "Mistral Small 4 (Reasoning)",
       "creator": "Mistral",
-      "composite_ability": 0.3703235130962942,
+      "composite_ability": 0.37026873698788354,
       "normalized_param": 0.0425,
       "total_parameters_B": 119.0,
       "active_parameters_B": 6.5,
@@ -1864,7 +1864,7 @@
     {
       "model": "HyperNova 60B 2605",
       "creator": "Multiverse Computing",
-      "composite_ability": 0.34921494142440956,
+      "composite_ability": 0.34919922973392986,
       "normalized_param": 0.020964285714285713,
       "total_parameters_B": 58.7,
       "active_parameters_B": 4.8,
@@ -1900,7 +1900,7 @@
     {
       "model": "Qwen3 Coder Next",
       "creator": "Alibaba",
-      "composite_ability": 0.337343890775603,
+      "composite_ability": 0.3372579674682922,
       "normalized_param": 0.028464285714285713,
       "total_parameters_B": 79.7,
       "active_parameters_B": 3.0,
@@ -2092,7 +2092,7 @@
     {
       "model": "Mistral Large 3",
       "creator": "Mistral",
-      "composite_ability": 0.3036529715649266,
+      "composite_ability": 0.30366079672327095,
       "normalized_param": 0.24107142857142858,
       "total_parameters_B": 675.0,
       "active_parameters_B": 41.0,
