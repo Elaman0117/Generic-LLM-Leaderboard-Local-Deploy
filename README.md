@@ -6,19 +6,18 @@
 
 | # | 模型 | 综合能力 | 总参数量 | 活跃参数量 | 大小类 | 开源 | 推理 |
 |---|------|---------|---------|-----------|--------|------|------|
-| 1 | Kimi K3 (max) | 0.8630 | 2800B | 104B | large | Y | N |
-| 2 | GLM-5.2 (max) | 0.7833 | 753B | 40B | large | Y | N |
-| 3 | MiniMax-M3 | 0.7212 | 428B | 23B | large | Y | N |
-| 4 | DeepSeek V4 Flash 0731 (Reasoning, Max Effort) | 0.7078 | 284B | 13B | large | Y | N |
-| 5 | Inkling Small | 0.6373 | 266B | 12B | large | Y | N |
-| 6 | Qwen3.6 27B (Reasoning) | 0.6010 | 28B | 28B | small | Y | N |
-| 7 | Gemma 4 26B A4B (Reasoning) | 0.4324 | 25B | 4B | small | Y | N |
-| 8 | Qwen3.5 9B (Reasoning) | 0.4239 | 10B | 10B | small | Y | N |
-| 9 | Qwen3.5 4B (Reasoning) | 0.4059 | 5B | 5B | small | Y | N |
-| 10 | G9v3-3B | 0.3126 | 3B | 3B | tiny | Y | N |
-| 11 | MiniCPM5-1B (Non-reasoning) | 0.2799 | 1B | 1B | tiny | Y | N |
-| 12 | Qwen3.5 0.8B (Reasoning) | 0.1306 | 873M | 873M | tiny | Y | N |
-| 13 | Gemma 3 270M | 0.1204 | 268M | 268M | tiny | Y | N |
+| 1 | Kimi K3 (max) | 0.8610 | 2800B | 104B | large | Y | N |
+| 2 | GLM-5.2 (max) | 0.7780 | 753B | 40B | large | Y | N |
+| 3 | MiniMax-M3 | 0.7153 | 428B | 23B | large | Y | N |
+| 4 | DeepSeek V4 Flash 0731 (Reasoning, Max Effort) | 0.7028 | 284B | 13B | large | Y | N |
+| 5 | Inkling Small | 0.6294 | 266B | 12B | large | Y | N |
+| 6 | Qwen3.6 27B (Reasoning) | 0.5942 | 28B | 28B | small | Y | N |
+| 7 | Gemma 4 26B A4B (Reasoning) | 0.4251 | 25B | 4B | small | Y | N |
+| 8 | Qwen3.5 9B (Reasoning) | 0.4195 | 10B | 10B | small | Y | N |
+| 9 | Qwen3.5 4B (Reasoning) | 0.4020 | 5B | 5B | small | Y | N |
+| 10 | G9v3-3B | 0.3189 | 3B | 3B | tiny | Y | N |
+| 11 | MiniCPM5-1B (Reasoning) | 0.2809 | 1B | 1B | tiny | Y | N |
+| 12 | Gemma 3 270M | 0.1208 | 268M | 268M | tiny | Y | N |
 
 ### 评分方法
 
@@ -40,4 +39,4 @@ Pareto 前沿上的模型代表了**最高训练效率**——用更少的参数
 
 **数据来源**: [Artificial Analysis](https://artificialanalysis.ai/leaderboards/models)  
 **方法论**: [AA Methodology](https://artificialanalysis.ai/methodology)  
-**模型总数**: 254  
+**模型总数**: 255  
