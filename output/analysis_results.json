@@ -113,10 +113,10 @@
       "intelligence_index_cost_usd": 2425.11087566663,
       "input_price": 3.0,
       "output_price": 15.0,
-      "speed": 38.9226083761132,
-      "ttft": 3.12825611100004,
-      "total_response": 67.35827830895349,
-      "reasoning_time": 51.38401775836276,
+      "speed": 41.2509101394757,
+      "ttft": 2.81936454999999,
+      "total_response": 63.424087974213265,
+      "reasoning_time": 48.48377873937062,
       "valid_metrics": 15
     },
     {
@@ -133,10 +133,10 @@
       "intelligence_index_cost_usd": 714.5226932926432,
       "input_price": 1.351,
       "output_price": 4.29,
-      "speed": 111.66100281813,
-      "ttft": 1.49280374600003,
-      "total_response": 23.881999050576717,
-      "reasoning_time": 17.911356243661345,
+      "speed": 120.736088434796,
+      "ttft": 1.44831729099997,
+      "total_response": 22.154636606207326,
+      "reasoning_time": 16.565055452165886,
       "valid_metrics": 17
     },
     {
@@ -153,10 +153,10 @@
       "intelligence_index_cost_usd": 204.81833888433607,
       "input_price": 0.3,
       "output_price": 1.2,
-      "speed": 108.929871817537,
-      "ttft": 1.69352776400001,
-      "total_response": 24.644073452584177,
-      "reasoning_time": 18.360436550867334,
+      "speed": 126.42698676862,
+      "ttft": 1.64516129349999,
+      "total_response": 21.41942044416193,
+      "reasoning_time": 15.819407320529551,
       "valid_metrics": 16
     },
     {
@@ -173,10 +173,10 @@
       "intelligence_index_cost_usd": 72.02594013079299,
       "input_price": 0.14,
       "output_price": 0.28,
-      "speed": 112.821725954102,
-      "ttft": 1.148685371,
-      "total_response": 23.307538010934323,
-      "reasoning_time": 17.727082111947457,
+      "speed": 123.240511782493,
+      "ttft": 1.16952641,
+      "total_response": 21.45506372107711,
+      "reasoning_time": 16.228429848861687,
       "valid_metrics": 12
     },
     {
@@ -193,10 +193,10 @@
       "intelligence_index_cost_usd": 192.52413291763895,
       "input_price": 0.3,
       "output_price": 1.2,
-      "speed": 144.861518920452,
-      "ttft": 1.5851283930001,
-      "total_response": 18.842989684464456,
-      "reasoning_time": 13.806289033171485,
+      "speed": 143.952906435951,
+      "ttft": 1.55876075450005,
+      "total_response": 18.925551477216896,
+      "reasoning_time": 13.893432578173476,
       "valid_metrics": 13
     },
     {
@@ -213,10 +213,10 @@
       "intelligence_index_cost_usd": 667.1783664000001,
       "input_price": 0.6,
       "output_price": 3.6,
-      "speed": 52.7897610334029,
-      "ttft": 3.74972946399998,
-      "total_response": 120.74211357598934,
-      "reasoning_time": 107.52085042416638,
+      "speed": 56.2345229855399,
+      "ttft": 3.74519718949997,
+      "total_response": 113.57097096885775,
+      "reasoning_time": 100.93443846690977,
       "valid_metrics": 16
     },
     {
@@ -253,10 +253,10 @@
       "intelligence_index_cost_usd": 240.43329431,
       "input_price": 0.135,
       "output_price": 0.2,
-      "speed": 77.7847325300284,
-      "ttft": 1.98708648600006,
-      "total_response": 34.127069728018505,
-      "reasoning_time": 25.711986593614757,
+      "speed": 85.2350101873787,
+      "ttft": 1.620078159,
+      "total_response": 30.950748672255724,
+      "reasoning_time": 23.46453641060458,
       "valid_metrics": 16
     },
     {
@@ -273,10 +273,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.03,
       "output_price": 0.15,
-      "speed": 37.7924266341325,
-      "ttft": 0.687231034999854,
-      "total_response": 66.83805072706237,
-      "reasoning_time": 52.92065575365002,
+      "speed": 40.8860799082641,
+      "ttft": 0.704262551499995,
+      "total_response": 61.84976746684619,
+      "reasoning_time": 48.91640393227696,
       "valid_metrics": 14
     },
     {
@@ -1148,7 +1148,7 @@
     {
       "model": "Gemma 4 31B (Reasoning)",
       "creator": "Google",
-      "composite_ability": 0.511080510560938,
+      "composite_ability": 0.5109795809093264,
       "normalized_param": 0.010964285714285715,
       "total_parameters_B": 30.7,
       "active_parameters_B": 30.7,
