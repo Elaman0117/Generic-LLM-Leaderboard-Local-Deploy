@@ -3,34 +3,34 @@
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "methodology": "18 evaluation metrics normalized [0,1], averaged → composite ability; Pareto = non-dominated by parameter count; X-axis: totalParameters (linear scale); Y-axis: composite ability (linear, direct average); Parameter count from AA's model metadata",
     "param_source": "totalParameters from AA RSC payload — total model parameters in billions",
-    "total_models": 254,
-    "pareto_count": 12
+    "total_models": 255,
+    "pareto_count": 11
   },
   "metric_ranges": {
     "AA Intelligence Index": {
       "min": 1.0,
       "max": 63.0532452071291,
-      "count": 256
+      "count": 257
     },
     "AA Agentic Index": {
       "min": 0.9621993127147767,
       "max": 59.1729518900344,
-      "count": 111
+      "count": 112
     },
     "AA Coding Index": {
       "min": 0.0,
       "max": 78.3482452489943,
-      "count": 144
+      "count": 145
     },
     "GPQA Diamond": {
       "min": 0.1111111111111111,
       "max": 0.9494949494949495,
-      "count": 256
+      "count": 257
     },
     "Humanity's Last Exam": {
       "min": 0.010658016682113068,
       "max": 0.554680259499537,
-      "count": 255
+      "count": 256
     },
     "MMMU Pro": {
       "min": 0.14508670520231215,
@@ -45,17 +45,17 @@
     "SciCode Coding": {
       "min": 0.0,
       "max": 0.6018518518518519,
-      "count": 256
+      "count": 257
     },
     "CritPt Physics": {
       "min": 0.0,
       "max": 0.32285714285714284,
-      "count": 252
+      "count": 253
     },
     "AA-LCR Long Context": {
       "min": 0.0,
       "max": 0.8333333333333334,
-      "count": 251
+      "count": 252
     },
     "τ²-Bench Telecom": {
       "min": 0.0,
@@ -70,17 +70,17 @@
     "AA Omniscience Index": {
       "min": -88.58333333333333,
       "max": 43.3,
-      "count": 250
+      "count": 251
     },
     "AA-Omniscience Accuracy": {
       "min": 0.001,
       "max": 0.6535,
-      "count": 250
+      "count": 251
     },
     "AA-Omniscience Non-Hallucination": {
       "min": 0.015260480617435538,
       "max": 0.990990990990991,
-      "count": 250
+      "count": 251
     },
     "APEX-Agents-AA": {
       "min": 0.007374631268436578,
@@ -95,7 +95,7 @@
     "GDPval-AA Normalized": {
       "min": 0.0,
       "max": 0.672335,
-      "count": 145
+      "count": 146
     }
   },
   "pareto_frontier": [
@@ -113,54 +113,34 @@
       "intelligence_index_cost_usd": 2425.11087566663,
       "input_price": 3.0,
       "output_price": 15.0,
-      "speed": 37.876501788195,
+      "speed": 37.9568968398296,
       "ttft": 2.69083460700006,
-      "total_response": 68.69481813166593,
-      "reasoning_time": 52.803186819732694,
+      "total_response": 68.55501761831135,
+      "reasoning_time": 52.69134640904904,
       "valid_metrics": 15
     },
     {
       "rank": 2,
-      "model": "Qwen3.8 2.4T A95B",
-      "creator": "Alibaba",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "composite_ability": 0.8014804812647917,
-      "total_parameters_B": 2400.0,
-      "active_parameters_B": 95.0,
-      "size_class": "large",
-      "normalized_param": 0.8571428571428571,
-      "intelligence_index_cost_usd": 1671.8901233654,
-      "input_price": 2.0,
-      "output_price": 6.0,
-      "speed": 46.6750294779089,
-      "ttft": 2.59188073150002,
-      "total_response": 56.15371085703298,
-      "reasoning_time": 42.84946410042637,
-      "valid_metrics": 12
-    },
-    {
-      "rank": 3,
-      "model": "GLM-5.2 (max)",
+      "model": "GLM-5.3 (max)",
       "creator": "Z AI",
       "is_reasoning": false,
-      "is_open_weights": true,
-      "composite_ability": 0.7833291468737438,
+      "is_open_weights": false,
+      "composite_ability": 0.8341153422591526,
       "total_parameters_B": 753.0,
       "active_parameters_B": 40.0,
       "size_class": "large",
       "normalized_param": 0.2689285714285714,
-      "intelligence_index_cost_usd": 746.8185839631498,
+      "intelligence_index_cost_usd": 1238.4999482809942,
       "input_price": 1.4,
       "output_price": 4.4,
-      "speed": 152.837922902398,
-      "ttft": 1.47186971550002,
-      "total_response": 17.829066623995665,
-      "reasoning_time": 13.085757526796515,
-      "valid_metrics": 17
+      "speed": null,
+      "ttft": null,
+      "total_response": null,
+      "reasoning_time": null,
+      "valid_metrics": 12
     },
     {
-      "rank": 4,
+      "rank": 3,
       "model": "MiniMax-M3",
       "creator": "MiniMax",
       "is_reasoning": false,
@@ -173,14 +153,14 @@
       "intelligence_index_cost_usd": 204.81833888433607,
       "input_price": 0.3,
       "output_price": 1.2,
-      "speed": 93.6265179513873,
-      "ttft": 1.166677056,
-      "total_response": 27.868513829402687,
-      "reasoning_time": 21.361469418722148,
+      "speed": 92.5327144756928,
+      "ttft": 1.279715519,
+      "total_response": 28.29718727658817,
+      "reasoning_time": 21.613977406070536,
       "valid_metrics": 16
     },
     {
-      "rank": 5,
+      "rank": 4,
       "model": "DeepSeek V4 Flash 0731 (Reasoning, Max Effort)",
       "creator": "DeepSeek",
       "is_reasoning": false,
@@ -193,14 +173,14 @@
       "intelligence_index_cost_usd": 323.25907280569834,
       "input_price": 0.44,
       "output_price": 1.32,
-      "speed": 99.4661897161522,
-      "ttft": 1.20356447300014,
-      "total_response": 26.337733250695138,
-      "reasoning_time": 20.107335022156,
+      "speed": 103.167810781312,
+      "ttft": 1.17656397400003,
+      "total_response": 25.40892851742654,
+      "reasoning_time": 19.385891634741206,
       "valid_metrics": 12
     },
     {
-      "rank": 6,
+      "rank": 5,
       "model": "Qwen3.8 27B",
       "creator": "Alibaba",
       "is_reasoning": false,
@@ -220,7 +200,7 @@
       "valid_metrics": 13
     },
     {
-      "rank": 7,
+      "rank": 6,
       "model": "Gemma 4 26B A4B (Reasoning)",
       "creator": "Google",
       "is_reasoning": false,
@@ -240,7 +220,7 @@
       "valid_metrics": 17
     },
     {
-      "rank": 8,
+      "rank": 7,
       "model": "Qwen3.5 9B (Reasoning)",
       "creator": "Alibaba",
       "is_reasoning": false,
@@ -253,14 +233,14 @@
       "intelligence_index_cost_usd": 240.43329431,
       "input_price": 0.135,
       "output_price": 0.2,
-      "speed": 83.009162440549,
+      "speed": 84.3787192035812,
       "ttft": 1.96668672300007,
-      "total_response": 32.083843992120755,
-      "reasoning_time": 24.093725815296548,
+      "total_response": 31.5950103524241,
+      "reasoning_time": 23.702658903539223,
       "valid_metrics": 16
     },
     {
-      "rank": 9,
+      "rank": 8,
       "model": "Qwen3.5 4B (Reasoning)",
       "creator": "Alibaba",
       "is_reasoning": false,
@@ -273,14 +253,14 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.03,
       "output_price": 0.15,
-      "speed": 51.0785163461421,
+      "speed": 33.9744466436638,
       "ttft": 0.664674844000047,
-      "total_response": 49.60893123270038,
-      "reasoning_time": 39.15540511096027,
+      "total_response": 74.24939062232892,
+      "reasoning_time": 58.86777262266309,
       "valid_metrics": 14
     },
     {
-      "rank": 10,
+      "rank": 9,
       "model": "G9v3-3B",
       "creator": "AI9Stars",
       "is_reasoning": false,
@@ -300,7 +280,7 @@
       "valid_metrics": 11
     },
     {
-      "rank": 11,
+      "rank": 10,
       "model": "MiniCPM5-1B (Reasoning)",
       "creator": "OpenBMB",
       "is_reasoning": false,
@@ -320,7 +300,7 @@
       "valid_metrics": 12
     },
     {
-      "rank": 12,
+      "rank": 11,
       "model": "Gemma 3 270M",
       "creator": "Google",
       "is_reasoning": false,
@@ -462,6 +442,18 @@
       "is_pareto": false
     },
     {
+      "model": "GLM-5.3 (max)",
+      "creator": "Z AI",
+      "composite_ability": 0.8341153422591526,
+      "normalized_param": 0.2689285714285714,
+      "total_parameters_B": 753.0,
+      "active_parameters_B": 40.0,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": true
+    },
+    {
       "model": "Muse Spark 1.2 (xhigh)",
       "creator": "Meta",
       "composite_ability": 0.8314020173890583,
@@ -543,7 +535,7 @@
       "size_class": "large",
       "is_reasoning": false,
       "is_open_weights": true,
-      "is_pareto": true
+      "is_pareto": false
     },
     {
       "model": "Claude Sonnet 5 (Adaptive Reasoning, Max Effort)",
@@ -579,7 +571,7 @@
       "size_class": "large",
       "is_reasoning": false,
       "is_open_weights": true,
-      "is_pareto": true
+      "is_pareto": false
     },
     {
       "model": "GPT-5.6 Terra (xhigh)",
