@@ -114,8 +114,8 @@
       "input_price": 3.0,
       "output_price": 15.0,
       "speed": 40.5977407093384,
-      "ttft": 2.69083460700006,
-      "total_response": 64.27061605096951,
+      "ttft": 2.89441902049998,
+      "total_response": 64.47420046446942,
       "reasoning_time": 49.26382515517556,
       "valid_metrics": 15
     },
@@ -153,10 +153,10 @@
       "intelligence_index_cost_usd": 204.81833888433607,
       "input_price": 0.3,
       "output_price": 1.2,
-      "speed": 98.2072302984562,
-      "ttft": 1.40139282700011,
-      "total_response": 26.85776699010793,
-      "reasoning_time": 20.365099330486256,
+      "speed": 104.967093326138,
+      "ttft": 1.38844558000006,
+      "total_response": 25.20543355957929,
+      "reasoning_time": 19.053590383663384,
       "valid_metrics": 16
     },
     {
@@ -173,10 +173,10 @@
       "intelligence_index_cost_usd": 323.25907280569834,
       "input_price": 0.44,
       "output_price": 1.32,
-      "speed": 126.275021841182,
-      "ttft": 1.23607102800002,
-      "total_response": 21.03412739376559,
-      "reasoning_time": 15.838445092612458,
+      "speed": 133.143136965613,
+      "ttft": 1.151765415,
+      "total_response": 19.928549986672497,
+      "reasoning_time": 15.021427657337997,
       "valid_metrics": 12
     },
     {
@@ -233,10 +233,10 @@
       "intelligence_index_cost_usd": 240.43329431,
       "input_price": 0.135,
       "output_price": 0.2,
-      "speed": 75.9458625420328,
-      "ttft": 1.91544768500008,
-      "total_response": 34.83363330197634,
-      "reasoning_time": 26.334548493581007,
+      "speed": 81.6965985902701,
+      "ttft": 2.07679786000006,
+      "total_response": 32.677827072221696,
+      "reasoning_time": 24.480823369777305,
       "valid_metrics": 16
     },
     {
@@ -253,10 +253,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.03,
       "output_price": 0.15,
-      "speed": 29.4689926403541,
-      "ttft": 0.716757862000008,
-      "total_response": 85.55169031152538,
-      "reasoning_time": 67.86794595962029,
+      "speed": 28.6377405360217,
+      "ttft": 0.770917170500041,
+      "total_response": 88.06830702063154,
+      "reasoning_time": 69.8379118801052,
       "valid_metrics": 14
     },
     {
@@ -564,7 +564,7 @@
     {
       "model": "GLM-5.2 (max)",
       "creator": "Z AI",
-      "composite_ability": 0.7833322090726914,
+      "composite_ability": 0.7833488324384067,
       "normalized_param": 0.2689285714285714,
       "total_parameters_B": 753.0,
       "active_parameters_B": 40.0,
@@ -1068,7 +1068,7 @@
     {
       "model": "GPT-5.6 Luna (medium)",
       "creator": "OpenAI",
-      "composite_ability": 0.5863118208987945,
+      "composite_ability": 0.586295231183617,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
