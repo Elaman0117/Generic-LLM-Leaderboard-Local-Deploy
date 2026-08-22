@@ -6,11 +6,11 @@
 
 | # | 模型 | 综合能力 | 总参数量 | 活跃参数量 | 大小类 | 开源 | 推理 |
 |---|------|---------|---------|-----------|--------|------|------|
-| 1 | Kimi K3 (max) | 0.8681 | 2800B | 104B | large | Y | N |
+| 1 | Kimi K3 (max) | 0.8679 | 2800B | 104B | large | Y | N |
 | 2 | GLM-5.3 (max) | 0.8341 | 753B | 40B | large | N | N |
 | 3 | MiniMax-M3 | 0.7141 | 428B | 23B | large | Y | N |
 | 4 | DeepSeek V4 Flash 0731 (Reasoning, Max Effort) | 0.7022 | 284B | 13B | large | Y | N |
-| 5 | Qwen3.8 27B | 0.7014 | 27B | 27B | small | Y | N |
+| 5 | Qwen3.8 27B (xhigh) | 0.7014 | 27B | 27B | small | Y | N |
 | 6 | Gemma 4 26B A4B (Reasoning) | 0.4242 | 25B | 4B | small | Y | N |
 | 7 | Qwen3.5 9B (Reasoning) | 0.4185 | 10B | 10B | small | Y | N |
 | 8 | Qwen3.5 4B (Reasoning) | 0.4009 | 5B | 5B | small | Y | N |
@@ -38,4 +38,4 @@ Pareto 前沿上的模型代表了**最高训练效率**——用更少的参数
 
 **数据来源**: [Artificial Analysis](https://artificialanalysis.ai/leaderboards/models)  
 **方法论**: [AA Methodology](https://artificialanalysis.ai/methodology)  
-**模型总数**: 255  
+**模型总数**: 261  
