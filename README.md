@@ -10,7 +10,7 @@
 | 2 | GLM-5.3 (max) | 0.8345 | 753B | 40B | large | N | N |
 | 3 | MiniMax-M3 | 0.7142 | 428B | 23B | large | Y | N |
 | 4 | DeepSeek V4 Flash 0731 (Reasoning, Max Effort) | 0.7027 | 284B | 13B | large | Y | N |
-| 5 | Qwen3.8 27B (xhigh) | 0.7016 | 27B | 27B | small | Y | N |
+| 5 | Qwen3.8 27B (xhigh) | 0.7015 | 27B | 27B | small | Y | N |
 | 6 | Gemma 4 26B A4B (Reasoning) | 0.4243 | 25B | 4B | small | Y | N |
 | 7 | Qwen3.5 9B (Reasoning) | 0.4186 | 10B | 10B | small | Y | N |
 | 8 | Qwen3.5 4B (Reasoning) | 0.4009 | 5B | 5B | small | Y | N |
