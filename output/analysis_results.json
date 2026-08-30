@@ -105,7 +105,7 @@
       "creator": "Kimi",
       "is_reasoning": false,
       "is_open_weights": true,
-      "composite_ability": 0.868315871762687,
+      "composite_ability": 0.8670917478094363,
       "total_parameters_B": 2800.0,
       "active_parameters_B": 104.0,
       "size_class": "large",
@@ -113,10 +113,10 @@
       "intelligence_index_cost_usd": 2425.11087566663,
       "input_price": 3.0,
       "output_price": 15.0,
-      "speed": 35.9479688431313,
-      "ttft": 7.90162864200011,
-      "total_response": 77.44658710431065,
-      "reasoning_time": 55.63596676984844,
+      "speed": 38.4001267521811,
+      "ttft": 3.95861593249999,
+      "total_response": 69.06256770156548,
+      "reasoning_time": 52.08316141525239,
       "valid_metrics": 15
     },
     {
@@ -133,10 +133,10 @@
       "intelligence_index_cost_usd": 1238.4999482809942,
       "input_price": 1.4,
       "output_price": 4.4,
-      "speed": 77.3024599507146,
-      "ttft": 1.61601186999997,
-      "total_response": 33.95650920467618,
-      "reasoning_time": 25.872397867740965,
+      "speed": 66.6151095174349,
+      "ttft": 1.6252330315,
+      "total_response": 39.15425637335438,
+      "reasoning_time": 30.023218673483502,
       "valid_metrics": 12
     },
     {
@@ -153,10 +153,10 @@
       "intelligence_index_cost_usd": 138.0208940822332,
       "input_price": 0.15,
       "output_price": 0.5,
-      "speed": 49.8236236459724,
-      "ttft": 1.51294826150001,
-      "total_response": 51.689948990392054,
-      "reasoning_time": 40.141600583113636,
+      "speed": 48.5986825584248,
+      "ttft": 1.51455849400002,
+      "total_response": 52.956282186705636,
+      "reasoning_time": 41.15337895416449,
       "valid_metrics": 12
     },
     {
@@ -173,10 +173,10 @@
       "intelligence_index_cost_usd": 158.1270242888,
       "input_price": 0.15,
       "output_price": 0.47,
-      "speed": 77.2980502973821,
-      "ttft": 2.792457915,
-      "total_response": 35.13480019118894,
-      "reasoning_time": 25.87387382095115,
+      "speed": 83.2842810916826,
+      "ttft": 2.7352352515,
+      "total_response": 32.752904459065135,
+      "reasoning_time": 24.01413536605211,
       "valid_metrics": 13
     },
     {
@@ -193,10 +193,10 @@
       "intelligence_index_cost_usd": 693.6699701065,
       "input_price": 0.5,
       "output_price": 3.0,
-      "speed": 46.1441755756913,
-      "ttft": 3.95714334699983,
-      "total_response": 58.13516189018943,
-      "reasoning_time": 43.34241483455168,
+      "speed": 45.5457998321514,
+      "ttft": 3.96122380899996,
+      "total_response": 58.851027242317116,
+      "reasoning_time": 43.911842746653726,
       "valid_metrics": 13
     },
     {
@@ -233,10 +233,10 @@
       "intelligence_index_cost_usd": 240.43329431,
       "input_price": 0.135,
       "output_price": 0.2,
-      "speed": 81.5183565349909,
+      "speed": 85.0506748211356,
       "ttft": 1.64965169449977,
-      "total_response": 32.31759087120411,
-      "reasoning_time": 24.534351341363475,
+      "total_response": 31.043892307611696,
+      "reasoning_time": 23.515392490489543,
       "valid_metrics": 16
     },
     {
@@ -253,10 +253,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.03,
       "output_price": 0.15,
-      "speed": 33.5343481346794,
-      "ttft": 0.635270076499999,
-      "total_response": 75.18569789336387,
-      "reasoning_time": 59.6403422534911,
+      "speed": 34.9820664095132,
+      "ttft": 0.647408732000002,
+      "total_response": 72.11259808742749,
+      "reasoning_time": 57.17215148434198,
       "valid_metrics": 14
     },
     {
@@ -384,7 +384,7 @@
     {
       "model": "Kimi K3 (max)",
       "creator": "Kimi",
-      "composite_ability": 0.868315871762687,
+      "composite_ability": 0.8670917478094363,
       "normalized_param": 1.0,
       "total_parameters_B": 2800.0,
       "active_parameters_B": 104.0,
