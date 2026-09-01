@@ -6,15 +6,15 @@
 
 | # | 模型 | 综合能力 | 总参数量 | 活跃参数量 | 大小类 | 开源 | 推理 |
 |---|------|---------|---------|-----------|--------|------|------|
-| 1 | Kimi K3 (max) | 0.8671 | 2800B | 104B | large | Y | N |
+| 1 | Kimi K3 (max) | 0.8683 | 2800B | 104B | large | Y | N |
 | 2 | GLM-5.3 (max) | 0.8347 | 753B | 40B | large | Y | N |
 | 3 | GLM-5.3-Flash | 0.7902 | 320B | 18B | large | Y | N |
 | 4 | Qwen3.8-Flash-Next | 0.7569 | 180B | 6B | large | Y | N |
 | 5 | Qwen3.8 27B (xhigh) | 0.7022 | 27B | 27B | small | Y | N |
-| 6 | Gemma 4 26B A4B (Reasoning) | 0.4233 | 25B | 4B | small | Y | N |
+| 6 | Gemma 4 26B A4B (Reasoning) | 0.4245 | 25B | 4B | small | Y | N |
 | 7 | Qwen3.5 9B (Reasoning) | 0.4187 | 10B | 10B | small | Y | N |
 | 8 | Qwen3.5 4B (Reasoning) | 0.4009 | 5B | 5B | small | Y | N |
-| 9 | G9v3-3B | 0.3172 | 3B | 3B | tiny | Y | N |
+| 9 | G9v3-3B | 0.3188 | 3B | 3B | tiny | Y | N |
 | 10 | MiniCPM5-1B (Reasoning) | 0.2807 | 1B | 1B | tiny | Y | N |
 | 11 | Gemma 3 270M | 0.1207 | 268M | 268M | tiny | Y | N |
 
@@ -38,4 +38,4 @@ Pareto 前沿上的模型代表了**最高训练效率**——用更少的参数
 
 **数据来源**: [Artificial Analysis](https://artificialanalysis.ai/leaderboards/models)  
 **方法论**: [AA Methodology](https://artificialanalysis.ai/methodology)  
-**模型总数**: 270  
+**模型总数**: 271  
