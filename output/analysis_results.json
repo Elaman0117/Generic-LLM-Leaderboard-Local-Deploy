@@ -3,34 +3,34 @@
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "methodology": "18 evaluation metrics normalized [0,1], averaged → composite ability; Pareto = non-dominated by parameter count; X-axis: totalParameters (linear scale); Y-axis: composite ability (linear, direct average); Parameter count from AA's model metadata",
     "param_source": "totalParameters from AA RSC payload — total model parameters in billions",
-    "total_models": 271,
+    "total_models": 276,
     "pareto_count": 11
   },
   "metric_ranges": {
     "AA Intelligence Index": {
       "min": 1.0,
-      "max": 63.0532452071291,
-      "count": 273
+      "max": 65.6528630094377,
+      "count": 278
     },
     "AA Agentic Index": {
       "min": 0.9621993127147767,
-      "max": 59.1729518900344,
-      "count": 129
+      "max": 61.3388316151203,
+      "count": 134
     },
     "AA Coding Index": {
       "min": 0.0,
-      "max": 78.3482452489943,
-      "count": 161
+      "max": 81.6028575391871,
+      "count": 166
     },
     "GPQA Diamond": {
       "min": 0.1111111111111111,
       "max": 0.9494949494949495,
-      "count": 273
+      "count": 278
     },
     "Humanity's Last Exam": {
       "min": 0.010658016682113068,
-      "max": 0.554680259499537,
-      "count": 272
+      "max": 0.5912882298424467,
+      "count": 277
     },
     "MMMU Pro": {
       "min": 0.14508670520231215,
@@ -44,18 +44,18 @@
     },
     "SciCode Coding": {
       "min": 0.0,
-      "max": 0.6018518518518519,
-      "count": 273
+      "max": 0.6203703703703703,
+      "count": 278
     },
     "CritPt Physics": {
       "min": 0.0,
       "max": 0.32285714285714284,
-      "count": 269
+      "count": 274
     },
     "AA-LCR Long Context": {
       "min": 0.0,
       "max": 0.8333333333333334,
-      "count": 268
+      "count": 273
     },
     "τ²-Bench Telecom": {
       "min": 0.0,
@@ -69,18 +69,18 @@
     },
     "AA Omniscience Index": {
       "min": -88.58333333333333,
-      "max": 43.3,
-      "count": 267
+      "max": 43.45,
+      "count": 272
     },
     "AA-Omniscience Accuracy": {
       "min": 0.001,
-      "max": 0.6535,
-      "count": 267
+      "max": 0.6723333333333333,
+      "count": 272
     },
     "AA-Omniscience Non-Hallucination": {
       "min": 0.015260480617435538,
       "max": 0.990990990990991,
-      "count": 267
+      "count": 272
     },
     "APEX-Agents-AA": {
       "min": 0.007374631268436578,
@@ -94,8 +94,8 @@
     },
     "GDPval-AA Normalized": {
       "min": 0.0,
-      "max": 0.6619700000000001,
-      "count": 162
+      "max": 0.6765249999999999,
+      "count": 167
     }
   },
   "pareto_frontier": [
@@ -105,7 +105,7 @@
       "creator": "Kimi",
       "is_reasoning": false,
       "is_open_weights": true,
-      "composite_ability": 0.868315871762687,
+      "composite_ability": 0.85283334622181,
       "total_parameters_B": 2800.0,
       "active_parameters_B": 104.0,
       "size_class": "large",
@@ -113,10 +113,10 @@
       "intelligence_index_cost_usd": 2425.11087566663,
       "input_price": 3.0,
       "output_price": 15.0,
-      "speed": 38.2890536803158,
-      "ttft": 3.215081056,
-      "total_response": 68.50789348414409,
-      "reasoning_time": 52.23424994251528,
+      "speed": 37.8050188736671,
+      "ttft": 4.15587634450001,
+      "total_response": 70.28466226983552,
+      "reasoning_time": 52.903028740268404,
       "valid_metrics": 15
     },
     {
@@ -125,7 +125,7 @@
       "creator": "Z AI",
       "is_reasoning": false,
       "is_open_weights": true,
-      "composite_ability": 0.8346726081572087,
+      "composite_ability": 0.816055882762715,
       "total_parameters_B": 753.0,
       "active_parameters_B": 40.0,
       "size_class": "large",
@@ -133,10 +133,10 @@
       "intelligence_index_cost_usd": 1238.4999482809942,
       "input_price": 1.4,
       "output_price": 4.4,
-      "speed": 71.5781340139171,
+      "speed": 69.5618056767254,
       "ttft": 1.87203983000001,
-      "total_response": 36.79890729365755,
-      "reasoning_time": 27.941493970926032,
+      "total_response": 37.81130241352538,
+      "reasoning_time": 28.7514100668203,
       "valid_metrics": 12
     },
     {
@@ -145,7 +145,7 @@
       "creator": "Z AI",
       "is_reasoning": false,
       "is_open_weights": true,
-      "composite_ability": 0.790210820568977,
+      "composite_ability": 0.7727773313700018,
       "total_parameters_B": 320.0,
       "active_parameters_B": 18.0,
       "size_class": "large",
@@ -153,10 +153,10 @@
       "intelligence_index_cost_usd": 138.0208940822332,
       "input_price": 0.15,
       "output_price": 0.5,
-      "speed": 43.0879119363861,
-      "ttft": 1.54425170449999,
-      "total_response": 59.565164940930124,
-      "reasoning_time": 46.4167305891441,
+      "speed": 42.5011759606219,
+      "ttft": 1.68333662199996,
+      "total_response": 60.50523845164098,
+      "reasoning_time": 47.05752146371281,
       "valid_metrics": 12
     },
     {
@@ -165,7 +165,7 @@
       "creator": "Alibaba",
       "is_reasoning": false,
       "is_open_weights": true,
-      "composite_ability": 0.7568959698019349,
+      "composite_ability": 0.7411764738360941,
       "total_parameters_B": 180.0,
       "active_parameters_B": 6.0,
       "size_class": "large",
@@ -173,10 +173,10 @@
       "intelligence_index_cost_usd": 158.1270242888,
       "input_price": 0.15,
       "output_price": 0.47,
-      "speed": 88.3423244146301,
-      "ttft": 2.58321215000001,
-      "total_response": 30.882218504716015,
-      "reasoning_time": 22.639205083772804,
+      "speed": 87.7834058867439,
+      "ttft": 2.70677956050003,
+      "total_response": 31.185966198865845,
+      "reasoning_time": 22.78334931069265,
       "valid_metrics": 13
     },
     {
@@ -185,7 +185,7 @@
       "creator": "Alibaba",
       "is_reasoning": false,
       "is_open_weights": true,
-      "composite_ability": 0.7021855344455605,
+      "composite_ability": 0.6881090249509654,
       "total_parameters_B": 27.0,
       "active_parameters_B": 27.0,
       "size_class": "small",
@@ -193,10 +193,10 @@
       "intelligence_index_cost_usd": 693.6699701065,
       "input_price": 0.5,
       "output_price": 3.0,
-      "speed": 44.9351459467924,
-      "ttft": 3.93077512050007,
-      "total_response": 59.566512967223524,
-      "reasoning_time": 44.50859027737876,
+      "speed": 43.6774174283593,
+      "ttft": 3.98297803250005,
+      "total_response": 61.22079444187355,
+      "reasoning_time": 45.7902531274988,
       "valid_metrics": 13
     },
     {
@@ -205,7 +205,7 @@
       "creator": "Google",
       "is_reasoning": false,
       "is_open_weights": true,
-      "composite_ability": 0.42447443483917585,
+      "composite_ability": 0.4188055404681489,
       "total_parameters_B": 25.2,
       "active_parameters_B": 3.8,
       "size_class": "small",
@@ -225,7 +225,7 @@
       "creator": "Alibaba",
       "is_reasoning": false,
       "is_open_weights": true,
-      "composite_ability": 0.4186696664232552,
+      "composite_ability": 0.4142215737927682,
       "total_parameters_B": 9.65,
       "active_parameters_B": 9.65,
       "size_class": "small",
@@ -233,10 +233,10 @@
       "intelligence_index_cost_usd": 240.43329431,
       "input_price": 0.135,
       "output_price": 0.2,
-      "speed": 87.557193288357,
+      "speed": 87.4534043374445,
       "ttft": 2.0069339185,
-      "total_response": 30.55969932940816,
-      "reasoning_time": 22.84221232872653,
+      "total_response": 30.59358550673997,
+      "reasoning_time": 22.869321270591975,
       "valid_metrics": 16
     },
     {
@@ -245,7 +245,7 @@
       "creator": "Alibaba",
       "is_reasoning": false,
       "is_open_weights": true,
-      "composite_ability": 0.40089155825388856,
+      "composite_ability": 0.39739056039186,
       "total_parameters_B": 4.66,
       "active_parameters_B": 4.66,
       "size_class": "small",
@@ -253,10 +253,10 @@
       "intelligence_index_cost_usd": null,
       "input_price": 0.03,
       "output_price": 0.15,
-      "speed": 26.8424360998372,
-      "ttft": 0.754263540000011,
-      "total_response": 93.89037051261427,
-      "reasoning_time": 74.5088855780914,
+      "speed": 26.7487413721941,
+      "ttft": 0.752151113999986,
+      "total_response": 94.21449258322532,
+      "reasoning_time": 74.76987317538027,
       "valid_metrics": 14
     },
     {
@@ -265,7 +265,7 @@
       "creator": "AI9Stars",
       "is_reasoning": false,
       "is_open_weights": true,
-      "composite_ability": 0.3188337801216375,
+      "composite_ability": 0.31546904812602145,
       "total_parameters_B": 3.0,
       "active_parameters_B": 3.0,
       "size_class": "tiny",
@@ -285,7 +285,7 @@
       "creator": "OpenBMB",
       "is_reasoning": false,
       "is_open_weights": true,
-      "composite_ability": 0.2807136781802261,
+      "composite_ability": 0.27929635243392215,
       "total_parameters_B": 1.0,
       "active_parameters_B": 1.0,
       "size_class": "tiny",
@@ -305,7 +305,7 @@
       "creator": "Google",
       "is_reasoning": false,
       "is_open_weights": true,
-      "composite_ability": 0.12069968927540721,
+      "composite_ability": 0.1203295840699012,
       "total_parameters_B": 0.268,
       "active_parameters_B": 0.268,
       "size_class": "tiny",
@@ -322,9 +322,33 @@
   ],
   "all_models": [
     {
+      "model": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "creator": "Anthropic",
+      "composite_ability": 0.9276030055960813,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
+      "model": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "creator": "Anthropic",
+      "composite_ability": 0.9202408386647009,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
       "model": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
       "creator": "Anthropic",
-      "composite_ability": 0.9199079816220529,
+      "composite_ability": 0.9003337914769183,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -336,7 +360,7 @@
     {
       "model": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
       "creator": "Anthropic",
-      "composite_ability": 0.9095648218213912,
+      "composite_ability": 0.892580908421558,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -348,7 +372,19 @@
     {
       "model": "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
       "creator": "Anthropic",
-      "composite_ability": 0.9094943314357221,
+      "composite_ability": 0.8901671141285082,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
+      "model": "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+      "creator": "Anthropic",
+      "composite_ability": 0.8900957699972128,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -360,7 +396,7 @@
     {
       "model": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
       "creator": "Anthropic",
-      "composite_ability": 0.8935745521491965,
+      "composite_ability": 0.8747177037537012,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -372,7 +408,19 @@
     {
       "model": "GPT-5.6 Sol (max)",
       "creator": "OpenAI",
-      "composite_ability": 0.8870214883291933,
+      "composite_ability": 0.8727085676754285,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
+      "model": "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+      "creator": "Anthropic",
+      "composite_ability": 0.8626636713868631,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -384,7 +432,7 @@
     {
       "model": "Kimi K3 (max)",
       "creator": "Kimi",
-      "composite_ability": 0.868315871762687,
+      "composite_ability": 0.85283334622181,
       "normalized_param": 1.0,
       "total_parameters_B": 2800.0,
       "active_parameters_B": 104.0,
@@ -396,31 +444,7 @@
     {
       "model": "Claude Opus 5 (Adaptive Reasoning, Medium Effort)",
       "creator": "Anthropic",
-      "composite_ability": 0.8604012494214747,
-      "normalized_param": null,
-      "total_parameters_B": null,
-      "active_parameters_B": null,
-      "size_class": "large",
-      "is_reasoning": false,
-      "is_open_weights": false,
-      "is_pareto": false
-    },
-    {
-      "model": "Grok 4.6 (xhigh)",
-      "creator": "SpaceXAI",
-      "composite_ability": 0.8572278366965731,
-      "normalized_param": null,
-      "total_parameters_B": null,
-      "active_parameters_B": null,
-      "size_class": "large",
-      "is_reasoning": false,
-      "is_open_weights": false,
-      "is_pareto": false
-    },
-    {
-      "model": "Grok 4.6 (high)",
-      "creator": "SpaceXAI",
-      "composite_ability": 0.8545886965370745,
+      "composite_ability": 0.8425085450256633,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -432,7 +456,43 @@
     {
       "model": "GPT-5.6 Sol (xhigh)",
       "creator": "OpenAI",
-      "composite_ability": 0.853583207154343,
+      "composite_ability": 0.8387988592544766,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
+      "model": "Grok 4.6 (xhigh)",
+      "creator": "SpaceXAI",
+      "composite_ability": 0.8383599248116523,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
+      "model": "Grok 4.6 (high)",
+      "creator": "SpaceXAI",
+      "composite_ability": 0.835399919367211,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
+      "model": "Claude Fable 5.1 (Adaptive Reasoning, Low Effort, Default Fallback)",
+      "creator": "Anthropic",
+      "composite_ability": 0.8349733849121536,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -444,7 +504,7 @@
     {
       "model": "Grok 4.6 (medium)",
       "creator": "SpaceXAI",
-      "composite_ability": 0.8433213777448261,
+      "composite_ability": 0.8247176480484946,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -456,7 +516,7 @@
     {
       "model": "GPT-5.6 Sol (high)",
       "creator": "OpenAI",
-      "composite_ability": 0.8351265487296817,
+      "composite_ability": 0.820701194820932,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -468,7 +528,7 @@
     {
       "model": "GLM-5.3 (max)",
       "creator": "Z AI",
-      "composite_ability": 0.8346726081572087,
+      "composite_ability": 0.816055882762715,
       "normalized_param": 0.2689285714285714,
       "total_parameters_B": 753.0,
       "active_parameters_B": 40.0,
@@ -478,9 +538,9 @@
       "is_pareto": true
     },
     {
-      "model": "Muse Spark 1.2 (xhigh)",
-      "creator": "Meta",
-      "composite_ability": 0.8316795805636716,
+      "model": "GPT-5.6 Terra (max)",
+      "creator": "OpenAI",
+      "composite_ability": 0.8154943788954853,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -490,9 +550,9 @@
       "is_pareto": false
     },
     {
-      "model": "GPT-5.6 Terra (max)",
-      "creator": "OpenAI",
-      "composite_ability": 0.8276488896393612,
+      "model": "Muse Spark 1.2 (xhigh)",
+      "creator": "Meta",
+      "composite_ability": 0.813289303718331,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -504,19 +564,7 @@
     {
       "model": "Gemini 3.7 Flash (high)",
       "creator": "Google",
-      "composite_ability": 0.8194553376141579,
-      "normalized_param": null,
-      "total_parameters_B": null,
-      "active_parameters_B": null,
-      "size_class": "large",
-      "is_reasoning": false,
-      "is_open_weights": false,
-      "is_pareto": false
-    },
-    {
-      "model": "Qwen3.8 Max",
-      "creator": "Alibaba",
-      "composite_ability": 0.8155059624279727,
+      "composite_ability": 0.8021261736433323,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -528,7 +576,19 @@
     {
       "model": "GPT-5.6 Sol (medium)",
       "creator": "OpenAI",
-      "composite_ability": 0.813479283862006,
+      "composite_ability": 0.7996372240626113,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
+      "model": "Qwen3.8 Max",
+      "creator": "Alibaba",
+      "composite_ability": 0.7987279553192722,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -540,7 +600,7 @@
     {
       "model": "Grok 4.5 (high)",
       "creator": "SpaceXAI",
-      "composite_ability": 0.8031357476491578,
+      "composite_ability": 0.7864776991761279,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -552,7 +612,7 @@
     {
       "model": "Qwen3.8 2.4T A95B",
       "creator": "Alibaba",
-      "composite_ability": 0.8025407034733523,
+      "composite_ability": 0.7845835764939687,
       "normalized_param": 0.8571428571428571,
       "total_parameters_B": 2400.0,
       "active_parameters_B": 95.0,
@@ -564,7 +624,7 @@
     {
       "model": "Claude Sonnet 5 (Adaptive Reasoning, Max Effort)",
       "creator": "Anthropic",
-      "composite_ability": 0.797890108736056,
+      "composite_ability": 0.7816969642793343,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -576,7 +636,7 @@
     {
       "model": "Claude Opus 5 (Adaptive Reasoning, Low Effort)",
       "creator": "Anthropic",
-      "composite_ability": 0.7917190167063789,
+      "composite_ability": 0.7758562279346225,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -588,7 +648,7 @@
     {
       "model": "GLM-5.3-Flash",
       "creator": "Z AI",
-      "composite_ability": 0.790210820568977,
+      "composite_ability": 0.7727773313700018,
       "normalized_param": 0.11428571428571428,
       "total_parameters_B": 320.0,
       "active_parameters_B": 18.0,
@@ -600,7 +660,7 @@
     {
       "model": "GLM-5.2 (max)",
       "creator": "Z AI",
-      "composite_ability": 0.7836834628740211,
+      "composite_ability": 0.7722172336399138,
       "normalized_param": 0.2689285714285714,
       "total_parameters_B": 753.0,
       "active_parameters_B": 40.0,
@@ -612,7 +672,7 @@
     {
       "model": "GPT-5.6 Terra (xhigh)",
       "creator": "OpenAI",
-      "composite_ability": 0.7814528597187992,
+      "composite_ability": 0.7684516740555196,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -624,7 +684,7 @@
     {
       "model": "Gemini 3.7 Flash (medium)",
       "creator": "Google",
-      "composite_ability": 0.7810618729545733,
+      "composite_ability": 0.764874449470088,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -636,7 +696,7 @@
     {
       "model": "Gemini 3.5 Flash (medium)",
       "creator": "Google",
-      "composite_ability": 0.7706486898542663,
+      "composite_ability": 0.76100230688145,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -648,19 +708,7 @@
     {
       "model": "Gemini 3.1 Pro Preview",
       "creator": "Google",
-      "composite_ability": 0.7705484414888216,
-      "normalized_param": null,
-      "total_parameters_B": null,
-      "active_parameters_B": null,
-      "size_class": "large",
-      "is_reasoning": false,
-      "is_open_weights": false,
-      "is_pareto": false
-    },
-    {
-      "model": "Gemini 3.6 Flash (high)",
-      "creator": "Google",
-      "composite_ability": 0.764294238756812,
+      "composite_ability": 0.759795321703332,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -672,7 +720,19 @@
     {
       "model": "GPT-5.3 Codex (xhigh)",
       "creator": "OpenAI",
-      "composite_ability": 0.7618824571013879,
+      "composite_ability": 0.7521277829282341,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
+      "model": "Gemini 3.6 Flash (high)",
+      "creator": "Google",
+      "composite_ability": 0.7487679898294102,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -684,7 +744,7 @@
     {
       "model": "GPT-5.6 Sol (low)",
       "creator": "OpenAI",
-      "composite_ability": 0.7605085346222835,
+      "composite_ability": 0.7476732683812559,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -696,7 +756,7 @@
     {
       "model": "Qwen3.8-Flash-Next",
       "creator": "Alibaba",
-      "composite_ability": 0.7568959698019349,
+      "composite_ability": 0.7411764738360941,
       "normalized_param": 0.06428571428571428,
       "total_parameters_B": 180.0,
       "active_parameters_B": 6.0,
@@ -708,7 +768,7 @@
     {
       "model": "GPT-5.6 Luna (max)",
       "creator": "OpenAI",
-      "composite_ability": 0.7490596561083608,
+      "composite_ability": 0.7353999466163338,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -720,7 +780,7 @@
     {
       "model": "GPT-5.6 Terra (high)",
       "creator": "OpenAI",
-      "composite_ability": 0.7449550407137697,
+      "composite_ability": 0.7326434254661628,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -732,7 +792,19 @@
     {
       "model": "Gemini 3.7 Flash (low)",
       "creator": "Google",
-      "composite_ability": 0.7434131070473138,
+      "composite_ability": 0.7281124478849756,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
+      "model": "Grok 4.6 (low)",
+      "creator": "SpaceXAI",
+      "composite_ability": 0.719114875786296,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -744,7 +816,7 @@
     {
       "model": "DeepSeek V4 Pro 0813 (Reasoning, Max Effort)",
       "creator": "DeepSeek",
-      "composite_ability": 0.7351727674399297,
+      "composite_ability": 0.7177695696681209,
       "normalized_param": 0.5714285714285714,
       "total_parameters_B": 1600.0,
       "active_parameters_B": 49.0,
@@ -754,33 +826,9 @@
       "is_pareto": false
     },
     {
-      "model": "Grok 4.6 (low)",
-      "creator": "SpaceXAI",
-      "composite_ability": 0.7346893792693074,
-      "normalized_param": null,
-      "total_parameters_B": null,
-      "active_parameters_B": null,
-      "size_class": "large",
-      "is_reasoning": false,
-      "is_open_weights": false,
-      "is_pareto": false
-    },
-    {
-      "model": "GPT-5.6 Luna (xhigh)",
-      "creator": "OpenAI",
-      "composite_ability": 0.7172537072279858,
-      "normalized_param": null,
-      "total_parameters_B": null,
-      "active_parameters_B": null,
-      "size_class": "medium",
-      "is_reasoning": false,
-      "is_open_weights": false,
-      "is_pareto": false
-    },
-    {
       "model": "MiniMax-M3",
       "creator": "MiniMax",
-      "composite_ability": 0.7143597802284385,
+      "composite_ability": 0.7038041772933025,
       "normalized_param": 0.15285714285714286,
       "total_parameters_B": 428.0,
       "active_parameters_B": 23.0,
@@ -790,9 +838,9 @@
       "is_pareto": false
     },
     {
-      "model": "Agnes 2.5 Pro Beta",
-      "creator": "Sapiens AI",
-      "composite_ability": 0.7104044605699689,
+      "model": "GPT-5.6 Luna (xhigh)",
+      "creator": "OpenAI",
+      "composite_ability": 0.7022345815987435,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -802,37 +850,13 @@
       "is_pareto": false
     },
     {
-      "model": "DeepSeek V4 Flash 0731 (Reasoning, Max Effort)",
-      "creator": "DeepSeek",
-      "composite_ability": 0.7024853436038188,
-      "normalized_param": 0.10142857142857142,
-      "total_parameters_B": 284.0,
-      "active_parameters_B": 13.0,
-      "size_class": "large",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
-      "model": "Qwen3.8 27B (xhigh)",
-      "creator": "Alibaba",
-      "composite_ability": 0.7021855344455605,
-      "normalized_param": 0.009642857142857142,
-      "total_parameters_B": 27.0,
-      "active_parameters_B": 27.0,
-      "size_class": "small",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": true
-    },
-    {
-      "model": "DeepSeek V4 Flash Vision (Reasoning, Max Effort)",
-      "creator": "DeepSeek",
-      "composite_ability": 0.6986149254209136,
-      "normalized_param": 0.10142857142857142,
-      "total_parameters_B": 284.0,
-      "active_parameters_B": 13.0,
-      "size_class": "large",
+      "model": "Agnes 2.5 Pro Beta",
+      "creator": "Sapiens AI",
+      "composite_ability": 0.6966769965779644,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": "medium",
       "is_reasoning": false,
       "is_open_weights": false,
       "is_pareto": false
@@ -840,7 +864,7 @@
     {
       "model": "Grok 4.3 (medium)",
       "creator": "SpaceXAI",
-      "composite_ability": 0.6974950546794926,
+      "composite_ability": 0.690409175595353,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -850,9 +874,45 @@
       "is_pareto": false
     },
     {
+      "model": "Qwen3.8 27B (xhigh)",
+      "creator": "Alibaba",
+      "composite_ability": 0.6881090249509654,
+      "normalized_param": 0.009642857142857142,
+      "total_parameters_B": 27.0,
+      "active_parameters_B": 27.0,
+      "size_class": "small",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": true
+    },
+    {
+      "model": "DeepSeek V4 Flash 0731 (Reasoning, Max Effort)",
+      "creator": "DeepSeek",
+      "composite_ability": 0.6857802580721015,
+      "normalized_param": 0.10142857142857142,
+      "total_parameters_B": 284.0,
+      "active_parameters_B": 13.0,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
+      "model": "DeepSeek V4 Flash Vision (Reasoning, Max Effort)",
+      "creator": "DeepSeek",
+      "composite_ability": 0.683558583572379,
+      "normalized_param": 0.10142857142857142,
+      "total_parameters_B": 284.0,
+      "active_parameters_B": 13.0,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
       "model": "GPT-5.6 Terra (medium)",
       "creator": "OpenAI",
-      "composite_ability": 0.6883870503139123,
+      "composite_ability": 0.6762170669253821,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -864,7 +924,7 @@
     {
       "model": "GPT-5.6 Luna (high)",
       "creator": "OpenAI",
-      "composite_ability": 0.6846180615681103,
+      "composite_ability": 0.6705043407895188,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -876,7 +936,7 @@
     {
       "model": "DeepSeek V4 Pro (Reasoning, Max Effort)",
       "creator": "DeepSeek",
-      "composite_ability": 0.6763194712510868,
+      "composite_ability": 0.6656889278377237,
       "normalized_param": 0.5714285714285714,
       "total_parameters_B": 1600.0,
       "active_parameters_B": 49.0,
@@ -886,9 +946,21 @@
       "is_pareto": false
     },
     {
+      "model": "Qwen3.7 Plus",
+      "creator": "Alibaba",
+      "composite_ability": 0.6525836075991053,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": "medium",
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
       "model": "Kimi K3 (low)",
       "creator": "Kimi",
-      "composite_ability": 0.6638800304375598,
+      "composite_ability": 0.6502573958875745,
       "normalized_param": 0.9928571428571429,
       "total_parameters_B": 2780.0,
       "active_parameters_B": 104.0,
@@ -900,7 +972,7 @@
     {
       "model": "Motif 3",
       "creator": "Motif Technologies",
-      "composite_ability": 0.663740244056755,
+      "composite_ability": 0.649326243707663,
       "normalized_param": 0.11214285714285714,
       "total_parameters_B": 314.0,
       "active_parameters_B": 13.2,
@@ -910,21 +982,9 @@
       "is_pareto": false
     },
     {
-      "model": "Qwen3.7 Plus",
-      "creator": "Alibaba",
-      "composite_ability": 0.6611579294829224,
-      "normalized_param": null,
-      "total_parameters_B": null,
-      "active_parameters_B": null,
-      "size_class": "medium",
-      "is_reasoning": false,
-      "is_open_weights": false,
-      "is_pareto": false
-    },
-    {
       "model": "DeepSeek V4 Pro (Reasoning, High Effort)",
       "creator": "DeepSeek",
-      "composite_ability": 0.6547891548763349,
+      "composite_ability": 0.6432837711377077,
       "normalized_param": 0.5714285714285714,
       "total_parameters_B": 1600.0,
       "active_parameters_B": 49.0,
@@ -934,9 +994,21 @@
       "is_pareto": false
     },
     {
+      "model": "Grok 4.3 (low)",
+      "creator": "SpaceXAI",
+      "composite_ability": 0.6394291719597762,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
       "model": "MiMo-V2.5-Pro",
       "creator": "Xiaomi",
-      "composite_ability": 0.6473299243997827,
+      "composite_ability": 0.6377323238145053,
       "normalized_param": 0.3653571428571429,
       "total_parameters_B": 1023.0,
       "active_parameters_B": 42.0,
@@ -948,7 +1020,7 @@
     {
       "model": "Kimi K2.7 Code",
       "creator": "Kimi",
-      "composite_ability": 0.6467169529294868,
+      "composite_ability": 0.6355216353560343,
       "normalized_param": 0.35714285714285715,
       "total_parameters_B": 1000.0,
       "active_parameters_B": 32.0,
@@ -958,21 +1030,9 @@
       "is_pareto": false
     },
     {
-      "model": "Grok 4.3 (low)",
-      "creator": "SpaceXAI",
-      "composite_ability": 0.6452765869903508,
-      "normalized_param": null,
-      "total_parameters_B": null,
-      "active_parameters_B": null,
-      "size_class": "large",
-      "is_reasoning": false,
-      "is_open_weights": false,
-      "is_pareto": false
-    },
-    {
       "model": "Inkling (xhigh)",
       "creator": "Thinking Machines",
-      "composite_ability": 0.6315368355895458,
+      "composite_ability": 0.6190143694085837,
       "normalized_param": 0.3482142857142857,
       "total_parameters_B": 975.0,
       "active_parameters_B": 41.0,
@@ -984,7 +1044,7 @@
     {
       "model": "Inkling Small",
       "creator": "Thinking Machines",
-      "composite_ability": 0.6287471153713383,
+      "composite_ability": 0.6163646678045084,
       "normalized_param": 0.095,
       "total_parameters_B": 266.0,
       "active_parameters_B": 12.0,
@@ -996,7 +1056,7 @@
     {
       "model": "GPT-5.6 Terra (low)",
       "creator": "OpenAI",
-      "composite_ability": 0.6248450896324927,
+      "composite_ability": 0.6146456043062464,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1006,21 +1066,9 @@
       "is_pareto": false
     },
     {
-      "model": "Motif 3 (Beta)",
-      "creator": "Motif Technologies",
-      "composite_ability": 0.6213683005994788,
-      "normalized_param": 0.11214285714285714,
-      "total_parameters_B": 314.0,
-      "active_parameters_B": 13.0,
-      "size_class": "large",
-      "is_reasoning": false,
-      "is_open_weights": false,
-      "is_pareto": false
-    },
-    {
       "model": "MiMo-V2.5",
       "creator": "Xiaomi",
-      "composite_ability": 0.6209802848539957,
+      "composite_ability": 0.6123970133855842,
       "normalized_param": 0.11071428571428571,
       "total_parameters_B": 310.0,
       "active_parameters_B": 15.0,
@@ -1032,7 +1080,7 @@
     {
       "model": "Nemotron 3 Ultra 550B A55B (Reasoning)",
       "creator": "NVIDIA",
-      "composite_ability": 0.6190334814468289,
+      "composite_ability": 0.6098144306549269,
       "normalized_param": 0.19642857142857142,
       "total_parameters_B": 550.0,
       "active_parameters_B": 55.0,
@@ -1042,9 +1090,21 @@
       "is_pareto": false
     },
     {
+      "model": "Motif 3 (Beta)",
+      "creator": "Motif Technologies",
+      "composite_ability": 0.6077631144071517,
+      "normalized_param": 0.11214285714285714,
+      "total_parameters_B": 314.0,
+      "active_parameters_B": 13.0,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
       "model": "Claude Sonnet 5 (Non-reasoning, High Effort)",
       "creator": "Anthropic",
-      "composite_ability": 0.615022974164411,
+      "composite_ability": 0.60306539471729,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1056,7 +1116,7 @@
     {
       "model": "Quasar 438B",
       "creator": "Multiverse Computing",
-      "composite_ability": 0.6146187413563919,
+      "composite_ability": 0.6026266767789984,
       "normalized_param": 0.15642857142857142,
       "total_parameters_B": 438.0,
       "active_parameters_B": 438.0,
@@ -1068,7 +1128,7 @@
     {
       "model": "Solar Pro 4",
       "creator": "Upstage",
-      "composite_ability": 0.6145498825835706,
+      "composite_ability": 0.6021326786975678,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1078,21 +1138,9 @@
       "is_pareto": false
     },
     {
-      "model": "Nex-N2-Pro",
-      "creator": "Nex AGI",
-      "composite_ability": 0.6086580202697652,
-      "normalized_param": 0.1417857142857143,
-      "total_parameters_B": 397.0,
-      "active_parameters_B": 17.0,
-      "size_class": "large",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "MiMo-V2-Omni-0327",
       "creator": "Xiaomi",
-      "composite_ability": 0.60414459334616,
+      "composite_ability": 0.5982769735005862,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1102,9 +1150,21 @@
       "is_pareto": false
     },
     {
+      "model": "Nex-N2-Pro",
+      "creator": "Nex AGI",
+      "composite_ability": 0.5971331763971828,
+      "normalized_param": 0.1417857142857143,
+      "total_parameters_B": 397.0,
+      "active_parameters_B": 17.0,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "GPT-5.6 Sol (Non-reasoning)",
       "creator": "OpenAI",
-      "composite_ability": 0.5977624842800819,
+      "composite_ability": 0.5855571544279567,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1116,7 +1176,7 @@
     {
       "model": "Qwen3.6 27B (Reasoning)",
       "creator": "Alibaba",
-      "composite_ability": 0.5934887319872247,
+      "composite_ability": 0.5852332468059952,
       "normalized_param": 0.009928571428571429,
       "total_parameters_B": 27.8,
       "active_parameters_B": 27.8,
@@ -1126,21 +1186,9 @@
       "is_pareto": false
     },
     {
-      "model": "Hy3",
-      "creator": "Tencent",
-      "composite_ability": 0.5928919382141034,
-      "normalized_param": 0.10678571428571429,
-      "total_parameters_B": 299.0,
-      "active_parameters_B": 21.0,
-      "size_class": "large",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "Gemini 3.5 Flash (minimal)",
       "creator": "Google",
-      "composite_ability": 0.591477149053681,
+      "composite_ability": 0.5843483608736737,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1150,9 +1198,21 @@
       "is_pareto": false
     },
     {
+      "model": "Hy3",
+      "creator": "Tencent",
+      "composite_ability": 0.5793574802184891,
+      "normalized_param": 0.10678571428571429,
+      "total_parameters_B": 299.0,
+      "active_parameters_B": 21.0,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "Gemini 3.5 Flash-Lite",
       "creator": "Google",
-      "composite_ability": 0.5879517298229483,
+      "composite_ability": 0.5779922320850113,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1164,7 +1224,7 @@
     {
       "model": "GPT-5.6 Luna (medium)",
       "creator": "OpenAI",
-      "composite_ability": 0.5866938453084457,
+      "composite_ability": 0.5750503801916768,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1176,31 +1236,19 @@
     {
       "model": "Qwen3.8 27B (low)",
       "creator": "Alibaba",
-      "composite_ability": 0.5848847513030657,
+      "composite_ability": 0.5739757906770624,
       "normalized_param": 0.009642857142857142,
       "total_parameters_B": 27.0,
       "active_parameters_B": 27.0,
       "size_class": "small",
       "is_reasoning": false,
       "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
-      "model": "Apodex 1.1",
-      "creator": "Apodex",
-      "composite_ability": 0.5810719340062015,
-      "normalized_param": null,
-      "total_parameters_B": null,
-      "active_parameters_B": null,
-      "size_class": "medium",
-      "is_reasoning": false,
-      "is_open_weights": false,
       "is_pareto": false
     },
     {
       "model": "o3",
       "creator": "OpenAI",
-      "composite_ability": 0.5789898846530992,
+      "composite_ability": 0.5729136088381103,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1210,33 +1258,9 @@
       "is_pareto": false
     },
     {
-      "model": "Qwen3.8 27B (medium)",
-      "creator": "Alibaba",
-      "composite_ability": 0.578519202206101,
-      "normalized_param": 0.009642857142857142,
-      "total_parameters_B": 27.0,
-      "active_parameters_B": 27.0,
-      "size_class": "small",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
-      "model": "Solar Open2 250B",
-      "creator": "Upstage",
-      "composite_ability": 0.5776496412714596,
-      "normalized_param": 0.08928571428571429,
-      "total_parameters_B": 250.0,
-      "active_parameters_B": 15.0,
-      "size_class": "large",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "MiMo-V2-Flash (Feb 2026)",
       "creator": "Xiaomi",
-      "composite_ability": 0.5770519253420047,
+      "composite_ability": 0.5708983310297826,
       "normalized_param": 0.11035714285714286,
       "total_parameters_B": 309.0,
       "active_parameters_B": 15.0,
@@ -1246,9 +1270,33 @@
       "is_pareto": false
     },
     {
+      "model": "Apodex 1.1",
+      "creator": "Apodex",
+      "composite_ability": 0.5690558785442794,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": "medium",
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
+      "model": "Qwen3.8 27B (medium)",
+      "creator": "Alibaba",
+      "composite_ability": 0.5673329323158285,
+      "normalized_param": 0.009642857142857142,
+      "total_parameters_B": 27.0,
+      "active_parameters_B": 27.0,
+      "size_class": "small",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "MiMo-V2-Omni",
       "creator": "Xiaomi",
-      "composite_ability": 0.5724319002484061,
+      "composite_ability": 0.5667383592845683,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1258,9 +1306,21 @@
       "is_pareto": false
     },
     {
+      "model": "Solar Open2 250B",
+      "creator": "Upstage",
+      "composite_ability": 0.5662943907503201,
+      "normalized_param": 0.08928571428571429,
+      "total_parameters_B": 250.0,
+      "active_parameters_B": 15.0,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "Qwen3.5 397B A17B (Reasoning)",
       "creator": "Alibaba",
-      "composite_ability": 0.5706089096070478,
+      "composite_ability": 0.5632657873252707,
       "normalized_param": 0.1417857142857143,
       "total_parameters_B": 397.0,
       "active_parameters_B": 17.0,
@@ -1270,9 +1330,21 @@
       "is_pareto": false
     },
     {
+      "model": "Claude Sonnet 4.6 (Non-reasoning, Low Effort)",
+      "creator": "Anthropic",
+      "composite_ability": 0.5578902613489546,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
       "model": "Agnes 2.5 Pro Alpha",
       "creator": "Sapiens AI",
-      "composite_ability": 0.5686162504617133,
+      "composite_ability": 0.5557406094877755,
       "normalized_param": 0.1417857142857143,
       "total_parameters_B": 397.0,
       "active_parameters_B": 17.0,
@@ -1284,7 +1356,7 @@
     {
       "model": "JT-4.1 Flash 236B A21B",
       "creator": "China Mobile",
-      "composite_ability": 0.5642377483547558,
+      "composite_ability": 0.5547622855812583,
       "normalized_param": 0.08428571428571428,
       "total_parameters_B": 236.0,
       "active_parameters_B": 21.0,
@@ -1294,21 +1366,9 @@
       "is_pareto": false
     },
     {
-      "model": "Claude Sonnet 4.6 (Non-reasoning, Low Effort)",
-      "creator": "Anthropic",
-      "composite_ability": 0.5634391729306109,
-      "normalized_param": null,
-      "total_parameters_B": null,
-      "active_parameters_B": null,
-      "size_class": "large",
-      "is_reasoning": false,
-      "is_open_weights": false,
-      "is_pareto": false
-    },
-    {
       "model": "Qwen3.6 35B A3B (Reasoning)",
       "creator": "Alibaba",
-      "composite_ability": 0.5520780884780846,
+      "composite_ability": 0.5449428860614177,
       "normalized_param": 0.012857142857142857,
       "total_parameters_B": 36.0,
       "active_parameters_B": 3.0,
@@ -1320,7 +1380,7 @@
     {
       "model": "A.X-K2",
       "creator": "SK Telecom",
-      "composite_ability": 0.5512241204097178,
+      "composite_ability": 0.5405753234425845,
       "normalized_param": 0.24714285714285714,
       "total_parameters_B": 692.0,
       "active_parameters_B": 33.0,
@@ -1332,7 +1392,7 @@
     {
       "model": "Qwen3.5 122B A10B (Reasoning)",
       "creator": "Alibaba",
-      "composite_ability": 0.5444884975048414,
+      "composite_ability": 0.5367389364161573,
       "normalized_param": 0.044642857142857144,
       "total_parameters_B": 125.0,
       "active_parameters_B": 10.0,
@@ -1344,7 +1404,7 @@
     {
       "model": "KAT Coder Pro V2",
       "creator": "KwaiKAT",
-      "composite_ability": 0.5437941141866595,
+      "composite_ability": 0.5362594034816284,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1356,7 +1416,7 @@
     {
       "model": "Qwen3.5 Omni Plus",
       "creator": "Alibaba",
-      "composite_ability": 0.5384801025287603,
+      "composite_ability": 0.5335678906287289,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1368,7 +1428,7 @@
     {
       "model": "GPT-5.6 Luna (low)",
       "creator": "OpenAI",
-      "composite_ability": 0.5332507048476416,
+      "composite_ability": 0.523129040954216,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1378,21 +1438,9 @@
       "is_pareto": false
     },
     {
-      "model": "Ling 3.0 Flash",
-      "creator": "InclusionAI",
-      "composite_ability": 0.5330943278874997,
-      "normalized_param": 0.04428571428571428,
-      "total_parameters_B": 124.0,
-      "active_parameters_B": 5.1,
-      "size_class": "medium",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "Qwen3.8 27B (Non-reasoning)",
       "creator": "Alibaba",
-      "composite_ability": 0.5310715324072185,
+      "composite_ability": 0.522682103669329,
       "normalized_param": 0.009642857142857142,
       "total_parameters_B": 27.0,
       "active_parameters_B": 27.0,
@@ -1402,13 +1450,13 @@
       "is_pareto": false
     },
     {
-      "model": "G9v3-39A5B",
-      "creator": "AI9Stars",
-      "composite_ability": 0.5275482191563834,
-      "normalized_param": 0.013928571428571429,
-      "total_parameters_B": 39.0,
-      "active_parameters_B": 5.0,
-      "size_class": "small",
+      "model": "Ling 3.0 Flash",
+      "creator": "InclusionAI",
+      "composite_ability": 0.522101354024596,
+      "normalized_param": 0.04428571428571428,
+      "total_parameters_B": 124.0,
+      "active_parameters_B": 5.1,
+      "size_class": "medium",
       "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
@@ -1416,7 +1464,7 @@
     {
       "model": "Step 3.7 Flash",
       "creator": "StepFun",
-      "composite_ability": 0.5267424733514318,
+      "composite_ability": 0.5203169335167502,
       "normalized_param": 0.07071428571428572,
       "total_parameters_B": 198.0,
       "active_parameters_B": 11.0,
@@ -1426,9 +1474,21 @@
       "is_pareto": false
     },
     {
+      "model": "G9v3-39A5B",
+      "creator": "AI9Stars",
+      "composite_ability": 0.5180997067521357,
+      "normalized_param": 0.013928571428571429,
+      "total_parameters_B": 39.0,
+      "active_parameters_B": 5.0,
+      "size_class": "small",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "Muse Glimmer (high)",
       "creator": "Meta",
-      "composite_ability": 0.5196369194119483,
+      "composite_ability": 0.5099555145846618,
       "normalized_param": 0.010714285714285714,
       "total_parameters_B": 30.0,
       "active_parameters_B": 30.0,
@@ -1440,7 +1500,7 @@
     {
       "model": "Gemma 4 31B (Reasoning)",
       "creator": "Google",
-      "composite_ability": 0.5095727991982297,
+      "composite_ability": 0.5030627879658964,
       "normalized_param": 0.010964285714285715,
       "total_parameters_B": 30.7,
       "active_parameters_B": 30.7,
@@ -1452,7 +1512,7 @@
     {
       "model": "Qwen3.5 397B A17B (Non-reasoning)",
       "creator": "Alibaba",
-      "composite_ability": 0.5079279355666195,
+      "composite_ability": 0.5022644515709223,
       "normalized_param": 0.1417857142857143,
       "total_parameters_B": 397.0,
       "active_parameters_B": 17.0,
@@ -1462,21 +1522,9 @@
       "is_pareto": false
     },
     {
-      "model": "GLM-5.2 (Non-reasoning)",
-      "creator": "Z AI",
-      "composite_ability": 0.5061601792443553,
-      "normalized_param": 0.2689285714285714,
-      "total_parameters_B": 753.0,
-      "active_parameters_B": 40.0,
-      "size_class": "large",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "Mistral Medium 3.5",
       "creator": "Mistral",
-      "composite_ability": 0.5032949460153736,
+      "composite_ability": 0.49663251733377384,
       "normalized_param": 0.045714285714285714,
       "total_parameters_B": 128.0,
       "active_parameters_B": 128.0,
@@ -1486,9 +1534,21 @@
       "is_pareto": false
     },
     {
+      "model": "GLM-5.2 (Non-reasoning)",
+      "creator": "Z AI",
+      "composite_ability": 0.4962897570717688,
+      "normalized_param": 0.2689285714285714,
+      "total_parameters_B": 753.0,
+      "active_parameters_B": 40.0,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "GPT-5.6 Terra (Non-reasoning)",
       "creator": "OpenAI",
-      "composite_ability": 0.5008257914597609,
+      "composite_ability": 0.4909125533246898,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1500,7 +1560,7 @@
     {
       "model": "Claude 4.5 Haiku (Reasoning)",
       "creator": "Anthropic",
-      "composite_ability": 0.4911771785093612,
+      "composite_ability": 0.4854090399055877,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1510,33 +1570,9 @@
       "is_pareto": false
     },
     {
-      "model": "LongCat 2.0",
-      "creator": "LongCat",
-      "composite_ability": 0.4893635306415821,
-      "normalized_param": 0.5714285714285714,
-      "total_parameters_B": 1600.0,
-      "active_parameters_B": 48.0,
-      "size_class": "large",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
-      "model": "K-EXAONE 2.0",
-      "creator": "LG AI Research",
-      "composite_ability": 0.48850363857124185,
-      "normalized_param": 0.26785714285714285,
-      "total_parameters_B": 750.0,
-      "active_parameters_B": 37.0,
-      "size_class": "large",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "Ring-2.6-1T",
       "creator": "InclusionAI",
-      "composite_ability": 0.488093532128573,
+      "composite_ability": 0.4803189141866545,
       "normalized_param": 0.35714285714285715,
       "total_parameters_B": 1000.0,
       "active_parameters_B": 63.0,
@@ -1546,33 +1582,33 @@
       "is_pareto": false
     },
     {
-      "model": "Qwen3.6 27B (Non-reasoning)",
-      "creator": "Alibaba",
-      "composite_ability": 0.4801586405766724,
-      "normalized_param": 0.009928571428571429,
-      "total_parameters_B": 27.8,
-      "active_parameters_B": 27.8,
-      "size_class": "small",
+      "model": "K-EXAONE 2.0",
+      "creator": "LG AI Research",
+      "composite_ability": 0.4796401386303985,
+      "normalized_param": 0.26785714285714285,
+      "total_parameters_B": 750.0,
+      "active_parameters_B": 37.0,
+      "size_class": "large",
       "is_reasoning": false,
       "is_open_weights": true,
       "is_pareto": false
     },
     {
-      "model": "GPT-5.5 Instant (June 2026)",
-      "creator": "OpenAI",
-      "composite_ability": 0.47850207389887595,
-      "normalized_param": null,
-      "total_parameters_B": null,
-      "active_parameters_B": null,
+      "model": "LongCat 2.0",
+      "creator": "LongCat",
+      "composite_ability": 0.47814481131464587,
+      "normalized_param": 0.5714285714285714,
+      "total_parameters_B": 1600.0,
+      "active_parameters_B": 48.0,
       "size_class": "large",
       "is_reasoning": false,
-      "is_open_weights": false,
+      "is_open_weights": true,
       "is_pareto": false
     },
     {
       "model": "Doubao Seed Code",
       "creator": "ByteDance Seed",
-      "composite_ability": 0.47819854700314135,
+      "composite_ability": 0.47335769111115705,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1582,9 +1618,21 @@
       "is_pareto": false
     },
     {
+      "model": "Qwen3.6 27B (Non-reasoning)",
+      "creator": "Alibaba",
+      "composite_ability": 0.4733180749445985,
+      "normalized_param": 0.009928571428571429,
+      "total_parameters_B": 27.8,
+      "active_parameters_B": 27.8,
+      "size_class": "small",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "JT-35B-Flash",
       "creator": "China Mobile",
-      "composite_ability": 0.4768445831640468,
+      "composite_ability": 0.4727049444768781,
       "normalized_param": 0.0125,
       "total_parameters_B": 35.0,
       "active_parameters_B": 35.0,
@@ -1596,7 +1644,7 @@
     {
       "model": "Command A+",
       "creator": "Cohere",
-      "composite_ability": 0.47469144137340835,
+      "composite_ability": 0.47014390733897554,
       "normalized_param": 0.07785714285714286,
       "total_parameters_B": 218.0,
       "active_parameters_B": 25.0,
@@ -1606,9 +1654,21 @@
       "is_pareto": false
     },
     {
+      "model": "GPT-5.5 Instant (June 2026)",
+      "creator": "OpenAI",
+      "composite_ability": 0.46900502937464084,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
       "model": "DeepSeek V4 Pro (Non-reasoning)",
       "creator": "DeepSeek",
-      "composite_ability": 0.4708689600314548,
+      "composite_ability": 0.4656091603593101,
       "normalized_param": 0.5714285714285714,
       "total_parameters_B": 1600.0,
       "active_parameters_B": 49.0,
@@ -1620,7 +1680,7 @@
     {
       "model": "Nova 2.0 Pro Preview (medium)",
       "creator": "Amazon",
-      "composite_ability": 0.46229707825882743,
+      "composite_ability": 0.4573260459432523,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1632,7 +1692,7 @@
     {
       "model": "Qwen3.5 122B A10B (Non-reasoning)",
       "creator": "Alibaba",
-      "composite_ability": 0.4552252493766331,
+      "composite_ability": 0.4490466506943564,
       "normalized_param": 0.044642857142857144,
       "total_parameters_B": 125.0,
       "active_parameters_B": 10.0,
@@ -1644,7 +1704,7 @@
     {
       "model": "Nova 2.0 Pro Preview (low)",
       "creator": "Amazon",
-      "composite_ability": 0.4478666985999232,
+      "composite_ability": 0.44389784252629616,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1654,21 +1714,9 @@
       "is_pareto": false
     },
     {
-      "model": "MiMo-V2.5-Pro (Non-reasoning)",
-      "creator": "Xiaomi",
-      "composite_ability": 0.43534289492382533,
-      "normalized_param": 0.3653571428571429,
-      "total_parameters_B": 1023.0,
-      "active_parameters_B": 41.7,
-      "size_class": "large",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "Nova 2.0 Lite (medium)",
       "creator": "Amazon",
-      "composite_ability": 0.4338488138611613,
+      "composite_ability": 0.4302105469878583,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1678,12 +1726,12 @@
       "is_pareto": false
     },
     {
-      "model": "DeepSeek V4 Flash (Non-reasoning)",
-      "creator": "DeepSeek",
-      "composite_ability": 0.42627673596604987,
-      "normalized_param": 0.10142857142857142,
-      "total_parameters_B": 284.0,
-      "active_parameters_B": 13.0,
+      "model": "MiMo-V2.5-Pro (Non-reasoning)",
+      "creator": "Xiaomi",
+      "composite_ability": 0.42991228386094404,
+      "normalized_param": 0.3653571428571429,
+      "total_parameters_B": 1023.0,
+      "active_parameters_B": 41.7,
       "size_class": "large",
       "is_reasoning": false,
       "is_open_weights": true,
@@ -1692,7 +1740,7 @@
     {
       "model": "Claude 4.5 Haiku (Non-reasoning)",
       "creator": "Anthropic",
-      "composite_ability": 0.42570882627804085,
+      "composite_ability": 0.42243522493957114,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1702,9 +1750,21 @@
       "is_pareto": false
     },
     {
+      "model": "DeepSeek V4 Flash (Non-reasoning)",
+      "creator": "DeepSeek",
+      "composite_ability": 0.42160050441061564,
+      "normalized_param": 0.10142857142857142,
+      "total_parameters_B": 284.0,
+      "active_parameters_B": 13.0,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "Gemma 4 26B A4B (Reasoning)",
       "creator": "Google",
-      "composite_ability": 0.42447443483917585,
+      "composite_ability": 0.4188055404681489,
       "normalized_param": 0.009,
       "total_parameters_B": 25.2,
       "active_parameters_B": 3.8,
@@ -1716,7 +1776,7 @@
     {
       "model": "Qwen3.5 9B (Reasoning)",
       "creator": "Alibaba",
-      "composite_ability": 0.4186696664232552,
+      "composite_ability": 0.4142215737927682,
       "normalized_param": 0.0034464285714285716,
       "total_parameters_B": 9.65,
       "active_parameters_B": 9.65,
@@ -1726,9 +1786,9 @@
       "is_pareto": true
     },
     {
-      "model": "GPT-5.6 Luna (Non-reasoning)",
-      "creator": "OpenAI",
-      "composite_ability": 0.41614645929333566,
+      "model": "Nova 2.0 Omni (low)",
+      "creator": "Amazon",
+      "composite_ability": 0.4107241390364643,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1740,7 +1800,7 @@
     {
       "model": "Gemma 4 12B (Reasoning)",
       "creator": "Google",
-      "composite_ability": 0.4149972662733402,
+      "composite_ability": 0.410017504976017,
       "normalized_param": 0.004285714285714286,
       "total_parameters_B": 12.0,
       "active_parameters_B": 12.0,
@@ -1750,9 +1810,9 @@
       "is_pareto": false
     },
     {
-      "model": "Nova 2.0 Omni (low)",
-      "creator": "Amazon",
-      "composite_ability": 0.41367920249967544,
+      "model": "GPT-5.6 Luna (Non-reasoning)",
+      "creator": "OpenAI",
+      "composite_ability": 0.40853613309269743,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1764,7 +1824,7 @@
     {
       "model": "Nova 2.0 Omni (medium)",
       "creator": "Amazon",
-      "composite_ability": 0.41075847246493585,
+      "composite_ability": 0.40724003419199734,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1776,7 +1836,7 @@
     {
       "model": "Nova 2.0 Lite (high)",
       "creator": "Amazon",
-      "composite_ability": 0.4105725296121349,
+      "composite_ability": 0.40623831770230867,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1788,7 +1848,7 @@
     {
       "model": "Grok 4.3 (Non-reasoning)",
       "creator": "SpaceXAI",
-      "composite_ability": 0.41043156383217805,
+      "composite_ability": 0.4046483694638971,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1800,7 +1860,7 @@
     {
       "model": "EXAONE 4.5 33B",
       "creator": "LG AI Research",
-      "composite_ability": 0.40600509788565625,
+      "composite_ability": 0.4018405586600568,
       "normalized_param": 0.012285714285714285,
       "total_parameters_B": 34.4,
       "active_parameters_B": 34.4,
@@ -1812,7 +1872,7 @@
     {
       "model": "Gemma 4 31B (Non-reasoning)",
       "creator": "Google",
-      "composite_ability": 0.40547243732830834,
+      "composite_ability": 0.4003971036916102,
       "normalized_param": 0.010964285714285715,
       "total_parameters_B": 30.7,
       "active_parameters_B": 30.7,
@@ -1824,7 +1884,7 @@
     {
       "model": "ERNIE 5.0 Thinking Preview",
       "creator": "Baidu",
-      "composite_ability": 0.40269741864442327,
+      "composite_ability": 0.3983623652909876,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1834,21 +1894,9 @@
       "is_pareto": false
     },
     {
-      "model": "K-EXAONE (Reasoning)",
-      "creator": "LG AI Research",
-      "composite_ability": 0.4010185862513679,
-      "normalized_param": 0.08428571428571428,
-      "total_parameters_B": 236.0,
-      "active_parameters_B": 23.0,
-      "size_class": "large",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "Qwen3.5 4B (Reasoning)",
       "creator": "Alibaba",
-      "composite_ability": 0.40089155825388856,
+      "composite_ability": 0.39739056039186,
       "normalized_param": 0.0016642857142857143,
       "total_parameters_B": 4.66,
       "active_parameters_B": 4.66,
@@ -1858,9 +1906,21 @@
       "is_pareto": true
     },
     {
+      "model": "K-EXAONE (Reasoning)",
+      "creator": "LG AI Research",
+      "composite_ability": 0.39590391125305546,
+      "normalized_param": 0.08428571428571428,
+      "total_parameters_B": 236.0,
+      "active_parameters_B": 23.0,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "Qwen3.5 35B A3B (Non-reasoning)",
       "creator": "Alibaba",
-      "composite_ability": 0.3938047669586537,
+      "composite_ability": 0.3887255005200861,
       "normalized_param": 0.012857142857142857,
       "total_parameters_B": 36.0,
       "active_parameters_B": 3.0,
@@ -1872,7 +1932,7 @@
     {
       "model": "Mercury 2",
       "creator": "Inception",
-      "composite_ability": 0.392036500746923,
+      "composite_ability": 0.3863636999086932,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1882,21 +1942,9 @@
       "is_pareto": false
     },
     {
-      "model": "Nemotron 3.5 Lightning",
-      "creator": "NVIDIA",
-      "composite_ability": 0.3891607224274305,
-      "normalized_param": 0.011285714285714286,
-      "total_parameters_B": 31.6,
-      "active_parameters_B": 3.6,
-      "size_class": "small",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "Nemotron 3 Super 120B A12B (Reasoning)",
       "creator": "NVIDIA",
-      "composite_ability": 0.38862334288492545,
+      "composite_ability": 0.38304896987325276,
       "normalized_param": 0.04307142857142857,
       "total_parameters_B": 120.6,
       "active_parameters_B": 12.7,
@@ -1906,12 +1954,12 @@
       "is_pareto": false
     },
     {
-      "model": "Granite 4.2 30B",
-      "creator": "IBM",
-      "composite_ability": 0.3876499761737999,
-      "normalized_param": 0.010714285714285714,
-      "total_parameters_B": 30.0,
-      "active_parameters_B": 30.0,
+      "model": "Nemotron 3.5 Lightning",
+      "creator": "NVIDIA",
+      "composite_ability": 0.38292006897974806,
+      "normalized_param": 0.011285714285714286,
+      "total_parameters_B": 31.6,
+      "active_parameters_B": 3.6,
       "size_class": "small",
       "is_reasoning": false,
       "is_open_weights": true,
@@ -1920,7 +1968,7 @@
     {
       "model": "Qwen3.6 35B A3B (Non-reasoning)",
       "creator": "Alibaba",
-      "composite_ability": 0.38639487703316033,
+      "composite_ability": 0.38188615945895754,
       "normalized_param": 0.012857142857142857,
       "total_parameters_B": 36.0,
       "active_parameters_B": 3.0,
@@ -1930,9 +1978,21 @@
       "is_pareto": false
     },
     {
+      "model": "Granite 4.2 30B",
+      "creator": "IBM",
+      "composite_ability": 0.3812141572338664,
+      "normalized_param": 0.010714285714285714,
+      "total_parameters_B": 30.0,
+      "active_parameters_B": 30.0,
+      "size_class": "small",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "Nova 2.0 Lite (low)",
       "creator": "Amazon",
-      "composite_ability": 0.38263536899475725,
+      "composite_ability": 0.37964822742606164,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1944,7 +2004,7 @@
     {
       "model": "MiMo-V2-Flash (Non-reasoning)",
       "creator": "Xiaomi",
-      "composite_ability": 0.38046302401625076,
+      "composite_ability": 0.37508933170135117,
       "normalized_param": 0.11035714285714286,
       "total_parameters_B": 309.0,
       "active_parameters_B": 15.0,
@@ -1956,7 +2016,7 @@
     {
       "model": "Cogito v2.1 (Reasoning)",
       "creator": "Deep Cogito",
-      "composite_ability": 0.37861592009558614,
+      "composite_ability": 0.37396885278994013,
       "normalized_param": 0.23964285714285713,
       "total_parameters_B": 671.0,
       "active_parameters_B": 37.0,
@@ -1968,7 +2028,7 @@
     {
       "model": "Ling 3.0 Tiny",
       "creator": "InclusionAI",
-      "composite_ability": 0.37794914696452,
+      "composite_ability": 0.3722609497186013,
       "normalized_param": 0.0028214285714285715,
       "total_parameters_B": 7.9,
       "active_parameters_B": 1.3,
@@ -1980,7 +2040,7 @@
     {
       "model": "Apriel-v1.6-15B-Thinker",
       "creator": "ServiceNow",
-      "composite_ability": 0.37581174280777324,
+      "composite_ability": 0.3712548519673686,
       "normalized_param": 0.005357142857142857,
       "total_parameters_B": 15.0,
       "active_parameters_B": 15.0,
@@ -1990,21 +2050,9 @@
       "is_pareto": false
     },
     {
-      "model": "gpt-oss-120b (high)",
-      "creator": "OpenAI",
-      "composite_ability": 0.37148678470336316,
-      "normalized_param": 0.04178571428571429,
-      "total_parameters_B": 117.0,
-      "active_parameters_B": 5.1,
-      "size_class": "medium",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "Gemma 4 26B A4B (Non-reasoning)",
       "creator": "Google",
-      "composite_ability": 0.3708418221695058,
+      "composite_ability": 0.3669982918415038,
       "normalized_param": 0.009,
       "total_parameters_B": 25.2,
       "active_parameters_B": 3.8,
@@ -2014,9 +2062,21 @@
       "is_pareto": false
     },
     {
+      "model": "gpt-oss-120b (high)",
+      "creator": "OpenAI",
+      "composite_ability": 0.36598614109567346,
+      "normalized_param": 0.04178571428571429,
+      "total_parameters_B": 117.0,
+      "active_parameters_B": 5.1,
+      "size_class": "medium",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "Qwen3.5 9B (Non-reasoning)",
       "creator": "Alibaba",
-      "composite_ability": 0.3693233920735833,
+      "composite_ability": 0.36545784292200495,
       "normalized_param": 0.0034464285714285716,
       "total_parameters_B": 9.65,
       "active_parameters_B": 9.65,
@@ -2028,7 +2088,7 @@
     {
       "model": "Trinity Large Thinking",
       "creator": "Arcee AI",
-      "composite_ability": 0.3676923477502065,
+      "composite_ability": 0.3628671504777741,
       "normalized_param": 0.1425,
       "total_parameters_B": 399.0,
       "active_parameters_B": 13.0,
@@ -2040,7 +2100,7 @@
     {
       "model": "Nemotron Cascade 2 30B A3B",
       "creator": "NVIDIA",
-      "composite_ability": 0.3667801892357169,
+      "composite_ability": 0.36236136279778325,
       "normalized_param": 0.011285714285714286,
       "total_parameters_B": 31.6,
       "active_parameters_B": 3.0,
@@ -2052,7 +2112,7 @@
     {
       "model": "Mistral Small 4 (Reasoning)",
       "creator": "Mistral",
-      "composite_ability": 0.3630256354752599,
+      "composite_ability": 0.35876206369760233,
       "normalized_param": 0.0425,
       "total_parameters_B": 119.0,
       "active_parameters_B": 6.5,
@@ -2064,7 +2124,7 @@
     {
       "model": "Qwen3.5 Omni Flash",
       "creator": "Alibaba",
-      "composite_ability": 0.35974951587357973,
+      "composite_ability": 0.3567903466615582,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -2076,7 +2136,7 @@
     {
       "model": "Magistral Medium 1.2",
       "creator": "Mistral",
-      "composite_ability": 0.3595233076959321,
+      "composite_ability": 0.3556469424780833,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -2088,7 +2148,7 @@
     {
       "model": "HyperNova 60B 2605",
       "creator": "Multiverse Computing",
-      "composite_ability": 0.3489223935794567,
+      "composite_ability": 0.34422905903501083,
       "normalized_param": 0.020964285714285713,
       "total_parameters_B": 58.7,
       "active_parameters_B": 4.8,
@@ -2100,7 +2160,7 @@
     {
       "model": "North Mini Code",
       "creator": "Cohere",
-      "composite_ability": 0.3405391778361578,
+      "composite_ability": 0.33574026628921017,
       "normalized_param": 0.010714285714285714,
       "total_parameters_B": 30.0,
       "active_parameters_B": 3.0,
@@ -2112,7 +2172,7 @@
     {
       "model": "Granite 4.2 8B",
       "creator": "IBM",
-      "composite_ability": 0.3405047964464053,
+      "composite_ability": 0.3353154885160509,
       "normalized_param": 0.002857142857142857,
       "total_parameters_B": 8.0,
       "active_parameters_B": 8.0,
@@ -2124,7 +2184,7 @@
     {
       "model": "K2 Think V2",
       "creator": "MBZUAI Institute of Foundation Models",
-      "composite_ability": 0.3300542732344874,
+      "composite_ability": 0.3260342079296725,
       "normalized_param": 0.025,
       "total_parameters_B": 70.0,
       "active_parameters_B": 70.0,
@@ -2136,7 +2196,7 @@
     {
       "model": "Qwen3 Coder Next",
       "creator": "Alibaba",
-      "composite_ability": 0.3298177243772479,
+      "composite_ability": 0.32490297769759974,
       "normalized_param": 0.028464285714285713,
       "total_parameters_B": 79.7,
       "active_parameters_B": 3.0,
@@ -2146,21 +2206,9 @@
       "is_pareto": false
     },
     {
-      "model": "Qwen3 Next 80B A3B (Reasoning)",
-      "creator": "Alibaba",
-      "composite_ability": 0.32055966344272135,
-      "normalized_param": 0.02857142857142857,
-      "total_parameters_B": 80.0,
-      "active_parameters_B": 3.0,
-      "size_class": "medium",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "Gemma 4 12B (Non-reasoning)",
       "creator": "Google",
-      "composite_ability": 0.3196001643881174,
+      "composite_ability": 0.3169730989302137,
       "normalized_param": 0.004285714285714286,
       "total_parameters_B": 12.0,
       "active_parameters_B": 12.0,
@@ -2170,9 +2218,21 @@
       "is_pareto": false
     },
     {
+      "model": "Qwen3 Next 80B A3B (Reasoning)",
+      "creator": "Alibaba",
+      "composite_ability": 0.31650392624232765,
+      "normalized_param": 0.02857142857142857,
+      "total_parameters_B": 80.0,
+      "active_parameters_B": 3.0,
+      "size_class": "medium",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "G9v3-3B",
       "creator": "AI9Stars",
-      "composite_ability": 0.3188337801216375,
+      "composite_ability": 0.31546904812602145,
       "normalized_param": 0.0010714285714285715,
       "total_parameters_B": 3.0,
       "active_parameters_B": 3.0,
@@ -2184,7 +2244,7 @@
     {
       "model": "DiffusionGemma 26B A4B",
       "creator": "Google",
-      "composite_ability": 0.3143372762069283,
+      "composite_ability": 0.3101345138253072,
       "normalized_param": 0.009,
       "total_parameters_B": 25.2,
       "active_parameters_B": 3.8,
@@ -2196,7 +2256,7 @@
     {
       "model": "Qwen3.5 4B (Non-reasoning)",
       "creator": "Alibaba",
-      "composite_ability": 0.31256107014966705,
+      "composite_ability": 0.3095526327693455,
       "normalized_param": 0.0016642857142857143,
       "total_parameters_B": 4.66,
       "active_parameters_B": 4.66,
@@ -2206,21 +2266,9 @@
       "is_pareto": false
     },
     {
-      "model": "INTELLECT-3",
-      "creator": "Prime Intellect",
-      "composite_ability": 0.3114626761949893,
-      "normalized_param": 0.038214285714285715,
-      "total_parameters_B": 107.0,
-      "active_parameters_B": 12.0,
-      "size_class": "medium",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "Solar Open 100B (Reasoning)",
       "creator": "Upstage",
-      "composite_ability": 0.31122987390101675,
+      "composite_ability": 0.3077624000405387,
       "normalized_param": 0.03642857142857143,
       "total_parameters_B": 102.0,
       "active_parameters_B": 12.0,
@@ -2230,9 +2278,21 @@
       "is_pareto": false
     },
     {
+      "model": "INTELLECT-3",
+      "creator": "Prime Intellect",
+      "composite_ability": 0.30716678127311225,
+      "normalized_param": 0.038214285714285715,
+      "total_parameters_B": 107.0,
+      "active_parameters_B": 12.0,
+      "size_class": "medium",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "Mi:dm K 2.5 Pro",
       "creator": "Korea Telecom",
-      "composite_ability": 0.31057061296699884,
+      "composite_ability": 0.30702595518406434,
       "normalized_param": 0.011428571428571429,
       "total_parameters_B": 32.0,
       "active_parameters_B": 32.0,
@@ -2244,7 +2304,7 @@
     {
       "model": "Nova 2.0 Pro Preview (Non-reasoning)",
       "creator": "Amazon",
-      "composite_ability": 0.308890473061791,
+      "composite_ability": 0.30566397960335295,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -2256,7 +2316,7 @@
     {
       "model": "JT-MINI",
       "creator": "China Mobile",
-      "composite_ability": 0.3080495410847066,
+      "composite_ability": 0.3049242052240089,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -2268,7 +2328,7 @@
     {
       "model": "K2-V2 (high)",
       "creator": "MBZUAI Institute of Foundation Models",
-      "composite_ability": 0.3075914853500479,
+      "composite_ability": 0.30409809543792277,
       "normalized_param": 0.025,
       "total_parameters_B": 70.0,
       "active_parameters_B": 70.0,
@@ -2280,7 +2340,7 @@
     {
       "model": "Solar Pro 3",
       "creator": "Upstage",
-      "composite_ability": 0.3072487710717263,
+      "composite_ability": 0.30396120972801266,
       "normalized_param": 0.03642857142857143,
       "total_parameters_B": 102.0,
       "active_parameters_B": 12.0,
@@ -2292,7 +2352,7 @@
     {
       "model": "HyperCLOVA X SEED Think (32B)",
       "creator": "Naver",
-      "composite_ability": 0.3067782000850807,
+      "composite_ability": 0.30373351061931275,
       "normalized_param": 0.011428571428571429,
       "total_parameters_B": 32.0,
       "active_parameters_B": 32.0,
@@ -2304,7 +2364,7 @@
     {
       "model": "K-EXAONE (Non-reasoning)",
       "creator": "LG AI Research",
-      "composite_ability": 0.30210806323467704,
+      "composite_ability": 0.29918593425749246,
       "normalized_param": 0.08428571428571428,
       "total_parameters_B": 236.0,
       "active_parameters_B": 23.0,
@@ -2316,7 +2376,7 @@
     {
       "model": "gpt-oss-20b (low)",
       "creator": "OpenAI",
-      "composite_ability": 0.3016068638785296,
+      "composite_ability": 0.29851126828843766,
       "normalized_param": 0.0075,
       "total_parameters_B": 21.0,
       "active_parameters_B": 3.6,
@@ -2328,7 +2388,7 @@
     {
       "model": "NVIDIA Nemotron 3 Nano 30B A3B (Reasoning)",
       "creator": "NVIDIA",
-      "composite_ability": 0.29960084247572655,
+      "composite_ability": 0.296193590092576,
       "normalized_param": 0.011285714285714286,
       "total_parameters_B": 31.6,
       "active_parameters_B": 3.6,
@@ -2340,7 +2400,7 @@
     {
       "model": "LongCat Flash Lite",
       "creator": "LongCat",
-      "composite_ability": 0.29648133992169673,
+      "composite_ability": 0.29347731892014417,
       "normalized_param": 0.024464285714285713,
       "total_parameters_B": 68.5,
       "active_parameters_B": 3.0,
@@ -2352,7 +2412,7 @@
     {
       "model": "Llama Nemotron Super 49B v1.5 (Reasoning)",
       "creator": "NVIDIA",
-      "composite_ability": 0.2959362131874826,
+      "composite_ability": 0.2926355901026756,
       "normalized_param": 0.0175,
       "total_parameters_B": 49.0,
       "active_parameters_B": 49.0,
@@ -2364,7 +2424,7 @@
     {
       "model": "Mistral Large 3",
       "creator": "Mistral",
-      "composite_ability": 0.29528482208979007,
+      "composite_ability": 0.2916785906631045,
       "normalized_param": 0.24107142857142858,
       "total_parameters_B": 675.0,
       "active_parameters_B": 41.0,
@@ -2376,7 +2436,7 @@
     {
       "model": "Gemma 4 E4B (Reasoning)",
       "creator": "Google",
-      "composite_ability": 0.2915874522215003,
+      "composite_ability": 0.28948793731432654,
       "normalized_param": 0.002857142857142857,
       "total_parameters_B": 8.0,
       "active_parameters_B": 4.5,
@@ -2388,7 +2448,7 @@
     {
       "model": "Llama 3.1 Instruct 405B",
       "creator": "Meta",
-      "composite_ability": 0.29055398603074867,
+      "composite_ability": 0.2877645217983751,
       "normalized_param": 0.14464285714285716,
       "total_parameters_B": 405.0,
       "active_parameters_B": 405.0,
@@ -2400,7 +2460,7 @@
     {
       "model": "Qwen3 Next 80B A3B Instruct",
       "creator": "Alibaba",
-      "composite_ability": 0.28919852692671094,
+      "composite_ability": 0.2859712838359155,
       "normalized_param": 0.02857142857142857,
       "total_parameters_B": 80.0,
       "active_parameters_B": 3.0,
@@ -2412,7 +2472,7 @@
     {
       "model": "Nova Premier",
       "creator": "Amazon",
-      "composite_ability": 0.28823817118495393,
+      "composite_ability": 0.28535672367999454,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -2424,7 +2484,7 @@
     {
       "model": "Nemotron 3 Nano Omni 30B A3B Reasoning",
       "creator": "NVIDIA",
-      "composite_ability": 0.2860707783160273,
+      "composite_ability": 0.2833397675058017,
       "normalized_param": 0.010714285714285714,
       "total_parameters_B": 30.0,
       "active_parameters_B": 3.0,
@@ -2434,21 +2494,9 @@
       "is_pareto": false
     },
     {
-      "model": "Devstral 2",
-      "creator": "Mistral",
-      "composite_ability": 0.2843894879683456,
-      "normalized_param": 0.044642857142857144,
-      "total_parameters_B": 125.0,
-      "active_parameters_B": 125.0,
-      "size_class": "medium",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "Llama 4 Maverick",
       "creator": "Meta",
-      "composite_ability": 0.2836615913606206,
+      "composite_ability": 0.28059106457585686,
       "normalized_param": 0.14357142857142857,
       "total_parameters_B": 402.0,
       "active_parameters_B": 17.0,
@@ -2458,12 +2506,12 @@
       "is_pareto": false
     },
     {
-      "model": "gpt-oss-120b (low)",
-      "creator": "OpenAI",
-      "composite_ability": 0.2817689936138003,
-      "normalized_param": 0.04178571428571429,
-      "total_parameters_B": 117.0,
-      "active_parameters_B": 5.1,
+      "model": "Devstral 2",
+      "creator": "Mistral",
+      "composite_ability": 0.2799714360348489,
+      "normalized_param": 0.044642857142857144,
+      "total_parameters_B": 125.0,
+      "active_parameters_B": 125.0,
       "size_class": "medium",
       "is_reasoning": false,
       "is_open_weights": true,
@@ -2472,7 +2520,7 @@
     {
       "model": "MiniCPM5-1B (Reasoning)",
       "creator": "OpenBMB",
-      "composite_ability": 0.2807136781802261,
+      "composite_ability": 0.27929635243392215,
       "normalized_param": 0.00035714285714285714,
       "total_parameters_B": 1.0,
       "active_parameters_B": 1.0,
@@ -2482,9 +2530,33 @@
       "is_pareto": true
     },
     {
+      "model": "gpt-oss-120b (low)",
+      "creator": "OpenAI",
+      "composite_ability": 0.2782993592205047,
+      "normalized_param": 0.04178571428571429,
+      "total_parameters_B": 117.0,
+      "active_parameters_B": 5.1,
+      "size_class": "medium",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
+      "model": "MiniCPM5-1B (Non-reasoning)",
+      "creator": "OpenBMB",
+      "composite_ability": 0.2760024145725387,
+      "normalized_param": 0.00035714285714285714,
+      "total_parameters_B": 1.0,
+      "active_parameters_B": 1.0,
+      "size_class": "tiny",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "gpt-oss-20b (high)",
       "creator": "OpenAI",
-      "composite_ability": 0.2789022535324874,
+      "composite_ability": 0.2752904663891671,
       "normalized_param": 0.0075,
       "total_parameters_B": 21.0,
       "active_parameters_B": 3.6,
@@ -2496,7 +2568,7 @@
     {
       "model": "Motif-2-12.7B-Reasoning",
       "creator": "Motif Technologies",
-      "composite_ability": 0.2774499726986026,
+      "composite_ability": 0.27434461428971285,
       "normalized_param": 0.004535714285714285,
       "total_parameters_B": 12.7,
       "active_parameters_B": 12.7,
@@ -2506,45 +2578,9 @@
       "is_pareto": false
     },
     {
-      "model": "Hermes 4 - Llama-3.1 405B (Reasoning)",
-      "creator": "Nous Research",
-      "composite_ability": 0.27720019052385847,
-      "normalized_param": 0.145,
-      "total_parameters_B": 406.0,
-      "active_parameters_B": 406.0,
-      "size_class": "large",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
-      "model": "MiniCPM5-1B (Non-reasoning)",
-      "creator": "OpenBMB",
-      "composite_ability": 0.2770356886619898,
-      "normalized_param": 0.00035714285714285714,
-      "total_parameters_B": 1.0,
-      "active_parameters_B": 1.0,
-      "size_class": "tiny",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
-      "model": "K2-V2 (medium)",
-      "creator": "MBZUAI Institute of Foundation Models",
-      "composite_ability": 0.27598510475577187,
-      "normalized_param": 0.025,
-      "total_parameters_B": 70.0,
-      "active_parameters_B": 70.0,
-      "size_class": "medium",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "Nova 2.0 Lite (Non-reasoning)",
       "creator": "Amazon",
-      "composite_ability": 0.2758937556762154,
+      "composite_ability": 0.2738017548099401,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -2554,9 +2590,33 @@
       "is_pareto": false
     },
     {
+      "model": "Hermes 4 - Llama-3.1 405B (Reasoning)",
+      "creator": "Nous Research",
+      "composite_ability": 0.27367304395013325,
+      "normalized_param": 0.145,
+      "total_parameters_B": 406.0,
+      "active_parameters_B": 406.0,
+      "size_class": "large",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
+      "model": "K2-V2 (medium)",
+      "creator": "MBZUAI Institute of Foundation Models",
+      "composite_ability": 0.2733413038242096,
+      "normalized_param": 0.025,
+      "total_parameters_B": 70.0,
+      "active_parameters_B": 70.0,
+      "size_class": "medium",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "Step3 VL 10B",
       "creator": "StepFun",
-      "composite_ability": 0.2752136009210413,
+      "composite_ability": 0.2722835168203521,
       "normalized_param": 0.003642857142857143,
       "total_parameters_B": 10.2,
       "active_parameters_B": 10.2,
@@ -2568,7 +2628,7 @@
     {
       "model": "Tri-21B-Think",
       "creator": "Trillion Labs",
-      "composite_ability": 0.2731735621399291,
+      "composite_ability": 0.2709167005752873,
       "normalized_param": 0.0075,
       "total_parameters_B": 21.0,
       "active_parameters_B": 21.0,
@@ -2580,7 +2640,7 @@
     {
       "model": "Hermes 4 - Llama-3.1 405B (Non-reasoning)",
       "creator": "Nous Research",
-      "composite_ability": 0.27125439844559096,
+      "composite_ability": 0.26813799011619616,
       "normalized_param": 0.145,
       "total_parameters_B": 406.0,
       "active_parameters_B": 406.0,
@@ -2592,7 +2652,7 @@
     {
       "model": "Granite 4.2 3B",
       "creator": "IBM",
-      "composite_ability": 0.26944456680006296,
+      "composite_ability": 0.2659933868472116,
       "normalized_param": 0.0010714285714285715,
       "total_parameters_B": 3.0,
       "active_parameters_B": 3.0,
@@ -2604,7 +2664,7 @@
     {
       "model": "Nova 2.0 Omni (Non-reasoning)",
       "creator": "Amazon",
-      "composite_ability": 0.2630527846769382,
+      "composite_ability": 0.2608199150335237,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -2616,7 +2676,7 @@
     {
       "model": "Mistral Small 4 (Non-reasoning)",
       "creator": "Mistral",
-      "composite_ability": 0.26175773665526564,
+      "composite_ability": 0.25930420139563426,
       "normalized_param": 0.0425,
       "total_parameters_B": 119.0,
       "active_parameters_B": 6.5,
@@ -2628,7 +2688,7 @@
     {
       "model": "Qwen3 Omni 30B A3B (Reasoning)",
       "creator": "Alibaba",
-      "composite_ability": 0.2598277976016446,
+      "composite_ability": 0.2571706907130217,
       "normalized_param": 0.012607142857142857,
       "total_parameters_B": 35.3,
       "active_parameters_B": 3.0,
@@ -2640,7 +2700,7 @@
     {
       "model": "Devstral Small 2",
       "creator": "Mistral",
-      "composite_ability": 0.2569008966526724,
+      "composite_ability": 0.25316554675539393,
       "normalized_param": 0.008571428571428572,
       "total_parameters_B": 24.0,
       "active_parameters_B": 24.0,
@@ -2652,7 +2712,7 @@
     {
       "model": "ERNIE 4.5 300B A47B",
       "creator": "Baidu",
-      "composite_ability": 0.25538427996111124,
+      "composite_ability": 0.25272168017053664,
       "normalized_param": 0.10714285714285714,
       "total_parameters_B": 300.0,
       "active_parameters_B": 47.0,
@@ -2662,21 +2722,9 @@
       "is_pareto": false
     },
     {
-      "model": "Llama 3.2 Instruct 90B (Vision)",
-      "creator": "Meta",
-      "composite_ability": 0.25519396668894956,
-      "normalized_param": 0.03214285714285714,
-      "total_parameters_B": 90.0,
-      "active_parameters_B": 90.0,
-      "size_class": "medium",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "Gemma 4 E4B (Non-reasoning)",
       "creator": "Google",
-      "composite_ability": 0.25337032497266854,
+      "composite_ability": 0.25219600533065506,
       "normalized_param": 0.002857142857142857,
       "total_parameters_B": 8.0,
       "active_parameters_B": 4.5,
@@ -2686,9 +2734,21 @@
       "is_pareto": false
     },
     {
+      "model": "Llama 3.2 Instruct 90B (Vision)",
+      "creator": "Meta",
+      "composite_ability": 0.25138014721697044,
+      "normalized_param": 0.03214285714285714,
+      "total_parameters_B": 90.0,
+      "active_parameters_B": 90.0,
+      "size_class": "medium",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "NVIDIA Nemotron Nano 12B v2 VL (Reasoning)",
       "creator": "NVIDIA",
-      "composite_ability": 0.25141109360577174,
+      "composite_ability": 0.24913148569911284,
       "normalized_param": 0.004714285714285714,
       "total_parameters_B": 13.2,
       "active_parameters_B": 13.2,
@@ -2700,7 +2760,7 @@
     {
       "model": "Llama 3.1 Nemotron Ultra 253B v1 (Reasoning)",
       "creator": "NVIDIA",
-      "composite_ability": 0.2481947974417263,
+      "composite_ability": 0.24497519314401323,
       "normalized_param": 0.09035714285714286,
       "total_parameters_B": 253.0,
       "active_parameters_B": 253.0,
@@ -2712,7 +2772,7 @@
     {
       "model": "Falcon-H1R-7B",
       "creator": "TII UAE",
-      "composite_ability": 0.2476876212133277,
+      "composite_ability": 0.2446962924295986,
       "normalized_param": 0.0025,
       "total_parameters_B": 7.0,
       "active_parameters_B": 7.0,
@@ -2724,7 +2784,7 @@
     {
       "model": "EXAONE 4.0 32B (Reasoning)",
       "creator": "LG AI Research",
-      "composite_ability": 0.24739322893688392,
+      "composite_ability": 0.24394326016950696,
       "normalized_param": 0.011428571428571429,
       "total_parameters_B": 32.0,
       "active_parameters_B": 32.0,
@@ -2736,7 +2796,7 @@
     {
       "model": "Olmo 3.1 32B Think",
       "creator": "Allen Institute for AI",
-      "composite_ability": 0.24202163111652447,
+      "composite_ability": 0.2394149719426414,
       "normalized_param": 0.0115,
       "total_parameters_B": 32.2,
       "active_parameters_B": 32.2,
@@ -2748,7 +2808,7 @@
     {
       "model": "Hermes 4 - Llama-3.1 70B (Reasoning)",
       "creator": "Nous Research",
-      "composite_ability": 0.24187283336606674,
+      "composite_ability": 0.23837241385120875,
       "normalized_param": 0.025214285714285713,
       "total_parameters_B": 70.6,
       "active_parameters_B": 70.6,
@@ -2760,7 +2820,7 @@
     {
       "model": "Sarvam 105B (high)",
       "creator": "Sarvam",
-      "composite_ability": 0.2411785823822942,
+      "composite_ability": 0.23788889931169924,
       "normalized_param": 0.03785714285714286,
       "total_parameters_B": 106.0,
       "active_parameters_B": 10.3,
@@ -2772,7 +2832,7 @@
     {
       "model": "Gemma 4 E2B (Reasoning)",
       "creator": "Google",
-      "composite_ability": 0.23651287659930012,
+      "composite_ability": 0.23469508589830546,
       "normalized_param": 0.0018214285714285715,
       "total_parameters_B": 5.1,
       "active_parameters_B": 2.3,
@@ -2784,7 +2844,7 @@
     {
       "model": "Magistral Small 1.2",
       "creator": "Mistral",
-      "composite_ability": 0.2358185394011933,
+      "composite_ability": 0.23305381900556077,
       "normalized_param": 0.008571428571428572,
       "total_parameters_B": 24.0,
       "active_parameters_B": 24.0,
@@ -2796,7 +2856,7 @@
     {
       "model": "Nanbeige4.1-3B",
       "creator": "Nanbeige",
-      "composite_ability": 0.23187340009394028,
+      "composite_ability": 0.22897619534535105,
       "normalized_param": 0.0014035714285714285,
       "total_parameters_B": 3.93,
       "active_parameters_B": 3.93,
@@ -2808,7 +2868,7 @@
     {
       "model": "NVIDIA Nemotron Nano 9B V2 (Reasoning)",
       "creator": "NVIDIA",
-      "composite_ability": 0.23076525758350788,
+      "composite_ability": 0.22862185360428214,
       "normalized_param": 0.0032142857142857142,
       "total_parameters_B": 9.0,
       "active_parameters_B": 9.0,
@@ -2818,21 +2878,9 @@
       "is_pareto": false
     },
     {
-      "model": "K2-V2 (low)",
-      "creator": "MBZUAI Institute of Foundation Models",
-      "composite_ability": 0.23045448937683818,
-      "normalized_param": 0.025,
-      "total_parameters_B": 70.0,
-      "active_parameters_B": 70.0,
-      "size_class": "medium",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "LFM2.5-8B-A1B",
       "creator": "Liquid AI",
-      "composite_ability": 0.23018504091277758,
+      "composite_ability": 0.22854917190361454,
       "normalized_param": 0.0029642857142857144,
       "total_parameters_B": 8.3,
       "active_parameters_B": 1.5,
@@ -2842,9 +2890,21 @@
       "is_pareto": false
     },
     {
+      "model": "K2-V2 (low)",
+      "creator": "MBZUAI Institute of Foundation Models",
+      "composite_ability": 0.22827533665273445,
+      "normalized_param": 0.025,
+      "total_parameters_B": 70.0,
+      "active_parameters_B": 70.0,
+      "size_class": "medium",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "Llama Nemotron Super 49B v1.5 (Non-reasoning)",
       "creator": "NVIDIA",
-      "composite_ability": 0.22885444675232214,
+      "composite_ability": 0.2266716645678848,
       "normalized_param": 0.0175,
       "total_parameters_B": 49.0,
       "active_parameters_B": 49.0,
@@ -2856,7 +2916,7 @@
     {
       "model": "LFM2.5-2.6B",
       "creator": "Liquid AI",
-      "composite_ability": 0.22593726718800747,
+      "composite_ability": 0.22370229089566704,
       "normalized_param": 0.0009642857142857143,
       "total_parameters_B": 2.7,
       "active_parameters_B": 2.7,
@@ -2868,7 +2928,7 @@
     {
       "model": "Ring-flash-2.0",
       "creator": "InclusionAI",
-      "composite_ability": 0.2243118921781129,
+      "composite_ability": 0.2218028353731942,
       "normalized_param": 0.03678571428571428,
       "total_parameters_B": 103.0,
       "active_parameters_B": 6.1,
@@ -2880,7 +2940,7 @@
     {
       "model": "Command A",
       "creator": "Cohere",
-      "composite_ability": 0.22010552373651185,
+      "composite_ability": 0.21769528633330057,
       "normalized_param": 0.03964285714285714,
       "total_parameters_B": 111.0,
       "active_parameters_B": 111.0,
@@ -2892,7 +2952,7 @@
     {
       "model": "Llama 3.1 Nemotron Instruct 70B",
       "creator": "NVIDIA",
-      "composite_ability": 0.21105179424310677,
+      "composite_ability": 0.2087743233599392,
       "normalized_param": 0.025,
       "total_parameters_B": 70.0,
       "active_parameters_B": 70.0,
@@ -2904,7 +2964,7 @@
     {
       "model": "Llama 4 Scout",
       "creator": "Meta",
-      "composite_ability": 0.20804672891252435,
+      "composite_ability": 0.20625820585273535,
       "normalized_param": 0.03892857142857143,
       "total_parameters_B": 109.0,
       "active_parameters_B": 17.0,
@@ -2916,7 +2976,7 @@
     {
       "model": "NVIDIA Nemotron Nano 9B V2 (Non-reasoning)",
       "creator": "NVIDIA",
-      "composite_ability": 0.20396119957315786,
+      "composite_ability": 0.20205195395047995,
       "normalized_param": 0.0032142857142857142,
       "total_parameters_B": 9.0,
       "active_parameters_B": 9.0,
@@ -2928,7 +2988,7 @@
     {
       "model": "Ministral 3 14B",
       "creator": "Mistral",
-      "composite_ability": 0.20211144629637787,
+      "composite_ability": 0.19982737934666595,
       "normalized_param": 0.005,
       "total_parameters_B": 14.0,
       "active_parameters_B": 14.0,
@@ -2940,7 +3000,7 @@
     {
       "model": "Qwen3.5 2B (Reasoning)",
       "creator": "Alibaba",
-      "composite_ability": 0.19887376064241233,
+      "composite_ability": 0.1980422923953619,
       "normalized_param": 0.0008107142857142857,
       "total_parameters_B": 2.27,
       "active_parameters_B": 2.27,
@@ -2950,21 +3010,9 @@
       "is_pareto": false
     },
     {
-      "model": "Granite 4.1 30B",
-      "creator": "IBM",
-      "composite_ability": 0.19599477657404854,
-      "normalized_param": 0.010714285714285714,
-      "total_parameters_B": 30.0,
-      "active_parameters_B": 30.0,
-      "size_class": "small",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "Gemma 4 E2B (Non-reasoning)",
       "creator": "Google",
-      "composite_ability": 0.19582436758724817,
+      "composite_ability": 0.19417895389856332,
       "normalized_param": 0.0018214285714285715,
       "total_parameters_B": 5.1,
       "active_parameters_B": 2.3,
@@ -2974,9 +3022,21 @@
       "is_pareto": false
     },
     {
+      "model": "Granite 4.1 30B",
+      "creator": "IBM",
+      "composite_ability": 0.19365642521820686,
+      "normalized_param": 0.010714285714285714,
+      "total_parameters_B": 30.0,
+      "active_parameters_B": 30.0,
+      "size_class": "small",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "Kimi Linear 48B A3B Instruct",
       "creator": "Kimi",
-      "composite_ability": 0.19383718624100799,
+      "composite_ability": 0.19180611983121312,
       "normalized_param": 0.017535714285714286,
       "total_parameters_B": 49.1,
       "active_parameters_B": 3.0,
@@ -2986,33 +3046,9 @@
       "is_pareto": false
     },
     {
-      "model": "Celeris-1",
-      "creator": "Celeris",
-      "composite_ability": 0.1909762712179481,
-      "normalized_param": null,
-      "total_parameters_B": null,
-      "active_parameters_B": null,
-      "size_class": "medium",
-      "is_reasoning": false,
-      "is_open_weights": false,
-      "is_pareto": false
-    },
-    {
-      "model": "Hermes 4 - Llama-3.1 70B (Non-reasoning)",
-      "creator": "Nous Research",
-      "composite_ability": 0.1908848697747351,
-      "normalized_param": 0.025214285714285713,
-      "total_parameters_B": 70.6,
-      "active_parameters_B": 70.6,
-      "size_class": "medium",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "NVIDIA Nemotron 3 Nano 4B",
       "creator": "NVIDIA",
-      "composite_ability": 0.19083182932965068,
+      "composite_ability": 0.1889933894813949,
       "normalized_param": 0.0014178571428571428,
       "total_parameters_B": 3.97,
       "active_parameters_B": 3.97,
@@ -3022,9 +3058,21 @@
       "is_pareto": false
     },
     {
+      "model": "Hermes 4 - Llama-3.1 70B (Non-reasoning)",
+      "creator": "Nous Research",
+      "composite_ability": 0.18850046290951758,
+      "normalized_param": 0.025214285714285713,
+      "total_parameters_B": 70.6,
+      "active_parameters_B": 70.6,
+      "size_class": "medium",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "Llama 3.3 Instruct 70B",
       "creator": "Meta",
-      "composite_ability": 0.19021519382934343,
+      "composite_ability": 0.1878396803101559,
       "normalized_param": 0.025,
       "total_parameters_B": 70.0,
       "active_parameters_B": 70.0,
@@ -3034,9 +3082,21 @@
       "is_pareto": false
     },
     {
+      "model": "Celeris-1",
+      "creator": "Celeris",
+      "composite_ability": 0.1878152131852916,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": "medium",
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
       "model": "Qwen3 Omni 30B A3B Instruct",
       "creator": "Alibaba",
-      "composite_ability": 0.18849093916212903,
+      "composite_ability": 0.1867888042697931,
       "normalized_param": 0.012607142857142857,
       "total_parameters_B": 35.3,
       "active_parameters_B": 3.0,
@@ -3048,7 +3108,7 @@
     {
       "model": "Olmo 3.1 32B Instruct",
       "creator": "Allen Institute for AI",
-      "composite_ability": 0.1879981581442474,
+      "composite_ability": 0.186193308916934,
       "normalized_param": 0.0115,
       "total_parameters_B": 32.2,
       "active_parameters_B": 32.2,
@@ -3060,7 +3120,7 @@
     {
       "model": "EXAONE 4.0 32B (Non-reasoning)",
       "creator": "LG AI Research",
-      "composite_ability": 0.1818081131292761,
+      "composite_ability": 0.17973398856062564,
       "normalized_param": 0.011428571428571429,
       "total_parameters_B": 32.0,
       "active_parameters_B": 32.0,
@@ -3072,7 +3132,7 @@
     {
       "model": "Granite 4.1 8B",
       "creator": "IBM",
-      "composite_ability": 0.17555269858365494,
+      "composite_ability": 0.17341688815033274,
       "normalized_param": 0.002857142857142857,
       "total_parameters_B": 8.0,
       "active_parameters_B": 8.0,
@@ -3084,7 +3144,7 @@
     {
       "model": "Ministral 3 8B",
       "creator": "Mistral",
-      "composite_ability": 0.1752796920370151,
+      "composite_ability": 0.17340368667670036,
       "normalized_param": 0.002857142857142857,
       "total_parameters_B": 8.0,
       "active_parameters_B": 8.0,
@@ -3096,7 +3156,7 @@
     {
       "model": "Sarvam 30B (high)",
       "creator": "Sarvam",
-      "composite_ability": 0.1736652517730814,
+      "composite_ability": 0.17149749845291035,
       "normalized_param": 0.0115,
       "total_parameters_B": 32.2,
       "active_parameters_B": 2.4,
@@ -3108,7 +3168,7 @@
     {
       "model": "Jamba 1.7 Large",
       "creator": "AI21 Labs",
-      "composite_ability": 0.17285045327375073,
+      "composite_ability": 0.17085109974490711,
       "normalized_param": 0.14214285714285715,
       "total_parameters_B": 398.0,
       "active_parameters_B": 94.0,
@@ -3120,7 +3180,7 @@
     {
       "model": "Qwen3.5 2B (Non-reasoning)",
       "creator": "Alibaba",
-      "composite_ability": 0.16918292543912186,
+      "composite_ability": 0.16816499228070522,
       "normalized_param": 0.0008107142857142857,
       "total_parameters_B": 2.27,
       "active_parameters_B": 2.27,
@@ -3132,7 +3192,7 @@
     {
       "model": "NVIDIA Nemotron 3 Nano 30B A3B (Non-reasoning)",
       "creator": "NVIDIA",
-      "composite_ability": 0.16818445607487803,
+      "composite_ability": 0.16629881690951986,
       "normalized_param": 0.011285714285714286,
       "total_parameters_B": 31.6,
       "active_parameters_B": 3.6,
@@ -3144,7 +3204,7 @@
     {
       "model": "NVIDIA Nemotron Nano 12B v2 VL (Non-reasoning)",
       "creator": "NVIDIA",
-      "composite_ability": 0.16741642011237007,
+      "composite_ability": 0.16589674663218829,
       "normalized_param": 0.004714285714285714,
       "total_parameters_B": 13.2,
       "active_parameters_B": 13.2,
@@ -3156,7 +3216,7 @@
     {
       "model": "Granite 4.0 H Small",
       "creator": "IBM",
-      "composite_ability": 0.16446365914767647,
+      "composite_ability": 0.16259353870247636,
       "normalized_param": 0.011428571428571429,
       "total_parameters_B": 32.0,
       "active_parameters_B": 9.0,
@@ -3166,21 +3226,9 @@
       "is_pareto": false
     },
     {
-      "model": "Phi-4",
-      "creator": "Microsoft",
-      "composite_ability": 0.16258243665538935,
-      "normalized_param": 0.005,
-      "total_parameters_B": 14.0,
-      "active_parameters_B": 14.0,
-      "size_class": "small",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "LFM2 24B A2B",
       "creator": "Liquid AI",
-      "composite_ability": 0.1621665876202387,
+      "composite_ability": 0.16096664614673495,
       "normalized_param": 0.0085,
       "total_parameters_B": 23.8,
       "active_parameters_B": 2.3,
@@ -3190,9 +3238,21 @@
       "is_pareto": false
     },
     {
+      "model": "Phi-4",
+      "creator": "Microsoft",
+      "composite_ability": 0.16052995945419615,
+      "normalized_param": 0.005,
+      "total_parameters_B": 14.0,
+      "active_parameters_B": 14.0,
+      "size_class": "small",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "Jamba Reasoning 3B",
       "creator": "AI21 Labs",
-      "composite_ability": 0.16094214088960895,
+      "composite_ability": 0.16002996470869343,
       "normalized_param": 0.0010714285714285715,
       "total_parameters_B": 3.0,
       "active_parameters_B": 3.0,
@@ -3204,7 +3264,7 @@
     {
       "model": "Nova Micro",
       "creator": "Amazon",
-      "composite_ability": 0.15865377280549708,
+      "composite_ability": 0.15735258649444134,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -3216,7 +3276,7 @@
     {
       "model": "Reka Flash 3",
       "creator": "Reka AI",
-      "composite_ability": 0.14709502952890702,
+      "composite_ability": 0.1450149370094137,
       "normalized_param": 0.0075,
       "total_parameters_B": 21.0,
       "active_parameters_B": 21.0,
@@ -3228,7 +3288,7 @@
     {
       "model": "Olmo 3 7B Think",
       "creator": "Allen Institute for AI",
-      "composite_ability": 0.14509322368248387,
+      "composite_ability": 0.14319649444002416,
       "normalized_param": 0.0025,
       "total_parameters_B": 7.0,
       "active_parameters_B": 7.0,
@@ -3240,7 +3300,7 @@
     {
       "model": "Ministral 3 3B",
       "creator": "Mistral",
-      "composite_ability": 0.14202962784619816,
+      "composite_ability": 0.1405986320902204,
       "normalized_param": 0.0010714285714285715,
       "total_parameters_B": 3.0,
       "active_parameters_B": 3.0,
@@ -3252,7 +3312,7 @@
     {
       "model": "MiniCPM-V 4.6 1.3B",
       "creator": "OpenBMB",
-      "composite_ability": 0.13757952797395162,
+      "composite_ability": 0.1368628057840525,
       "normalized_param": 0.0004642857142857143,
       "total_parameters_B": 1.3,
       "active_parameters_B": 1.3,
@@ -3264,7 +3324,7 @@
     {
       "model": "Llama 3.2 Instruct 11B (Vision)",
       "creator": "Meta",
-      "composite_ability": 0.13629077260047603,
+      "composite_ability": 0.13500266635586985,
       "normalized_param": 0.003928571428571429,
       "total_parameters_B": 11.0,
       "active_parameters_B": 11.0,
@@ -3276,7 +3336,7 @@
     {
       "model": "Molmo2-8B",
       "creator": "Allen Institute for AI",
-      "composite_ability": 0.12246866771697909,
+      "composite_ability": 0.12125800799221702,
       "normalized_param": 0.003092857142857143,
       "total_parameters_B": 8.66,
       "active_parameters_B": 8.66,
@@ -3288,7 +3348,7 @@
     {
       "model": "Gemma 3 270M",
       "creator": "Google",
-      "composite_ability": 0.12069968927540721,
+      "composite_ability": 0.1203295840699012,
       "normalized_param": 9.571428571428571e-05,
       "total_parameters_B": 0.268,
       "active_parameters_B": 0.268,
@@ -3300,7 +3360,7 @@
     {
       "model": "Jamba 1.7 Mini",
       "creator": "AI21 Labs",
-      "composite_ability": 0.11611379028238301,
+      "composite_ability": 0.11492157240370639,
       "normalized_param": 0.018571428571428572,
       "total_parameters_B": 52.0,
       "active_parameters_B": 12.0,
@@ -3312,7 +3372,7 @@
     {
       "model": "Phi-4 Mini Instruct",
       "creator": "Microsoft",
-      "composite_ability": 0.11430090371004001,
+      "composite_ability": 0.11297494489399813,
       "normalized_param": 0.0013714285714285714,
       "total_parameters_B": 3.84,
       "active_parameters_B": 3.84,
@@ -3322,21 +3382,9 @@
       "is_pareto": false
     },
     {
-      "model": "LFM2.5-1.2B-Instruct",
-      "creator": "Liquid AI",
-      "composite_ability": 0.11186299015927299,
-      "normalized_param": 0.00041785714285714283,
-      "total_parameters_B": 1.17,
-      "active_parameters_B": 1.17,
-      "size_class": "tiny",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
       "model": "Qwen3.5 0.8B (Reasoning)",
       "creator": "Alibaba",
-      "composite_ability": 0.11156571435783942,
+      "composite_ability": 0.11124784687501485,
       "normalized_param": 0.00031178571428571426,
       "total_parameters_B": 0.873,
       "active_parameters_B": 0.873,
@@ -3346,57 +3394,9 @@
       "is_pareto": false
     },
     {
-      "model": "LFM2 2.6B",
+      "model": "LFM2.5-1.2B-Instruct",
       "creator": "Liquid AI",
-      "composite_ability": 0.11132898209633035,
-      "normalized_param": 0.0009178571428571429,
-      "total_parameters_B": 2.57,
-      "active_parameters_B": 2.57,
-      "size_class": "tiny",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
-      "model": "Phi-4 Multimodal Instruct",
-      "creator": "Microsoft",
-      "composite_ability": 0.1099884900963878,
-      "normalized_param": 0.002,
-      "total_parameters_B": 5.6,
-      "active_parameters_B": 5.6,
-      "size_class": "small",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
-      "model": "Olmo 3 7B Instruct",
-      "creator": "Allen Institute for AI",
-      "composite_ability": 0.10966847600708421,
-      "normalized_param": 0.0025,
-      "total_parameters_B": 7.0,
-      "active_parameters_B": 7.0,
-      "size_class": "small",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
-      "model": "Exaone 4.0 1.2B (Reasoning)",
-      "creator": "LG AI Research",
-      "composite_ability": 0.10783673871428745,
-      "normalized_param": 0.00045714285714285713,
-      "total_parameters_B": 1.28,
-      "active_parameters_B": 1.28,
-      "size_class": "tiny",
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
-      "model": "LFM2.5-1.2B-Thinking",
-      "creator": "Liquid AI",
-      "composite_ability": 0.10769975683491209,
+      "composite_ability": 0.11089152182339,
       "normalized_param": 0.00041785714285714283,
       "total_parameters_B": 1.17,
       "active_parameters_B": 1.17,
@@ -3406,9 +3406,69 @@
       "is_pareto": false
     },
     {
+      "model": "LFM2 2.6B",
+      "creator": "Liquid AI",
+      "composite_ability": 0.11051294618129988,
+      "normalized_param": 0.0009178571428571429,
+      "total_parameters_B": 2.57,
+      "active_parameters_B": 2.57,
+      "size_class": "tiny",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
+      "model": "Olmo 3 7B Instruct",
+      "creator": "Allen Institute for AI",
+      "composite_ability": 0.1084405917693656,
+      "normalized_param": 0.0025,
+      "total_parameters_B": 7.0,
+      "active_parameters_B": 7.0,
+      "size_class": "small",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
+      "model": "Phi-4 Multimodal Instruct",
+      "creator": "Microsoft",
+      "composite_ability": 0.10757126112089047,
+      "normalized_param": 0.002,
+      "total_parameters_B": 5.6,
+      "active_parameters_B": 5.6,
+      "size_class": "small",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
+      "model": "LFM2.5-1.2B-Thinking",
+      "creator": "Liquid AI",
+      "composite_ability": 0.10669004736816562,
+      "normalized_param": 0.00041785714285714283,
+      "total_parameters_B": 1.17,
+      "active_parameters_B": 1.17,
+      "size_class": "tiny",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
+      "model": "Exaone 4.0 1.2B (Reasoning)",
+      "creator": "LG AI Research",
+      "composite_ability": 0.10665083602603455,
+      "normalized_param": 0.00045714285714285713,
+      "total_parameters_B": 1.28,
+      "active_parameters_B": 1.28,
+      "size_class": "tiny",
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
       "model": "Granite 4.0 H 1B",
       "creator": "IBM",
-      "composite_ability": 0.10423090722673771,
+      "composite_ability": 0.1032489687132859,
       "normalized_param": 0.0005357142857142857,
       "total_parameters_B": 1.5,
       "active_parameters_B": 1.5,
@@ -3420,7 +3480,7 @@
     {
       "model": "Apertus 70B Instruct",
       "creator": "Swiss AI Initiative",
-      "composite_ability": 0.10395096585668052,
+      "composite_ability": 0.10280590817648884,
       "normalized_param": 0.025,
       "total_parameters_B": 70.0,
       "active_parameters_B": 70.0,
@@ -3432,7 +3492,7 @@
     {
       "model": "Granite 4.1 3B",
       "creator": "IBM",
-      "composite_ability": 0.10255728744111217,
+      "composite_ability": 0.10132343756591129,
       "normalized_param": 0.0010714285714285715,
       "total_parameters_B": 3.0,
       "active_parameters_B": 3.0,
@@ -3444,7 +3504,7 @@
     {
       "model": "Granite 4.0 Micro",
       "creator": "IBM",
-      "composite_ability": 0.10022445397962483,
+      "composite_ability": 0.09896178201268337,
       "normalized_param": 0.0010714285714285715,
       "total_parameters_B": 3.0,
       "active_parameters_B": 3.0,
@@ -3456,7 +3516,7 @@
     {
       "model": "Exaone 4.0 1.2B (Non-reasoning)",
       "creator": "LG AI Research",
-      "composite_ability": 0.09903840141093638,
+      "composite_ability": 0.0980307884236075,
       "normalized_param": 0.00045714285714285713,
       "total_parameters_B": 1.28,
       "active_parameters_B": 1.28,
@@ -3468,7 +3528,7 @@
     {
       "model": "Qwen3.5 0.8B (Non-reasoning)",
       "creator": "Alibaba",
-      "composite_ability": 0.09658075471437245,
+      "composite_ability": 0.09590918732877661,
       "normalized_param": 0.00031178571428571426,
       "total_parameters_B": 0.873,
       "active_parameters_B": 0.873,
@@ -3480,7 +3540,7 @@
     {
       "model": "LFM2 8B A1B",
       "creator": "Liquid AI",
-      "composite_ability": 0.08867265510998204,
+      "composite_ability": 0.0877011878863321,
       "normalized_param": 0.0029785714285714285,
       "total_parameters_B": 8.34,
       "active_parameters_B": 1.5,
@@ -3492,7 +3552,7 @@
     {
       "model": "Granite 4.0 1B",
       "creator": "IBM",
-      "composite_ability": 0.0868937715238239,
+      "composite_ability": 0.08591644088855394,
       "normalized_param": 0.0005714285714285715,
       "total_parameters_B": 1.6,
       "active_parameters_B": 1.6,
@@ -3504,7 +3564,7 @@
     {
       "model": "LFM2.5-VL-1.6B",
       "creator": "Liquid AI",
-      "composite_ability": 0.07945820234199291,
+      "composite_ability": 0.07879326482661998,
       "normalized_param": 0.0005714285714285715,
       "total_parameters_B": 1.6,
       "active_parameters_B": 1.6,
@@ -3516,7 +3576,7 @@
     {
       "model": "Granite 4.0 350M",
       "creator": "IBM",
-      "composite_ability": 0.07449939870973149,
+      "composite_ability": 0.07388333206953547,
       "normalized_param": 0.000125,
       "total_parameters_B": 0.35,
       "active_parameters_B": 0.35,
@@ -3528,7 +3588,7 @@
     {
       "model": "Apertus 8B Instruct",
       "creator": "Swiss AI Initiative",
-      "composite_ability": 0.06890275391573,
+      "composite_ability": 0.06800907204833403,
       "normalized_param": 0.002857142857142857,
       "total_parameters_B": 8.0,
       "active_parameters_B": 8.0,
@@ -3540,7 +3600,7 @@
     {
       "model": "Molmo 7B-D",
       "creator": "Allen Institute for AI",
-      "composite_ability": 0.06390196626134018,
+      "composite_ability": 0.06300296405809303,
       "normalized_param": 0.002864285714285714,
       "total_parameters_B": 8.02,
       "active_parameters_B": 8.02,
@@ -3552,7 +3612,7 @@
     {
       "model": "Granite 4.0 H 350M",
       "creator": "IBM",
-      "composite_ability": 0.06221538423561576,
+      "composite_ability": 0.061486418853464606,
       "normalized_param": 0.00012142857142857143,
       "total_parameters_B": 0.34,
       "active_parameters_B": 0.34,
@@ -3564,7 +3624,7 @@
     {
       "model": "Tiny Aya Global",
       "creator": "Cohere",
-      "composite_ability": 0.05229171462389785,
+      "composite_ability": 0.051523785616694545,
       "normalized_param": 0.0011964285714285714,
       "total_parameters_B": 3.35,
       "active_parameters_B": 3.35,
