@@ -9,11 +9,11 @@
 | 1 | Kimi K3 (max) | 0.8471 | 2800B | 104B | large | Y | N |
 | 2 | GLM-5.3 (max) | 0.8060 | 753B | 40B | large | Y | N |
 | 3 | GLM-5.3-Flash | 0.7592 | 320B | 18B | large | Y | N |
-| 4 | Qwen3.8-Flash-Next | 0.7156 | 180B | 6B | large | Y | N |
+| 4 | Qwen3.8-Flash-Next | 0.7155 | 180B | 6B | large | Y | N |
 | 5 | Qwen3.8 27B (xhigh) | 0.6734 | 27B | 27B | small | Y | N |
-| 6 | Qwen3.5 9B (Reasoning) | 0.4251 | 10B | 10B | small | Y | N |
+| 6 | Qwen3.5 9B (Reasoning) | 0.4250 | 10B | 10B | small | Y | N |
 | 7 | Qwen3.5 4B (Reasoning) | 0.3991 | 5B | 5B | small | Y | N |
-| 8 | G9v3-3B | 0.3061 | 3B | 3B | tiny | Y | N |
+| 8 | G9v3-3B | 0.3060 | 3B | 3B | tiny | Y | N |
 | 9 | MiniCPM5-1B (Reasoning) | 0.2920 | 1B | 1B | tiny | Y | N |
 | 10 | Gemma 3 270M | 0.1296 | 268M | 268M | tiny | Y | N |
 
