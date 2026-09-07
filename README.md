@@ -13,7 +13,7 @@
 | 5 | Qwen3.8 27B (xhigh) | 0.6734 | 27B | 27B | small | Y | N |
 | 6 | Qwen3.5 9B (Reasoning) | 0.4250 | 10B | 10B | small | Y | N |
 | 7 | Qwen3.5 4B (Reasoning) | 0.3991 | 5B | 5B | small | Y | N |
-| 8 | G9v3-3B | 0.3060 | 3B | 3B | tiny | Y | N |
+| 8 | G9v3-3B | 0.3059 | 3B | 3B | tiny | Y | N |
 | 9 | MiniCPM5-1B (Reasoning) | 0.2920 | 1B | 1B | tiny | Y | N |
 | 10 | Gemma 3 270M | 0.1296 | 268M | 268M | tiny | Y | N |
 
