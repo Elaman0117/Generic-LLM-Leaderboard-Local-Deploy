@@ -6,16 +6,16 @@
 
 | # | 模型 | 综合能力 | 总参数量 | 活跃参数量 | 大小类 | 开源 | 推理 |
 |---|------|---------|---------|-----------|--------|------|------|
-| 1 | Kimi K3 (max) | 0.8471 | 2800B | 104B | large | Y | N |
-| 2 | GLM-5.3 (max) | 0.8060 | 753B | 40B | large | Y | N |
-| 3 | GLM-5.3-Flash | 0.7592 | 320B | 18B | large | Y | N |
-| 4 | Qwen3.8-Flash-Next | 0.7155 | 180B | 6B | large | Y | N |
-| 5 | Qwen3.8 27B (xhigh) | 0.6734 | 27B | 27B | small | Y | N |
-| 6 | Qwen3.5 9B (Reasoning) | 0.4250 | 10B | 10B | small | Y | N |
-| 7 | Qwen3.5 4B (Reasoning) | 0.3991 | 5B | 5B | small | Y | N |
-| 8 | G9v3-3B | 0.3059 | 3B | 3B | tiny | Y | N |
-| 9 | MiniCPM5-1B (Reasoning) | 0.2920 | 1B | 1B | tiny | Y | N |
-| 10 | Gemma 3 270M | 0.1296 | 268M | 268M | tiny | Y | N |
+| 1 | Kimi K3 (max) | 0.8417 | 2800B | 104B | large | Y | N |
+| 2 | GLM-5.3 (max) | 0.8036 | 753B | 40B | large | Y | N |
+| 3 | GLM-5.3-Flash | 0.7552 | 320B | 18B | large | Y | N |
+| 4 | Qwen3.8-Flash-Next | 0.7132 | 180B | 6B | large | Y | N |
+| 5 | Qwen3.8 27B (xhigh) | 0.6636 | 27B | 27B | small | Y | N |
+| 6 | Qwen3.5 9B (Reasoning) | 0.4203 | 10B | 10B | small | Y | N |
+| 7 | Qwen3.5 4B (Reasoning) | 0.3944 | 5B | 5B | small | Y | N |
+| 8 | MiniCPM5-2B | 0.3351 | 3B | 3B | tiny | Y | N |
+| 9 | MiniCPM5-1B (Reasoning) | 0.2910 | 1B | 1B | tiny | Y | N |
+| 10 | Gemma 3 270M | 0.1301 | 268M | 268M | tiny | Y | N |
 
 ### 评分方法
 
@@ -37,4 +37,4 @@ Pareto 前沿上的模型代表了**最高训练效率**——用更少的参数
 
 **数据来源**: [Artificial Analysis](https://artificialanalysis.ai/leaderboards/models)  
 **方法论**: [AA Methodology](https://artificialanalysis.ai/methodology)  
-**模型总数**: 286  
+**模型总数**: 291  
