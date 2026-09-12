@@ -3,36 +3,36 @@
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "methodology": "18 evaluation metrics normalized [0,1], averaged → composite ability; Pareto = non-dominated by parameter count; X-axis: totalParameters (linear scale); Y-axis: composite ability (linear, direct average); Parameter count from AA's model metadata",
     "param_source": "totalParameters from AA RSC payload — total model parameters in billions",
-    "total_models": 293,
+    "total_models": 294,
     "pareto_count": 0
   },
   "metric_ranges": {
     "AA Intelligence Index": {
       "min": 4.83423948,
       "max": 53.3737509623252,
-      "count": 296
+      "count": 298
     },
     "AA Agentic Index": null,
     "AA Coding Index": null,
     "GPQA Diamond": {
       "min": 0.1111111111111111,
       "max": 0.9626262626262626,
-      "count": 292
+      "count": 293
     },
     "Humanity's Last Exam": {
       "min": 0.010658016682113068,
       "max": 0.5912882298424467,
-      "count": 296
+      "count": 297
     },
     "MMMU Pro": {
       "min": 0.14508670520231215,
       "max": 0.86878612716763,
-      "count": 143
+      "count": 142
     },
     "IFBench Instruction Following": {
       "min": 0.12108843537414966,
       "max": 0.8333333333333334,
-      "count": 201
+      "count": 202
     },
     "SciCode Coding": {
       "min": 0.14351851851851852,
@@ -42,37 +42,37 @@
     "CritPt Physics": {
       "min": 0.0,
       "max": 0.32285714285714284,
-      "count": 292
+      "count": 294
     },
     "AA-LCR Long Context": {
       "min": 0.0,
       "max": 0.8866666666666667,
-      "count": 285
+      "count": 286
     },
     "τ²-Bench Telecom": {
       "min": 0.0,
       "max": 0.9912280701754386,
-      "count": 199
+      "count": 200
     },
     "Terminal-Bench Hard": {
       "min": 0.0,
       "max": 0.6590909090909091,
-      "count": 198
+      "count": 199
     },
     "AA Omniscience Index": {
       "min": -88.58333333333333,
       "max": 43.73333333333326,
-      "count": 291
+      "count": 292
     },
     "AA-Omniscience Accuracy": {
       "min": 0.001,
       "max": 0.6723333333333333,
-      "count": 291
+      "count": 292
     },
     "AA-Omniscience Non-Hallucination": {
       "min": 0.015260480617435538,
       "max": 0.990990990990991,
-      "count": 291
+      "count": 292
     },
     "APEX-Agents-AA": {
       "min": 0.007374631268436578,
@@ -287,7 +287,7 @@
     {
       "model": "Unknown",
       "creator": "Kimi",
-      "composite_ability": 0.8321486264054793,
+      "composite_ability": 0.8314723140185531,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -468,18 +468,6 @@
       "model": "Unknown",
       "creator": "Anthropic",
       "composite_ability": 0.7630186876263966,
-      "normalized_param": null,
-      "total_parameters_B": null,
-      "active_parameters_B": null,
-      "size_class": null,
-      "is_reasoning": false,
-      "is_open_weights": false,
-      "is_pareto": false
-    },
-    {
-      "model": "Unknown",
-      "creator": "OpenAI",
-      "composite_ability": 0.7614892209051408,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -718,18 +706,6 @@
     },
     {
       "model": "Unknown",
-      "creator": "Anthropic",
-      "composite_ability": 0.6763419267254496,
-      "normalized_param": null,
-      "total_parameters_B": null,
-      "active_parameters_B": null,
-      "size_class": null,
-      "is_reasoning": false,
-      "is_open_weights": false,
-      "is_pareto": false
-    },
-    {
-      "model": "Unknown",
       "creator": "SpaceXAI",
       "composite_ability": 0.6759663590187662,
       "normalized_param": null,
@@ -762,6 +738,18 @@
       "size_class": null,
       "is_reasoning": false,
       "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
+      "model": "Unknown",
+      "creator": "Sapiens AI",
+      "composite_ability": 0.67087979790031,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": null,
+      "is_reasoning": false,
+      "is_open_weights": false,
       "is_pareto": false
     },
     {
@@ -828,6 +816,18 @@
       "model": "Unknown",
       "creator": "OpenAI",
       "composite_ability": 0.6475823715137227,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": null,
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
+      "model": "Unknown",
+      "creator": "Anthropic",
+      "composite_ability": 0.6466682483869771,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -958,32 +958,20 @@
     },
     {
       "model": "Unknown",
-      "creator": "Kimi",
-      "composite_ability": 0.6083946273184785,
-      "normalized_param": null,
-      "total_parameters_B": null,
-      "active_parameters_B": null,
-      "size_class": null,
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
-      "model": "Unknown",
-      "creator": "MBZUAI Institute of Foundation Models",
-      "composite_ability": 0.6032856667914216,
-      "normalized_param": null,
-      "total_parameters_B": null,
-      "active_parameters_B": null,
-      "size_class": null,
-      "is_reasoning": false,
-      "is_open_weights": true,
-      "is_pareto": false
-    },
-    {
-      "model": "Unknown",
       "creator": "NVIDIA",
       "composite_ability": 0.6002908051279181,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": null,
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
+      "model": "Unknown",
+      "creator": "Kimi",
+      "composite_ability": 0.6001644949475163,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1008,6 +996,18 @@
       "model": "Unknown",
       "creator": "Xiaomi",
       "composite_ability": 0.5975774102879162,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": null,
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
+      "model": "Unknown",
+      "creator": "MBZUAI Institute of Foundation Models",
+      "composite_ability": 0.5966511480620567,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1198,18 +1198,6 @@
     },
     {
       "model": "Unknown",
-      "creator": "OpenAI",
-      "composite_ability": 0.5497562751891409,
-      "normalized_param": null,
-      "total_parameters_B": null,
-      "active_parameters_B": null,
-      "size_class": null,
-      "is_reasoning": false,
-      "is_open_weights": false,
-      "is_pareto": false
-    },
-    {
-      "model": "Unknown",
       "creator": "Anthropic",
       "composite_ability": 0.5495709671717269,
       "normalized_param": null,
@@ -1224,6 +1212,18 @@
       "model": "Unknown",
       "creator": "Xiaomi",
       "composite_ability": 0.5488878000019991,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": null,
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
+      "model": "Unknown",
+      "creator": "OpenAI",
+      "composite_ability": 0.5487337975227147,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1319,7 +1319,7 @@
     {
       "model": "Unknown",
       "creator": "Sapiens AI",
-      "composite_ability": 0.5239605469645305,
+      "composite_ability": 0.5256502892368462,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -1403,7 +1403,7 @@
     {
       "model": "Unknown",
       "creator": "OpenAI",
-      "composite_ability": 0.5056180870507554,
+      "composite_ability": 0.5046005500012797,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
@@ -3144,6 +3144,18 @@
       "model": "Unknown",
       "creator": "LG AI Research",
       "composite_ability": 0.15897029850078404,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": null,
+      "is_reasoning": false,
+      "is_open_weights": true,
+      "is_pareto": false
+    },
+    {
+      "model": "Unknown",
+      "creator": "IBM",
+      "composite_ability": 0.15884192796882246,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
