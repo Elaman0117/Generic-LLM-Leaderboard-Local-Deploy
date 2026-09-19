@@ -3,14 +3,14 @@
     "source": "https://artificialanalysis.ai/leaderboards/models",
     "methodology": "18 evaluation metrics normalized [0,1], averaged → composite ability; Pareto = non-dominated by parameter count; X-axis: totalParameters (linear scale); Y-axis: composite ability (linear, direct average); Parameter count from AA's model metadata",
     "param_source": "totalParameters from AA RSC payload — total model parameters in billions",
-    "total_models": 263,
+    "total_models": 264,
     "pareto_count": 0
   },
   "metric_ranges": {
     "AA Intelligence Index": {
       "min": 3.04760621054014,
       "max": 53.3737509623252,
-      "count": 267
+      "count": 268
     },
     "AA Agentic Index": null,
     "AA Coding Index": null,
@@ -22,12 +22,12 @@
     "Humanity's Last Exam": {
       "min": 0.010658016682113068,
       "max": 0.5912882298424467,
-      "count": 266
+      "count": 267
     },
     "MMMU Pro": {
       "min": 0.14508670520231215,
       "max": 0.86878612716763,
-      "count": 126
+      "count": 127
     },
     "IFBench Instruction Following": {
       "min": 0.12108843537414966,
@@ -37,17 +37,17 @@
     "SciCode Coding": {
       "min": 0.06944444444444445,
       "max": 0.6307870370370371,
-      "count": 130
+      "count": 131
     },
     "CritPt Physics": {
       "min": 0.0,
       "max": 0.32285714285714284,
-      "count": 263
+      "count": 264
     },
     "AA-LCR Long Context": {
       "min": 0.0,
       "max": 0.8866666666666667,
-      "count": 256
+      "count": 257
     },
     "τ²-Bench Telecom": {
       "min": 0.0,
@@ -62,17 +62,17 @@
     "AA Omniscience Index": {
       "min": -88.58333333333333,
       "max": 43.73333333333326,
-      "count": 261
+      "count": 262
     },
     "AA-Omniscience Accuracy": {
       "min": 0.001,
       "max": 0.6723333333333333,
-      "count": 261
+      "count": 262
     },
     "AA-Omniscience Non-Hallucination": {
       "min": 0.015260480617435538,
       "max": 0.990990990990991,
-      "count": 261
+      "count": 262
     },
     "APEX-Agents-AA": {
       "min": 0.007374631268436578,
@@ -87,7 +87,7 @@
     "GDPval-AA Normalized": {
       "min": 0.0,
       "max": 0.622645,
-      "count": 166
+      "count": 167
     }
   },
   "pareto_frontier": [],
@@ -384,6 +384,18 @@
       "model": "GPT-5.6 Terra (max)",
       "creator": "OpenAI",
       "composite_ability": 0.7986254636862988,
+      "normalized_param": null,
+      "total_parameters_B": null,
+      "active_parameters_B": null,
+      "size_class": null,
+      "is_reasoning": false,
+      "is_open_weights": false,
+      "is_pareto": false
+    },
+    {
+      "model": "Step 5 Preview",
+      "creator": "StepFun",
+      "composite_ability": 0.7850449288345109,
       "normalized_param": null,
       "total_parameters_B": null,
       "active_parameters_B": null,
