@@ -792,69 +792,163 @@ def _is_dark_color(color):
 
 
 def build_axis_mapping(models, brand_frontiers):
-    """Linear X mapping for TOTAL PARAMS (B) - no fitting, no log.
-
-    x = raw / xmax, xmax = max total-params among the 11 brand-frontier
-    chart-visible models (Y-baseline filtered).  Left edge raw = 0.
-    Models with raw > xmax are chart-excluded but table-kept (over_max),
-    mirroring the main board rule.  axis_x is written for every with-X model.
-    """
-    print("Building LINEAR params mapping x = raw/xmax (11 brand frontiers)...")
+    # Log mapping for TOTAL PARAMS (V21 port) - x = A*ln(B*X+C)+D, B = 1.
+    # Fit set = 11 brand-frontier chart-visible models (Y-baseline filtered).
+    # r = B/C fitted over a log grid (target = in-group rank quantiles);
+    # A, D solved from pins f(0) = 0, f(xmax) = 1. C > 0 always, so the
+    # singularity stays left of raw zero; the square is bounded both ways
+    # (dense forward + closed-form inverse checks below).
+    # Models with raw > xmax are chart-excluded but table-kept (over_max).
+    print("Fitting log mapping X=A*ln(B*X+C)+D, pins (0,0)/(xmax,1), on 11 brand frontiers...")
     fmodels = [m for fr in brand_frontiers.values() for m in fr
                if m.get("x_value") is not None and float(m["x_value"]) >= 0
                and m.get("chart_y") is not None]
-    vals = sorted(float(m["x_value"]) for m in fmodels)
-    xmax = vals[-1]
-    xmin = 0.0
-    span = xmax - xmin
-    print("  frontier set: %d models, param range %.3f - %.3f B" % (len(fmodels), vals[0], xmax))
-    withx = [m for m in models if m.get("x_value") is not None and m["x_value"] >= 0]
-    def fmap(v):
-        v = float(v)
-        if v <= xmin:
+    pos = sorted(float(m["x_value"]) for m in fmodels
+                 if float(m["x_value"]) > 0)
+    n = len(pos)
+    cmax = pos[-1]
+    cmin = pos[0]
+    print("  frontier fit set: %d models, param range %.3f - %.3f B" % (len(fmodels), cmin, cmax))
+    priced = [m for m in models
+              if m.get("x_value") is not None and m["x_value"] >= 0]
+    if not pos:
+        print("  WARNING: no chart-visible positive-X frontier models; X degenerates to 0")
+        for m in priced:
+            m["axis_x"] = 0.0
+        return {
+            "mapping": "degenerate (no positive-X frontier models visible)",
+            "function": "x = 0",
+            "knots": 0,
+            "fit": {"fitted_models": 0, "method": "none (no data)", "r": None, "A": None,
+                    "B": 1.0, "C": None, "D": None, "log_base": "natural log",
+                    "mse_vs_quantile": None, "max_abs_deviation_vs_quantile": None,
+                    "uniform_density": False},
+            "left_edge_cost": 0.0,
+            "left_edge_label": "0",
+            "free_models": 0,
+            "plotted_models": 0,
+            "total_models": len(models),
+            "min_positive_cost": None,
+            "x_at_min_positive_cost": None,
+            "max_cost": None,
+            "x_at_max_cost": None,
+            "decade_ticks": [],
+            "left_half_models": 0,
+            "right_half_models": 0,
+            "map_fn": (lambda c: 0.0),
+        }
+    targets = {}
+    i = 0
+    while i < n:
+        z = math.log10(pos[i])
+        j = i
+        while j + 1 < n and math.log10(pos[j + 1]) == z:
+            j += 1
+        t = (i + j) / 2.0 / max(n - 1, 1)
+        for k in range(i, j + 1):
+            targets[pos[k]] = t
+        i = j + 1
+    ct = np.array(pos)
+    tt = np.array([targets[c] for c in pos])
+    def f_of_r(cc, r):
+        return np.log(1.0 + r * cc) / np.log(1.0 + r * cmax)
+    best = None
+    rs = np.logspace(-7, -1, 600)
+    for r in rs:
+        f = f_of_r(ct, r)
+        if not (np.all(np.isfinite(f)) and f.min() >= 0.0 and f.max() <= 1.0):
+            continue
+        mse = float(np.mean((f - tt) ** 2))
+        if best is None or mse < best[0]:
+            best = (mse, r)
+    for _ in range(3):
+        lo, hi = math.log10(best[1] / 5), math.log10(best[1] * 5)
+        for r in np.logspace(lo, hi, 600):
+            f = f_of_r(ct, r)
+            if not (np.all(np.isfinite(f)) and f.min() >= 0.0 and f.max() <= 1.0):
+                continue
+            mse = float(np.mean((f - tt) ** 2))
+            if mse < best[0]:
+                best = (mse, r)
+    mse0, r_best = best
+    C_par = 1.0 / r_best
+    B_par = 1.0
+    A_par = 1.0 / math.log(1.0 + r_best * cmax)
+    D_par = -A_par * math.log(C_par)
+    f = f_of_r(ct, r_best)
+    maxdev = float(np.max(np.abs(f - tt)))
+    print("  best r=%.6g (A=%.6f B=1 C=%.4f D=%.6f, ln) mse=%.6f maxdev=%.4f"
+          % (r_best, A_par, C_par, D_par, mse0, maxdev))
+    grid = np.linspace(0.0, cmax, 20001)
+    g = f_of_r(grid, r_best)
+    print("  positivity proof: min f on [0,cmax] = %.12f (must be >= 0)" % float(g.min()))
+    assert bool(np.all(np.isfinite(g))) and float(g.min()) >= 0.0 and float(g.max()) <= 1.0, "positivity violated"
+    yg = np.linspace(0.0, 1.0, 20001)
+    xg = (np.exp((yg - D_par) / A_par) - C_par) / B_par
+    print("  inverse proof: x range on y in [0,1] = [%.2f, %.2f] (must stay within [0,cmax])" % (float(xg.min()), float(xg.max())))
+    assert bool(np.all(np.isfinite(xg))) and float(xg.min()) >= 0.0 - 1e-6 and float(xg.max()) <= cmax + 1e-6, "inverse out of square"
+    sing_n = (-C_par / B_par) / cmax
+    print("  singularity at normalized x = %.6f (must be < 0, left of raw 0)" % sing_n)
+    def fmap(cost):
+        c = float(cost)
+        if c <= 0.0:
             return 0.0
-        if v >= xmax:
+        if c >= cmax:
             return 1.0
-        return (v - xmin) / span
-    for m in withx:
+        return float(math.log(1.0 + r_best * c) / math.log(1.0 + r_best * cmax))
+    for m in priced:
         m["axis_x"] = fmap(m["x_value"])
-        m["over_max"] = float(m["x_value"]) > xmax
+        m["over_max"] = float(m["x_value"]) > cmax
+    xs_all = [float(m["axis_x"]) for m in priced]
+    print("  plotted-x range: [%.6f, %.6f] (must stay within [0,1])" % (min(xs_all), max(xs_all)))
+    assert min(xs_all) >= 0.0 and max(xs_all) <= 1.0, "plotted x out of [0,1]"
     decades = []
-    e = 0
-    while 10.0 ** e <= xmax:
-        decades.append({"price": 10.0 ** e, "x": fmap(10.0 ** e)})
-        e += 1
-    decades.append({"price": xmax, "x": 1.0})
-    over_max = [m for m in withx if m.get("chart_y") is not None and m.get("over_max")]
+    zmax = math.log10(cmax)
+    for e10 in range(0, int(math.floor(zmax)) + 1):
+        dd = 10.0 ** e10
+        if dd <= cmax:
+            decades.append({"price": dd, "x": fmap(dd)})
+    decades.append({"price": cmax, "x": 1.0})
+    over_max = [m for m in priced if m.get("chart_y") is not None and m.get("over_max")]
     if over_max:
         print("  over-max chart-excluded (table-kept): %d model(s)" % len(over_max))
         for _m in sorted(over_max, key=lambda u: -float(u["x_value"])):
             print("    params=%.1fB model=%s" % (float(_m["x_value"]), _m.get("model")))
-    vis = [m for m in withx if m.get("chart_y") is not None and not m.get("over_max")]
+    vis = [m for m in priced if m.get("chart_y") is not None and not m.get("over_max")]
     left = sum(1 for m in vis if float(m["axis_x"]) < 0.5)
     mapping_meta = {
-        "mapping": "linear total-params mapping x = raw/xmax (xmax = 11 brand-frontier max)",
-        "function": "x = raw/%.3f; raw>xmax chart-excluded (table x=1.0)" % xmax,
-        "knots": 0,
-        "fit": {"fitted_models": len(fmodels),
-                "fit_set": "11 brand-frontier models (chart-visible, with params)",
-                "method": "none (linear, no fitting)", "uniform_density": False},
-        "left_edge_cost": xmin,
+        "mapping": ("log mapping X=A*ln(B*X+C)+D fitted on the "
+                    "11 brand-frontier models, pins RAW (0,0)/(xmax,1), B=1, C=1/r"),
+        "function": ("x = A*ln(X+C)+D with C=%.4f (A=%.6f B=1 D=%.6f, ln); "
+                     "f(0)=0, f(xmax)=1 exactly; raw>xmax chart-excluded (table x=1.0)"
+                     % (C_par, A_par, D_par)),
+        "knots": 2,
+        "fit": {
+            "fitted_models": n,
+            "fit_set": "11 brand-frontier models (chart-visible, with params, positive X)",
+            "method": "least-squares fit of r=B/C over log grid (pins solve A,D)",
+            "r": r_best, "A": A_par, "B": 1.0, "C": C_par, "D": D_par,
+            "log_base": "natural log",
+            "mse_vs_quantile": mse0,
+            "max_abs_deviation_vs_quantile": maxdev,
+            "uniform_density": False,
+        },
+        "left_edge_cost": 0.0,
         "left_edge_label": "0",
         "free_models": 0,
         "over_max_models": len(over_max),
         "plotted_models": len(vis),
         "total_models": len(models),
-        "min_positive_cost": vals[0],
-        "x_at_min_positive_cost": fmap(vals[0]),
-        "max_cost": xmax,
+        "min_positive_cost": cmin,
+        "x_at_min_positive_cost": float(math.log(1.0 + r_best * cmin) / math.log(1.0 + r_best * cmax)),
+        "max_cost": cmax,
         "x_at_max_cost": 1.0,
         "decade_ticks": decades,
         "left_half_models": left,
         "right_half_models": len(vis) - left,
         "map_fn": fmap,
     }
-    print("  plotted=%d left/right=%d/%d" % (len(vis), left, len(vis) - left))
+    print("  plotted=%d (frontier fit n=%d) left/right=%d/%d" % (len(vis), n, left, len(vis) - left))
     return mapping_meta
 
 
@@ -887,7 +981,7 @@ def analyze_x_distribution(models, mapping_meta):
         "left_half_models": left,
         "right_half_models": n - left,
         "decile_counts": deciles,
-        "note": ("linear X, no fitting/mapping"),
+        "note": ("log mapping x = A*ln(B*X+C)+D fitted on brand frontiers; pins (0,0)/(xmax,1)"),
     }
     print(f"\n  X distribution: n={n}, median={result['median']:.3f}, "
           f"left/right = {left}/{n - left}")
@@ -1049,8 +1143,10 @@ def plot_analysis(models, pareto, brand_frontiers, x_dist, mapping_meta):
                         labelcolor=TEXT_COLOR, borderpad=LEG_PAD)
 
     # 底部说明文字（单行精简版）
+    _fit = mapping_meta.get("fit", {})
     method = (
-        "X: 总参数量线性 (B)。右端为11品牌前沿最大值 | Pareto = 能力高且参数少"
+        f"X轴: x = A*ln(B*X+C)+D (B=1, C={_fit.get('C', 0):.1f}；取自 11品牌前沿); "
+        f"10^x 指示位于 x(10^x) | Pareto = 能力高且参数少"
     )
     footnote = fig.text(0.5, 0.016, method, ha="center", va="bottom", fontsize=6.5,
                         color=MUTED_TEXT_COLOR, style="italic")
@@ -2419,26 +2515,35 @@ def generate_readme(models, pareto, brand_frontiers, x_dist, mapping_meta):
     lines.append("")
 
     # ── 横轴映射与分布分析 ────────────────────────────────────────────────
-    lines.append("\n## 横轴线性\n")
+    lines.append("\n## \u6a2a\u8f74\u6620\u5c04\uff08\u5bf9\u6570\uff09\n")
     if x_dist.get("plotted_models"):
+        fit = mapping_meta.get("fit", {})
         dec_ticks = mapping_meta.get("decade_ticks", [])
-        lines.append("横轴为总参数量（线性）：x = 总参数量 / 前沿最大值；前沿最大值为 11 品牌前沿入图模型的最大总参数量。\n")
+        lines.append(f"\u6a2a\u8f74\uff08\u603b\u53c2\u6570\u91cf\uff09\u4e3a **x = A\u00b7ln(B\u00b7X+C)+D \u5bf9\u6570\u6620\u5c04**"
+                     f"\uff08B = 1\uff1bA\u3001D \u6309\u7aef\u70b9\u5b9a\u51fa\uff1bC = {fit.get('C', 0):.2f}"
+                     f"\uff0cr = B/C = {fit.get('r', 0):.6g}\uff09\uff0c\u7528 11 \u54c1\u724c\u524d\u6cbf\u5165\u56fe\u6a21\u578b\u7684\u603b\u53c2\u6570\u91cf\u5b9a\u51fa"
+                     f"\uff1bmse = {fit.get('mse_vs_quantile', 0):.6f}\uff0cmaxdev = {fit.get('max_abs_deviation_vs_quantile', 0):.4f}\u3002\n")
+        lines.append("```")
+        lines.append("x = 0                            # X = 0")
+        lines.append("x = A\u00b7ln(X+C)+D                  # X > 0")
+        lines.append("```\n")
+        lines.append("- **\u51fd\u6570\u7aef\u70b9**\uff1aX = 0 \u2192 x = 0\uff1b\u524d\u6cbf\u6700\u5927\u503c \u2192 x = 1\uff1b")
         vis_vals = [float(m["x_value"]) for m in models
                     if m.get("chart_y") is not None
                     and m.get("x_value") is not None
                     and not m.get("over_max")]
         pairs = [(a["price"], b["price"]) for a, b in zip(dec_ticks, dec_ticks[1:])]
         if pairs:
-            seg = "，".join(f"{_fmt_x_tick(lo)}–{_fmt_x_tick(hi)}: "
+            seg = "\uff0c".join(f"{_fmt_x_tick(lo)}\u2013{_fmt_x_tick(hi)}: "
                                 f"{sum(1 for v in vis_vals if lo < v <= hi)}"
                                 for lo, hi in pairs)
-            lines.append(f"- 数量级入图模型数：{seg}")
-        lines.append(f"- 中位数位置 {x_dist.get('median', 0):.3f}；左 {x_dist.get('left_half_models', 0)} 个，右 {x_dist.get('right_half_models', 0)} 个")
-        lines.append(f"- 前沿最大总参数量 {mapping_meta.get('max_cost', 0):,.1f}B → x = 1；高于该值的模型不入图，表格中有。")
+            lines.append(f"- \u6570\u91cf\u7ea7\u5165\u56fe\u6a21\u578b\u6570\uff1a{seg}")
+        lines.append(f"- \u4e2d\u4f4d\u6570\u4f4d\u7f6e {x_dist.get('median', 0):.3f}\uff1b\u5de6 {x_dist.get('left_half_models', 0)} \u4e2a\uff0c\u53f3 {x_dist.get('right_half_models', 0)} \u4e2a")
+        lines.append(f"- \u524d\u6cbf\u6700\u5927\u603b\u53c2\u6570\u91cf {mapping_meta.get('max_cost', 0):,.1f}B \u2192 x = 1\uff1b\u9ad8\u4e8e\u8be5\u503c\u7684\u6a21\u578b\u4e0d\u5165\u56fe\uff0c\u8868\u683c\u4e2d\u6709\u3002")
         if dec_ticks:
-            lines.append("- 10^x 数量级指示（位置 = x(10^x)）："
-                         + "，".join(f"10^{int(round(math.log10(d['price'])))} → {d['x']:.3f}"
-                                         for d in dec_ticks if d["price"] >= 1 and abs(math.log10(d["price"]) - round(math.log10(d["price"]))) < 1e-9))
+            lines.append("- 10^x \u6570\u91cf\u7ea7\u6307\u793a\uff08\u4f4d\u7f6e = x(10^x)\uff09\uff1a"
+                         + "\uff0c".join(f"10^{int(round(math.log10(d['price'])))}\u2192 {d['x']:.3f}"
+                                     for d in dec_ticks if d['price'] >= 1 and abs(math.log10(d['price']) - round(math.log10(d['price']))) < 1e-9))
         lines.append("")
 # ── 标注规则 ─────────────────────────────────────────────────────────
     lines.append("## 图中标注规则\n")
@@ -2550,7 +2655,7 @@ def main():
                        for b, fr in brand_frontiers.items()}
     brand_frontiers = {b: fr for b, fr in brand_frontiers.items() if fr}
 
-    print("\nBuilding LINEAR X-axis mapping (no fitting, AFTER the Y-baseline filter)...")
+    print("\nBuilding X-axis mapping (AFTER the Y-baseline filter)...")
     mapping_meta = build_axis_mapping(models, brand_frontiers)
     mapping_meta["y_axis"] = yb
 
