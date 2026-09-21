@@ -3,7 +3,7 @@ name: LLM Leaderboard Analysis (Parameter Count)
 on:
   schedule:
     # Daily at 04:00 UTC (12:00 Beijing time)
-    - cron: '0 4 * * *'
+    - cron: "0 4 * * *"
   workflow_dispatch:
 
 permissions:
@@ -21,23 +21,24 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
-          cache: 'pip'
+          python-version: "3.12"
+          cache: "pip"
 
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
           playwright install chromium --with-deps
 
-      - name: Install CJK fonts
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y fontconfig fonts-noto-cjk
-          sudo fc-cache -f
-          fc-match "Noto Sans CJK SC" || true
+      # V1-params: fonts are bundled in repo/fonts/ (Sarasa Mono SC subsets)
+      # and registered by src/analyze.py via matplotlib addfont().
 
       - name: Scrape leaderboard data
         run: python src/scrape.py
+
+      # Incremental: output/param_cache.json is committed, so only new slugs
+      # are fetched. --limit caps CI time; the next run catches up.
+      - name: Scrape model parameter counts (incremental)
+        run: python src/scrape_params.py --sleep 0.3 --limit 150
 
       - name: Run analysis
         run: python src/analyze.py
@@ -50,7 +51,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "🔄 Update leaderboard analysis $(date +'%Y-%m-%d')"
+            git commit -m "Update params leaderboard analysis $(date +"%Y-%m-%d")"
             git push
           fi
 

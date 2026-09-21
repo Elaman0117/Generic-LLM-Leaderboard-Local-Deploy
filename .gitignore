@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Playwright
+.playwright/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Keep output directory structure but allow data to be committed
+# (output/ is tracked in git for results)
+
+# Local run logs (never commit)
+*.log

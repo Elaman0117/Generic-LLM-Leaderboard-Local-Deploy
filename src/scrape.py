@@ -3,12 +3,26 @@
 Scraper for Artificial Analysis LLM Leaderboard.
 
 Extracts the full model dataset from the Next.js RSC payload embedded in the page.
-This gives us ~500 models with 88 fields including:
-  - totalParameters / activeParameters: model parameter counts (in billions)
-  - All pricing (input, output, cache_hit, cache_write, blended at various ratios)
-  - All intelligence evaluation scores (gpqa, hle, scicode, etc.)
-  - Speed, latency, and timing data
-  - Token counts for the Intelligence Index evaluations
+
+V18 (2026-09-12): the RSC payload no longer carries the old 96-field array —
+AA now splits the data across TWO `models` arrays:
+  * the main benchmark array (~50 fields: all evaluation scores, pricing,
+    speed/latency, creator color/logo/name, paramClass, …)
+  * a display-metadata array (8 fields: slug, name, releaseDate, deprecated,
+    isReasoning, effort, release, creator{id,name,logo})
+The scraper picks the richest array as `main` and merges the metadata
+fields (name, releaseDate) into it by `slug`, restoring the old `name` field.
+
+Fields AA removed from the models payload since v17: agenticIndex,
+codingIndex (AA Agentic / Coding Index), intelligenceIndexCostTotal, blended
+prices, modelCreatorSlug, cweBench, mlcrOverall, … New benchmark columns
+now carried: analystAgent, tauBanking (τ³-Bench Banking),
+terminalbenchV21 / terminalbenchV40 ("Intelligence Index v4.3: … 𝜏³-Banking
+is removed, and Terminal-Bench moves to v4.0").
+
+The RSC payload contains EVERY model regardless of the page's Status filter
+(Current / All) — including deprecated ones (`deprecated: true`), which
+analyze.py keeps (Status: All) as of Version 10.
 """
 
 import json
@@ -42,13 +56,14 @@ function _findBestModels(obj, maxDepth) {
 }
 """
 
-# Primary extraction: parse RSC script tags directly
+# Primary extraction: parse RSC script tags directly.
+# V18: collect ALL `models` arrays (main benchmark array + metadata arrays),
+# so the Python side can merge them by slug.
 EXTRACT_JS = """
 (() => {
   ${SEARCH}
   const scripts = document.querySelectorAll('script');
-  let bestModels = null;
-  let bestFieldCount = 0;
+  const found = [];
 
   for (let i = 0; i < scripts.length; i++) {
     const text = scripts[i].textContent || '';
@@ -62,14 +77,11 @@ EXTRACT_JS = """
       const content = arr[1];
       const colonIdx = content.indexOf(':');
       const data = JSON.parse(content.substring(colonIdx + 1));
-      const found = _findBestModels(data, 25);
-      if (found) {
-        const fc = Object.keys(found[0]).length;
-        if (fc > bestFieldCount) { bestFieldCount = fc; bestModels = found; }
-      }
+      const m = _findBestModels(data, 25);
+      if (m) found.push(m);
     } catch(e) { /* skip */ }
   }
-  return JSON.stringify(bestModels || []);
+  return JSON.stringify(found);
 })()
 """.replace("${SEARCH}", _SEARCH_MODELS_JS)
 
@@ -88,18 +100,62 @@ def scrape_leaderboard():
         print("[2/3] Extracting model data from RSC payload ...")
         raw_json = page.evaluate(EXTRACT_JS)
 
-        models = json.loads(raw_json)
+        arrays = json.loads(raw_json)
+        print(f"  models arrays found: {len(arrays)} "
+              f"({[len(a) for a in arrays]} models, "
+              f"{[len(a[0].keys()) if a else 0 for a in arrays]} fields each)")
+
+        # V18: main = the array whose models carry the most fields (the
+        # benchmark/pricing array). Every other array is treated as a
+        # metadata source: fields absent from main are merged in by slug
+        # (restores `name`, `releaseDate`, …).
+        models = max(arrays, key=lambda a: len(a[0].keys())) if arrays else []
+        if len(arrays) > 1:
+            main_slugs = {m.get("slug") for m in models}
+            meta_by_slug = {}
+            for arr in arrays:
+                if arr is models:
+                    continue
+                for m in arr:
+                    sl = m.get("slug")
+                    if sl and sl in main_slugs and sl not in meta_by_slug:
+                        meta_by_slug[sl] = m
+            n_merged = 0
+            for m in models:
+                meta = meta_by_slug.get(m.get("slug"))
+                if not meta:
+                    continue
+                for k, v in meta.items():
+                    if k not in m and v is not None:
+                        m[k] = v
+                        n_merged += 1
+            print(f"  Merged metadata fields into {len(meta_by_slug)} models "
+                  f"({n_merged} field values, e.g. name/releaseDate)")
+
         print(f"  Extracted {len(models)} models")
 
         if models and len(models) > 0:
             print(f"  Fields per model: {len(models[0].keys())}")
-            # Print sample
+        if models and len(models) > 0:
+            print(f"  Fields per model: {len(models[0].keys())}")
+            
+            # Print sample (安全格式化，防止 '?' 或 '--' 导致 ValueError)
             m = models[0]
+            
+            raw_cost = m.get('intelligenceIndexCostTotal')
+            try:
+                # 如果是 None、空字符串或 '--'，则降级为 '?'，否则转为浮点数格式化
+                if raw_cost in (None, "", "--", "?"):
+                    cost_str = "$?"
+                else:
+                    cost_str = f"${float(raw_cost):.2f}"
+            except (ValueError, TypeError):
+                cost_str = "$?"
+
             print(f"  Sample: {m.get('name', '?')}, "
                   f"reasoning={m.get('reasoningModel', '?')}, "
                   f"intelIndex={m.get('intelligenceIndex', '?')}, "
-                  f"totalParams={m.get('totalParameters', '?')}B, "
-                  f"activeParams={m.get('activeParameters', '?')}B, "
+                  f"costTotal={cost_str}, "
                   f"inputPrice=${m.get('price1mInputTokens', '?')}, "
                   f"outputPrice=${m.get('price1mOutputTokens', '?')}")
 
