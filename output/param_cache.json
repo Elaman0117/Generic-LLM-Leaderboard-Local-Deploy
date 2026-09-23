@@ -5246,5 +5246,141 @@
   "active_B": null,
   "source": "undisclosed",
   "fetched_at": "2026-09-22T16:45:07+00:00"
+ },
+ "gpt-6-sol-low": {
+  "slug": "gpt-6-sol-low",
+  "name": "GPT-6 Sol (low)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-23T09:02:48+00:00"
+ },
+ "gpt-6-luna-xhigh": {
+  "slug": "gpt-6-luna-xhigh",
+  "name": "GPT-6 Luna (xhigh)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-23T09:02:48+00:00"
+ },
+ "claude-opus-5-5": {
+  "slug": "claude-opus-5-5",
+  "name": "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-23T09:02:49+00:00"
+ },
+ "gpt-6-luna-medium": {
+  "slug": "gpt-6-luna-medium",
+  "name": "GPT-6 Luna (medium)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-23T09:02:49+00:00"
+ },
+ "claude-opus-5-5-low": {
+  "slug": "claude-opus-5-5-low",
+  "name": "Claude Opus 5.5 (Adaptive Reasoning, Low Effort, Default Fallback)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-23T09:02:50+00:00"
+ },
+ "gpt-6-sol-high": {
+  "slug": "gpt-6-sol-high",
+  "name": "GPT-6 Sol (high)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-23T09:02:51+00:00"
+ },
+ "gpt-6-luna-non-reasoning": {
+  "slug": "gpt-6-luna-non-reasoning",
+  "name": "GPT-6 Luna (Non-reasoning)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-23T09:02:51+00:00"
+ },
+ "gpt-6-luna": {
+  "slug": "gpt-6-luna",
+  "name": "GPT-6 Luna (max)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-23T09:02:52+00:00"
+ },
+ "gpt-6-sol-medium": {
+  "slug": "gpt-6-sol-medium",
+  "name": "GPT-6 Sol (medium)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-23T09:02:52+00:00"
+ },
+ "gpt-6-luna-high": {
+  "slug": "gpt-6-luna-high",
+  "name": "GPT-6 Luna (high)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-23T09:02:53+00:00"
+ },
+ "gpt-6-luna-low": {
+  "slug": "gpt-6-luna-low",
+  "name": "GPT-6 Luna (low)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-23T09:02:53+00:00"
+ },
+ "gpt-6-sol": {
+  "slug": "gpt-6-sol",
+  "name": "GPT-6 Sol (max)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-23T09:02:54+00:00"
+ },
+ "gpt-6-sol-non-reasoning": {
+  "slug": "gpt-6-sol-non-reasoning",
+  "name": "GPT-6 Sol (Non-reasoning)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-23T09:02:54+00:00"
+ },
+ "gpt-6-sol-xhigh": {
+  "slug": "gpt-6-sol-xhigh",
+  "name": "GPT-6 Sol (xhigh)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-23T09:02:55+00:00"
+ },
+ "claude-opus-5-5-xhigh": {
+  "slug": "claude-opus-5-5-xhigh",
+  "name": "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-23T09:02:56+00:00"
+ },
+ "claude-opus-5-5-medium": {
+  "slug": "claude-opus-5-5-medium",
+  "name": "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-23T09:02:56+00:00"
+ },
+ "claude-opus-5-5-high": {
+  "slug": "claude-opus-5-5-high",
+  "name": "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-23T09:02:57+00:00"
  }
 }
