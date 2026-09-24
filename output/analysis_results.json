@@ -4,7 +4,7 @@
     "model_status": "All (including deprecated models)",
     "methodology": "20 evaluation metrics normalized [0,1], averaged → composite ability, then re-normalized linearly so best model = 1 and worst = 0; Pareto = non-dominated by total params (models without param data excluded); chart Y-axis (V17): y = 0 at the FIRST (lowest) level of the overall Pareto frontier — models below it are excluded from the chart but kept in the table; chart_y = (ability-y0)/(1-y0); X-axis: linear total-params mapping x = raw/xmax (xmax = 11 brand-frontier max); left edge raw = 0; 11 brands get their own thin Pareto lines (brand theme colors, drawn above the solid gray overall Pareto line; vertices ordered by (axis_x, ability) so equal-cost points connect bottom-up); dark brand elements carry a narrow white outline on the black canvas; labels ride ON the Pareto lines when the adjacent segment allows (parallel to the line, mid-axis coincident, line gapped under the text, bare brand-colored text), else take the nearest free spot; every label = model family (brand-shared leading block stripped at the longest valid cut: ending at a separator, or at a letter followed by a digit in every name) plus thinking level, '(non-reasoning)' shortened to '(non)'; 2+ consecutive same-family vertices shorten to level-only labels after the run head (runs recomputed per brand; non-adjacent occurrences keep full labels)",
     "x_source": "AA model detail pages (FAQ text), model-name fallback; MoE keeps TOTAL; unit B",
-    "total_models": 333,
+    "total_models": 332,
     "pareto_count": 11,
     "x_axis_mapping": {
       "mapping": "log mapping X=A*ln(B*X+C)+D fitted on the 11 brand-frontier models, pins RAW (0,0)/(xmax,1), B=1, C=1/r",
@@ -28,8 +28,8 @@
       "left_edge_label": "0",
       "free_models": 0,
       "over_max_models": 0,
-      "plotted_models": 283,
-      "total_models": 333,
+      "plotted_models": 282,
+      "total_models": 332,
       "min_positive_cost": 0.268,
       "x_at_min_positive_cost": 0.018633211821964677,
       "max_cost": 2800.0,
@@ -57,35 +57,35 @@
         }
       ],
       "left_half_models": 132,
-      "right_half_models": 151,
+      "right_half_models": 150,
       "y_axis": {
         "baseline": 0.12164848884007264,
         "baseline_model": "Gemma 3 270M",
-        "visible_models": 283,
-        "plotted_models": 283,
+        "visible_models": 282,
+        "plotted_models": 282,
         "no_x_visible": 0,
         "below_baseline": 50,
-        "total_models": 333,
+        "total_models": 332,
         "note": "chart y = (ability - baseline)/(1 - baseline); models below the first overall-Pareto level are excluded from the chart but kept in the README table"
       }
     },
     "y_axis": {
       "baseline": 0.12164848884007264,
       "baseline_model": "Gemma 3 270M",
-      "visible_models": 283,
-      "plotted_models": 283,
+      "visible_models": 282,
+      "plotted_models": 282,
       "no_x_visible": 0,
       "below_baseline": 50,
-      "total_models": 333,
+      "total_models": 332,
       "note": "chart y = (ability - baseline)/(1 - baseline); models below the first overall-Pareto level are excluded from the chart but kept in the README table"
     },
     "x_axis_distribution": {
-      "plotted_models": 283,
+      "plotted_models": 282,
       "x_min": 0.018633211821964677,
       "x_max": 1.0,
       "median": 0.5015504762301118,
       "left_half_models": 132,
-      "right_half_models": 151,
+      "right_half_models": 150,
       "decile_counts": [
         4,
         21,
@@ -94,7 +94,7 @@
         23,
         43,
         29,
-        31,
+        30,
         40,
         8
       ],
@@ -105,22 +105,22 @@
     "AA Intelligence Index": {
       "min": 3.04760621054014,
       "max": 57.6223698102963,
-      "count": 664
+      "count": 662
     },
     "GPQA Diamond": {
       "min": 0.09797979797979799,
       "max": 0.9626262626262626,
-      "count": 618
+      "count": 615
     },
     "Humanity's Last Exam": {
       "min": 0.010658016682113068,
       "max": 0.6135310472659871,
-      "count": 636
+      "count": 634
     },
     "MMMU Pro": {
       "min": 0.14508670520231215,
       "max": 0.876878612716763,
-      "count": 278
+      "count": 277
     },
     "IFBench Instruction Following": {
       "min": 0.12108843537414966,
@@ -130,37 +130,37 @@
     "SciCode Coding": {
       "min": 0.06944444444444445,
       "max": 0.6689814814814815,
-      "count": 200
+      "count": 198
     },
     "CritPt Physics": {
       "min": 0.0,
       "max": 0.32285714285714284,
-      "count": 551
+      "count": 549
     },
     "AA-LCR Long Context": {
       "min": 0.0,
       "max": 0.8866666666666667,
-      "count": 547
+      "count": 545
     },
     "AA Omniscience Index": {
       "min": -88.58333333333333,
       "max": 46.416666666666664,
-      "count": 548
+      "count": 546
     },
     "AA-Omniscience Accuracy": {
       "min": 0.001,
       "max": 0.6723333333333333,
-      "count": 548
+      "count": 546
     },
     "AA-Omniscience Non-Hallucination": {
       "min": 0.015260480617435538,
       "max": 0.990990990990991,
-      "count": 548
+      "count": 546
     },
     "GDPval-AA Normalized": {
       "min": 0.0,
       "max": 0.673085,
-      "count": 254
+      "count": 253
     },
     "AA Analyst Agent": {
       "min": 0.0125,
@@ -185,7 +185,7 @@
     "τ³-Bench Banking": {
       "min": 0.002061855670103093,
       "max": 0.51340206185567,
-      "count": 211
+      "count": 208
     },
     "Terminal-Bench Hard": {
       "min": 0.0,
@@ -2294,27 +2294,6 @@
       "x_axis_position": 0.57686319809007,
       "in_chart": true,
       "chart_y": 0.4574386070944558,
-      "is_pareto": false,
-      "brand_frontier_of": null
-    },
-    {
-      "model": "Agnes 2.5 Pro Alpha",
-      "full_name": "Agnes 2.5 Pro Alpha (based on Qwen3.5 397B A17B)",
-      "creator": "Sapiens AI",
-      "creator_slug": "sapiens-ai",
-      "creator_color": "#1521a9",
-      "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/sapiens.svg",
-      "is_deprecated": false,
-      "composite_ability": 0.5217430642600451,
-      "total_params_B": 397.0,
-      "active_params_B": 17.0,
-      "param_source": "faq",
-      "size_class": "large",
-      "is_open_weights": true,
-      "is_reasoning": true,
-      "x_axis_position": 0.7341679378421231,
-      "in_chart": true,
-      "chart_y": 0.4555062185657521,
       "is_pareto": false,
       "brand_frontier_of": null
     },
@@ -4672,7 +4651,7 @@
     },
     {
       "model": "INTELLECT-3",
-      "full_name": "INTELLECT-3",
+      "full_name": "INTELLECT-3 (based on GLM-4.5-Air)",
       "creator": "Prime Intellect",
       "creator_slug": "prime-intellect",
       "creator_color": "#000000",
@@ -5118,7 +5097,7 @@
       "creator_slug": "nvidia",
       "creator_color": "#76b900",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/nvidia_small.svg",
-      "is_deprecated": false,
+      "is_deprecated": true,
       "composite_ability": 0.24371248493131736,
       "total_params_B": 49.0,
       "active_params_B": null,
@@ -5160,7 +5139,7 @@
       "creator_slug": "mistral",
       "creator_color": "#fd6f00",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/mistral_small.png",
-      "is_deprecated": false,
+      "is_deprecated": true,
       "composite_ability": 0.24153953123384445,
       "total_params_B": 125.0,
       "active_params_B": null,
@@ -5538,7 +5517,7 @@
       "creator_slug": "mistral",
       "creator_color": "#fd6f00",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/mistral_small.png",
-      "is_deprecated": false,
+      "is_deprecated": true,
       "composite_ability": 0.2188863721674131,
       "total_params_B": 24.0,
       "active_params_B": null,
@@ -5790,7 +5769,7 @@
       "creator_slug": "nvidia",
       "creator_color": "#76b900",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/nvidia_small.svg",
-      "is_deprecated": false,
+      "is_deprecated": true,
       "composite_ability": 0.20264722164051607,
       "total_params_B": 49.0,
       "active_params_B": null,
@@ -6168,7 +6147,7 @@
       "creator_slug": "nvidia",
       "creator_color": "#76b900",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/nvidia_small.svg",
-      "is_deprecated": false,
+      "is_deprecated": true,
       "composite_ability": 0.18500107807016014,
       "total_params_B": 70.0,
       "active_params_B": null,
@@ -7339,7 +7318,7 @@
     },
     {
       "model": "Sarvam M",
-      "full_name": "Sarvam M (Reasoning)",
+      "full_name": "Sarvam M (Reasoning, based on Mistral Small 3.1)",
       "creator": "Sarvam",
       "creator_slug": "sarvam",
       "creator_color": "#807D77",
