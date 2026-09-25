@@ -5390,5 +5390,21 @@
   "active_B": null,
   "source": "undisclosed",
   "fetched_at": "2026-09-24T08:59:10+00:00"
+ },
+ "deepseek-v4-1-flash-non-reasoning": {
+  "slug": "deepseek-v4-1-flash-non-reasoning",
+  "name": "DeepSeek V4.1 Flash (Non-Reasoning)",
+  "total_B": 552.0,
+  "active_B": 16.0,
+  "source": "faq",
+  "fetched_at": "2026-09-25T09:21:22+00:00"
+ },
+ "glm-5-3-low": {
+  "slug": "glm-5-3-low",
+  "name": "GLM-5.3 (low)",
+  "total_B": 753.0,
+  "active_B": 40.0,
+  "source": "faq",
+  "fetched_at": "2026-09-25T09:21:23+00:00"
  }
 }
