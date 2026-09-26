@@ -96,7 +96,7 @@
 | 86 | DeepSeek V3.2 Exp | 0.4425 | 685B | 37B | large | ✅ | ✅ |
 | 87 | DeepSeek V3.1 Terminus | 0.4381 | 685B | 37B | large | ✅ | ✅ |
 | 88 | Qwen3.5 122B A10B (Non-reasoning) | 0.4278 | 125B | 10B | medium | ✅ | ❌ |
-| 89 | Qwen3.5 9B | 0.4246 | 9.65B | — | small | ✅ | ✅ |
+| 89 | Qwen3.5 9B | 0.4228 | 9.65B | — | small | ✅ | ✅ |
 | 90 | MiMo-V2.5-Pro (Non-reasoning) | 0.4209 | 1T | 42B | large | ✅ | ❌ |
 | 91 | Kimi K2 0905 | 0.4180 | 1T | 32B | large | ✅ | ❌ |
 | 92 | DeepSeek V4 Flash (Non-reasoning) | 0.4167 | 284B | 13B | large | ✅ | ❌ |

@@ -130,7 +130,7 @@
     "SciCode Coding": {
       "min": 0.06944444444444445,
       "max": 0.6689814814814815,
-      "count": 200
+      "count": 201
     },
     "CritPt Physics": {
       "min": 0.0,
@@ -850,15 +850,15 @@
         "is_open_weights": true,
         "is_pareto": true,
         "chart_label": "3.5 9B",
-        "composite_ability": 0.42455409374455955,
+        "composite_ability": 0.4228439664378322,
         "total_params_B": 9.65,
         "active_params_B": null,
         "param_source": "faq",
         "size_class": "small",
         "x_axis_position": 0.2503770771198635,
         "in_chart": true,
-        "chart_y": 0.3424659651252052,
-        "valid_metrics": 14
+        "chart_y": 0.3405118858695908,
+        "valid_metrics": 15
       },
       {
         "rank": 5,
@@ -3019,7 +3019,7 @@
       "creator_color": "#ff7018",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/alibaba.svg",
       "is_deprecated": false,
-      "composite_ability": 0.42455409374455955,
+      "composite_ability": 0.4228439664378322,
       "total_params_B": 9.65,
       "active_params_B": null,
       "param_source": "faq",
@@ -3028,7 +3028,7 @@
       "is_reasoning": true,
       "x_axis_position": 0.2503770771198635,
       "in_chart": true,
-      "chart_y": 0.3424659651252052,
+      "chart_y": 0.3405118858695908,
       "is_pareto": false,
       "brand_frontier_of": "Alibaba"
     },
