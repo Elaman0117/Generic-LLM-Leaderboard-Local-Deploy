@@ -5406,5 +5406,53 @@
   "active_B": 40.0,
   "source": "faq",
   "fetched_at": "2026-09-25T09:21:23+00:00"
+ },
+ "claude-sonnet-5-5-medium": {
+  "slug": "claude-sonnet-5-5-medium",
+  "name": "Claude Sonnet 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-29T03:08:32+00:00"
+ },
+ "mimo-v2-6-flash": {
+  "slug": "mimo-v2-6-flash",
+  "name": "MiMo-V2.6-Flash",
+  "total_B": 309.0,
+  "active_B": 15.0,
+  "source": "faq",
+  "fetched_at": "2026-09-29T03:08:33+00:00"
+ },
+ "claude-sonnet-5-5-high": {
+  "slug": "claude-sonnet-5-5-high",
+  "name": "Claude Sonnet 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-29T03:08:33+00:00"
+ },
+ "claude-sonnet-5-5-xhigh": {
+  "slug": "claude-sonnet-5-5-xhigh",
+  "name": "Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-29T03:08:34+00:00"
+ },
+ "claude-sonnet-5-5": {
+  "slug": "claude-sonnet-5-5",
+  "name": "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-29T03:08:35+00:00"
+ },
+ "claude-sonnet-5-5-low": {
+  "slug": "claude-sonnet-5-5-low",
+  "name": "Claude Sonnet 5.5 (Adaptive Reasoning, Low Effort, Default Fallback)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-29T03:08:36+00:00"
  }
 }
