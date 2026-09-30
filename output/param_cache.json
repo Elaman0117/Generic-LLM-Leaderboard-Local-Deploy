@@ -5454,5 +5454,61 @@
   "active_B": null,
   "source": "undisclosed",
   "fetched_at": "2026-09-29T03:08:36+00:00"
+ },
+ "gpt-6-1-sol-xhigh": {
+  "slug": "gpt-6-1-sol-xhigh",
+  "name": "GPT-6.1 Sol (xhigh)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-30T10:16:18+00:00"
+ },
+ "gpt-6-1-sol-high": {
+  "slug": "gpt-6-1-sol-high",
+  "name": "GPT-6.1 Sol (high)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-30T10:16:18+00:00"
+ },
+ "jt236b": {
+  "slug": "jt236b",
+  "name": "JT-4.1 Flash 236B A21B",
+  "total_B": 236.0,
+  "active_B": null,
+  "source": "faq",
+  "fetched_at": "2026-09-30T10:16:19+00:00"
+ },
+ "gpt-6-1-sol-medium": {
+  "slug": "gpt-6-1-sol-medium",
+  "name": "GPT-6.1 Sol (medium)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-30T10:16:20+00:00"
+ },
+ "gpt-6-1-sol": {
+  "slug": "gpt-6-1-sol",
+  "name": "GPT-6.1 Sol (max)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-30T10:16:20+00:00"
+ },
+ "deepseek-v4-pro-non-reasoning": {
+  "slug": "deepseek-v4-pro-non-reasoning",
+  "name": "DeepSeek V4 Pro 0813 (Non-reasoning)",
+  "total_B": 1600.0,
+  "active_B": 49.0,
+  "source": "faq",
+  "fetched_at": "2026-09-30T10:16:21+00:00"
+ },
+ "gpt-6-1-sol-low": {
+  "slug": "gpt-6-1-sol-low",
+  "name": "GPT-6.1 Sol (low)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-09-30T10:16:21+00:00"
  }
 }
