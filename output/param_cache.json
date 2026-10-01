@@ -5510,5 +5510,21 @@
   "active_B": null,
   "source": "undisclosed",
   "fetched_at": "2026-09-30T10:16:21+00:00"
+ },
+ "solar-mini4": {
+  "slug": "solar-mini4",
+  "name": "Solar Mini 4",
+  "total_B": 35.0,
+  "active_B": null,
+  "source": "faq",
+  "fetched_at": "2026-10-01T10:42:33+00:00"
+ },
+ "gemini-4-argon": {
+  "slug": "gemini-4-argon",
+  "name": "Gemini 4 Argon (High)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-10-01T10:42:33+00:00"
  }
 }

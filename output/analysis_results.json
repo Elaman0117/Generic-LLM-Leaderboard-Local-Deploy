@@ -4,7 +4,7 @@
     "model_status": "All (including deprecated models)",
     "methodology": "20 evaluation metrics normalized [0,1], averaged → composite ability, then re-normalized linearly so best model = 1 and worst = 0; Pareto = non-dominated by total params (models without param data excluded); chart Y-axis (V17): y = 0 at the FIRST (lowest) level of the overall Pareto frontier — models below it are excluded from the chart but kept in the table; chart_y = (ability-y0)/(1-y0); X-axis: linear total-params mapping x = raw/xmax (xmax = 11 brand-frontier max); left edge raw = 0; 11 brands get their own thin Pareto lines (brand theme colors, drawn above the solid gray overall Pareto line; vertices ordered by (axis_x, ability) so equal-cost points connect bottom-up); dark brand elements carry a narrow white outline on the black canvas; labels ride ON the Pareto lines when the adjacent segment allows (parallel to the line, mid-axis coincident, line gapped under the text, bare brand-colored text), else take the nearest free spot; every label = model family (brand-shared leading block stripped at the longest valid cut: ending at a separator, or at a letter followed by a digit in every name) plus thinking level, '(non-reasoning)' shortened to '(non)'; 2+ consecutive same-family vertices shorten to level-only labels after the run head (runs recomputed per brand; non-adjacent occurrences keep full labels)",
     "x_source": "AA model detail pages (FAQ text), model-name fallback; MoE keeps TOTAL; unit B",
-    "total_models": 337,
+    "total_models": 338,
     "pareto_count": 11,
     "x_axis_mapping": {
       "mapping": "log mapping X=A*ln(B*X+C)+D fitted on the 11 brand-frontier models, pins RAW (0,0)/(xmax,1), B=1, C=1/r",
@@ -28,8 +28,8 @@
       "left_edge_label": "0",
       "free_models": 0,
       "over_max_models": 0,
-      "plotted_models": 287,
-      "total_models": 337,
+      "plotted_models": 288,
+      "total_models": 338,
       "min_positive_cost": 0.268,
       "x_at_min_positive_cost": 0.020428104398171304,
       "max_cost": 2800.0,
@@ -56,42 +56,42 @@
           "x": 1.0
         }
       ],
-      "left_half_models": 131,
+      "left_half_models": 132,
       "right_half_models": 156,
       "y_axis": {
         "baseline": 0.12484240246968392,
         "baseline_model": "Gemma 3 270M",
-        "visible_models": 287,
-        "plotted_models": 287,
+        "visible_models": 288,
+        "plotted_models": 288,
         "no_x_visible": 0,
         "below_baseline": 50,
-        "total_models": 337,
+        "total_models": 338,
         "note": "chart y = (ability - baseline)/(1 - baseline); models below the first overall-Pareto level are excluded from the chart but kept in the README table"
       }
     },
     "y_axis": {
       "baseline": 0.12484240246968392,
       "baseline_model": "Gemma 3 270M",
-      "visible_models": 287,
-      "plotted_models": 287,
+      "visible_models": 288,
+      "plotted_models": 288,
       "no_x_visible": 0,
       "below_baseline": 50,
-      "total_models": 337,
+      "total_models": 338,
       "note": "chart y = (ability - baseline)/(1 - baseline); models below the first overall-Pareto level are excluded from the chart but kept in the README table"
     },
     "x_axis_distribution": {
-      "plotted_models": 287,
+      "plotted_models": 288,
       "x_min": 0.020428104398171304,
       "x_max": 1.0,
       "median": 0.5248451020832305,
-      "left_half_models": 131,
+      "left_half_models": 132,
       "right_half_models": 156,
       "decile_counts": [
         4,
         21,
         24,
         38,
-        44,
+        45,
         44,
         28,
         34,
@@ -105,7 +105,7 @@
     "AA Intelligence Index": {
       "min": 3.04760621054014,
       "max": 57.6223698102963,
-      "count": 676
+      "count": 678
     },
     "GPQA Diamond": {
       "min": 0.09797979797979799,
@@ -115,7 +115,7 @@
     "Humanity's Last Exam": {
       "min": 0.010658016682113068,
       "max": 0.6135310472659871,
-      "count": 649
+      "count": 651
     },
     "MMMU Pro": {
       "min": 0.14508670520231215,
@@ -130,37 +130,37 @@
     "SciCode Coding": {
       "min": 0.06944444444444445,
       "max": 0.6689814814814815,
-      "count": 214
+      "count": 216
     },
     "CritPt Physics": {
       "min": 0.0,
       "max": 0.32285714285714284,
-      "count": 564
+      "count": 566
     },
     "AA-LCR Long Context": {
       "min": 0.0,
       "max": 0.8866666666666667,
-      "count": 560
+      "count": 562
     },
     "AA Omniscience Index": {
       "min": -88.58333333333333,
       "max": 46.416666666666664,
-      "count": 561
+      "count": 563
     },
     "AA-Omniscience Accuracy": {
       "min": 0.001,
       "max": 0.6723333333333333,
-      "count": 561
+      "count": 563
     },
     "AA-Omniscience Non-Hallucination": {
       "min": 0.015260480617435538,
       "max": 0.990990990990991,
-      "count": 561
+      "count": 563
     },
     "GDPval-AA Normalized": {
       "min": 0.0,
       "max": 0.673085,
-      "count": 275
+      "count": 277
     },
     "AA Analyst Agent": {
       "min": 0.0125,
@@ -170,7 +170,7 @@
     "APEX-Agents-AA": {
       "min": 0.007374631268436578,
       "max": 0.47050147492625366,
-      "count": 32
+      "count": 33
     },
     "ITBench-SRE": {
       "min": 0.005649717514124294,
@@ -199,7 +199,7 @@
     {
       "rank": 1,
       "model": "Kimi K3 (max)",
-      "full_name": "Kimi K3 (max)",
+      "full_name": "Kimi K3 (Max)",
       "creator": "Kimi",
       "creator_color": "#047AFE",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/kimi.jpg",
@@ -207,20 +207,20 @@
       "is_open_weights": true,
       "is_pareto": true,
       "chart_label": "K3 (max)",
-      "composite_ability": 0.8737271025196268,
+      "composite_ability": 0.8746212925427885,
       "total_params_B": 2800.0,
       "active_params_B": 104.0,
       "param_source": "faq",
       "size_class": "large",
       "x_axis_position": 1.0,
       "in_chart": true,
-      "chart_y": 0.8557141047090104,
+      "chart_y": 0.8567358521356283,
       "valid_metrics": 15
     },
     {
       "rank": 2,
       "model": "GLM-5.3 (max)",
-      "full_name": "GLM-5.3 (max)",
+      "full_name": "GLM-5.3 (Max)",
       "creator": "Z AI",
       "creator_color": "#1c7ff8",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/zai.svg",
@@ -249,15 +249,15 @@
       "is_open_weights": false,
       "is_pareto": true,
       "chart_label": "Step 5 Preview",
-      "composite_ability": 0.8359615942641537,
+      "composite_ability": 0.8394222184356088,
       "total_params_B": 600.0,
       "active_params_B": null,
       "param_source": "faq",
       "size_class": "large",
       "x_axis_position": 0.7934876169885829,
       "in_chart": true,
-      "chart_y": 0.8125612961611022,
-      "valid_metrics": 12
+      "chart_y": 0.8165155830018048,
+      "valid_metrics": 13
     },
     {
       "rank": 4,
@@ -304,7 +304,7 @@
     {
       "rank": 6,
       "model": "Qwen3.8 27B (xhigh)",
-      "full_name": "Qwen3.8 27B (xhigh)",
+      "full_name": "Qwen3.8 27B (Xhigh)",
       "creator": "Alibaba",
       "creator_color": "#ff7018",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/alibaba.svg",
@@ -312,14 +312,14 @@
       "is_open_weights": true,
       "is_pareto": true,
       "chart_label": "3.8 27B (xhigh)",
-      "composite_ability": 0.7036375217899259,
+      "composite_ability": 0.7037707851282715,
       "total_params_B": 27.0,
       "active_params_B": null,
       "param_source": "faq",
       "size_class": "small",
       "x_axis_position": 0.3846860645738794,
       "in_chart": true,
-      "chart_y": 0.6613610176653835,
+      "chart_y": 0.6615132911972842,
       "valid_metrics": 12
     },
     {
@@ -433,7 +433,7 @@
       {
         "rank": 1,
         "model": "gpt-oss-120b (high)",
-        "full_name": "gpt-oss-120b (high)",
+        "full_name": "gpt-oss-120b (High)",
         "creator": "OpenAI",
         "creator_color": "#1f1f1f",
         "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/openai.svg",
@@ -454,7 +454,7 @@
       {
         "rank": 2,
         "model": "gpt-oss-20b (high)",
-        "full_name": "gpt-oss-20b (high)",
+        "full_name": "gpt-oss-20b (High)",
         "creator": "OpenAI",
         "creator_color": "#1f1f1f",
         "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/openai.svg",
@@ -477,7 +477,7 @@
       {
         "rank": 1,
         "model": "Muse Glimmer (high)",
-        "full_name": "Muse Glimmer (high)",
+        "full_name": "Muse Glimmer (High)",
         "creator": "Meta",
         "creator_color": "#0089f4",
         "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/meta.svg",
@@ -521,7 +521,7 @@
       {
         "rank": 1,
         "model": "GLM-5.3 (max)",
-        "full_name": "GLM-5.3 (max)",
+        "full_name": "GLM-5.3 (Max)",
         "creator": "Z AI",
         "creator_color": "#1c7ff8",
         "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/zai.svg",
@@ -714,7 +714,7 @@
       {
         "rank": 1,
         "model": "Kimi K3 (max)",
-        "full_name": "Kimi K3 (max)",
+        "full_name": "Kimi K3 (Max)",
         "creator": "Kimi",
         "creator_color": "#047AFE",
         "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/kimi.jpg",
@@ -722,20 +722,20 @@
         "is_open_weights": true,
         "is_pareto": true,
         "chart_label": "K3 (max)",
-        "composite_ability": 0.8737271025196268,
+        "composite_ability": 0.8746212925427885,
         "total_params_B": 2800.0,
         "active_params_B": 104.0,
         "param_source": "faq",
         "size_class": "large",
         "x_axis_position": 1.0,
         "in_chart": true,
-        "chart_y": 0.8557141047090104,
+        "chart_y": 0.8567358521356283,
         "valid_metrics": 15
       },
       {
         "rank": 2,
         "model": "Kimi K2.6",
-        "full_name": "Kimi K2.6",
+        "full_name": "Kimi K2.6 (Reasoning)",
         "creator": "Kimi",
         "creator_color": "#047AFE",
         "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/kimi.jpg",
@@ -821,7 +821,7 @@
       {
         "rank": 3,
         "model": "Qwen3.8 27B (xhigh)",
-        "full_name": "Qwen3.8 27B (xhigh)",
+        "full_name": "Qwen3.8 27B (Xhigh)",
         "creator": "Alibaba",
         "creator_color": "#ff7018",
         "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/alibaba.svg",
@@ -829,14 +829,14 @@
         "is_open_weights": true,
         "is_pareto": true,
         "chart_label": "3.8 27B (xhigh)",
-        "composite_ability": 0.7036375217899259,
+        "composite_ability": 0.7037707851282715,
         "total_params_B": 27.0,
         "active_params_B": null,
         "param_source": "faq",
         "size_class": "small",
         "x_axis_position": 0.3846860645738794,
         "in_chart": true,
-        "chart_y": 0.6613610176653835,
+        "chart_y": 0.6615132911972842,
         "valid_metrics": 12
       },
       {
@@ -928,7 +928,7 @@
       {
         "rank": 1,
         "model": "DeepSeek V4 Pro 0813 (max)",
-        "full_name": "DeepSeek V4 Pro 0813 (Reasoning, Max Effort)",
+        "full_name": "DeepSeek V4 Pro 0813 (Max)",
         "creator": "DeepSeek",
         "creator_color": "#2243e6",
         "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/deepseek.svg",
@@ -949,7 +949,7 @@
       {
         "rank": 2,
         "model": "DeepSeek V4.1 Flash (max)",
-        "full_name": "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+        "full_name": "DeepSeek V4.1 Flash (Max)",
         "creator": "DeepSeek",
         "creator_color": "#2243e6",
         "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/deepseek.svg",
@@ -970,7 +970,7 @@
       {
         "rank": 3,
         "model": "DeepSeek V4 Flash Vision (max)",
-        "full_name": "DeepSeek V4 Flash Vision (Reasoning, Max Effort)",
+        "full_name": "DeepSeek V4 Flash Vision (Max)",
         "creator": "DeepSeek",
         "creator_color": "#2243e6",
         "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/deepseek.svg",
@@ -1064,14 +1064,14 @@
         "is_open_weights": true,
         "is_pareto": true,
         "chart_label": "3",
-        "composite_ability": 0.6733491107597693,
+        "composite_ability": 0.6741738084871235,
         "total_params_B": 428.0,
         "active_params_B": 23.0,
         "param_source": "faq",
         "size_class": "large",
         "x_axis_position": 0.7482845938578794,
         "in_chart": true,
-        "chart_y": 0.6267519242682285,
+        "chart_y": 0.6276942662300437,
         "valid_metrics": 16
       },
       {
@@ -1144,13 +1144,13 @@
   "all_models": [
     {
       "model": "Kimi K3 (max)",
-      "full_name": "Kimi K3 (max)",
+      "full_name": "Kimi K3 (Max)",
       "creator": "Kimi",
       "creator_slug": "kimi",
       "creator_color": "#047AFE",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/kimi.jpg",
       "is_deprecated": false,
-      "composite_ability": 0.8737271025196268,
+      "composite_ability": 0.8746212925427885,
       "total_params_B": 2800.0,
       "active_params_B": 104.0,
       "param_source": "faq",
@@ -1159,13 +1159,13 @@
       "is_reasoning": true,
       "x_axis_position": 1.0,
       "in_chart": true,
-      "chart_y": 0.8557141047090104,
+      "chart_y": 0.8567358521356283,
       "is_pareto": true,
       "brand_frontier_of": "Kimi"
     },
     {
       "model": "GLM-5.3 (max)",
-      "full_name": "GLM-5.3 (max)",
+      "full_name": "GLM-5.3 (Max)",
       "creator": "Z AI",
       "creator_slug": "z-ai",
       "creator_color": "#1c7ff8",
@@ -1213,7 +1213,7 @@
       "creator_color": "#00F5E7",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/stepfun.svg",
       "is_deprecated": false,
-      "composite_ability": 0.8359615942641537,
+      "composite_ability": 0.8394222184356088,
       "total_params_B": 600.0,
       "active_params_B": null,
       "param_source": "faq",
@@ -1222,7 +1222,7 @@
       "is_reasoning": true,
       "x_axis_position": 0.7934876169885829,
       "in_chart": true,
-      "chart_y": 0.8125612961611022,
+      "chart_y": 0.8165155830018048,
       "is_pareto": true,
       "brand_frontier_of": null
     },
@@ -1270,7 +1270,7 @@
     },
     {
       "model": "GLM-5.2 (max)",
-      "full_name": "GLM-5.2 (max)",
+      "full_name": "GLM-5.2 (Max)",
       "creator": "Z AI",
       "creator_slug": "z-ai",
       "creator_color": "#1c7ff8",
@@ -1312,7 +1312,7 @@
     },
     {
       "model": "DeepSeek V4 Pro 0813 (max)",
-      "full_name": "DeepSeek V4 Pro 0813 (Reasoning, Max Effort)",
+      "full_name": "DeepSeek V4 Pro 0813 (Max)",
       "creator": "DeepSeek",
       "creator_slug": "deepseek",
       "creator_color": "#2243e6",
@@ -1333,7 +1333,7 @@
     },
     {
       "model": "DeepSeek V4.1 Flash (max)",
-      "full_name": "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+      "full_name": "DeepSeek V4.1 Flash (Max)",
       "creator": "DeepSeek",
       "creator_slug": "deepseek",
       "creator_color": "#2243e6",
@@ -1354,7 +1354,7 @@
     },
     {
       "model": "JT-4.1 Flash 236B A21B",
-      "full_name": "JT-4.1 Flash 236B A21B",
+      "full_name": "JT-4.1 Flash 236B A21B (Reasoning)",
       "creator": "China Mobile",
       "creator_slug": "china-mobile",
       "creator_color": "#00b8ea",
@@ -1375,7 +1375,7 @@
     },
     {
       "model": "Kimi K2.6",
-      "full_name": "Kimi K2.6",
+      "full_name": "Kimi K2.6 (Reasoning)",
       "creator": "Kimi",
       "creator_slug": "kimi",
       "creator_color": "#047AFE",
@@ -1396,13 +1396,13 @@
     },
     {
       "model": "Qwen3.8 27B (xhigh)",
-      "full_name": "Qwen3.8 27B (xhigh)",
+      "full_name": "Qwen3.8 27B (Xhigh)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
       "creator_color": "#ff7018",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/alibaba.svg",
       "is_deprecated": false,
-      "composite_ability": 0.7036375217899259,
+      "composite_ability": 0.7037707851282715,
       "total_params_B": 27.0,
       "active_params_B": null,
       "param_source": "faq",
@@ -1411,13 +1411,13 @@
       "is_reasoning": true,
       "x_axis_position": 0.3846860645738794,
       "in_chart": true,
-      "chart_y": 0.6613610176653835,
+      "chart_y": 0.6615132911972842,
       "is_pareto": true,
       "brand_frontier_of": "Alibaba"
     },
     {
       "model": "DeepSeek V4 Flash Vision (max)",
-      "full_name": "DeepSeek V4 Flash Vision (Reasoning, Max Effort)",
+      "full_name": "DeepSeek V4 Flash Vision (Max)",
       "creator": "DeepSeek",
       "creator_slug": "deepseek",
       "creator_color": "#2243e6",
@@ -1438,7 +1438,7 @@
     },
     {
       "model": "DeepSeek V4 Flash 0731 (max)",
-      "full_name": "DeepSeek V4 Flash 0731 (Reasoning, Max Effort)",
+      "full_name": "DeepSeek V4 Flash 0731 (Max)",
       "creator": "DeepSeek",
       "creator_slug": "deepseek",
       "creator_color": "#2243e6",
@@ -1465,7 +1465,7 @@
       "creator_color": "#EB3568",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/minimax.svg",
       "is_deprecated": false,
-      "composite_ability": 0.6733491107597693,
+      "composite_ability": 0.6741738084871235,
       "total_params_B": 428.0,
       "active_params_B": 23.0,
       "param_source": "faq",
@@ -1474,7 +1474,7 @@
       "is_reasoning": true,
       "x_axis_position": 0.7482845938578794,
       "in_chart": true,
-      "chart_y": 0.6267519242682285,
+      "chart_y": 0.6276942662300437,
       "is_pareto": false,
       "brand_frontier_of": "MiniMax"
     },
@@ -1501,7 +1501,7 @@
     },
     {
       "model": "DeepSeek V4 Pro (max)",
-      "full_name": "DeepSeek V4 Pro 0424 (Reasoning, Max Effort)",
+      "full_name": "DeepSeek V4 Pro 0424 (Max)",
       "creator": "DeepSeek",
       "creator_slug": "deepseek",
       "creator_color": "#2243e6",
@@ -1564,7 +1564,7 @@
     },
     {
       "model": "Kimi K3 (low)",
-      "full_name": "Kimi K3 (low)",
+      "full_name": "Kimi K3 (Low)",
       "creator": "Kimi",
       "creator_slug": "kimi",
       "creator_color": "#047AFE",
@@ -1585,7 +1585,7 @@
     },
     {
       "model": "DeepSeek V4 Pro (high)",
-      "full_name": "DeepSeek V4 Pro 0424 (Reasoning, High Effort)",
+      "full_name": "DeepSeek V4 Pro 0424 (High)",
       "creator": "DeepSeek",
       "creator_slug": "deepseek",
       "creator_color": "#2243e6",
@@ -1690,7 +1690,7 @@
     },
     {
       "model": "MiMo-V2.5-Pro",
-      "full_name": "MiMo-V2.5-Pro",
+      "full_name": "MiMo-V2.5-Pro (Reasoning)",
       "creator": "Xiaomi",
       "creator_slug": "xiaomi",
       "creator_color": "#ff6900",
@@ -1732,7 +1732,7 @@
     },
     {
       "model": "DeepSeek V4 Flash (max)",
-      "full_name": "DeepSeek V4 Flash 0420 (Reasoning, Max Effort)",
+      "full_name": "DeepSeek V4 Flash 0420 (Max)",
       "creator": "DeepSeek",
       "creator_slug": "deepseek",
       "creator_color": "#2243e6",
@@ -1753,7 +1753,7 @@
     },
     {
       "model": "GLM-5.3 (low)",
-      "full_name": "GLM-5.3 (low)",
+      "full_name": "GLM-5.3 (Low)",
       "creator": "Z AI",
       "creator_slug": "z-ai",
       "creator_color": "#1c7ff8",
@@ -1773,8 +1773,8 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Inkling",
-      "full_name": "Inkling (xhigh)",
+      "model": "Inkling (xhigh)",
+      "full_name": "Inkling (Xhigh)",
       "creator": "Thinking Machines",
       "creator_slug": "thinking-machines",
       "creator_color": "#676767",
@@ -1879,7 +1879,7 @@
     },
     {
       "model": "Quasar 438B (max)",
-      "full_name": "Quasar 438B (max, based on GLM-5.2)",
+      "full_name": "Quasar 438B (Max, Based on GLM-5.2)",
       "creator": "Multiverse Computing",
       "creator_slug": "multiverse-computing",
       "creator_color": "#f11338",
@@ -1900,7 +1900,7 @@
     },
     {
       "model": "Nex-N2-Pro",
-      "full_name": "Nex-N2-Pro (based on Qwen3.5-397B-A17B)",
+      "full_name": "Nex-N2-Pro (Based on Qwen3.5-397B-A17B)",
       "creator": "Nex AGI",
       "creator_slug": "nex-agi",
       "creator_color": "#0351bc",
@@ -1921,7 +1921,7 @@
     },
     {
       "model": "DeepSeek V4 Flash (high)",
-      "full_name": "DeepSeek V4 Flash 0420 (Reasoning, High Effort)",
+      "full_name": "DeepSeek V4 Flash 0420 (High)",
       "creator": "DeepSeek",
       "creator_slug": "deepseek",
       "creator_color": "#2243e6",
@@ -2047,7 +2047,7 @@
     },
     {
       "model": "Qwen3.8 27B (medium)",
-      "full_name": "Qwen3.8 27B (medium)",
+      "full_name": "Qwen3.8 27B (Medium)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
       "creator_color": "#ff7018",
@@ -2088,7 +2088,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Kimi K2.6 (Non-reasoning)",
+      "model": "Kimi K2.6 (non-reasoning)",
       "full_name": "Kimi K2.6 (Non-reasoning)",
       "creator": "Kimi",
       "creator_slug": "kimi",
@@ -2194,7 +2194,7 @@
     },
     {
       "model": "Qwen3.8 27B (low)",
-      "full_name": "Qwen3.8 27B (low)",
+      "full_name": "Qwen3.8 27B (Low)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
       "creator_color": "#ff7018",
@@ -2235,7 +2235,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "GLM-5.1 (Non-reasoning)",
+      "model": "GLM-5.1 (non-reasoning)",
       "full_name": "GLM-5.1 (Non-reasoning)",
       "creator": "Z AI",
       "creator_slug": "z-ai",
@@ -2278,7 +2278,7 @@
     },
     {
       "model": "JT-4.1 Flash 236B A21B (non-reasoning)",
-      "full_name": "JT-4.1 Flash 236B A21B (non-reasoning)",
+      "full_name": "JT-4.1 Flash 236B A21B (Non-reasoning)",
       "creator": "China Mobile",
       "creator_slug": "china-mobile",
       "creator_color": "#00b8ea",
@@ -2424,7 +2424,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Kimi K2.5 (Non-reasoning)",
+      "model": "Kimi K2.5 (non-reasoning)",
       "full_name": "Kimi K2.5 (Non-reasoning)",
       "creator": "Kimi",
       "creator_slug": "kimi",
@@ -2441,6 +2441,27 @@
       "x_axis_position": 0.8619182903418664,
       "in_chart": true,
       "chart_y": 0.4548042251831889,
+      "is_pareto": false,
+      "brand_frontier_of": null
+    },
+    {
+      "model": "Solar Mini 4",
+      "full_name": "Solar Mini 4",
+      "creator": "Upstage",
+      "creator_slug": "upstage",
+      "creator_color": "#7c59f5",
+      "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/upstage.svg",
+      "is_deprecated": false,
+      "composite_ability": 0.5221185106055746,
+      "total_params_B": 35.0,
+      "active_params_B": null,
+      "param_source": "faq",
+      "size_class": "small",
+      "is_open_weights": false,
+      "is_reasoning": true,
+      "x_axis_position": 0.4177653395828875,
+      "in_chart": true,
+      "chart_y": 0.4539480766172846,
       "is_pareto": false,
       "brand_frontier_of": null
     },
@@ -2508,7 +2529,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "GLM-5 (Non-reasoning)",
+      "model": "GLM-5 (non-reasoning)",
       "full_name": "GLM-5 (Non-reasoning)",
       "creator": "Z AI",
       "creator_slug": "z-ai",
@@ -2529,7 +2550,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3.8 27B",
+      "model": "Qwen3.8 27B (non-reasoning)",
       "full_name": "Qwen3.8 27B (Non-reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -2613,7 +2634,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3.5 397B A17B (Non-reasoning)",
+      "model": "Qwen3.5 397B A17B (non-reasoning)",
       "full_name": "Qwen3.5 397B A17B (Non-reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -2635,7 +2656,7 @@
     },
     {
       "model": "Muse Glimmer (high)",
-      "full_name": "Muse Glimmer (high)",
+      "full_name": "Muse Glimmer (High)",
       "creator": "Meta",
       "creator_slug": "meta",
       "creator_color": "#0089f4",
@@ -2655,7 +2676,7 @@
       "brand_frontier_of": "Meta"
     },
     {
-      "model": "Qwen3.5 27B (Non-reasoning)",
+      "model": "Qwen3.5 27B (non-reasoning)",
       "full_name": "Qwen3.5 27B (Non-reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -2802,8 +2823,8 @@
       "brand_frontier_of": null
     },
     {
-      "model": "DeepSeek V4.1 Flash (Non-reasoning)",
-      "full_name": "DeepSeek V4.1 Flash (Non-Reasoning)",
+      "model": "DeepSeek V4.1 Flash (non-reasoning)",
+      "full_name": "DeepSeek V4.1 Flash (Non-reasoning)",
       "creator": "DeepSeek",
       "creator_slug": "deepseek",
       "creator_color": "#2243e6",
@@ -2886,7 +2907,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "DeepSeek V4 Pro (Non-reasoning)",
+      "model": "DeepSeek V4 Pro (non-reasoning)",
       "full_name": "DeepSeek V4 Pro 0424 (Non-reasoning)",
       "creator": "DeepSeek",
       "creator_slug": "deepseek",
@@ -2907,7 +2928,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "GLM-5.2 (Non-reasoning)",
+      "model": "GLM-5.2 (non-reasoning)",
       "full_name": "GLM-5.2 (Non-reasoning)",
       "creator": "Z AI",
       "creator_slug": "z-ai",
@@ -2949,7 +2970,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3.6 27B (Non-reasoning)",
+      "model": "Qwen3.6 27B (non-reasoning)",
       "full_name": "Qwen3.6 27B (Non-reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -3012,7 +3033,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3.5 122B A10B (Non-reasoning)",
+      "model": "Qwen3.5 122B A10B (non-reasoning)",
       "full_name": "Qwen3.5 122B A10B (Non-reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -3033,7 +3054,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "MiMo-V2.5-Pro (Non-reasoning)",
+      "model": "MiMo-V2.5-Pro (non-reasoning)",
       "full_name": "MiMo-V2.5-Pro (Non-reasoning)",
       "creator": "Xiaomi",
       "creator_slug": "xiaomi",
@@ -3096,7 +3117,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "DeepSeek V4 Flash (Non-reasoning)",
+      "model": "DeepSeek V4 Flash (non-reasoning)",
       "full_name": "DeepSeek V4 Flash 0420 (Non-reasoning)",
       "creator": "DeepSeek",
       "creator_slug": "deepseek",
@@ -3117,7 +3138,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3 VL 235B A22B (Reasoning)",
+      "model": "Qwen3 VL 235B A22B",
       "full_name": "Qwen3 VL 235B A22B (Reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -3180,7 +3201,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "DeepSeek V3.2 (Non-reasoning)",
+      "model": "DeepSeek V3.2 (non-reasoning)",
       "full_name": "DeepSeek V3.2 (Non-reasoning)",
       "creator": "DeepSeek",
       "creator_slug": "deepseek",
@@ -3202,7 +3223,7 @@
     },
     {
       "model": "EXAONE 4.5 33B",
-      "full_name": "EXAONE 4.5 33B",
+      "full_name": "EXAONE 4.5 33B (Reasoning)",
       "creator": "LG AI Research",
       "creator_slug": "lg-ai-research",
       "creator_color": "#df3b8a",
@@ -3243,7 +3264,7 @@
       "brand_frontier_of": "Alibaba"
     },
     {
-      "model": "Hy3-preview (Non-reasoning)",
+      "model": "Hy3-preview (non-reasoning)",
       "full_name": "Hy3-preview (Non-reasoning)",
       "creator": "Tencent",
       "creator_slug": "tencent",
@@ -3264,7 +3285,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "GLM-4.7 (Non-reasoning)",
+      "model": "GLM-4.7 (non-reasoning)",
       "full_name": "GLM-4.7 (Non-reasoning)",
       "creator": "Z AI",
       "creator_slug": "z-ai",
@@ -3285,7 +3306,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3.6 35B A3B (Non-reasoning)",
+      "model": "Qwen3.6 35B A3B (non-reasoning)",
       "full_name": "Qwen3.6 35B A3B (Non-reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -3453,7 +3474,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "DeepSeek V4 Pro 0813 (Non-reasoning)",
+      "model": "DeepSeek V4 Pro 0813 (non-reasoning)",
       "full_name": "DeepSeek V4 Pro 0813 (Non-reasoning)",
       "creator": "DeepSeek",
       "creator_slug": "deepseek",
@@ -3495,7 +3516,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Gemma 4 31B (Non-reasoning)",
+      "model": "Gemma 4 31B (non-reasoning)",
       "full_name": "Gemma 4 31B (Non-reasoning)",
       "creator": "Google",
       "creator_slug": "google",
@@ -3516,7 +3537,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3 VL 32B (Reasoning)",
+      "model": "Qwen3 VL 32B",
       "full_name": "Qwen3 VL 32B (Reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -3621,7 +3642,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3.5 9B (Non-reasoning)",
+      "model": "Qwen3.5 9B (non-reasoning)",
       "full_name": "Qwen3.5 9B (Non-reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -3663,7 +3684,7 @@
       "brand_frontier_of": "Z AI"
     },
     {
-      "model": "GLM-4.6 (Non-reasoning)",
+      "model": "GLM-4.6 (non-reasoning)",
       "full_name": "GLM-4.6 (Non-reasoning)",
       "creator": "Z AI",
       "creator_slug": "z-ai",
@@ -3684,7 +3705,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3.5 35B A3B (Non-reasoning)",
+      "model": "Qwen3.5 35B A3B (non-reasoning)",
       "full_name": "Qwen3.5 35B A3B (Non-reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -3873,7 +3894,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Gemma 4 26B A4B (Non-reasoning)",
+      "model": "Gemma 4 26B A4B (non-reasoning)",
       "full_name": "Gemma 4 26B A4B (Non-reasoning)",
       "creator": "Google",
       "creator_slug": "google",
@@ -3936,7 +3957,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "DeepSeek V3.1 Terminus (Non-reasoning)",
+      "model": "DeepSeek V3.1 Terminus (non-reasoning)",
       "full_name": "DeepSeek V3.1 Terminus (Non-reasoning)",
       "creator": "DeepSeek",
       "creator_slug": "deepseek",
@@ -3958,7 +3979,7 @@
     },
     {
       "model": "gpt-oss-120b (high)",
-      "full_name": "gpt-oss-120b (high)",
+      "full_name": "gpt-oss-120b (High)",
       "creator": "OpenAI",
       "creator_slug": "openai",
       "creator_color": "#1f1f1f",
@@ -3978,7 +3999,7 @@
       "brand_frontier_of": "OpenAI"
     },
     {
-      "model": "MiMo-V2-Flash (Non-reasoning)",
+      "model": "MiMo-V2-Flash (non-reasoning)",
       "full_name": "MiMo-V2-Flash (Non-reasoning)",
       "creator": "Xiaomi",
       "creator_slug": "xiaomi",
@@ -4020,7 +4041,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "DeepSeek V3.2 Exp (Non-reasoning)",
+      "model": "DeepSeek V3.2 Exp (non-reasoning)",
       "full_name": "DeepSeek V3.2 Exp (Non-reasoning)",
       "creator": "DeepSeek",
       "creator_slug": "deepseek",
@@ -4042,7 +4063,7 @@
     },
     {
       "model": "HyperNova 60B 2605 (high)",
-      "full_name": "HyperNova 60B 2605 (high, based on gpt-oss-120b)",
+      "full_name": "HyperNova 60B 2605 (High, Based on gpt-oss-120b)",
       "creator": "Multiverse Computing",
       "creator_slug": "multiverse-computing",
       "creator_color": "#f11338",
@@ -4062,7 +4083,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "DeepSeek V3.1 (Non-reasoning)",
+      "model": "DeepSeek V3.1 (non-reasoning)",
       "full_name": "DeepSeek V3.1 (Non-reasoning)",
       "creator": "DeepSeek",
       "creator_slug": "deepseek",
@@ -4209,7 +4230,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3 Next 80B A3B (Reasoning)",
+      "model": "Qwen3 Next 80B A3B",
       "full_name": "Qwen3 Next 80B A3B (Reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -4230,7 +4251,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Gemma 4 12B (Non-reasoning)",
+      "model": "Gemma 4 12B (non-reasoning)",
       "full_name": "Gemma 4 12B (Non-reasoning)",
       "creator": "Google",
       "creator_slug": "google",
@@ -4356,7 +4377,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "MiniCPM5-1B (Non-reasoning)",
+      "model": "MiniCPM5-1B (non-reasoning)",
       "full_name": "MiniCPM5-1B (Non-reasoning)",
       "creator": "OpenBMB",
       "creator_slug": "openbmb",
@@ -4419,7 +4440,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3.5 4B (Non-reasoning)",
+      "model": "Qwen3.5 4B (non-reasoning)",
       "full_name": "Qwen3.5 4B (Non-reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -4588,7 +4609,7 @@
     },
     {
       "model": "K2-V2 (high)",
-      "full_name": "K2-V2 (high)",
+      "full_name": "K2-V2 (High)",
       "creator": "Institute of Foundation Models",
       "creator_slug": "institute-of-foundation-models",
       "creator_color": "#1521a9",
@@ -4608,7 +4629,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "K-EXAONE (Non-reasoning)",
+      "model": "K-EXAONE (non-reasoning)",
       "full_name": "K-EXAONE (Non-reasoning)",
       "creator": "LG AI Research",
       "creator_slug": "lg-ai-research",
@@ -4714,7 +4735,7 @@
     },
     {
       "model": "gpt-oss-20b (high)",
-      "full_name": "gpt-oss-20b (high)",
+      "full_name": "gpt-oss-20b (High)",
       "creator": "OpenAI",
       "creator_slug": "openai",
       "creator_color": "#1f1f1f",
@@ -4735,7 +4756,7 @@
     },
     {
       "model": "INTELLECT-3",
-      "full_name": "INTELLECT-3 (based on GLM-4.5-Air)",
+      "full_name": "INTELLECT-3 (Based on GLM-4.5-Air)",
       "creator": "Prime Intellect",
       "creator_slug": "prime-intellect",
       "creator_color": "#000000",
@@ -4818,7 +4839,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3 VL 30B A3B (Reasoning)",
+      "model": "Qwen3 VL 30B A3B",
       "full_name": "Qwen3 VL 30B A3B (Reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -4861,7 +4882,7 @@
     },
     {
       "model": "gpt-oss-20b (low)",
-      "full_name": "gpt-oss-20b (low)",
+      "full_name": "gpt-oss-20b (Low)",
       "creator": "OpenAI",
       "creator_slug": "openai",
       "creator_color": "#1f1f1f",
@@ -4923,7 +4944,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Gemma 4 E4B (Non-reasoning)",
+      "model": "Gemma 4 E4B (non-reasoning)",
       "full_name": "Gemma 4 E4B (Non-reasoning)",
       "creator": "Google",
       "creator_slug": "google",
@@ -5050,7 +5071,7 @@
     },
     {
       "model": "K2-V2 (medium)",
-      "full_name": "K2-V2 (medium)",
+      "full_name": "K2-V2 (Medium)",
       "creator": "Institute of Foundation Models",
       "creator_slug": "institute-of-foundation-models",
       "creator_color": "#1521a9",
@@ -5113,7 +5134,7 @@
     },
     {
       "model": "gpt-oss-120b (low)",
-      "full_name": "gpt-oss-120b (low)",
+      "full_name": "gpt-oss-120b (Low)",
       "creator": "OpenAI",
       "creator_slug": "openai",
       "creator_color": "#1f1f1f",
@@ -5133,7 +5154,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3 VL 8B (Reasoning)",
+      "model": "Qwen3 VL 8B",
       "full_name": "Qwen3 VL 8B (Reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -5196,7 +5217,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "GLM-4.7-Flash (Non-reasoning)",
+      "model": "GLM-4.7-Flash (non-reasoning)",
       "full_name": "GLM-4.7-Flash (Non-reasoning)",
       "creator": "Z AI",
       "creator_slug": "z-ai",
@@ -5280,7 +5301,7 @@
       "brand_frontier_of": "Alibaba"
     },
     {
-      "model": "Mistral Small 4 (Non-reasoning)",
+      "model": "Mistral Small 4 (non-reasoning)",
       "full_name": "Mistral Small 4 (Non-reasoning)",
       "creator": "Mistral",
       "creator_slug": "mistral",
@@ -5301,7 +5322,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Hermes 4 405B (Non-reasoning)",
+      "model": "Hermes 4 405B (non-reasoning)",
       "full_name": "Hermes 4 - Llama-3.1 405B (Non-reasoning)",
       "creator": "Nous Research",
       "creator_slug": "nous-research",
@@ -5385,7 +5406,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "GLM-4.6V (Non-reasoning)",
+      "model": "GLM-4.6V (non-reasoning)",
       "full_name": "GLM-4.6V (Non-reasoning)",
       "creator": "Z AI",
       "creator_slug": "z-ai",
@@ -5427,7 +5448,7 @@
       "brand_frontier_of": "Google"
     },
     {
-      "model": "Qwen3 Omni 30B A3B (Reasoning)",
+      "model": "Qwen3 Omni 30B A3B",
       "full_name": "Qwen3 Omni 30B A3B (Reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -5701,7 +5722,7 @@
     },
     {
       "model": "Sarvam 105B (high)",
-      "full_name": "Sarvam 105B (high)",
+      "full_name": "Sarvam 105B (High)",
       "creator": "Sarvam",
       "creator_slug": "sarvam",
       "creator_color": "#807D77",
@@ -5764,7 +5785,7 @@
     },
     {
       "model": "K2-V2 (low)",
-      "full_name": "K2-V2 (low)",
+      "full_name": "K2-V2 (Low)",
       "creator": "Institute of Foundation Models",
       "creator_slug": "institute-of-foundation-models",
       "creator_color": "#1521a9",
@@ -5847,7 +5868,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Llama Nemotron Super 49B v1.5 (Non-reasoning)",
+      "model": "Llama Nemotron Super 49B v1.5 (non-reasoning)",
       "full_name": "Llama Nemotron Super 49B v1.5 (Non-reasoning)",
       "creator": "NVIDIA",
       "creator_slug": "nvidia",
@@ -6204,7 +6225,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3 235B (Non-reasoning)",
+      "model": "Qwen3 235B (non-reasoning)",
       "full_name": "Qwen3 235B A22B (Non-reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -6267,7 +6288,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3 VL 4B (Reasoning)",
+      "model": "Qwen3 VL 4B",
       "full_name": "Qwen3 VL 4B (Reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -6288,7 +6309,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Llama 3.3 Nemotron Super 49B (Non-reasoning)",
+      "model": "Llama 3.3 Nemotron Super 49B (non-reasoning)",
       "full_name": "Llama 3.3 Nemotron Super 49B v1 (Non-reasoning)",
       "creator": "NVIDIA",
       "creator_slug": "nvidia",
@@ -6309,7 +6330,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3 30B A3B 2507 (Non-reasoning)",
+      "model": "Qwen3 30B A3B 2507 (non-reasoning)",
       "full_name": "Qwen3 30B A3B 2507 Instruct",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -6372,7 +6393,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "NVIDIA Nemotron Nano 9B V2 (Non-reasoning)",
+      "model": "NVIDIA Nemotron Nano 9B V2 (non-reasoning)",
       "full_name": "NVIDIA Nemotron Nano 9B V2 (Non-reasoning)",
       "creator": "NVIDIA",
       "creator_slug": "nvidia",
@@ -6393,7 +6414,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3 32B (Non-reasoning)",
+      "model": "Qwen3 32B (non-reasoning)",
       "full_name": "Qwen3 32B (Non-reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -6414,7 +6435,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "GLM-4.5V (Non-reasoning)",
+      "model": "GLM-4.5V (non-reasoning)",
       "full_name": "GLM-4.5V (Non-reasoning)",
       "creator": "Z AI",
       "creator_slug": "z-ai",
@@ -6435,7 +6456,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Gemma 4 E2B (Non-reasoning)",
+      "model": "Gemma 4 E2B (non-reasoning)",
       "full_name": "Gemma 4 E2B (Non-reasoning)",
       "creator": "Google",
       "creator_slug": "google",
@@ -6456,7 +6477,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3.5 2B (Non-reasoning)",
+      "model": "Qwen3.5 2B (non-reasoning)",
       "full_name": "Qwen3.5 2B (Non-reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -6540,7 +6561,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3 4B 2507 (Non-reasoning)",
+      "model": "Qwen3 4B 2507 (non-reasoning)",
       "full_name": "Qwen3 4B 2507 Instruct",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -6708,7 +6729,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Hermes 4 70B (Non-reasoning)",
+      "model": "Hermes 4 70B (non-reasoning)",
       "full_name": "Hermes 4 - Llama-3.1 70B (Non-reasoning)",
       "creator": "Nous Research",
       "creator_slug": "nous-research",
@@ -6750,7 +6771,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "EXAONE 4.0 32B (Non-reasoning)",
+      "model": "EXAONE 4.0 32B (non-reasoning)",
       "full_name": "EXAONE 4.0 32B (Non-reasoning)",
       "creator": "LG AI Research",
       "creator_slug": "lg-ai-research",
@@ -6856,7 +6877,7 @@
     },
     {
       "model": "Sarvam 30B (high)",
-      "full_name": "Sarvam 30B (high)",
+      "full_name": "Sarvam 30B (High)",
       "creator": "Sarvam",
       "creator_slug": "sarvam",
       "creator_color": "#807D77",
@@ -6897,7 +6918,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "NVIDIA Nemotron Nano 12B v2 VL (Non-reasoning)",
+      "model": "NVIDIA Nemotron Nano 12B v2 VL (non-reasoning)",
       "full_name": "NVIDIA Nemotron Nano 12B v2 VL (Non-reasoning)",
       "creator": "NVIDIA",
       "creator_slug": "nvidia",
@@ -6939,7 +6960,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3 30B (Non-reasoning)",
+      "model": "Qwen3 30B (non-reasoning)",
       "full_name": "Qwen3 30B A3B (Non-reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -6960,7 +6981,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Nemotron 3 Nano (Non-reasoning)",
+      "model": "Nemotron 3 Nano (non-reasoning)",
       "full_name": "NVIDIA Nemotron 3 Nano 30B A3B (Non-reasoning)",
       "creator": "NVIDIA",
       "creator_slug": "nvidia",
@@ -7086,7 +7107,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3 14B (Non-reasoning)",
+      "model": "Qwen3 14B (non-reasoning)",
       "full_name": "Qwen3 14B (Non-reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -7359,7 +7380,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3 8B (Non-reasoning)",
+      "model": "Qwen3 8B (non-reasoning)",
       "full_name": "Qwen3 8B (Non-reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -7402,7 +7423,7 @@
     },
     {
       "model": "Sarvam M",
-      "full_name": "Sarvam M (Reasoning, based on Mistral Small 3.1)",
+      "full_name": "Sarvam M (Reasoning, Based on Mistral Small 3.1)",
       "creator": "Sarvam",
       "creator_slug": "sarvam",
       "creator_color": "#807D77",
@@ -7527,7 +7548,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3.5 0.8B (Non-reasoning)",
+      "model": "Qwen3.5 0.8B (non-reasoning)",
       "full_name": "Qwen3.5 0.8B (Non-reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -7695,7 +7716,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Exaone 4.0 1.2B (Non-reasoning)",
+      "model": "Exaone 4.0 1.2B (non-reasoning)",
       "full_name": "Exaone 4.0 1.2B (Non-reasoning)",
       "creator": "LG AI Research",
       "creator_slug": "lg-ai-research",
@@ -7779,7 +7800,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Granite 3.3 8B",
+      "model": "Granite 3.3 8B (non-reasoning)",
       "full_name": "Granite 3.3 8B (Non-reasoning)",
       "creator": "IBM",
       "creator_slug": "ibm",
@@ -8010,7 +8031,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3 1.7B (Non-reasoning)",
+      "model": "Qwen3 1.7B (non-reasoning)",
       "full_name": "Qwen3 1.7B (Non-reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
@@ -8136,7 +8157,7 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3 0.6B (Non-reasoning)",
+      "model": "Qwen3 0.6B (non-reasoning)",
       "full_name": "Qwen3 0.6B (Non-reasoning)",
       "creator": "Alibaba",
       "creator_slug": "alibaba",
