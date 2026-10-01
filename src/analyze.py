@@ -281,8 +281,8 @@ METRIC_FIELDS = {
     "tau2": "tau2",
     "tauBanking": "tauBanking",
     "terminalbenchHard": "terminalbenchHard",
-    "terminalbenchV21": "terminalbenchV21",
-    "terminalbenchV40": "terminalbenchV40",
+    "terminalbenchV21": "terminalBench21",  # AA payload uses capital-B, no V (V19 fix 2026-10-01)
+    "terminalbenchV40": "terminalBench40",
 }
 
 METRIC_LABELS = {
