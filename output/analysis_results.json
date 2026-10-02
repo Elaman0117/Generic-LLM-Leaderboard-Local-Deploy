@@ -215,14 +215,14 @@
       "is_open_weights": true,
       "is_pareto": true,
       "chart_label": "5.3 (max)",
-      "composite_ability": 0.8548290968150493,
+      "composite_ability": 0.8540738745271741,
       "total_params_B": 753.0,
       "active_params_B": 40.0,
       "param_source": "faq",
       "size_class": "large",
       "x_axis_position": 0.821029766433557,
       "in_chart": true,
-      "chart_y": 0.8341795367948647,
+      "chart_y": 0.8333168893438203,
       "valid_metrics": 14
     },
     {
@@ -537,14 +537,14 @@
         "is_open_weights": true,
         "is_pareto": true,
         "chart_label": "5.3 (max)",
-        "composite_ability": 0.8548290968150493,
+        "composite_ability": 0.8540738745271741,
         "total_params_B": 753.0,
         "active_params_B": 40.0,
         "param_source": "faq",
         "size_class": "large",
         "x_axis_position": 0.821029766433557,
         "in_chart": true,
-        "chart_y": 0.8341795367948647,
+        "chart_y": 0.8333168893438203,
         "valid_metrics": 14
       },
       {
@@ -743,7 +743,7 @@
       {
         "rank": 2,
         "model": "Kimi K2.6",
-        "full_name": "Kimi K2.6 (Reasoning)",
+        "full_name": "Kimi K2.6",
         "creator": "Kimi",
         "creator_color": "#047AFE",
         "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/kimi.jpg",
@@ -1137,7 +1137,7 @@
       "creator_color": "#1c7ff8",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/zai.svg",
       "is_deprecated": false,
-      "composite_ability": 0.8548290968150493,
+      "composite_ability": 0.8540738745271741,
       "total_params_B": 753.0,
       "active_params_B": 40.0,
       "param_source": "faq",
@@ -1146,7 +1146,7 @@
       "is_reasoning": true,
       "x_axis_position": 0.821029766433557,
       "in_chart": true,
-      "chart_y": 0.8341795367948647,
+      "chart_y": 0.8333168893438203,
       "is_pareto": true,
       "brand_frontier_of": "Z AI"
     },
@@ -1383,7 +1383,7 @@
     },
     {
       "model": "Kimi K2.6",
-      "full_name": "Kimi K2.6 (Reasoning)",
+      "full_name": "Kimi K2.6",
       "creator": "Kimi",
       "creator_slug": "kimi",
       "creator_color": "#047AFE",
@@ -1488,7 +1488,7 @@
     },
     {
       "model": "JT-4.1 Flash 236B A21B",
-      "full_name": "JT-4.1 Flash 236B A21B (Reasoning)",
+      "full_name": "JT-4.1 Flash 236B A21B",
       "creator": "China Mobile",
       "creator_slug": "china-mobile",
       "creator_color": "#00b8ea",
@@ -1761,7 +1761,7 @@
     },
     {
       "model": "MiMo-V2.5-Pro",
-      "full_name": "MiMo-V2.5-Pro (Reasoning)",
+      "full_name": "MiMo-V2.5-Pro",
       "creator": "Xiaomi",
       "creator_slug": "xiaomi",
       "creator_color": "#ff6900",
@@ -3294,7 +3294,7 @@
     },
     {
       "model": "EXAONE 4.5 33B",
-      "full_name": "EXAONE 4.5 33B (Reasoning)",
+      "full_name": "EXAONE 4.5 33B",
       "creator": "LG AI Research",
       "creator_slug": "lg-ai-research",
       "creator_color": "#df3b8a",
