@@ -5526,5 +5526,21 @@
   "active_B": null,
   "source": "undisclosed",
   "fetched_at": "2026-10-01T10:42:33+00:00"
+ },
+ "grok-4-7-low": {
+  "slug": "grok-4-7-low",
+  "name": "Grok 4.7 (Low)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-10-03T09:39:14+00:00"
+ },
+ "jt-4-1-flash-236b-a21b-non-reasoning": {
+  "slug": "jt-4-1-flash-236b-a21b-non-reasoning",
+  "name": "JT-4.1 Flash 236B A21B (Non-reasoning)",
+  "total_B": 236.0,
+  "active_B": null,
+  "source": "faq",
+  "fetched_at": "2026-10-03T09:39:15+00:00"
  }
 }
