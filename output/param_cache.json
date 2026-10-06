@@ -5542,5 +5542,13 @@
   "active_B": null,
   "source": "faq",
   "fetched_at": "2026-10-03T09:39:15+00:00"
+ },
+ "ling-3-1-flash": {
+  "slug": "ling-3-1-flash",
+  "name": "Ling 3.1 Flash",
+  "total_B": 560.0,
+  "active_B": null,
+  "source": "faq",
+  "fetched_at": "2026-10-06T11:00:01+00:00"
  }
 }
