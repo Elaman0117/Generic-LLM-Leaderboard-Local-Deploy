@@ -4,7 +4,7 @@
     "model_status": "All (including deprecated models)",
     "methodology": "20 evaluation metrics normalized [0,1], averaged → composite ability, then re-normalized linearly so best model = 1 and worst = 0; Pareto = non-dominated by total params (models without param data excluded); chart Y-axis (V17): y = 0 at the FIRST (lowest) level of the overall Pareto frontier — models below it are excluded from the chart but kept in the table; chart_y = (ability-y0)/(1-y0); X-axis: linear total-params mapping x = raw/xmax (xmax = 11 brand-frontier max); left edge raw = 0; 11 brands get their own thin Pareto lines (brand theme colors, drawn above the solid gray overall Pareto line; vertices ordered by (axis_x, ability) so equal-cost points connect bottom-up); dark brand elements carry a narrow white outline on the black canvas; labels ride ON the Pareto lines when the adjacent segment allows (parallel to the line, mid-axis coincident, line gapped under the text, bare brand-colored text), else take the nearest free spot; every label = model family (brand-shared leading block stripped at the longest valid cut: ending at a separator, or at a letter followed by a digit in every name) plus thinking level, '(non-reasoning)' shortened to '(non)'; 2+ consecutive same-family vertices shorten to level-only labels after the run head (runs recomputed per brand; non-adjacent occurrences keep full labels)",
     "x_source": "AA model detail pages (FAQ text), model-name fallback; MoE keeps TOTAL; unit B",
-    "total_models": 339,
+    "total_models": 340,
     "pareto_count": 11,
     "x_axis_mapping": {
       "mapping": "log mapping X=A*ln(B*X+C)+D fitted on the 11 brand-frontier models, pins RAW (0,0)/(xmax,1), B=1, C=1/r",
@@ -28,8 +28,8 @@
       "left_edge_label": "0",
       "free_models": 0,
       "over_max_models": 0,
-      "plotted_models": 287,
-      "total_models": 339,
+      "plotted_models": 288,
+      "total_models": 340,
       "min_positive_cost": 0.268,
       "x_at_min_positive_cost": 0.018553427040190897,
       "max_cost": 2800.0,
@@ -57,35 +57,35 @@
         }
       ],
       "left_half_models": 131,
-      "right_half_models": 156,
+      "right_half_models": 157,
       "y_axis": {
         "baseline": 0.12426980966233037,
         "baseline_model": "Gemma 3 270M",
-        "visible_models": 287,
-        "plotted_models": 287,
+        "visible_models": 288,
+        "plotted_models": 288,
         "no_x_visible": 0,
         "below_baseline": 52,
-        "total_models": 339,
+        "total_models": 340,
         "note": "chart y = (ability - baseline)/(1 - baseline); models below the first overall-Pareto level are excluded from the chart but kept in the README table"
       }
     },
     "y_axis": {
       "baseline": 0.12426980966233037,
       "baseline_model": "Gemma 3 270M",
-      "visible_models": 287,
-      "plotted_models": 287,
+      "visible_models": 288,
+      "plotted_models": 288,
       "no_x_visible": 0,
       "below_baseline": 52,
-      "total_models": 339,
+      "total_models": 340,
       "note": "chart y = (ability - baseline)/(1 - baseline); models below the first overall-Pareto level are excluded from the chart but kept in the README table"
     },
     "x_axis_distribution": {
-      "plotted_models": 287,
+      "plotted_models": 288,
       "x_min": 0.018553427040190897,
       "x_max": 1.0,
       "median": 0.5178523562461845,
       "left_half_models": 131,
-      "right_half_models": 156,
+      "right_half_models": 157,
       "decile_counts": [
         4,
         20,
@@ -95,7 +95,7 @@
         43,
         34,
         29,
-        41,
+        42,
         9
       ],
       "note": "log mapping x = A*ln(B*X+C)+D fitted on brand frontiers; pins (0,0)/(xmax,1)"
@@ -105,7 +105,7 @@
     "AA Intelligence Index": {
       "min": 3.04760621054014,
       "max": 57.6223698102963,
-      "count": 681
+      "count": 682
     },
     "GPQA Diamond": {
       "min": 0.09797979797979799,
@@ -115,12 +115,12 @@
     "Humanity's Last Exam": {
       "min": 0.010658016682113068,
       "max": 0.6135310472659871,
-      "count": 653
+      "count": 654
     },
     "MMMU Pro": {
       "min": 0.14508670520231215,
       "max": 0.876878612716763,
-      "count": 285
+      "count": 286
     },
     "IFBench Instruction Following": {
       "min": 0.12108843537414966,
@@ -130,37 +130,37 @@
     "SciCode Coding": {
       "min": 0.06944444444444445,
       "max": 0.6689814814814815,
-      "count": 220
+      "count": 221
     },
     "CritPt Physics": {
       "min": 0.0,
       "max": 0.32285714285714284,
-      "count": 568
+      "count": 569
     },
     "AA-LCR Long Context": {
       "min": 0.0,
       "max": 0.8866666666666667,
-      "count": 564
+      "count": 565
     },
     "AA Omniscience Index": {
       "min": -88.58333333333333,
       "max": 46.416666666666664,
-      "count": 565
+      "count": 566
     },
     "AA-Omniscience Accuracy": {
       "min": 0.001,
       "max": 0.6723333333333333,
-      "count": 565
+      "count": 566
     },
     "AA-Omniscience Non-Hallucination": {
       "min": 0.015260480617435538,
       "max": 0.990990990990991,
-      "count": 565
+      "count": 566
     },
     "GDPval-AA Normalized": {
       "min": 0.0,
       "max": 0.68312,
-      "count": 282
+      "count": 283
     },
     "AA Analyst Agent": {
       "min": 0.0125,
@@ -200,7 +200,7 @@
     "Terminal-Bench 4.0": {
       "min": 0.0,
       "max": 0.6363636363636364,
-      "count": 209
+      "count": 210
     }
   },
   "pareto_frontier": [
@@ -236,14 +236,14 @@
       "is_open_weights": false,
       "is_pareto": true,
       "chart_label": "Step 5 Preview",
-      "composite_ability": 0.816332988289695,
+      "composite_ability": 0.8162579095578381,
       "total_params_B": 600.0,
       "active_params_B": null,
       "param_source": "faq",
       "size_class": "large",
       "x_axis_position": 0.7901197456787119,
       "in_chart": true,
-      "chart_y": 0.7902698642381103,
+      "chart_y": 0.7901841315173644,
       "valid_metrics": 14
     },
     {
@@ -278,14 +278,14 @@
       "is_open_weights": true,
       "is_pareto": true,
       "chart_label": "3.8-Flash-Next",
-      "composite_ability": 0.7479853595575596,
+      "composite_ability": 0.7479396084553342,
       "total_params_B": 180.0,
       "active_params_B": 6.0,
       "param_source": "faq",
       "size_class": "large",
       "x_axis_position": 0.6267962172800325,
       "in_chart": true,
-      "chart_y": 0.7122234185562714,
+      "chart_y": 0.7121711751795667,
       "valid_metrics": 14
     },
     {
@@ -751,14 +751,14 @@
         "is_open_weights": true,
         "is_pareto": true,
         "chart_label": "K2.6",
-        "composite_ability": 0.6717460461717162,
+        "composite_ability": 0.6717278939125336,
         "total_params_B": 1000.0,
         "active_params_B": 32.0,
         "param_source": "faq",
         "size_class": "large",
         "x_axis_position": 0.8596597974850319,
         "in_chart": true,
-        "chart_y": 0.6251654248648051,
+        "chart_y": 0.6251446967234404,
         "valid_metrics": 19
       },
       {
@@ -816,14 +816,14 @@
         "is_open_weights": true,
         "is_pareto": true,
         "chart_label": "3.8-Flash-Next",
-        "composite_ability": 0.7479853595575596,
+        "composite_ability": 0.7479396084553342,
         "total_params_B": 180.0,
         "active_params_B": 6.0,
         "param_source": "faq",
         "size_class": "large",
         "x_axis_position": 0.6267962172800325,
         "in_chart": true,
-        "chart_y": 0.7122234185562714,
+        "chart_y": 0.7121711751795667,
         "valid_metrics": 14
       },
       {
@@ -923,14 +923,14 @@
         "is_open_weights": true,
         "is_pareto": true,
         "chart_label": "V4 Pro 0813 (max)",
-        "composite_ability": 0.7002993334969734,
+        "composite_ability": 0.7002374296387355,
         "total_params_B": 1600.0,
         "active_params_B": 49.0,
         "param_source": "faq",
         "size_class": "large",
         "x_axis_position": 0.9237022679352159,
         "in_chart": true,
-        "chart_y": 0.6577705441587367,
+        "chart_y": 0.6576998558817755,
         "valid_metrics": 13
       },
       {
@@ -965,14 +965,14 @@
         "is_open_weights": false,
         "is_pareto": true,
         "chart_label": "V4 Flash Vision (max)",
-        "composite_ability": 0.6644655602690195,
+        "composite_ability": 0.664428020903091,
         "total_params_B": 284.0,
         "active_params_B": null,
         "param_source": "faq",
         "size_class": "large",
         "x_axis_position": 0.688517525377353,
         "in_chart": true,
-        "chart_y": 0.6168518072882665,
+        "chart_y": 0.6168089409278936,
         "valid_metrics": 14
       },
       {
@@ -1200,7 +1200,7 @@
       "creator_color": "#00F5E7",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/stepfun.svg",
       "is_deprecated": false,
-      "composite_ability": 0.816332988289695,
+      "composite_ability": 0.8162579095578381,
       "total_params_B": 600.0,
       "active_params_B": null,
       "param_source": "faq",
@@ -1209,7 +1209,7 @@
       "is_reasoning": true,
       "x_axis_position": 0.7901197456787119,
       "in_chart": true,
-      "chart_y": 0.7902698642381103,
+      "chart_y": 0.7901841315173644,
       "is_pareto": true,
       "brand_frontier_of": null
     },
@@ -1263,7 +1263,7 @@
       "creator_color": "#1c7ff8",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/zai.svg",
       "is_deprecated": true,
-      "composite_ability": 0.7528842594504473,
+      "composite_ability": 0.7528546059582643,
       "total_params_B": 753.0,
       "active_params_B": 40.0,
       "param_source": "faq",
@@ -1272,7 +1272,7 @@
       "is_reasoning": true,
       "x_axis_position": 0.821029766433557,
       "in_chart": true,
-      "chart_y": 0.7178174930177202,
+      "chart_y": 0.7177836315698561,
       "is_pareto": false,
       "brand_frontier_of": null
     },
@@ -1284,7 +1284,7 @@
       "creator_color": "#ff7018",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/alibaba.svg",
       "is_deprecated": false,
-      "composite_ability": 0.7479853595575596,
+      "composite_ability": 0.7479396084553342,
       "total_params_B": 180.0,
       "active_params_B": 6.0,
       "param_source": "faq",
@@ -1293,7 +1293,7 @@
       "is_reasoning": true,
       "x_axis_position": 0.6267962172800325,
       "in_chart": true,
-      "chart_y": 0.7122234185562714,
+      "chart_y": 0.7121711751795667,
       "is_pareto": true,
       "brand_frontier_of": "Alibaba"
     },
@@ -1326,7 +1326,7 @@
       "creator_color": "#2243e6",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/deepseek.svg",
       "is_deprecated": false,
-      "composite_ability": 0.7002993334969734,
+      "composite_ability": 0.7002374296387355,
       "total_params_B": 1600.0,
       "active_params_B": 49.0,
       "param_source": "faq",
@@ -1335,7 +1335,7 @@
       "is_reasoning": true,
       "x_axis_position": 0.9237022679352159,
       "in_chart": true,
-      "chart_y": 0.6577705441587367,
+      "chart_y": 0.6576998558817755,
       "is_pareto": false,
       "brand_frontier_of": "DeepSeek"
     },
@@ -1410,7 +1410,7 @@
       "creator_color": "#047AFE",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/kimi.jpg",
       "is_deprecated": true,
-      "composite_ability": 0.6717460461717162,
+      "composite_ability": 0.6717278939125336,
       "total_params_B": 1000.0,
       "active_params_B": 32.0,
       "param_source": "faq",
@@ -1419,9 +1419,30 @@
       "is_reasoning": true,
       "x_axis_position": 0.8596597974850319,
       "in_chart": true,
-      "chart_y": 0.6251654248648051,
+      "chart_y": 0.6251446967234404,
       "is_pareto": false,
       "brand_frontier_of": "Kimi"
+    },
+    {
+      "model": "Mistral Large 4 Preview",
+      "full_name": "Mistral Large 4 Preview",
+      "creator": "Mistral",
+      "creator_slug": "mistral",
+      "creator_color": "#f32e02",
+      "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/mistral.svg",
+      "is_deprecated": false,
+      "composite_ability": 0.664741489851617,
+      "total_params_B": 1000.0,
+      "active_params_B": null,
+      "param_source": "faq",
+      "size_class": "large",
+      "is_open_weights": false,
+      "is_reasoning": true,
+      "x_axis_position": 0.8596597974850319,
+      "in_chart": true,
+      "chart_y": 0.6171668924430801,
+      "is_pareto": false,
+      "brand_frontier_of": null
     },
     {
       "model": "DeepSeek V4 Flash Vision (max)",
@@ -1431,7 +1452,7 @@
       "creator_color": "#2243e6",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/deepseek.svg",
       "is_deprecated": false,
-      "composite_ability": 0.6644655602690195,
+      "composite_ability": 0.664428020903091,
       "total_params_B": 284.0,
       "active_params_B": null,
       "param_source": "faq",
@@ -1440,7 +1461,7 @@
       "is_reasoning": true,
       "x_axis_position": 0.688517525377353,
       "in_chart": true,
-      "chart_y": 0.6168518072882665,
+      "chart_y": 0.6168089409278936,
       "is_pareto": false,
       "brand_frontier_of": "DeepSeek"
     },
@@ -1557,7 +1578,7 @@
       "creator_color": "#2243e6",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/deepseek.svg",
       "is_deprecated": true,
-      "composite_ability": 0.6425778750992658,
+      "composite_ability": 0.6425579940534945,
       "total_params_B": 1600.0,
       "active_params_B": 49.0,
       "param_source": "faq",
@@ -1566,7 +1587,7 @@
       "is_reasoning": true,
       "x_axis_position": 0.9237022679352159,
       "in_chart": true,
-      "chart_y": 0.5918581672250934,
+      "chart_y": 0.5918354649750276,
       "is_pareto": false,
       "brand_frontier_of": null
     },
@@ -1620,7 +1641,7 @@
       "creator_color": "#1c7ff8",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/zai.svg",
       "is_deprecated": true,
-      "composite_ability": 0.6208728283256149,
+      "composite_ability": 0.6208515744199053,
       "total_params_B": 744.0,
       "active_params_B": 40.0,
       "param_source": "faq",
@@ -1629,7 +1650,7 @@
       "is_reasoning": true,
       "x_axis_position": 0.8193929742732293,
       "in_chart": true,
-      "chart_y": 0.5670730827171793,
+      "chart_y": 0.5670488127925564,
       "is_pareto": false,
       "brand_frontier_of": null
     },
@@ -1683,7 +1704,7 @@
       "creator_color": "#1c7ff8",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/zai.svg",
       "is_deprecated": false,
-      "composite_ability": 0.6052075833109233,
+      "composite_ability": 0.6051574917195125,
       "total_params_B": 753.0,
       "active_params_B": 40.0,
       "param_source": "faq",
@@ -1692,7 +1713,7 @@
       "is_reasoning": true,
       "x_axis_position": 0.821029766433557,
       "in_chart": true,
-      "chart_y": 0.5491848733262809,
+      "chart_y": 0.5491276735266583,
       "is_pareto": false,
       "brand_frontier_of": null
     },
@@ -1704,7 +1725,7 @@
       "creator_color": "#047AFE",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/kimi.jpg",
       "is_deprecated": false,
-      "composite_ability": 0.6034293774422661,
+      "composite_ability": 0.6034078216344869,
       "total_params_B": 1000.0,
       "active_params_B": 32.0,
       "param_source": "faq",
@@ -1713,7 +1734,7 @@
       "is_reasoning": true,
       "x_axis_position": 0.8596597974850319,
       "in_chart": true,
-      "chart_y": 0.5471543325406862,
+      "chart_y": 0.547129717872816,
       "is_pareto": false,
       "brand_frontier_of": null
     },
@@ -3027,7 +3048,7 @@
       "creator_color": "#2adb65",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/longcat.svg",
       "is_deprecated": false,
-      "composite_ability": 0.4202663755295102,
+      "composite_ability": 0.42024110864859676,
       "total_params_B": 1600.0,
       "active_params_B": 48.0,
       "param_source": "faq",
@@ -3036,7 +3057,7 @@
       "is_reasoning": true,
       "x_axis_position": 0.9237022679352159,
       "in_chart": true,
-      "chart_y": 0.33799972769358055,
+      "chart_y": 0.33797087533563724,
       "is_pareto": false,
       "brand_frontier_of": null
     },
