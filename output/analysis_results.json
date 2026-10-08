@@ -105,7 +105,7 @@
     "AA Intelligence Index": {
       "min": 3.04760621054014,
       "max": 57.6223698102963,
-      "count": 682
+      "count": 687
     },
     "GPQA Diamond": {
       "min": 0.09797979797979799,
@@ -115,7 +115,7 @@
     "Humanity's Last Exam": {
       "min": 0.010658016682113068,
       "max": 0.6135310472659871,
-      "count": 654
+      "count": 659
     },
     "MMMU Pro": {
       "min": 0.14508670520231215,
@@ -130,37 +130,37 @@
     "SciCode Coding": {
       "min": 0.06944444444444445,
       "max": 0.6689814814814815,
-      "count": 221
+      "count": 226
     },
     "CritPt Physics": {
       "min": 0.0,
       "max": 0.32285714285714284,
-      "count": 569
+      "count": 574
     },
     "AA-LCR Long Context": {
       "min": 0.0,
       "max": 0.8866666666666667,
-      "count": 565
+      "count": 570
     },
     "AA Omniscience Index": {
       "min": -88.58333333333333,
       "max": 46.416666666666664,
-      "count": 566
+      "count": 571
     },
     "AA-Omniscience Accuracy": {
       "min": 0.001,
       "max": 0.6723333333333333,
-      "count": 566
+      "count": 571
     },
     "AA-Omniscience Non-Hallucination": {
       "min": 0.015260480617435538,
       "max": 0.990990990990991,
-      "count": 566
+      "count": 571
     },
     "GDPval-AA Normalized": {
       "min": 0.0,
       "max": 0.68312,
-      "count": 283
+      "count": 288
     },
     "AA Analyst Agent": {
       "min": 0.0125,
@@ -200,7 +200,7 @@
     "Terminal-Bench 4.0": {
       "min": 0.0,
       "max": 0.6363636363636364,
-      "count": 210
+      "count": 215
     }
   },
   "pareto_frontier": [
@@ -236,14 +236,14 @@
       "is_open_weights": false,
       "is_pareto": true,
       "chart_label": "Step 5 Preview",
-      "composite_ability": 0.8162579095578381,
+      "composite_ability": 0.8161904560096852,
       "total_params_B": 600.0,
       "active_params_B": null,
       "param_source": "faq",
       "size_class": "large",
       "x_axis_position": 0.7901197456787119,
       "in_chart": true,
-      "chart_y": 0.7901841315173644,
+      "chart_y": 0.7901071060260692,
       "valid_metrics": 14
     },
     {
@@ -1200,7 +1200,7 @@
       "creator_color": "#00F5E7",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/stepfun.svg",
       "is_deprecated": false,
-      "composite_ability": 0.8162579095578381,
+      "composite_ability": 0.8161904560096852,
       "total_params_B": 600.0,
       "active_params_B": null,
       "param_source": "faq",
@@ -1209,7 +1209,7 @@
       "is_reasoning": true,
       "x_axis_position": 0.7901197456787119,
       "in_chart": true,
-      "chart_y": 0.7901841315173644,
+      "chart_y": 0.7901071060260692,
       "is_pareto": true,
       "brand_frontier_of": null
     },
@@ -2711,7 +2711,7 @@
       "creator_slug": "inclusionai",
       "creator_color": "#4fb5ff",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/inclusionai.jpg",
-      "is_deprecated": false,
+      "is_deprecated": true,
       "composite_ability": 0.4785587747997847,
       "total_params_B": 124.0,
       "active_params_B": 5.1,
@@ -5063,7 +5063,7 @@
       "creator_slug": "mistral",
       "creator_color": "#f32e02",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/mistral.svg",
-      "is_deprecated": false,
+      "is_deprecated": true,
       "composite_ability": 0.25386890059348854,
       "total_params_B": 675.0,
       "active_params_B": 41.0,

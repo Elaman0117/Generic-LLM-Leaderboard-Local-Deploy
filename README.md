@@ -11,7 +11,7 @@
 | 1 | GLM-5.3 (max) | 0.8518 | 753B | 40B | large | ✅ | ✅ |
 | 2 | Kimi K3 (max) | 0.8388 | 2.8T | 104B | large | ✅ | ✅ |
 | 3 | MiMo-V2.6-Pro | 0.8201 | 1T | 42B | large | ✅ | ✅ |
-| 4 | Step 5 Preview | 0.8163 | 600B | — | large | ❌ | ✅ |
+| 4 | Step 5 Preview | 0.8162 | 600B | — | large | ❌ | ✅ |
 | 5 | GLM-5.3-Flash | 0.8060 | 320B | 18B | large | ✅ | ✅ |
 | 6 | Qwen3.8 2.4T A95B | 0.7724 | 2.4T | 95B | large | ✅ | ✅ |
 | 7 | GLM-5.2 (max) | 0.7529 | 753B | 40B | large | ✅ | ✅ |
