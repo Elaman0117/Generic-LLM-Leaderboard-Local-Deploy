@@ -5598,5 +5598,13 @@
   "active_B": null,
   "source": "undisclosed",
   "fetched_at": "2026-10-08T11:07:52+00:00"
+ },
+ "gpt-6-sol-daybreak-blue": {
+  "slug": "gpt-6-sol-daybreak-blue",
+  "name": "GPT-6 Sol (Daybreak Blue, max)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-10-09T11:06:53+00:00"
  }
 }
