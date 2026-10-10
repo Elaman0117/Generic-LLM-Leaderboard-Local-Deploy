@@ -17,22 +17,22 @@
 | 7 | GLM-5.2 (max) | 0.7529 | 753B | 40B | large | ✅ | ✅ |
 | 8 | Qwen3.8-Flash-Next | 0.7479 | 180B | 6B | large | ✅ | ✅ |
 | 9 | Ling 3.1 Flash | 0.7245 | 560B | — | large | ❌ | ✅ |
-| 10 | DeepSeek V4 Pro 0813 (max) | 0.7002 | 1.6T | 49B | large | ✅ | ✅ |
+| 10 | DeepSeek V4 Pro 0813 (max) | 0.6999 | 1.6T | 49B | large | ✅ | ✅ |
 | 11 | DeepSeek V4.1 Flash (max) | 0.6927 | 552B | 16B | large | ✅ | ✅ |
 | 12 | Motif 3 | 0.6771 | 314B | 13.2B | large | ✅ | ✅ |
 | 13 | Qwen3.8 27B (xhigh) | 0.6735 | 27B | — | small | ✅ | ✅ |
 | 14 | Kimi K2.6 | 0.6717 | 1T | 32B | large | ✅ | ✅ |
 | 15 | Mistral Large 4 Preview | 0.6647 | 1T | — | large | ❌ | ✅ |
-| 16 | DeepSeek V4 Flash Vision (max) | 0.6644 | 284B | — | large | ❌ | ✅ |
-| 17 | DeepSeek V4 Flash 0731 (max) | 0.6644 | 284B | 13B | large | ✅ | ✅ |
-| 18 | DeepSeek V4 Pro (high) | 0.6558 | 1.6T | 49B | large | ✅ | ✅ |
+| 16 | DeepSeek V4 Flash 0731 (max) | 0.6644 | 284B | 13B | large | ✅ | ✅ |
+| 17 | DeepSeek V4 Flash Vision (max) | 0.6644 | 284B | — | large | ❌ | ✅ |
+| 18 | DeepSeek V4 Pro (high) | 0.6557 | 1.6T | 49B | large | ✅ | ✅ |
 | 19 | GLM-5 | 0.6439 | 744B | 40B | large | ✅ | ✅ |
-| 20 | JT-4.1 Flash 236B A21B | 0.6434 | 236B | — | large | ❌ | ✅ |
-| 21 | Kimi K3 (low) | 0.6428 | 2.8T | 104B | large | ✅ | ✅ |
+| 20 | JT-4.1 Flash 236B A21B | 0.6431 | 236B | — | large | ❌ | ✅ |
+| 21 | Kimi K3 (low) | 0.6426 | 2.8T | 104B | large | ✅ | ✅ |
 | 22 | DeepSeek V4 Pro (max) | 0.6426 | 1.6T | 49B | large | ✅ | ✅ |
 | 23 | MiMo-V2.6-Flash | 0.6415 | 309B | 15B | large | ✅ | ✅ |
 | 24 | MiniMax-M3 | 0.6395 | 428B | 23B | large | ✅ | ✅ |
-| 25 | GLM-5.1 | 0.6209 | 744B | 40B | large | ✅ | ✅ |
+| 25 | GLM-5.1 | 0.6207 | 744B | 40B | large | ✅ | ✅ |
 | 26 | Motif 3 (Beta) | 0.6106 | 314B | — | large | ❌ | ✅ |
 | 27 | K2 Horizon 375B A23B | 0.6059 | 375B | 23B | large | ✅ | ✅ |
 | 28 | GLM-5.3 (low) | 0.6050 | 753B | 40B | large | ✅ | ✅ |
@@ -49,45 +49,45 @@
 | 39 | Kimi K2 Thinking | 0.5722 | 1T | 32B | large | ✅ | ✅ |
 | 40 | Inkling (xhigh) | 0.5666 | 975B | 41B | large | ✅ | ✅ |
 | 41 | Kimi K2.6 (non-reasoning) | 0.5651 | 1T | 32B | large | ✅ | ❌ |
-| 42 | Inkling Small | 0.5610 | 266B | 12B | large | ✅ | ✅ |
+| 42 | Inkling Small | 0.5609 | 266B | 12B | large | ✅ | ✅ |
 | 43 | Quasar 438B (max) | 0.5605 | 438B | — | large | ❌ | ✅ |
-| 44 | DeepSeek V4 Flash (high) | 0.5567 | 284B | 13B | large | ✅ | ✅ |
+| 44 | DeepSeek V4 Flash (high) | 0.5565 | 284B | 13B | large | ✅ | ✅ |
 | 45 | Qwen3.6 27B | 0.5551 | 27.8B | — | small | ✅ | ✅ |
 | 46 | JT-4.1 Flash 236B A21B (non-reasoning) | 0.5550 | 236B | — | large | ❌ | ❌ |
 | 47 | Hy3-preview | 0.5517 | 295B | 21B | large | ✅ | ✅ |
 | 48 | MiniMax-M2.5 | 0.5463 | 230B | 10B | large | ✅ | ✅ |
-| 49 | Qwen3.8 27B (medium) | 0.5458 | 27B | — | small | ✅ | ✅ |
+| 49 | Qwen3.8 27B (medium) | 0.5456 | 27B | — | small | ✅ | ✅ |
 | 50 | Nemotron 3 Ultra | 0.5453 | 550B | 55B | large | ✅ | ✅ |
 | 51 | GLM-5.1 (non-reasoning) | 0.5452 | 744B | 40B | large | ✅ | ❌ |
 | 52 | Qwen3.5 397B A17B | 0.5378 | 397B | 17B | large | ✅ | ✅ |
-| 53 | Qwen3.8 27B (low) | 0.5319 | 27B | — | small | ✅ | ✅ |
-| 54 | MiniMax-M2.7 | 0.5312 | 230B | 10B | large | ✅ | ✅ |
-| 55 | MiniMax-M2.1 | 0.5312 | 230B | 10B | large | ✅ | ✅ |
+| 53 | Qwen3.8 27B (low) | 0.5318 | 27B | — | small | ✅ | ✅ |
+| 54 | MiniMax-M2.1 | 0.5312 | 230B | 10B | large | ✅ | ✅ |
+| 55 | MiniMax-M2.7 | 0.5311 | 230B | 10B | large | ✅ | ✅ |
 | 56 | Hy3 | 0.5288 | 299B | 21B | large | ✅ | ✅ |
 | 57 | Qwen3.5 35B A3B | 0.5258 | 36B | 3B | small | ✅ | ✅ |
-| 58 | Step 3.7 Flash | 0.5220 | 198B | 11B | large | ✅ | ✅ |
+| 58 | Step 3.7 Flash | 0.5218 | 198B | 11B | large | ✅ | ✅ |
 | 59 | Kimi K2.5 (non-reasoning) | 0.5205 | 1T | 32B | large | ✅ | ❌ |
 | 60 | MiMo-V2-Flash | 0.5193 | 309B | 15B | large | ✅ | ✅ |
-| 61 | K2 Horizon MoVA 36B A4B | 0.5174 | 36B | 4B | small | ✅ | ✅ |
-| 62 | GLM-4.7 | 0.5149 | 357B | 32B | large | ✅ | ✅ |
+| 61 | K2 Horizon MoVA 36B A4B | 0.5173 | 36B | 4B | small | ✅ | ✅ |
+| 62 | GLM-4.7 | 0.5147 | 357B | 32B | large | ✅ | ✅ |
 | 63 | DeepSeek V3.2 | 0.5142 | 685B | 37B | large | ✅ | ✅ |
 | 64 | GLM-5 (non-reasoning) | 0.5093 | 744B | 40B | large | ✅ | ❌ |
-| 65 | Qwen3.6 35B A3B | 0.5075 | 36B | 3B | small | ✅ | ✅ |
+| 65 | Qwen3.6 35B A3B | 0.5073 | 36B | 3B | small | ✅ | ✅ |
 | 66 | G9v3-39A5B | 0.5065 | 39B | 5B | small | ✅ | ✅ |
 | 67 | Qwen3.5 397B A17B (non-reasoning) | 0.5026 | 397B | 17B | large | ✅ | ❌ |
 | 68 | Qwen3.5 122B A10B | 0.4988 | 125B | 10B | medium | ✅ | ✅ |
 | 69 | Qwen3.5 27B (non-reasoning) | 0.4878 | 27.8B | — | small | ✅ | ❌ |
-| 70 | A.X-K2 | 0.4872 | 692B | 33B | large | ✅ | ✅ |
+| 70 | A.X-K2 | 0.4870 | 692B | 33B | large | ✅ | ✅ |
 | 71 | DeepSeek V3.2 Speciale | 0.4866 | 685B | 37B | large | ✅ | ✅ |
 | 72 | JT-35B-Flash | 0.4856 | 35B | — | small | ❌ | ❌ |
 | 73 | Step 3.5 Flash | 0.4848 | 196B | 11B | large | ✅ | ✅ |
-| 74 | Ling-3.0-flash-Fin | 0.4830 | 124B | 5.1B | medium | ✅ | ✅ |
+| 74 | Ling-3.0-flash-Fin | 0.4828 | 124B | 5.1B | medium | ✅ | ✅ |
 | 75 | K-EXAONE 2.0 | 0.4818 | 750B | 37B | large | ✅ | ✅ |
 | 76 | Ling 3.0 Flash | 0.4786 | 124B | 5.1B | medium | ✅ | ✅ |
 | 77 | Qwen3.8 27B (non-reasoning) | 0.4763 | 27B | — | small | ✅ | ❌ |
 | 78 | Gemma 4 31B | 0.4757 | 30.7B | — | small | ✅ | ✅ |
 | 79 | MiniMax-M2 | 0.4722 | 230B | 10B | large | ✅ | ✅ |
-| 80 | Muse Glimmer (high) | 0.4682 | 30B | — | small | ✅ | ✅ |
+| 80 | Muse Glimmer (high) | 0.4680 | 30B | — | small | ✅ | ✅ |
 | 81 | Solar Mini 4 | 0.4678 | 35B | — | small | ❌ | ✅ |
 | 82 | GLM-5.2 (non-reasoning) | 0.4606 | 753B | 40B | large | ✅ | ❌ |
 | 83 | DeepSeek V4 Pro (non-reasoning) | 0.4574 | 1.6T | 49B | large | ✅ | ❌ |
@@ -95,13 +95,13 @@
 | 85 | Mistral Medium 3.5 | 0.4478 | 128B | — | medium | ✅ | ✅ |
 | 86 | Ring-2.6-1T | 0.4468 | 1T | 63B | large | ✅ | ✅ |
 | 87 | DeepSeek V3.2 Exp | 0.4405 | 685B | 37B | large | ✅ | ✅ |
-| 88 | DeepSeek V4.1 Flash (non-reasoning) | 0.4366 | 552B | 16B | large | ✅ | ❌ |
+| 88 | DeepSeek V4.1 Flash (non-reasoning) | 0.4365 | 552B | 16B | large | ✅ | ❌ |
 | 89 | Command A+ | 0.4363 | 218B | 25B | large | ✅ | ✅ |
 | 90 | Qwen3.5 122B A10B (non-reasoning) | 0.4352 | 125B | 10B | medium | ✅ | ❌ |
 | 91 | K2 Horizon 7B | 0.4328 | 7B | — | small | ✅ | ✅ |
 | 92 | LongCat 2.0 | 0.4200 | 1.6T | 48B | large | ✅ | ✅ |
 | 93 | MiMo-V2.5-Pro (non-reasoning) | 0.4190 | 1T | 42B | large | ✅ | ❌ |
-| 94 | Gemma 4 26B A4B | 0.4167 | 25.2B | 3.8B | small | ✅ | ✅ |
+| 94 | Gemma 4 26B A4B | 0.4165 | 25.2B | 3.8B | small | ✅ | ✅ |
 | 95 | Kimi K2 0905 | 0.4161 | 1T | 32B | large | ✅ | ❌ |
 | 96 | DeepSeek V4 Flash (non-reasoning) | 0.4148 | 284B | 13B | large | ✅ | ❌ |
 | 97 | Qwen3 VL 235B A22B | 0.4147 | 235B | 22B | large | ✅ | ✅ |
@@ -110,9 +110,9 @@
 | 100 | DeepSeek V3.2 (non-reasoning) | 0.4062 | 685B | 37B | large | ✅ | ❌ |
 | 101 | Hy3-preview (non-reasoning) | 0.4044 | 295B | 21B | large | ✅ | ❌ |
 | 102 | GLM-4.7 (non-reasoning) | 0.4014 | 357B | 32B | large | ✅ | ❌ |
-| 103 | Qwen3.6 35B A3B (non-reasoning) | 0.4002 | 36B | 3B | small | ✅ | ❌ |
+| 103 | Qwen3.6 35B A3B (non-reasoning) | 0.4001 | 36B | 3B | small | ✅ | ❌ |
 | 104 | Qwen3.5 4B | 0.3964 | 4.66B | — | small | ✅ | ✅ |
-| 105 | GLM-4.6 | 0.3953 | 357B | 32B | large | ✅ | ✅ |
+| 105 | GLM-4.6 | 0.3951 | 357B | 32B | large | ✅ | ✅ |
 | 106 | EXAONE 4.5 33B | 0.3931 | 34.4B | — | small | ✅ | ✅ |
 | 107 | DeepSeek V3.1 | 0.3928 | 685B | 37B | large | ✅ | ✅ |
 | 108 | GLM-4.5 | 0.3922 | 355B | 32B | large | ✅ | ✅ |
@@ -124,7 +124,7 @@
 | 114 | Gemma 4 31B (non-reasoning) | 0.3750 | 30.7B | — | small | ✅ | ❌ |
 | 115 | Qwen3.5 35B A3B (non-reasoning) | 0.3724 | 36B | 3B | small | ✅ | ❌ |
 | 116 | Qwen3 VL 32B | 0.3719 | 33.4B | — | small | ✅ | ✅ |
-| 117 | MiMo-V2-Flash (non-reasoning) | 0.3697 | 309B | 15B | large | ✅ | ❌ |
+| 117 | MiMo-V2-Flash (non-reasoning) | 0.3695 | 309B | 15B | large | ✅ | ❌ |
 | 118 | GLM-4.7-Flash | 0.3678 | 31.2B | 3B | small | ✅ | ✅ |
 | 119 | GLM-4.6 (non-reasoning) | 0.3643 | 357B | 32B | large | ✅ | ❌ |
 | 120 | Apriel-v1.5-15B-Thinker | 0.3605 | 15B | — | small | ✅ | ✅ |
@@ -141,11 +141,11 @@
 | 131 | K2 Horizon 3.7B | 0.3381 | 3.7B | — | tiny | ✅ | ✅ |
 | 132 | Trinity Large Thinking | 0.3371 | 399B | 13B | large | ✅ | ✅ |
 | 133 | Granite 4.2 30B | 0.3315 | 30B | — | small | ✅ | ✅ |
-| 134 | MiniCPM5-2B | 0.3313 | 2.6B | — | tiny | ✅ | ✅ |
+| 134 | MiniCPM5-2B | 0.3311 | 2.6B | — | tiny | ✅ | ✅ |
 | 135 | DeepSeek V3.2 Exp (non-reasoning) | 0.3297 | 685B | 37B | large | ✅ | ❌ |
 | 136 | Nemotron 3.5 Lightning | 0.3279 | 31.6B | 3.6B | small | ✅ | ✅ |
-| 137 | Ling 3.0 Tiny | 0.3266 | 7.9B | 1.3B | small | ✅ | ✅ |
-| 138 | DeepSeek V3.1 (non-reasoning) | 0.3265 | 685B | 37B | large | ✅ | ❌ |
+| 137 | DeepSeek V3.1 (non-reasoning) | 0.3265 | 685B | 37B | large | ✅ | ❌ |
+| 138 | Ling 3.0 Tiny | 0.3263 | 7.9B | 1.3B | small | ✅ | ✅ |
 | 139 | gpt-oss-120b (high) | 0.3236 | 117B | 5.1B | medium | ✅ | ✅ |
 | 140 | Seed-OSS-36B-Instruct | 0.3227 | 36.2B | — | small | ✅ | ✅ |
 | 141 | Qwen3 235B A22B 2507 | 0.3199 | 235B | 22B | large | ✅ | ✅ |
