@@ -5606,5 +5606,21 @@
   "active_B": null,
   "source": "undisclosed",
   "fetched_at": "2026-10-09T11:06:53+00:00"
+ },
+ "muse-wonder-full": {
+  "slug": "muse-wonder-full",
+  "name": "Muse Wonder Full (Max)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-10-13T11:23:29+00:00"
+ },
+ "muse-wonder": {
+  "slug": "muse-wonder",
+  "name": "Muse Wonder (Max)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-10-13T11:23:30+00:00"
  }
 }
