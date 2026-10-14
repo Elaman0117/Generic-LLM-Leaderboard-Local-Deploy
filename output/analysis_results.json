@@ -105,22 +105,22 @@
     "AA Intelligence Index": {
       "min": 3.04760621054014,
       "max": 57.6223698102963,
-      "count": 689
+      "count": 690
     },
     "GPQA Diamond": {
       "min": 0.09797979797979799,
       "max": 0.9626262626262626,
-      "count": 615
+      "count": 616
     },
     "Humanity's Last Exam": {
       "min": 0.010658016682113068,
       "max": 0.6135310472659871,
-      "count": 661
+      "count": 662
     },
     "MMMU Pro": {
       "min": 0.14508670520231215,
       "max": 0.876878612716763,
-      "count": 286
+      "count": 287
     },
     "IFBench Instruction Following": {
       "min": 0.12108843537414966,
@@ -130,42 +130,42 @@
     "SciCode Coding": {
       "min": 0.06944444444444445,
       "max": 0.6689814814814815,
-      "count": 228
+      "count": 229
     },
     "CritPt Physics": {
       "min": 0.0,
       "max": 0.32857142857142857,
-      "count": 576
+      "count": 577
     },
     "AA-LCR Long Context": {
       "min": 0.0,
       "max": 0.8866666666666667,
-      "count": 572
+      "count": 573
     },
     "AA Omniscience Index": {
       "min": -88.58333333333333,
       "max": 46.416666666666664,
-      "count": 573
+      "count": 574
     },
     "AA-Omniscience Accuracy": {
       "min": 0.001,
       "max": 0.6723333333333333,
-      "count": 573
+      "count": 574
     },
     "AA-Omniscience Non-Hallucination": {
       "min": 0.015260480617435538,
       "max": 0.990990990990991,
-      "count": 573
+      "count": 574
     },
     "GDPval-AA Normalized": {
       "min": 0.0,
       "max": 0.6831349999999999,
-      "count": 290
+      "count": 291
     },
     "AA Analyst Agent": {
       "min": 0.0125,
       "max": 0.6,
-      "count": 41
+      "count": 47
     },
     "APEX-Agents-AA": {
       "min": 0.007374631268436578,
@@ -185,7 +185,7 @@
     "τ³-Bench Banking": {
       "min": 0.002061855670103093,
       "max": 0.51340206185567,
-      "count": 208
+      "count": 209
     },
     "Terminal-Bench Hard": {
       "min": 0.0,
@@ -195,7 +195,7 @@
     "Terminal-Bench 2.1": {
       "min": 0.0,
       "max": 0.9138576779026217,
-      "count": 240
+      "count": 241
     },
     "Terminal-Bench 4.0": {
       "min": 0.0,
@@ -257,15 +257,15 @@
       "is_open_weights": true,
       "is_pareto": true,
       "chart_label": "5.3-Flash",
-      "composite_ability": 0.8063979214289796,
+      "composite_ability": 0.7813006514246946,
       "total_params_B": 320.0,
       "active_params_B": 18.0,
       "param_source": "faq",
       "size_class": "large",
       "x_axis_position": 0.7047046671798076,
       "in_chart": true,
-      "chart_y": 0.7788786394839187,
-      "valid_metrics": 14
+      "chart_y": 0.7502139550469117,
+      "valid_metrics": 15
     },
     {
       "rank": 4,
@@ -299,15 +299,15 @@
       "is_open_weights": true,
       "is_pareto": true,
       "chart_label": "3.8 27B (xhigh)",
-      "composite_ability": 0.6499292564059932,
+      "composite_ability": 0.674167121601687,
       "total_params_B": 27.0,
       "active_params_B": null,
       "param_source": "faq",
       "size_class": "small",
       "x_axis_position": 0.3755251355467993,
       "in_chart": true,
-      "chart_y": 0.6001689668223945,
-      "valid_metrics": 15
+      "chart_y": 0.6278520876216949,
+      "valid_metrics": 14
     },
     {
       "rank": 6,
@@ -558,15 +558,15 @@
         "is_open_weights": true,
         "is_pareto": true,
         "chart_label": "5.3-Flash",
-        "composite_ability": 0.8063979214289796,
+        "composite_ability": 0.7813006514246946,
         "total_params_B": 320.0,
         "active_params_B": 18.0,
         "param_source": "faq",
         "size_class": "large",
         "x_axis_position": 0.7047046671798076,
         "in_chart": true,
-        "chart_y": 0.7788786394839187,
-        "valid_metrics": 14
+        "chart_y": 0.7502139550469117,
+        "valid_metrics": 15
       },
       {
         "rank": 3,
@@ -837,15 +837,15 @@
         "is_open_weights": true,
         "is_pareto": true,
         "chart_label": "3.8 27B (xhigh)",
-        "composite_ability": 0.6499292564059932,
+        "composite_ability": 0.674167121601687,
         "total_params_B": 27.0,
         "active_params_B": null,
         "param_source": "faq",
         "size_class": "small",
         "x_axis_position": 0.3755251355467993,
         "in_chart": true,
-        "chart_y": 0.6001689668223945,
-        "valid_metrics": 15
+        "chart_y": 0.6278520876216949,
+        "valid_metrics": 14
       },
       {
         "rank": 4,
@@ -944,15 +944,15 @@
         "is_open_weights": true,
         "is_pareto": true,
         "chart_label": "V4.1 Flash (max)",
-        "composite_ability": 0.6929821290205544,
+        "composite_ability": 0.6873796421729116,
         "total_params_B": 552.0,
         "active_params_B": 16.0,
         "param_source": "faq",
         "size_class": "large",
         "x_axis_position": 0.7787778031382521,
         "in_chart": true,
-        "chart_y": 0.6493415265228064,
-        "valid_metrics": 12
+        "chart_y": 0.6429426824444366,
+        "valid_metrics": 13
       },
       {
         "rank": 3,
@@ -1095,15 +1095,15 @@
         "is_open_weights": true,
         "is_pareto": true,
         "chart_label": "Pro",
-        "composite_ability": 0.8195592780108842,
+        "composite_ability": 0.8055765625607878,
         "total_params_B": 1000.0,
         "active_params_B": 42.0,
         "param_source": "faq",
         "size_class": "large",
         "x_axis_position": 0.8596597974850319,
         "in_chart": true,
-        "chart_y": 0.7939107976875325,
-        "valid_metrics": 10
+        "chart_y": 0.7779405297707015,
+        "valid_metrics": 11
       },
       {
         "rank": 2,
@@ -1172,27 +1172,6 @@
       "brand_frontier_of": "Kimi"
     },
     {
-      "model": "MiMo-V2.6-Pro",
-      "full_name": "MiMo-V2.6-Pro",
-      "creator": "Xiaomi",
-      "creator_slug": "xiaomi",
-      "creator_color": "#ff6900",
-      "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/xiaomi.svg",
-      "is_deprecated": false,
-      "composite_ability": 0.8195592780108842,
-      "total_params_B": 1000.0,
-      "active_params_B": 42.0,
-      "param_source": "faq",
-      "size_class": "large",
-      "is_open_weights": true,
-      "is_reasoning": true,
-      "x_axis_position": 0.8596597974850319,
-      "in_chart": true,
-      "chart_y": 0.7939107976875325,
-      "is_pareto": false,
-      "brand_frontier_of": "Xiaomi"
-    },
-    {
       "model": "Step 5 Preview",
       "full_name": "Step 5 Preview",
       "creator": "StepFun",
@@ -1214,6 +1193,27 @@
       "brand_frontier_of": null
     },
     {
+      "model": "MiMo-V2.6-Pro",
+      "full_name": "MiMo-V2.6-Pro",
+      "creator": "Xiaomi",
+      "creator_slug": "xiaomi",
+      "creator_color": "#ff6900",
+      "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/xiaomi.svg",
+      "is_deprecated": false,
+      "composite_ability": 0.8055765625607878,
+      "total_params_B": 1000.0,
+      "active_params_B": 42.0,
+      "param_source": "faq",
+      "size_class": "large",
+      "is_open_weights": true,
+      "is_reasoning": true,
+      "x_axis_position": 0.8596597974850319,
+      "in_chart": true,
+      "chart_y": 0.7779405297707015,
+      "is_pareto": false,
+      "brand_frontier_of": "Xiaomi"
+    },
+    {
       "model": "GLM-5.3-Flash",
       "full_name": "GLM-5.3-Flash",
       "creator": "Z AI",
@@ -1221,7 +1221,7 @@
       "creator_color": "#1c7ff8",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/zai.svg",
       "is_deprecated": false,
-      "composite_ability": 0.8063979214289796,
+      "composite_ability": 0.7813006514246946,
       "total_params_B": 320.0,
       "active_params_B": 18.0,
       "param_source": "faq",
@@ -1230,7 +1230,7 @@
       "is_reasoning": true,
       "x_axis_position": 0.7047046671798076,
       "in_chart": true,
-      "chart_y": 0.7788786394839187,
+      "chart_y": 0.7502139550469117,
       "is_pareto": true,
       "brand_frontier_of": "Z AI"
     },
@@ -1347,7 +1347,7 @@
       "creator_color": "#2243e6",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/deepseek.svg",
       "is_deprecated": false,
-      "composite_ability": 0.6929821290205544,
+      "composite_ability": 0.6873796421729116,
       "total_params_B": 552.0,
       "active_params_B": 16.0,
       "param_source": "faq",
@@ -1356,7 +1356,7 @@
       "is_reasoning": true,
       "x_axis_position": 0.7787778031382521,
       "in_chart": true,
-      "chart_y": 0.6493415265228064,
+      "chart_y": 0.6429426824444366,
       "is_pareto": false,
       "brand_frontier_of": "DeepSeek"
     },
@@ -1380,6 +1380,27 @@
       "chart_y": 0.631627223492627,
       "is_pareto": false,
       "brand_frontier_of": null
+    },
+    {
+      "model": "Qwen3.8 27B (xhigh)",
+      "full_name": "Qwen3.8 27B (Xhigh)",
+      "creator": "Alibaba",
+      "creator_slug": "alibaba",
+      "creator_color": "#ff7018",
+      "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/alibaba.svg",
+      "is_deprecated": false,
+      "composite_ability": 0.674167121601687,
+      "total_params_B": 27.0,
+      "active_params_B": null,
+      "param_source": "faq",
+      "size_class": "small",
+      "is_open_weights": true,
+      "is_reasoning": true,
+      "x_axis_position": 0.3755251355467993,
+      "in_chart": true,
+      "chart_y": 0.6278520876216949,
+      "is_pareto": true,
+      "brand_frontier_of": "Alibaba"
     },
     {
       "model": "Kimi K2.6",
@@ -1485,27 +1506,6 @@
       "chart_y": 0.6073814384120992,
       "is_pareto": false,
       "brand_frontier_of": null
-    },
-    {
-      "model": "Qwen3.8 27B (xhigh)",
-      "full_name": "Qwen3.8 27B (Xhigh)",
-      "creator": "Alibaba",
-      "creator_slug": "alibaba",
-      "creator_color": "#ff7018",
-      "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/alibaba.svg",
-      "is_deprecated": false,
-      "composite_ability": 0.6499292564059932,
-      "total_params_B": 27.0,
-      "active_params_B": null,
-      "param_source": "faq",
-      "size_class": "small",
-      "is_open_weights": true,
-      "is_reasoning": true,
-      "x_axis_position": 0.3755251355467993,
-      "in_chart": true,
-      "chart_y": 0.6001689668223945,
-      "is_pareto": true,
-      "brand_frontier_of": "Alibaba"
     },
     {
       "model": "GLM-5",
@@ -1683,7 +1683,7 @@
       "creator_color": "#1521a9",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/ifm.svg",
       "is_deprecated": false,
-      "composite_ability": 0.6062478159601764,
+      "composite_ability": 0.6062920973163011,
       "total_params_B": 375.0,
       "active_params_B": 23.0,
       "param_source": "faq",
@@ -1692,7 +1692,7 @@
       "is_reasoning": true,
       "x_axis_position": 0.7262333610772271,
       "in_chart": true,
-      "chart_y": 0.5502784924433297,
+      "chart_y": 0.550329068107517,
       "is_pareto": false,
       "brand_frontier_of": null
     },
@@ -1704,7 +1704,7 @@
       "creator_color": "#1c7ff8",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/zai.svg",
       "is_deprecated": false,
-      "composite_ability": 0.6049644830142111,
+      "composite_ability": 0.6049488580214072,
       "total_params_B": 753.0,
       "active_params_B": 40.0,
       "param_source": "faq",
@@ -1713,7 +1713,7 @@
       "is_reasoning": true,
       "x_axis_position": 0.821029766433557,
       "in_chart": true,
-      "chart_y": 0.5488127420283472,
+      "chart_y": 0.548794896043984,
       "is_pareto": false,
       "brand_frontier_of": null
     },
@@ -2187,7 +2187,7 @@
       "creator_color": "#76b900",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/nvidia.svg",
       "is_deprecated": false,
-      "composite_ability": 0.5459772125387086,
+      "composite_ability": 0.5459641513992131,
       "total_params_B": 550.0,
       "active_params_B": 55.0,
       "param_source": "faq",
@@ -2196,7 +2196,7 @@
       "is_reasoning": true,
       "x_axis_position": 0.7782841352298254,
       "in_chart": true,
-      "chart_y": 0.48144081298220104,
+      "chart_y": 0.48142589528629376,
       "is_pareto": false,
       "brand_frontier_of": null
     },

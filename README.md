@@ -10,22 +10,22 @@
 |---|------|---------|---------|-----------|--------|------|------|
 | 1 | GLM-5.3 (max) | 0.8521 | 753B | 40B | large | ✅ | ✅ |
 | 2 | Kimi K3 (max) | 0.8391 | 2.8T | 104B | large | ✅ | ✅ |
-| 3 | MiMo-V2.6-Pro | 0.8196 | 1T | 42B | large | ✅ | ✅ |
-| 4 | Step 5 Preview | 0.8165 | 600B | — | large | ❌ | ✅ |
-| 5 | GLM-5.3-Flash | 0.8064 | 320B | 18B | large | ✅ | ✅ |
+| 3 | Step 5 Preview | 0.8165 | 600B | — | large | ❌ | ✅ |
+| 4 | MiMo-V2.6-Pro | 0.8056 | 1T | 42B | large | ✅ | ✅ |
+| 5 | GLM-5.3-Flash | 0.7813 | 320B | 18B | large | ✅ | ✅ |
 | 6 | Qwen3.8 2.4T A95B | 0.7724 | 2.4T | 95B | large | ✅ | ✅ |
 | 7 | GLM-5.2 (max) | 0.7531 | 753B | 40B | large | ✅ | ✅ |
 | 8 | Qwen3.8-Flash-Next | 0.7484 | 180B | 6B | large | ✅ | ✅ |
 | 9 | Ling 3.1 Flash | 0.7242 | 560B | — | large | ❌ | ✅ |
 | 10 | DeepSeek V4 Pro 0813 (max) | 0.7001 | 1.6T | 49B | large | ✅ | ✅ |
-| 11 | DeepSeek V4.1 Flash (max) | 0.6930 | 552B | 16B | large | ✅ | ✅ |
+| 11 | DeepSeek V4.1 Flash (max) | 0.6874 | 552B | 16B | large | ✅ | ✅ |
 | 12 | Motif 3 | 0.6775 | 314B | 13.2B | large | ✅ | ✅ |
-| 13 | Kimi K2.6 | 0.6724 | 1T | 32B | large | ✅ | ✅ |
-| 14 | Mistral Large 4 Preview | 0.6651 | 1T | — | large | ❌ | ✅ |
-| 15 | DeepSeek V4 Flash Vision (max) | 0.6649 | 284B | — | large | ❌ | ✅ |
-| 16 | DeepSeek V4 Flash 0731 (max) | 0.6643 | 284B | 13B | large | ✅ | ✅ |
-| 17 | DeepSeek V4 Pro (high) | 0.6562 | 1.6T | 49B | large | ✅ | ✅ |
-| 18 | Qwen3.8 27B (xhigh) | 0.6499 | 27B | — | small | ✅ | ✅ |
+| 13 | Qwen3.8 27B (xhigh) | 0.6742 | 27B | — | small | ✅ | ✅ |
+| 14 | Kimi K2.6 | 0.6724 | 1T | 32B | large | ✅ | ✅ |
+| 15 | Mistral Large 4 Preview | 0.6651 | 1T | — | large | ❌ | ✅ |
+| 16 | DeepSeek V4 Flash Vision (max) | 0.6649 | 284B | — | large | ❌ | ✅ |
+| 17 | DeepSeek V4 Flash 0731 (max) | 0.6643 | 284B | 13B | large | ✅ | ✅ |
+| 18 | DeepSeek V4 Pro (high) | 0.6562 | 1.6T | 49B | large | ✅ | ✅ |
 | 19 | GLM-5 | 0.6448 | 744B | 40B | large | ✅ | ✅ |
 | 20 | Kimi K3 (low) | 0.6434 | 2.8T | 104B | large | ✅ | ✅ |
 | 21 | JT-4.1 Flash 236B A21B | 0.6432 | 236B | — | large | ❌ | ✅ |
@@ -34,8 +34,8 @@
 | 24 | MiniMax-M3 | 0.6403 | 428B | 23B | large | ✅ | ✅ |
 | 25 | GLM-5.1 | 0.6214 | 744B | 40B | large | ✅ | ✅ |
 | 26 | Motif 3 (Beta) | 0.6109 | 314B | — | large | ❌ | ✅ |
-| 27 | K2 Horizon 375B A23B | 0.6062 | 375B | 23B | large | ✅ | ✅ |
-| 28 | GLM-5.3 (low) | 0.6050 | 753B | 40B | large | ✅ | ✅ |
+| 27 | K2 Horizon 375B A23B | 0.6063 | 375B | 23B | large | ✅ | ✅ |
+| 28 | GLM-5.3 (low) | 0.6049 | 753B | 40B | large | ✅ | ✅ |
 | 29 | Kimi K2.7 Code | 0.6038 | 1T | 32B | large | ✅ | ✅ |
 | 30 | Nex-N2-Pro | 0.6025 | 397B | 17B | large | ✅ | ✅ |
 | 31 | Qwen3.5 27B | 0.5901 | 27.8B | — | small | ✅ | ✅ |
