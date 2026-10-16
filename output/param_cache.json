@@ -5622,5 +5622,29 @@
   "active_B": null,
   "source": "undisclosed",
   "fetched_at": "2026-10-13T11:23:30+00:00"
+ },
+ "muse-spark-open": {
+  "slug": "muse-spark-open",
+  "name": "Muse Spark Open (Xhigh)",
+  "total_B": 816.0,
+  "active_B": 42.0,
+  "source": "faq",
+  "fetched_at": "2026-10-16T01:23:50+00:00"
+ },
+ "nemotron-3-5-bolt-74b-a9b": {
+  "slug": "nemotron-3-5-bolt-74b-a9b",
+  "name": "Nemotron 3.5 Bolt 74B-A9B",
+  "total_B": 74.0,
+  "active_B": 9.0,
+  "source": "faq",
+  "fetched_at": "2026-10-16T01:23:51+00:00"
+ },
+ "nemotron-3-5-super-vl": {
+  "slug": "nemotron-3-5-super-vl",
+  "name": "Nemotron 3.5 Super VL",
+  "total_B": 120.0,
+  "active_B": 12.0,
+  "source": "faq",
+  "fetched_at": "2026-10-16T01:23:51+00:00"
  }
 }
