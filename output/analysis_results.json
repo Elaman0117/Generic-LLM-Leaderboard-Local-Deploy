@@ -165,7 +165,7 @@
     "AA Analyst Agent": {
       "min": 0.0125,
       "max": 0.6,
-      "count": 49
+      "count": 50
     },
     "APEX-Agents-AA": {
       "min": 0.007374631268436578,
@@ -233,7 +233,7 @@
       "creator_color": "#00F5E7",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos//img/logos/stepfun.svg",
       "is_reasoning": true,
-      "is_open_weights": false,
+      "is_open_weights": true,
       "is_pareto": true,
       "chart_label": "Step 5 Preview",
       "composite_ability": 0.8166328824169246,
@@ -1205,7 +1205,7 @@
       "active_params_B": null,
       "param_source": "faq",
       "size_class": "large",
-      "is_open_weights": false,
+      "is_open_weights": true,
       "is_reasoning": true,
       "x_axis_position": 0.7856192622525577,
       "in_chart": true,
@@ -1352,7 +1352,7 @@
       "active_params_B": null,
       "param_source": "faq",
       "size_class": "large",
-      "is_open_weights": false,
+      "is_open_weights": true,
       "is_reasoning": true,
       "x_axis_position": 0.7760356734025756,
       "in_chart": true,

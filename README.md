@@ -10,14 +10,14 @@
 |---|------|---------|---------|-----------|--------|------|------|
 | 1 | GLM-5.3 (max) | 0.8414 | 753B | 40B | large | ✅ | ✅ |
 | 2 | Kimi K3 (max) | 0.8390 | 2.8T | 104B | large | ✅ | ✅ |
-| 3 | Step 5 Preview | 0.8166 | 600B | — | large | ❌ | ✅ |
+| 3 | Step 5 Preview | 0.8166 | 600B | — | large | ✅ | ✅ |
 | 4 | MiMo-V2.6-Pro | 0.8057 | 1T | 42B | large | ✅ | ✅ |
 | 5 | GLM-5.3-Flash | 0.7812 | 320B | 18B | large | ✅ | ✅ |
 | 6 | Qwen3.8 2.4T A95B | 0.7724 | 2.4T | 95B | large | ✅ | ✅ |
 | 7 | Muse Spark Open (xhigh) | 0.7692 | 816B | 42B | large | ✅ | ✅ |
 | 8 | GLM-5.2 (max) | 0.7532 | 753B | 40B | large | ✅ | ✅ |
 | 9 | Qwen3.8-Flash-Next | 0.7483 | 180B | 6B | large | ✅ | ✅ |
-| 10 | Ling 3.1 Flash | 0.7242 | 560B | — | large | ❌ | ✅ |
+| 10 | Ling 3.1 Flash | 0.7242 | 560B | — | large | ✅ | ✅ |
 | 11 | DeepSeek V4 Pro 0813 (max) | 0.7002 | 1.6T | 49B | large | ✅ | ✅ |
 | 12 | DeepSeek V4.1 Flash (max) | 0.6874 | 552B | 16B | large | ✅ | ✅ |
 | 13 | Motif 3 | 0.6774 | 314B | 13.2B | large | ✅ | ✅ |
