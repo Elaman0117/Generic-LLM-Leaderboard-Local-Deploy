@@ -523,6 +523,32 @@ def _dominates(a, b):
                  or a["x_value"] < b["x_value"]))
 
 
+def select_display_brands(models, pareto, min_brands=10):
+    """根据规则动态选择需要显示的厂商列表：
+    帕累托前沿厂商 + 除开帕累托前沿厂商后的全部模型按性能从高到低排列补充。
+    - 如果帕累托前沿厂商数量 >= min_brands（默认10），则全选前沿厂商（哪怕超过 10 个）；
+    - 如果帕累托前沿厂商数量 < min_brands，则从剩余模型中按性能从高到低选满 min_brands 个厂商。
+    保持稳定顺序：帕累托前沿厂商在前（按前沿最高能力降序），补充厂商在后（按其最高能力模型降序）。
+    """
+    frontier_brands = []
+    for m in pareto:
+        c = m.get("creator")
+        if c and c not in frontier_brands:
+            frontier_brands.append(c)
+
+    selected = list(frontier_brands)
+    if len(selected) < min_brands:
+        sorted_models = sorted(models, key=lambda m: m["composite_ability"], reverse=True)
+        for m in sorted_models:
+            c = m.get("creator")
+            if c and c not in selected:
+                selected.append(c)
+                if len(selected) >= min_brands:
+                    break
+
+    return selected
+
+
 def compute_brand_frontiers(models):
     """Requirement 7: per-brand Pareto frontiers for the eleven listed brands.
 
@@ -817,7 +843,7 @@ def build_axis_mapping(models, brand_frontiers):
     # singularity stays left of raw zero; the square is bounded both ways
     # (dense forward + closed-form inverse checks below).
     # Models with raw > xmax are chart-excluded but table-kept (over_max).
-    print("Fitting log mapping X=A*ln(B*X+C)+D, pins (0,0)/(xmax,1), on 11 brand frontiers...")
+    print(f"Fitting log mapping X=A*ln(B*X+C)+D, pins (0,0)/(xmax,1), on {len(brand_frontiers)} brand frontiers...")
     fmodels = [m for fr in brand_frontiers.values() for m in fr
                if m.get("x_value") is not None and float(m["x_value"]) >= 0
                and m.get("chart_y") is not None]
@@ -2366,7 +2392,7 @@ def save_results(models, pareto, brand_frontiers, metric_ranges, x_dist, mapping
                 "the chart but kept in the table; chart_y = (ability-y0)/(1-y0); "
                 "X-axis: linear total-params mapping x = raw/xmax (xmax = 11 brand-frontier max); "
                 "left edge raw = 0; "
-                "11 brands get their own thin Pareto lines (brand theme colors, "
+                f"{len(brand_frontiers)} brands get their own thin Pareto lines (brand theme colors, "
                 "drawn above the solid gray overall Pareto line; vertices "
                 "ordered by (axis_x, ability) so equal-cost points connect "
                 "bottom-up); dark brand elements carry a narrow white outline "
@@ -2502,7 +2528,7 @@ def generate_readme(models, pareto, brand_frontiers, x_dist, mapping_meta):
 
     # ── 品牌前沿说明（图例表）────────────────────────────────────────────
     lines.append("\n## 品牌帕累托前沿连线（仅体现在图中）\n")
-    lines.append("以下十一个品牌在图中拥有单独的帕累托连线（较窄宽度，品牌主题色，图层高于总体灰色连线）。"
+    lines.append(f"以下 {len([b for b in BRAND_LINE_CREATORS if b in brand_frontiers])} 个品牌在图中拥有单独的帕累托连线（较窄宽度，品牌主题色，图层高于总体灰色连线）。"
                  "表中数量为**入图顶点数**——品牌前沿上低于总体前沿第一级的顶点同样不入图（本表与图例一致）：\n")
     lines.append("| 品牌 | 主题色 | 品牌前沿模型数（入图） |")
     lines.append("|------|--------|--------------|")
@@ -2606,7 +2632,7 @@ def generate_readme(models, pareto, brand_frontiers, x_dist, mapping_meta):
     # ── 图表说明（V17-A：原先位于表格之前，现移至文末）──────────────────
     lines.append("\n## 图表说明（黑底）\n")
     lines.append("（V17 起本说明置于文末，图表之后直接跟随模型表格。）\n")
-    lines.append("图表说明：**灰色实线** = 总体帕累托前沿；**彩色细线** = 十一个品牌的单独帕累托前沿"
+    lines.append(f"图表说明：**灰色实线** = 总体帕累托前沿；**彩色细线** = 选定品牌的单独帕累托前沿（共 {len([b for b in BRAND_LINE_CREATORS if b in brand_frontiers])} 个品牌，"
                  "（品牌主题色，图层高于总体连线；暗色品牌元素带窄白边；顶点按（横轴位置、能力升序）"
                  "连接，等参数点自下而上）；品牌前沿模型圆点同样使用品牌颜色。"
                  "模型名称/思考程度标注优先骑在连线之上（点的左/右两侧皆可，同一条线段可容纳两个标签——各贴各的点；文字与连线平行、中轴线重合，连线仅在文字两侧绘制）；"
@@ -2662,7 +2688,13 @@ def main():
     pareto = compute_pareto(models)
     print(f"  Pareto frontier: {len(pareto)} models")
 
-    print("\nComputing brand Pareto frontiers (11 brands)...")
+    # 动态选择显示的厂商（帕累托前沿厂商 + 性能降序选满至少 10 个）
+    brand_creators = select_display_brands(models, pareto, min_brands=10)
+    BRAND_LINE_CREATORS.clear()
+    BRAND_LINE_CREATORS.extend(brand_creators)
+
+    print(f"\nComputing brand Pareto frontiers ({len(BRAND_LINE_CREATORS)} brands)...")
+    print(f"  Selected brands ({len(BRAND_LINE_CREATORS)}): {', '.join(BRAND_LINE_CREATORS)}")
     brand_frontiers = compute_brand_frontiers(models)
 
     print("\nApplying chart Y baseline (V17: y = 0 at the first overall-Pareto level)...")
