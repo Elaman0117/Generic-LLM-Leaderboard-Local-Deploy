@@ -2,27 +2,15 @@
 """
 Scraper for Artificial Analysis LLM Leaderboard.
 
-Extracts the full model dataset from the Next.js RSC payload embedded in the page.
+Extracts the full model dataset (Status: All, including deprecated models)
+from the Next.js page at https://artificialanalysis.ai/leaderboards/models?status=all.
 
-V18 (2026-09-12): the RSC payload no longer carries the old 96-field array —
-AA now splits the data across TWO `models` arrays:
-  * the main benchmark array (~50 fields: all evaluation scores, pricing,
-    speed/latency, creator color/logo/name, paramClass, …)
-  * a display-metadata array (8 fields: slug, name, releaseDate, deprecated,
-    isReasoning, effort, release, creator{id,name,logo})
-The scraper picks the richest array as `main` and merges the metadata
-fields (name, releaseDate) into it by `slug`, restoring the old `name` field.
-
-Fields AA removed from the models payload since v17: agenticIndex,
-codingIndex (AA Agentic / Coding Index), intelligenceIndexCostTotal, blended
-prices, modelCreatorSlug, cweBench, mlcrOverall, … New benchmark columns
-now carried: analystAgent, tauBanking (τ³-Bench Banking),
-terminalbenchV21 / terminalbenchV40 ("Intelligence Index v4.3: … 𝜏³-Banking
-is removed, and Terminal-Bench moves to v4.0").
-
-The RSC payload contains EVERY model regardless of the page's Status filter
-(Current / All) — including deprecated ones (`deprecated: true`), which
-analyze.py keeps (Status: All) as of Version 10.
+V21 (2026-10-20): AA defaults the /leaderboards/models page to 'Status: Current' (273 models)
+and carries initial data under `initialModels`. To extract ALL models (~706 models, including
+430+ deprecated models), the scraper queries `?status=all`, retrieves the complete model dataset
+from the rendered table instance (TanStack table state on the React fiber), traverses RSC payloads
+for auxiliary metadata (releases, etc.), merges missing fields across arrays by slug, and resolves
+release dates.
 """
 
 import json
@@ -31,64 +19,66 @@ import sys
 
 from playwright.sync_api import sync_playwright
 
-URL = "https://artificialanalysis.ai/leaderboards/models"
+URL = "https://artificialanalysis.ai/leaderboards/models?status=all"
 BASE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 OUTPUT_DIR = os.path.join(BASE_DIR, "output")
 OUTPUT_FILE = os.path.join(OUTPUT_DIR, "raw_data.json")
 MIN_MODELS_EXPECTED = 100
 
-# JavaScript code shared across extraction approaches
-_SEARCH_MODELS_JS = """
-function _findAllModelArrays(obj, maxDepth) {
-  const found = [];
-  const seen = new Set();
-  function search(o, d) {
-    if (d > maxDepth || !o || typeof o !== 'object') return;
-    if (Array.isArray(o)) {
-      if (o.length > 0 && typeof o[0] === 'object' && o[0] !== null && 'slug' in o[0]) {
-        if (!seen.has(o)) {
-          seen.add(o);
-          found.push(o);
+EXTRACT_FULL_JS = """
+(() => {
+  // 1. Try to get complete model array from TanStack table instance on the React fiber
+  let tableModels = null;
+  const table = document.querySelector('table');
+  if (table) {
+    const fiberKey = Object.keys(table).find(k => k.startsWith('__reactFiber$'));
+    if (fiberKey) {
+      let f = table[fiberKey];
+      while (f) {
+        if (f.memoizedProps && f.memoizedProps.table && f.memoizedProps.table.options && f.memoizedProps.table.options.data) {
+          const d = f.memoizedProps.table.options.data;
+          if (Array.isArray(d) && d.length > 0) {
+            tableModels = d;
+            break;
+          }
+        }
+        f = f.return;
+      }
+    }
+  }
+
+  // 2. Also extract all model/release arrays from RSC scripts
+  function _findAllModelArrays(obj, maxDepth) {
+    const found = [];
+    const seen = new Set();
+    function search(o, d) {
+      if (d > maxDepth || !o || typeof o !== 'object') return;
+      if (Array.isArray(o)) {
+        if (o.length > 0 && typeof o[0] === 'object' && o[0] !== null && 'slug' in o[0]) {
+          if (!seen.has(o)) {
+            seen.add(o);
+            found.push(o);
+          }
+        }
+        for (const v of o) search(v, d + 1);
+      } else {
+        for (const v of Object.values(o)) {
+          search(v, d + 1);
         }
       }
-      for (const v of o) search(v, d + 1);
-    } else {
-      for (const v of Object.values(o)) {
-        search(v, d + 1);
-      }
     }
+    search(obj, 0);
+    return found;
   }
-  search(obj, 0);
-  return found;
-}
-"""
 
-# Primary extraction: parse RSC script tags directly.
-# V19: dynamically find all model arrays (e.g. `initialModels`, `models`, `releases`),
-# choose the primary benchmark dataset by evaluation metric coverage, and merge
-# auxiliary metadata fields (e.g. releaseDate, releaseSlug) across arrays by slug.
-EXTRACT_JS = """
-(() => {
-  ${SEARCH}
   const scripts = document.querySelectorAll('script');
-  const found = [];
+  const rscArrays = [];
   const seenSigs = new Set();
-
-  function processData(data) {
-    const modelArrays = _findAllModelArrays(data, 25);
-    for (const arr of modelArrays) {
-      const sig = arr.length + ':' + (arr[0] ? arr[0].slug : '');
-      if (!seenSigs.has(sig)) {
-        seenSigs.add(sig);
-        found.push(arr);
-      }
-    }
-  }
 
   for (let i = 0; i < scripts.length; i++) {
     const text = scripts[i].textContent || '';
     if (!text.includes('__next_f')) continue;
-    if (!text.toLowerCase().includes('model') && !text.includes('slug')) continue;
+    if (!text.toLowerCase().includes('model') && !text.includes('slug') && !text.includes('release')) continue;
 
     const pushPattern = /self\\.__next_f\\.push\\(\\s*(\\[.*?\\])\\s*\\)\\s*;?/gs;
     let m;
@@ -102,10 +92,16 @@ EXTRACT_JS = """
         const colonIdx = content.indexOf(':');
         if (colonIdx === -1) continue;
         const data = JSON.parse(content.substring(colonIdx + 1));
-        processData(data);
+        const modelArrays = _findAllModelArrays(data, 25);
+        for (const a of modelArrays) {
+          const sig = a.length + ':' + (a[0] ? a[0].slug : '');
+          if (!seenSigs.has(sig)) {
+            seenSigs.add(sig);
+            rscArrays.push(a);
+          }
+        }
       } catch(e) { /* skip */ }
     }
-
     if (!matchedAny) {
       const match = text.match(/^self\\.__next_f\\.push\\((.+)\\)$/s);
       if (match) {
@@ -116,16 +112,27 @@ EXTRACT_JS = """
             const colonIdx = content.indexOf(':');
             if (colonIdx !== -1) {
               const data = JSON.parse(content.substring(colonIdx + 1));
-              processData(data);
+              const modelArrays = _findAllModelArrays(data, 25);
+              for (const a of modelArrays) {
+                const sig = a.length + ':' + (a[0] ? a[0].slug : '');
+                if (!seenSigs.has(sig)) {
+                  seenSigs.add(sig);
+                  rscArrays.push(a);
+                }
+              }
             }
           }
         } catch(e) { /* skip */ }
       }
     }
   }
-  return JSON.stringify(found);
+
+  return JSON.stringify({
+    tableModels: tableModels,
+    rscArrays: rscArrays
+  });
 })()
-""".replace("${SEARCH}", _SEARCH_MODELS_JS)
+"""
 
 
 def scrape_leaderboard():
@@ -137,17 +144,24 @@ def scrape_leaderboard():
 
         print(f"[1/3] Navigating to {URL} ...")
         page.goto(URL, wait_until="networkidle", timeout=90000)
-        page.wait_for_timeout(8000)  # Wait for RSC stream to complete
+        page.wait_for_timeout(8000)  # Wait for full table and data to settle
 
-        print("[2/3] Extracting model data from RSC payload ...")
-        raw_json = page.evaluate(EXTRACT_JS)
+        print("[2/3] Extracting model data (Status: All) ...")
+        raw_json = page.evaluate(EXTRACT_FULL_JS)
+        payload = json.loads(raw_json)
 
-        arrays = json.loads(raw_json)
-        print(f"  models arrays found: {len(arrays)} "
-              f"({[len(a) for a in arrays]} models, "
-              f"{[len(a[0].keys()) if a else 0 for a in arrays]} fields each)")
+        table_models = payload.get("tableModels")
+        rsc_arrays = payload.get("rscArrays", [])
 
-        # Select the primary benchmark dataset: array with the highest evaluation metric coverage
+        candidate_arrays = list(rsc_arrays)
+        if table_models and isinstance(table_models, list):
+            candidate_arrays.append(table_models)
+
+        print(f"  Arrays found: {len(candidate_arrays)} "
+              f"(tableModels: {len(table_models) if table_models else 0}, "
+              f"rscArrays: {len(rsc_arrays)})")
+
+        # Select the primary dataset: the array with highest benchmark metric coverage and model count
         def array_score(a):
             if not a:
                 return (0, 0, 0)
@@ -155,12 +169,21 @@ def scrape_leaderboard():
             total_fields = sum(len(m.keys()) for m in a)
             return (intel_count, len(a), total_fields)
 
-        models = max(arrays, key=array_score) if arrays else []
+        models = max(candidate_arrays, key=array_score) if candidate_arrays else []
 
-        if len(arrays) > 1 and models:
+        # Build release date map from all candidate arrays (releases, etc.)
+        release_map = {}
+        for arr in candidate_arrays:
+            for r in arr:
+                sl = r.get("slug")
+                rd = r.get("releaseDate")
+                if sl and rd and sl not in release_map:
+                    release_map[sl] = rd
+
+        if len(candidate_arrays) > 1 and models:
             models_by_slug = {m["slug"]: m for m in models if m.get("slug")}
             n_merged = 0
-            for arr in arrays:
+            for arr in candidate_arrays:
                 if arr is models:
                     continue
                 for item in arr:
@@ -174,7 +197,20 @@ def scrape_leaderboard():
             print(f"  Merged {n_merged} missing field values across {len(models_by_slug)} models "
                   f"(e.g. name/releaseDate/releaseSlug)")
 
+        # Join releaseSlug -> release_map for any models missing releaseDate
+        n_dated = 0
+        for m in models:
+            if m.get("releaseDate"):
+                n_dated += 1
+                continue
+            rs = m.get("releaseSlug")
+            if rs and rs in release_map:
+                m["releaseDate"] = release_map[rs]
+                n_dated += 1
+
         models_with_intel = sum(1 for m in models if m.get("intelligenceIndex") is not None)
+        deprecated_count = sum(1 for m in models if m.get("deprecated"))
+
         if len(models) < MIN_MODELS_EXPECTED or models_with_intel < 50:
             raise RuntimeError(
                 f"Extraction validation failed: {len(models)} models extracted "
@@ -183,7 +219,8 @@ def scrape_leaderboard():
                 f"{list(models[0].keys()) if models else []}"
             )
 
-        print(f"  Extracted {len(models)} models ({models_with_intel} with intelligenceIndex)")
+        print(f"  Extracted {len(models)} models ({models_with_intel} with intelligenceIndex, "
+              f"{deprecated_count} deprecated, {n_dated} with releaseDate)")
 
         if models and len(models) > 0:
             sample_model = next((x for x in models if x.get("intelligenceIndex") is not None and x.get("price1mInputTokens") is not None), models[0])
@@ -191,7 +228,6 @@ def scrape_leaderboard():
             
             raw_cost = sample_model.get('intelligenceIndexCostTotal')
             try:
-                # 如果是 None、空字符串或 '--'，则降级为 '?'，否则转为浮点数格式化
                 if raw_cost in (None, "", "--", "?"):
                     cost_str = "$?"
                 else:
