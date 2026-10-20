@@ -1517,7 +1517,7 @@
       "creator_color": "#2243e6",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos/deepseek.svg",
       "is_deprecated": false,
-      "composite_ability": 0.7001998317127116,
+      "composite_ability": 0.7000764765063644,
       "total_params_B": 1600.0,
       "active_params_B": 49.0,
       "param_source": "faq",
@@ -1526,7 +1526,7 @@
       "is_reasoning": true,
       "x_axis_position": 0.9296758331225506,
       "in_chart": true,
-      "chart_y": 0.6575851789198797,
+      "chart_y": 0.6574442895696436,
       "is_pareto": false,
       "brand_frontier_of": null
     },

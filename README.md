@@ -19,7 +19,7 @@
 | 9 | GLM-5.2 (max) | 0.7532 | 753B | 40B | large | ✅ | ✅ |
 | 10 | Qwen3.8-Flash-Next | 0.7483 | 180B | 6B | large | ✅ | ✅ |
 | 11 | Ling 3.1 Flash | 0.7242 | 560B | — | large | ✅ | ✅ |
-| 12 | DeepSeek V4 Pro 0813 (max) | 0.7002 | 1.6T | 49B | large | ✅ | ✅ |
+| 12 | DeepSeek V4 Pro 0813 (max) | 0.7001 | 1.6T | 49B | large | ✅ | ✅ |
 | 13 | DeepSeek V4.1 Flash (max) | 0.6874 | 552B | 16B | large | ✅ | ✅ |
 | 14 | Motif 3 | 0.6774 | 314B | 13.2B | large | ✅ | ✅ |
 | 15 | Qwen3.8 27B (xhigh) | 0.6741 | 27B | — | small | ✅ | ✅ |
