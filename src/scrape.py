@@ -39,47 +39,89 @@ MIN_MODELS_EXPECTED = 100
 
 # JavaScript code shared across extraction approaches
 _SEARCH_MODELS_JS = """
-function _findBestModels(obj, maxDepth) {
-  let best = null;
-  let bestFC = 0;
+function _findAllModelArrays(obj, maxDepth) {
+  const found = [];
+  const seen = new Set();
   function search(o, d) {
     if (d > maxDepth || !o || typeof o !== 'object') return;
-    if (!Array.isArray(o) && o.models && Array.isArray(o.models) && o.models.length > 0) {
-      const fc = Object.keys(o.models[0]).length;
-      if (fc > bestFC) { bestFC = fc; best = o.models; }
+    if (Array.isArray(o)) {
+      if (o.length > 0 && typeof o[0] === 'object' && o[0] !== null && 'slug' in o[0]) {
+        if (!seen.has(o)) {
+          seen.add(o);
+          found.push(o);
+        }
+      }
+      for (const v of o) search(v, d + 1);
+    } else {
+      for (const v of Object.values(o)) {
+        search(v, d + 1);
+      }
     }
-    if (Array.isArray(o)) for (const v of o) search(v, d + 1);
-    else for (const v of Object.values(o)) search(v, d + 1);
   }
   search(obj, 0);
-  return best;
+  return found;
 }
 """
 
 # Primary extraction: parse RSC script tags directly.
-# V18: collect ALL `models` arrays (main benchmark array + metadata arrays),
-# so the Python side can merge them by slug.
+# V19: dynamically find all model arrays (e.g. `initialModels`, `models`, `releases`),
+# choose the primary benchmark dataset by evaluation metric coverage, and merge
+# auxiliary metadata fields (e.g. releaseDate, releaseSlug) across arrays by slug.
 EXTRACT_JS = """
 (() => {
   ${SEARCH}
   const scripts = document.querySelectorAll('script');
   const found = [];
+  const seenSigs = new Set();
+
+  function processData(data) {
+    const modelArrays = _findAllModelArrays(data, 25);
+    for (const arr of modelArrays) {
+      const sig = arr.length + ':' + (arr[0] ? arr[0].slug : '');
+      if (!seenSigs.has(sig)) {
+        seenSigs.add(sig);
+        found.push(arr);
+      }
+    }
+  }
 
   for (let i = 0; i < scripts.length; i++) {
     const text = scripts[i].textContent || '';
-    if (!text.includes('__next_f') || !text.includes('models')) continue;
+    if (!text.includes('__next_f')) continue;
+    if (!text.toLowerCase().includes('model') && !text.includes('slug')) continue;
 
-    const match = text.match(/^self\\.__next_f\\.push\\((.+)\\)$/s);
-    if (!match) continue;
+    const pushPattern = /self\\.__next_f\\.push\\(\\s*(\\[.*?\\])\\s*\\)\\s*;?/gs;
+    let m;
+    let matchedAny = false;
+    while ((m = pushPattern.exec(text)) !== null) {
+      matchedAny = true;
+      try {
+        const arr = eval(m[1]);
+        if (!arr || arr.length < 2 || typeof arr[1] !== 'string') continue;
+        const content = arr[1];
+        const colonIdx = content.indexOf(':');
+        if (colonIdx === -1) continue;
+        const data = JSON.parse(content.substring(colonIdx + 1));
+        processData(data);
+      } catch(e) { /* skip */ }
+    }
 
-    try {
-      const arr = eval(match[1]);
-      const content = arr[1];
-      const colonIdx = content.indexOf(':');
-      const data = JSON.parse(content.substring(colonIdx + 1));
-      const m = _findBestModels(data, 25);
-      if (m) found.push(m);
-    } catch(e) { /* skip */ }
+    if (!matchedAny) {
+      const match = text.match(/^self\\.__next_f\\.push\\((.+)\\)$/s);
+      if (match) {
+        try {
+          const arr = eval(match[1]);
+          if (arr && arr.length >= 2 && typeof arr[1] === 'string') {
+            const content = arr[1];
+            const colonIdx = content.indexOf(':');
+            if (colonIdx !== -1) {
+              const data = JSON.parse(content.substring(colonIdx + 1));
+              processData(data);
+            }
+          }
+        } catch(e) { /* skip */ }
+      }
+    }
   }
   return JSON.stringify(found);
 })()
@@ -105,44 +147,49 @@ def scrape_leaderboard():
               f"({[len(a) for a in arrays]} models, "
               f"{[len(a[0].keys()) if a else 0 for a in arrays]} fields each)")
 
-        # V18: main = the array whose models carry the most fields (the
-        # benchmark/pricing array). Every other array is treated as a
-        # metadata source: fields absent from main are merged in by slug
-        # (restores `name`, `releaseDate`, …).
-        models = max(arrays, key=lambda a: len(a[0].keys())) if arrays else []
-        if len(arrays) > 1:
-            main_slugs = {m.get("slug") for m in models}
-            meta_by_slug = {}
+        # Select the primary benchmark dataset: array with the highest evaluation metric coverage
+        def array_score(a):
+            if not a:
+                return (0, 0, 0)
+            intel_count = sum(1 for m in a if m.get("intelligenceIndex") is not None)
+            total_fields = sum(len(m.keys()) for m in a)
+            return (intel_count, len(a), total_fields)
+
+        models = max(arrays, key=array_score) if arrays else []
+
+        if len(arrays) > 1 and models:
+            models_by_slug = {m["slug"]: m for m in models if m.get("slug")}
+            n_merged = 0
             for arr in arrays:
                 if arr is models:
                     continue
-                for m in arr:
-                    sl = m.get("slug")
-                    if sl and sl in main_slugs and sl not in meta_by_slug:
-                        meta_by_slug[sl] = m
-            n_merged = 0
-            for m in models:
-                meta = meta_by_slug.get(m.get("slug"))
-                if not meta:
-                    continue
-                for k, v in meta.items():
-                    if k not in m and v is not None:
-                        m[k] = v
-                        n_merged += 1
-            print(f"  Merged metadata fields into {len(meta_by_slug)} models "
-                  f"({n_merged} field values, e.g. name/releaseDate)")
+                for item in arr:
+                    slug = item.get("slug")
+                    if slug and slug in models_by_slug:
+                        target = models_by_slug[slug]
+                        for k, v in item.items():
+                            if k not in target and v is not None:
+                                target[k] = v
+                                n_merged += 1
+            print(f"  Merged {n_merged} missing field values across {len(models_by_slug)} models "
+                  f"(e.g. name/releaseDate/releaseSlug)")
 
-        print(f"  Extracted {len(models)} models")
+        models_with_intel = sum(1 for m in models if m.get("intelligenceIndex") is not None)
+        if len(models) < MIN_MODELS_EXPECTED or models_with_intel < 50:
+            raise RuntimeError(
+                f"Extraction validation failed: {len(models)} models extracted "
+                f"(expected >= {MIN_MODELS_EXPECTED}), {models_with_intel} models with "
+                f"intelligenceIndex (expected >= 50). Available fields: "
+                f"{list(models[0].keys()) if models else []}"
+            )
+
+        print(f"  Extracted {len(models)} models ({models_with_intel} with intelligenceIndex)")
 
         if models and len(models) > 0:
-            print(f"  Fields per model: {len(models[0].keys())}")
-        if models and len(models) > 0:
-            print(f"  Fields per model: {len(models[0].keys())}")
+            sample_model = next((x for x in models if x.get("intelligenceIndex") is not None and x.get("price1mInputTokens") is not None), models[0])
+            print(f"  Fields per model: {len(sample_model.keys())}")
             
-            # Print sample (安全格式化，防止 '?' 或 '--' 导致 ValueError)
-            m = models[0]
-            
-            raw_cost = m.get('intelligenceIndexCostTotal')
+            raw_cost = sample_model.get('intelligenceIndexCostTotal')
             try:
                 # 如果是 None、空字符串或 '--'，则降级为 '?'，否则转为浮点数格式化
                 if raw_cost in (None, "", "--", "?"):
@@ -152,12 +199,12 @@ def scrape_leaderboard():
             except (ValueError, TypeError):
                 cost_str = "$?"
 
-            print(f"  Sample: {m.get('name', '?')}, "
-                  f"reasoning={m.get('reasoningModel', '?')}, "
-                  f"intelIndex={m.get('intelligenceIndex', '?')}, "
+            print(f"  Sample: {sample_model.get('name', '?')}, "
+                  f"reasoning={sample_model.get('reasoningModel', '?')}, "
+                  f"intelIndex={sample_model.get('intelligenceIndex', '?')}, "
                   f"costTotal={cost_str}, "
-                  f"inputPrice=${m.get('price1mInputTokens', '?')}, "
-                  f"outputPrice=${m.get('price1mOutputTokens', '?')}")
+                  f"inputPrice=${sample_model.get('price1mInputTokens', '?')}, "
+                  f"outputPrice=${sample_model.get('price1mOutputTokens', '?')}")
 
         print(f"[3/3] Saving to {OUTPUT_FILE} ...")
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
@@ -173,7 +220,7 @@ if __name__ == "__main__":
     try:
         data = scrape_leaderboard()
         if not data or len(data) < MIN_MODELS_EXPECTED:
-            print(f"WARNING: Only {len(data) if data else 0} models scraped (expected {MIN_MODELS_EXPECTED})")
+            raise RuntimeError(f"Scraping returned insufficient models: {len(data) if data else 0} (expected >= {MIN_MODELS_EXPECTED})")
     except Exception as e:
         print(f"Scraping failed: {e}")
         import traceback

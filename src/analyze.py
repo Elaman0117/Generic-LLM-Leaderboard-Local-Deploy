@@ -407,6 +407,12 @@ def compute_scores(data):
     print(f"Models with ≥{MIN_VALID_METRICS} metrics: {len(valid)} "
           f"({len(models) - len(valid)} lack evaluation data and are not ranked)")
 
+    if not valid:
+        raise ValueError(
+            f"No models have ≥{MIN_VALID_METRICS} evaluated benchmark metrics in raw_data.json. "
+            "Please check that scrape.py successfully extracted the benchmark data."
+        )
+
     # ── Requirement 4: re-normalize composite ability to [0, 1] ──
     # best-performing model = 1, worst-performing model = 0
     abilities = [m["composite_ability_raw"] for m in valid]

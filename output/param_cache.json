@@ -5646,5 +5646,29 @@
   "active_B": 12.0,
   "source": "faq",
   "fetched_at": "2026-10-16T01:23:51+00:00"
+ },
+ "reflection-beam": {
+  "slug": "reflection-beam",
+  "name": "Beam 1.0",
+  "total_B": 501.0,
+  "active_B": 23.0,
+  "source": "faq",
+  "fetched_at": "2026-10-20T05:09:05+00:00"
+ },
+ "minimax-m3-1-flash": {
+  "slug": "minimax-m3-1-flash",
+  "name": "MiniMax-M3.1-Flash",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-10-20T05:09:06+00:00"
+ },
+ "deepseek-v4-1-flash-1017": {
+  "slug": "deepseek-v4-1-flash-1017",
+  "name": "DeepSeek V4.1 Flash 1017 (Max)",
+  "total_B": 552.0,
+  "active_B": 16.0,
+  "source": "faq",
+  "fetched_at": "2026-10-20T05:09:07+00:00"
  }
 }
