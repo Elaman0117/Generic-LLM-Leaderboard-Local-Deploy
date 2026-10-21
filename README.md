@@ -24,12 +24,12 @@
 | 14 | Motif 3 | 0.6774 | 314B | 13.2B | large | ✅ | ✅ |
 | 15 | Qwen3.8 27B (xhigh) | 0.6741 | 27B | — | small | ✅ | ✅ |
 | 16 | Kimi K2.6 | 0.6724 | 1T | 32B | large | ✅ | ✅ |
-| 17 | Mistral Large 4 Preview | 0.6650 | 1T | — | large | ❌ | ✅ |
-| 18 | DeepSeek V4 Flash Vision (max) | 0.6649 | 284B | — | large | ❌ | ✅ |
+| 17 | DeepSeek V4 Flash Vision (max) | 0.6649 | 284B | — | large | ❌ | ✅ |
+| 18 | Mistral Large 4 Preview | 0.6649 | 1T | — | large | ❌ | ✅ |
 | 19 | DeepSeek V4 Flash 0731 (max) | 0.6643 | 284B | 13B | large | ✅ | ✅ |
 | 20 | DeepSeek V4 Pro (high) | 0.6564 | 1.6T | 49B | large | ✅ | ✅ |
 | 21 | GLM-5 | 0.6448 | 744B | 40B | large | ✅ | ✅ |
-| 22 | Kimi K3 (low) | 0.6434 | 2.8T | 104B | large | ✅ | ✅ |
+| 22 | Kimi K3 (low) | 0.6435 | 2.8T | 104B | large | ✅ | ✅ |
 | 23 | JT-4.1 Flash 236B A21B | 0.6432 | 236B | — | large | ❌ | ✅ |
 | 24 | DeepSeek V4 Pro (max) | 0.6430 | 1.6T | 49B | large | ✅ | ✅ |
 | 25 | MiMo-V2.6-Flash | 0.6415 | 309B | 15B | large | ✅ | ✅ |
@@ -52,7 +52,7 @@
 | 42 | Solar Open2 250B | 0.5661 | 250B | 15B | large | ✅ | ✅ |
 | 43 | Kimi K2.6 (non-reasoning) | 0.5659 | 1T | 32B | large | ✅ | ❌ |
 | 44 | Beam 1.0 | 0.5654 | 501B | 23B | large | ✅ | ✅ |
-| 45 | Inkling Small | 0.5615 | 266B | 12B | large | ✅ | ✅ |
+| 45 | Inkling Small | 0.5614 | 266B | 12B | large | ✅ | ✅ |
 | 46 | Quasar 438B (max) | 0.5607 | 438B | — | large | ❌ | ✅ |
 | 47 | DeepSeek V4 Flash (high) | 0.5572 | 284B | 13B | large | ✅ | ✅ |
 | 48 | JT-4.1 Flash 236B A21B (non-reasoning) | 0.5558 | 236B | — | large | ❌ | ❌ |
