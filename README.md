@@ -37,7 +37,7 @@
 | 27 | GLM-5.1 | 0.6215 | 744B | 40B | large | ✅ | ✅ |
 | 28 | Motif 3 (Beta) | 0.6109 | 314B | — | large | ❌ | ✅ |
 | 29 | K2 Horizon 375B A23B | 0.6060 | 375B | 23B | large | ✅ | ✅ |
-| 30 | GLM-5.3 (low) | 0.6050 | 753B | 40B | large | ✅ | ✅ |
+| 30 | GLM-5.3 (low) | 0.6049 | 753B | 40B | large | ✅ | ✅ |
 | 31 | Kimi K2.7 Code | 0.6038 | 1T | 32B | large | ✅ | ✅ |
 | 32 | Nex-N2-Pro | 0.6025 | 397B | 17B | large | ✅ | ✅ |
 | 33 | Qwen3.5 27B | 0.5901 | 27.8B | — | small | ✅ | ✅ |
@@ -48,7 +48,7 @@
 | 38 | Kimi K2.5 | 0.5789 | 1T | 32B | large | ✅ | ✅ |
 | 39 | MiMo-V2.5 | 0.5755 | 310B | 15B | large | ✅ | ✅ |
 | 40 | Kimi K2 Thinking | 0.5729 | 1T | 32B | large | ✅ | ✅ |
-| 41 | Inkling (xhigh) | 0.5672 | 975B | 41B | large | ✅ | ✅ |
+| 41 | Inkling (xhigh) | 0.5669 | 975B | 41B | large | ✅ | ✅ |
 | 42 | Solar Open2 250B | 0.5661 | 250B | 15B | large | ✅ | ✅ |
 | 43 | Kimi K2.6 (non-reasoning) | 0.5659 | 1T | 32B | large | ✅ | ❌ |
 | 44 | Beam 1.0 | 0.5654 | 501B | 23B | large | ✅ | ✅ |
