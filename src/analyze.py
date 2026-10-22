@@ -208,15 +208,8 @@ plt.rcParams["axes.unicode_minus"] = False
 
 
 # ── Brand Pareto lines (chart only) ──
-# Creators as named on the AA page; "Xiaomi" is the creator of the MiMo
-# model family (the user refers to this brand as "Mimo").
-BRAND_LINE_CREATORS = [
-    "Anthropic", "OpenAI", "Meta", "Z AI", "Google", "SpaceXAI",
-    "Kimi", "Alibaba", "DeepSeek", "MiniMax", "Xiaomi",
-]
-BRAND_DISPLAY_NAMES = {  # chart legend / README display names
-    "Xiaomi": "Xiaomi · MiMo",
-}
+BRAND_LINE_CREATORS = []
+BRAND_DISPLAY_NAMES = {}
 
 # V20 用户处方 (user-prescribed placement)：(chart_label, creator) -> want。
 # online-first = 优先放置（仍做完整碰撞检查）；no-online = 永不骑线（贴点放）。
@@ -525,11 +518,18 @@ def _dominates(a, b):
 
 def select_display_brands(models, pareto, min_brands=10):
     """根据规则动态选择需要显示的厂商列表：
-    帕累托前沿厂商 + 除开帕累托前沿厂商后的全部模型按性能从高到低排列补充。
-    - 如果帕累托前沿厂商数量 >= min_brands（默认10），则全选前沿厂商（哪怕超过 10 个）；
-    - 如果帕累托前沿厂商数量 < min_brands，则从剩余模型中按性能从高到低选满 min_brands 个厂商。
-    保持稳定顺序：帕累托前沿厂商在前（按前沿最高能力降序），补充厂商在后（按其最高能力模型降序）。
+    1. 提取帕累托前沿厂商（按前沿最高能力降序）；
+    2. 如果前沿厂商数量不足 min_brands，则从剩余模型中按性能从高到低补充；
+    3. 如果选出的厂商中存在「在图片范围中只有 1 个模型」的厂商，则每出现一家就再补充一个名额。
+    保持稳定顺序：帕累托前沿厂商在前，补充厂商在后。
     """
+    y0 = min(float(m["composite_ability"]) for m in pareto)
+
+    def _chart_count(creator):
+        bm = [m for m in models if m.get("creator") == creator]
+        fr = compute_pareto(bm)
+        return len([m for m in fr if float(m["composite_ability"]) >= y0])
+
     frontier_brands = []
     for m in pareto:
         c = m.get("creator")
@@ -537,14 +537,28 @@ def select_display_brands(models, pareto, min_brands=10):
             frontier_brands.append(c)
 
     selected = list(frontier_brands)
-    if len(selected) < min_brands:
-        sorted_models = sorted(models, key=lambda m: m["composite_ability"], reverse=True)
-        for m in sorted_models:
-            c = m.get("creator")
-            if c and c not in selected:
-                selected.append(c)
-                if len(selected) >= min_brands:
-                    break
+
+    # 待选候选厂商池（按最高综合能力降序排列，仅选取在图片范围内至少有 1 个前沿模型的厂商）
+    sorted_models = sorted(models, key=lambda m: m["composite_ability"], reverse=True)
+    candidate_creators = []
+    for m in sorted_models:
+        c = m.get("creator")
+        if c and c not in selected and c not in candidate_creators:
+            if _chart_count(c) > 0:
+                candidate_creators.append(c)
+
+    # 基础补满 min_brands
+    while len(selected) < min_brands and candidate_creators:
+        selected.append(candidate_creators.pop(0))
+
+    # 若出现只有一个模型在图片范围中的厂商，则再添加名额
+    while True:
+        single_count = sum(1 for b in selected if _chart_count(b) == 1)
+        target_count = max(min_brands, len(frontier_brands)) + single_count
+        if len(selected) >= target_count or not candidate_creators:
+            break
+        while len(selected) < target_count and candidate_creators:
+            selected.append(candidate_creators.pop(0))
 
     return selected
 
