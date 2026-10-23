@@ -5670,5 +5670,13 @@
   "active_B": 16.0,
   "source": "faq",
   "fetched_at": "2026-10-20T05:09:07+00:00"
+ },
+ "ling-3-1-flash-1019": {
+  "slug": "ling-3-1-flash-1019",
+  "name": "Ling 3.1 Flash 1019",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-10-23T09:04:43+00:00"
  }
 }
