@@ -5678,5 +5678,21 @@
   "active_B": null,
   "source": "undisclosed",
   "fetched_at": "2026-10-23T09:04:43+00:00"
+ },
+ "nemotron-3-5-bolt-e4b-4gb": {
+  "slug": "nemotron-3-5-bolt-e4b-4gb",
+  "name": "Nemotron 3.5 Bolt E4B 4GB (Reasoning)",
+  "total_B": 8.0,
+  "active_B": null,
+  "source": "faq",
+  "fetched_at": "2026-10-24T08:36:47+00:00"
+ },
+ "kimi-k3-1-pro": {
+  "slug": "kimi-k3-1-pro",
+  "name": "Kimi K3.1 Pro",
+  "total_B": 2800.0,
+  "active_B": null,
+  "source": "faq",
+  "fetched_at": "2026-10-24T08:36:48+00:00"
  }
 }
