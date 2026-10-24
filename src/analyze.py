@@ -325,6 +325,177 @@ def load_data():
         return json.load(f)
 
 
+
+def calibrate_benchmark_bounds(models, metric_ranges, min_valid_metrics=MIN_VALID_METRICS, tolerance=1e-5, max_rounds=50):
+    """基准测试动态标定流程（留一交叉迭代映射标定）：
+    将一项基准测试暂时排除开外，计算其它基准测试成绩的平均成绩，
+    然后归一化排除某项后的平均成绩，
+    然后查看该项目中存在数据的模型的排除该项后的平均成绩，
+    找到其中成绩最高的模型的成绩和最低的模型的成绩，
+    单独设置为该项目归一化的映射新上界和下界。
+    并行处理，也就是该轮中所有排除后的上下界都是 1 和 0（初始轮为原来的参数），
+    计算出来的数据储存在新的地方，而不是覆盖旧数据。
+    然后该轮并行处理完之后，进行下一轮，将新得到的上下界设置为归一化的新上下界，
+    然后再次并行处理，重复进行直至收敛。
+    """
+    eval_models = [m for m in models if m.get("valid_metrics", 0) >= min_valid_metrics]
+    metric_keys = list(METRIC_FIELDS.keys())
+
+    # 初始轮（Round 0）：各基准测试映射上下界均为 [0.0, 1.0]
+    bounds = {k: {"lower": 0.0, "upper": 1.0} for k in metric_keys}
+    history = []
+
+    print("\n" + "=" * 60)
+    print("Benchmark Iterative Calibration (Leave-One-Out Scaling)")
+    print("=" * 60)
+    print(f"  Evaluating {len(eval_models)} models across {len(metric_keys)} benchmarks...")
+
+    converged = False
+    final_round = 0
+    max_delta = 1.0
+
+    for round_idx in range(1, max_rounds + 1):
+        # 1. 根据当前轮次的上下界映射各模型的基准测试分数（存储在临时字典中）
+        norm_scores = {}
+        for m in eval_models:
+            mid = id(m)
+            norm_scores[mid] = {}
+            for k in metric_keys:
+                val = m["_parsed"][k]
+                rng = metric_ranges.get(k)
+                if val is None or rng is None:
+                    norm_scores[mid][k] = None
+                elif rng["max"] == rng["min"]:
+                    norm_scores[mid][k] = 0.5
+                else:
+                    raw_norm = float((val - rng["min"]) / (rng["max"] - rng["min"]))
+                    low = bounds[k]["lower"]
+                    high = bounds[k]["upper"]
+                    norm_scores[mid][k] = low + raw_norm * (high - low)
+
+        # 2. 并行处理：对每一项基准测试独立排除并计算新上下界，保存在 new_bounds
+        new_bounds = {}
+        round_max_delta = 0.0
+
+        for excluded_k in metric_keys:
+            # 计算每位模型排除该项后的平均成绩
+            leave_out_avgs = {}
+            for m in eval_models:
+                mid = id(m)
+                scores = [norm_scores[mid][k] for k in metric_keys
+                          if k != excluded_k and norm_scores[mid][k] is not None]
+                if scores:
+                    leave_out_avgs[mid] = sum(scores) / len(scores)
+
+            if not leave_out_avgs:
+                new_bounds[excluded_k] = dict(bounds[excluded_k])
+                continue
+
+            # 归一化排除某项后的平均成绩到 [0, 1]
+            min_avg = min(leave_out_avgs.values())
+            max_avg = max(leave_out_avgs.values())
+
+            if max_avg > min_avg:
+                norm_leave_out = {mid: (avg - min_avg) / (max_avg - min_avg)
+                                  for mid, avg in leave_out_avgs.items()}
+            else:
+                norm_leave_out = {mid: 0.5 for mid in leave_out_avgs}
+
+            # 查看该项目中存在数据的模型的排除该项后的平均成绩
+            tested_scores = [norm_leave_out[id(m)] for m in eval_models
+                             if m["_parsed"][excluded_k] is not None and id(m) in norm_leave_out]
+
+            if tested_scores:
+                new_lower = min(tested_scores)
+                new_upper = max(tested_scores)
+            else:
+                new_lower = bounds[excluded_k]["lower"]
+                new_upper = bounds[excluded_k]["upper"]
+
+            delta = max(abs(new_lower - bounds[excluded_k]["lower"]),
+                        abs(new_upper - bounds[excluded_k]["upper"]))
+            if delta > round_max_delta:
+                round_max_delta = delta
+
+            new_bounds[excluded_k] = {"lower": new_lower, "upper": new_upper}
+
+        history.append({
+            "round": round_idx,
+            "max_delta": float(round_max_delta),
+            "bounds": {k: dict(v) for k, v in new_bounds.items()},
+        })
+
+        if round_idx <= 5 or round_idx % 5 == 0 or round_max_delta < tolerance:
+            print(f"  Round {round_idx:2d}: max bound change = {round_max_delta:.6f}")
+
+        bounds = new_bounds
+        final_round = round_idx
+        max_delta = round_max_delta
+        if round_max_delta < tolerance:
+            converged = True
+            print(f"  Converged at round {round_idx} with delta < {tolerance}!")
+            break
+
+    # 3. 将最终标定后的上下界应用到每位模型上，并存储在新的地方（不覆盖旧数据）
+    for m in models:
+        m["_calibrated_norm"] = {}
+        for k in metric_keys:
+            val = m["_parsed"][k]
+            rng = metric_ranges.get(k)
+            if val is None or rng is None:
+                m["_calibrated_norm"][k] = None
+            elif rng["max"] == rng["min"]:
+                m["_calibrated_norm"][k] = Fraction(1, 2)
+            else:
+                # 原始归一化
+                raw_norm = (val - rng["min"]) / (rng["max"] - rng["min"])
+                low = Fraction(bounds[k]["lower"]).limit_denominator(10**6)
+                high = Fraction(bounds[k]["upper"]).limit_denominator(10**6)
+                # 映射到标定区间 [low, high]
+                calibrated_val = low + raw_norm * (high - low)
+                m["_calibrated_norm"][k] = calibrated_val
+
+        cal_vals = [v for v in m["_calibrated_norm"].values() if v is not None]
+        if cal_vals:
+            m["composite_ability_calibrated_raw"] = sum(cal_vals) / len(cal_vals)
+        else:
+            m["composite_ability_calibrated_raw"] = None
+
+    # 对有效模型的 calibrated composite ability 进行全局 [0, 1] 再归一化，存储在新字段
+    cal_valid_raws = [m["composite_ability_calibrated_raw"] for m in eval_models
+                      if m["composite_ability_calibrated_raw"] is not None]
+    if cal_valid_raws:
+        min_cal, max_cal = min(cal_valid_raws), max(cal_valid_raws)
+        for m in models:
+            raw = m.get("composite_ability_calibrated_raw")
+            if raw is not None and max_cal > min_cal:
+                m["composite_ability_calibrated"] = (raw - min_cal) / (max_cal - min_cal)
+            elif raw is not None:
+                m["composite_ability_calibrated"] = Fraction(1, 2)
+            else:
+                m["composite_ability_calibrated"] = None
+    else:
+        for m in models:
+            m["composite_ability_calibrated"] = None
+
+    calibration_meta = {
+        "converged": converged,
+        "total_rounds": final_round,
+        "final_max_delta": float(max_delta),
+        "tolerance": float(tolerance),
+        "final_bounds": {
+            k: {
+                "lower": float(bounds[k]["lower"]),
+                "upper": float(bounds[k]["upper"]),
+                "span": float(bounds[k]["upper"] - bounds[k]["lower"]),
+                "metric_label": METRIC_LABELS.get(k, k),
+                "model_count": sum(1 for m in eval_models if m["_parsed"][k] is not None)
+            } for k in metric_keys
+        }
+    }
+    return calibration_meta
+
+
 def compute_scores(data):
     """Compute composite ability and per-request cost for ALL models.
 
@@ -463,7 +634,10 @@ def compute_scores(data):
     xs = [float(m["x_value"]) for m in valid]
     print(f"  Param range: {min(xs):.3f} - {max(xs):.3f} B ({len(xs)} with params)")
 
-    return valid, metric_ranges
+    # ── 基准测试动态标定流程（留一交叉迭代映射标定） ──
+    calibration_meta = calibrate_benchmark_bounds(models, metric_ranges)
+
+    return valid, metric_ranges, calibration_meta
 
 
 def _to_frac(val):
@@ -2390,7 +2564,7 @@ def _brand_cell(creator, logo):
     return creator or "--"
 
 
-def save_results(models, pareto, brand_frontiers, metric_ranges, x_dist, mapping_meta):
+def save_results(models, pareto, brand_frontiers, metric_ranges, x_dist, mapping_meta, calibration_meta=None):
 
     axis_meta = {k: v for k, v in mapping_meta.items() if k != "map_fn"}
     output = {
@@ -2437,6 +2611,7 @@ def save_results(models, pareto, brand_frontiers, metric_ranges, x_dist, mapping
             } if isinstance(v, dict) else v
             for k, v in metric_ranges.items()
         },
+        "benchmark_calibration": calibration_meta,
         "pareto_frontier": [_export_model(m, i + 1) for i, m in enumerate(pareto)],
         "brand_frontiers": {
             brand: [_export_model(m, i + 1) for i, m in enumerate(fr)]
@@ -2452,6 +2627,8 @@ def save_results(models, pareto, brand_frontiers, metric_ranges, x_dist, mapping
                 "creator_logo_url": resolve_logo_url(m["creator_logo"]) if m["creator_logo"] else None,
                 "is_deprecated": m["is_deprecated"],
                 "composite_ability": float(m["composite_ability"]),
+        "composite_ability_calibrated": (float(m["composite_ability_calibrated"]) if m.get("composite_ability_calibrated") is not None else None),
+        "composite_ability_calibrated": (float(m["composite_ability_calibrated"]) if m.get("composite_ability_calibrated") is not None else None),
                 "total_params_B": (float(m["x_value"]) if m.get("x_value") is not None else None),
                 "active_params_B": m.get("active_B"),
                 "param_source": m.get("x_source"),
@@ -2473,7 +2650,7 @@ def save_results(models, pareto, brand_frontiers, metric_ranges, x_dist, mapping
         json.dump(output, f, ensure_ascii=False, indent=2)
     print(f"JSON saved to {json_path}")
 
-    generate_readme(models, pareto, brand_frontiers, x_dist, mapping_meta)
+    generate_readme(models, pareto, brand_frontiers, x_dist, mapping_meta, calibration_meta)
 
 
 def _export_model(m, rank):
@@ -2489,6 +2666,7 @@ def _export_model(m, rank):
         "is_pareto": True,
         "chart_label": m.get("chart_label"),
         "composite_ability": float(m["composite_ability"]),
+        "composite_ability_calibrated": (float(m["composite_ability_calibrated"]) if m.get("composite_ability_calibrated") is not None else None),
         "total_params_B": (float(m["x_value"]) if m.get("x_value") is not None else None),
         "active_params_B": m.get("active_B"),
         "param_source": m.get("x_source"),
@@ -2500,7 +2678,7 @@ def _export_model(m, rank):
     }
 
 
-def generate_readme(models, pareto, brand_frontiers, x_dist, mapping_meta):
+def generate_readme(models, pareto, brand_frontiers, x_dist, mapping_meta, calibration_meta=None):
 
     ya = mapping_meta.get("y_axis", {})
     y0 = ya.get("baseline")
@@ -2552,6 +2730,32 @@ def generate_readme(models, pareto, brand_frontiers, x_dist, mapping_meta):
             continue
         logo = fr[0].get("creator_logo")
         lines.append(f"| {_brand_cell(brand, logo)} | `{fr[0].get('creator_color') or '#888888'}` | {len(fr)} |")
+
+    # ── 基准测试动态标定 ─────────────────────────────────────────────────
+    if calibration_meta:
+        lines.append("\n## 基准测试动态标定（Leave-One-Out Calibration）\n")
+        lines.append("不同基准测试的参测模型群体能力分布存在差异（例如部分高难度或专业领域基准测试仅覆盖头部高能力模型）。"
+                     "系统在标准归一化之后执行了**留一交叉动态映射标定流程**：\n")
+        lines.append("1. **排除单项基准**：暂时排除某项基准测试，计算各模型在其余测试项上的平均能力；\n"
+                     "2. **全域归一化评估**：将排除后的平均能力归一化至 `[0, 1]`；\n"
+                     "3. **锁定参测区间**：提取实际参测该基准测试的所有模型，以它们排除该项后的能力最高值和最低值分别作为该项的新映射上界和下界；\n"
+                     "4. **并行同步迭代**：所有基准测试以 `[0, 1]` 为初值同步更新，完成一轮后以新上下界作为输入进入下一轮，重复迭代直至收敛。\n")
+        fb = calibration_meta.get("final_bounds", {})
+        rounds = calibration_meta.get("total_rounds", 0)
+        tol = calibration_meta.get("tolerance", 1e-5)
+        lines.append(f"> 标定状态：已完成 **{rounds}** 轮并行迭代收敛（容差阈值 $\\Delta < {tol}$）。"
+                     "标定得到的数据作为新指标独立保存，不覆盖原始基准测试归一化与综合能力。\n")
+        lines.append("| 基准测试项 | 英文标识 | 参测模型数 | 标定映射下界 | 标定映射上界 | 映射跨度 |")
+        lines.append("| :--- | :--- | :---: | :---: | :---: | :---: |")
+        for k in METRIC_FIELDS:
+            info = fb.get(k, {})
+            label = info.get("metric_label", METRIC_LABELS.get(k, k))
+            cnt = info.get("model_count", 0)
+            low = info.get("lower", 0.0)
+            upp = info.get("upper", 1.0)
+            span = info.get("span", 1.0)
+            lines.append(f"| {label} | `{k}` | {cnt} | `{low:.4f}` | `{upp:.4f}` | `{span:.4f}` |")
+        lines.append("")
 
     # ── 评分方法 ─────────────────────────────────────────────────────────
     lines.append("\n## 评分方法\n")
@@ -2690,7 +2894,7 @@ def main():
     print(f"  {len(data)} models loaded")
 
     print("\nComputing scores & X (Status: All)...")
-    models, metric_ranges = compute_scores(data)
+    models, metric_ranges, calibration_meta = compute_scores(data)
 
     withx = [m for m in models if m.get("x_value") is not None]
     if withx:
@@ -2734,7 +2938,7 @@ def main():
     plot_analysis(models, pareto, brand_frontiers, x_dist, mapping_meta)
 
     print("\nSaving results...")
-    save_results(models, pareto, brand_frontiers, metric_ranges, x_dist, mapping_meta)
+    save_results(models, pareto, brand_frontiers, metric_ranges, x_dist, mapping_meta, calibration_meta)
 
     # Console summary of the overall frontier
     print(f"\n{'='*120}")

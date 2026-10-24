@@ -372,6 +372,41 @@
 | <img src="https://artificialanalysis.ai/img/logos/xiaomi.svg" width="18" alt="Xiaomi" /> Xiaomi | `#ff6900` | 2 |
 | <img src="https://artificialanalysis.ai/img/logos/meta.svg" width="18" alt="Meta" /> Meta | `#0089f4` | 3 |
 
+## 基准测试动态标定（Leave-One-Out Calibration）
+
+不同基准测试的参测模型群体能力分布存在差异（例如部分高难度或专业领域基准测试仅覆盖头部高能力模型）。系统在标准归一化之后执行了**留一交叉动态映射标定流程**：
+
+1. **排除单项基准**：暂时排除某项基准测试，计算各模型在其余测试项上的平均能力；
+2. **全域归一化评估**：将排除后的平均能力归一化至 `[0, 1]`；
+3. **锁定参测区间**：提取实际参测该基准测试的所有模型，以它们排除该项后的能力最高值和最低值分别作为该项的新映射上界和下界；
+4. **并行同步迭代**：所有基准测试以 `[0, 1]` 为初值同步更新，完成一轮后以新上下界作为输入进入下一轮，重复迭代直至收敛。
+
+> 标定状态：已完成 **14** 轮并行迭代收敛（容差阈值 $\Delta < 1e-05$）。标定得到的数据作为新指标独立保存，不覆盖原始基准测试归一化与综合能力。
+
+| 基准测试项 | 英文标识 | 参测模型数 | 标定映射下界 | 标定映射上界 | 映射跨度 |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| AA Intelligence Index | `intelligenceIndex` | 602 | `0.0000` | `1.0000` | `1.0000` |
+| GPQA Diamond | `gpqa` | 542 | `0.0000` | `0.9671` | `0.9671` |
+| Humanity's Last Exam | `hle` | 602 | `0.0000` | `1.0000` | `1.0000` |
+| MMMU Pro | `mmmuPro` | 285 | `0.0580` | `1.0000` | `0.9420` |
+| IFBench Instruction Following | `ifbench` | 448 | `0.0000` | `0.9188` | `0.9188` |
+| SciCode Coding | `scicode` | 237 | `0.1163` | `1.0000` | `0.8837` |
+| CritPt Physics | `critpt` | 582 | `0.0791` | `1.0000` | `0.9209` |
+| AA-LCR Long Context | `lcr` | 579 | `0.0000` | `1.0000` | `1.0000` |
+| AA Omniscience Index | `omniscience` | 582 | `0.0735` | `1.0000` | `0.9265` |
+| AA-Omniscience Accuracy | `omniscienceAccuracy` | 582 | `0.0697` | `1.0000` | `0.9303` |
+| AA-Omniscience Non-Hallucination | `omniscienceNonHallucination` | 582 | `0.0710` | `1.0000` | `0.9290` |
+| GDPval-AA Normalized | `gdpvalNormalized` | 301 | `0.1163` | `1.0000` | `0.8837` |
+| AA Analyst Agent | `analystAgent` | 51 | `0.3693` | `1.0000` | `0.6307` |
+| APEX-Agents-AA | `apexAgents` | 33 | `0.3119` | `0.8500` | `0.5381` |
+| ITBench-SRE | `itbenchSre` | 45 | `0.2070` | `1.0000` | `0.7930` |
+| τ²-Bench Telecom | `tau2` | 439 | `0.0723` | `0.9026` | `0.8303` |
+| τ³-Bench Banking | `tauBanking` | 209 | `0.1053` | `0.9703` | `0.8650` |
+| Terminal-Bench Hard | `terminalbenchHard` | 432 | `0.0753` | `0.9048` | `0.8294` |
+| Terminal-Bench 2.1 | `terminalbenchV21` | 242 | `0.1048` | `0.9652` | `0.8604` |
+| Terminal-Bench 4.0 | `terminalbenchV40` | 226 | `0.1153` | `1.0000` | `0.8847` |
+
+
 ## 评分方法
 
 1. **20项评估指标**各自线性归一化到 [0,1]
