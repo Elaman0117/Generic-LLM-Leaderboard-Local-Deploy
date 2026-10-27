@@ -155,6 +155,18 @@ SCORE_KEY_MAP = {
     "aa-analyst-agent": "analystAgent",
     "itbench-aa": "itbenchSre",
     "apex-agents-aa": "apexAgents",
+    "livecodebench": "livecodebench",
+    "aime-2025": "aime2025",
+    "aa-briefcase": "briefcase",
+    "automationbench-aa": "automationbench",
+    "gdp-pdf": "gdpPdf",
+    "mlcr-aa": "mlcr",
+    "terminal-bench-science": "terminalbenchScience",
+    "frontiercode": "frontiercode",
+    "enterprise-ops-gym-aa": "enterpriseOps",
+    "harvey-lab-aa": "harveyLab",
+    "code2video-aa": "code2video",
+    "aa-3d": "aa3d",
 }
 
 
