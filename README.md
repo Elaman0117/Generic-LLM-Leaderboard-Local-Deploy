@@ -273,7 +273,7 @@
 | 263 | Olmo 3.1 32B Instruct | 0.1735 | 32.2B | — | small | ✅ | ❌ |
 | 264 | Qwen3 Omni 30B A3B | 0.1718 | 35.3B | 3B | small | ✅ | ❌ |
 | 265 | Qwen3 4B 2507 (non-reasoning) | 0.1700 | 4.02B | — | tiny | ✅ | ❌ |
-| 266 | Nemotron 3 Nano 4B | 0.1684 | 3.97B | — | tiny | ✅ | ✅ |
+| 266 | Nemotron 3 Nano 4B | 0.1687 | 3.97B | — | tiny | ✅ | ✅ |
 | 267 | Olmo 3 32B Think | 0.1658 | 32.2B | — | small | ✅ | ✅ |
 | 268 | DeepSeek R1 Distill Llama 70B | 0.1650 | 70B | — | medium | ✅ | ✅ |
 | 269 | DeepSeek R1 Distill Qwen 14B | 0.1646 | 14B | — | small | ✅ | ✅ |
