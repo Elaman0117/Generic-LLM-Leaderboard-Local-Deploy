@@ -263,8 +263,10 @@ LW_OVERALL = 2.2                 # 总体帕累托线宽
 LW_BRAND = 1.1                   # 品牌线宽（较窄，避免遮挡）
 
 # ── Metrics (from AA's evaluation data) ──
-# V22: All 32 active benchmark metrics from AA's models dataset, including
-# reasoning, coding, math, agentic workflows, long context, and domain tests.
+# V18: agenticIndex / codingIndex (AA Agentic / Coding Index) were removed
+# from AA's models payload; the four new benchmark columns are added —
+# analystAgent, tauBanking (τ³-Bench Banking), terminalbenchV21 (2.1) and
+# terminalbenchV40 (4.0).  20 metrics total.
 METRIC_FIELDS = {
     "intelligenceIndex": "intelligenceIndex",
     "gpqa": "gpqa",
@@ -284,20 +286,8 @@ METRIC_FIELDS = {
     "tau2": "tau2",
     "tauBanking": "tauBanking",
     "terminalbenchHard": "terminalbenchHard",
-    "terminalbenchV21": "terminalBench21",
+    "terminalbenchV21": "terminalBench21",  # AA payload uses capital-B, no V (V19 fix 2026-10-01)
     "terminalbenchV40": "terminalBench40",
-    "livecodebench": "livecodebench",
-    "aime2025": "aime2025",
-    "briefcase": "briefcase",
-    "automationbench": "automationbench",
-    "gdpPdf": "gdpPdf",
-    "mlcr": "mlcr",
-    "terminalbenchScience": "terminalbenchScience",
-    "frontiercode": "frontiercode",
-    "enterpriseOps": "enterpriseOps",
-    "harveyLab": "harveyLab",
-    "code2video": "code2video",
-    "aa3d": "aa3d",
 }
 
 METRIC_LABELS = {
@@ -315,29 +305,17 @@ METRIC_LABELS = {
     "gdpvalNormalized": "GDPval-AA Normalized",
     "analystAgent": "AA Analyst Agent",
     "apexAgents": "APEX-Agents-AA",
-    "itbenchSre": "ITBench-AA",
+    "itbenchSre": "ITBench-SRE",
     "tau2": "τ²-Bench Telecom",
     "tauBanking": "τ³-Bench Banking",
     "terminalbenchHard": "Terminal-Bench Hard",
     "terminalbenchV21": "Terminal-Bench 2.1",
     "terminalbenchV40": "Terminal-Bench 4.0",
-    "livecodebench": "LiveCodeBench",
-    "aime2025": "AIME 2025",
-    "briefcase": "AA-Briefcase Knowledge Work",
-    "automationbench": "AutomationBench-AA SaaS Workflows",
-    "gdpPdf": "GDP.pdf Long Document",
-    "mlcr": "MLCR-AA Medical Reasoning",
-    "terminalbenchScience": "Terminal-Bench-Science",
-    "frontiercode": "FrontierCode SWE",
-    "enterpriseOps": "EnterpriseOps-Gym-AA",
-    "harveyLab": "Harvey LAB-AA Legal Agent",
-    "code2video": "Code2Video-AA Animation",
-    "aa3d": "AA-3D Interactive Experience",
 }
 
 # Fallback field names (supporting AA schema updates e.g. nested/kebab-case 'scores' dict)
 FALLBACK_METRIC_KEYS = {
-    "intelligenceIndex": ["intelligenceIndex", "artificial-analysis-intelligence-index"],
+    "intelligenceIndex": ["intelligenceIndex"],
     "gpqa": ["gpqa", "gpqa-diamond"],
     "hle": ["hle", "humanitys-last-exam"],
     "mmmuPro": ["mmmuPro", "mmmu-pro"],
@@ -357,19 +335,8 @@ FALLBACK_METRIC_KEYS = {
     "terminalbenchHard": ["terminalbenchHard", "terminalbench-hard"],
     "terminalbenchV21": ["terminalBench21", "terminalbenchV21", "terminalbench-2-1"],
     "terminalbenchV40": ["terminalBench40", "terminalbenchV40", "terminalbench-4-0"],
-    "livecodebench": ["livecodebench"],
-    "aime2025": ["aime2025", "aime-2025"],
-    "briefcase": ["briefcase", "aa-briefcase"],
-    "automationbench": ["automationbench", "automationbench-aa"],
-    "gdpPdf": ["gdpPdf", "gdp-pdf"],
-    "mlcr": ["mlcr", "mlcr-aa"],
-    "terminalbenchScience": ["terminalbenchScience", "terminal-bench-science"],
-    "frontiercode": ["frontiercode"],
-    "enterpriseOps": ["enterpriseOps", "enterprise-ops-gym-aa"],
-    "harveyLab": ["harveyLab", "harvey-lab-aa"],
-    "code2video": ["code2video", "code2video-aa"],
-    "aa3d": ["aa3d", "aa-3d"],
 }
+
 
 MIN_VALID_METRICS = 5
 
