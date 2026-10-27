@@ -313,6 +313,31 @@ METRIC_LABELS = {
     "terminalbenchV40": "Terminal-Bench 4.0",
 }
 
+# Fallback field names (supporting AA schema updates e.g. nested/kebab-case 'scores' dict)
+FALLBACK_METRIC_KEYS = {
+    "intelligenceIndex": ["intelligenceIndex"],
+    "gpqa": ["gpqa", "gpqa-diamond"],
+    "hle": ["hle", "humanitys-last-exam"],
+    "mmmuPro": ["mmmuPro", "mmmu-pro"],
+    "ifbench": ["ifbench"],
+    "scicode": ["scicode"],
+    "critpt": ["critpt"],
+    "lcr": ["lcr", "artificial-analysis-long-context-reasoning"],
+    "omniscience": ["omniscience", "aa-omniscience"],
+    "omniscienceAccuracy": ["omniscienceAccuracy", "omniscience-accuracy"],
+    "omniscienceNonHallucination": ["omniscienceNonHallucination", "omniscience-non-hallucination"],
+    "gdpvalNormalized": ["gdpvalNormalized", "gdpval-aa-normalized"],
+    "analystAgent": ["analystAgent", "aa-analyst-agent"],
+    "apexAgents": ["apexAgents", "apex-agents-aa"],
+    "itbenchSre": ["itbenchSre", "itbench-aa", "itbench-sre"],
+    "tau2": ["tau2", "tau2-bench"],
+    "tauBanking": ["tauBanking", "tau3-banking"],
+    "terminalbenchHard": ["terminalbenchHard", "terminalbench-hard"],
+    "terminalbenchV21": ["terminalBench21", "terminalbenchV21", "terminalbench-2-1"],
+    "terminalbenchV40": ["terminalBench40", "terminalbenchV40", "terminalbench-4-0"],
+}
+
+
 MIN_VALID_METRICS = 5
 
 
@@ -543,8 +568,18 @@ def compute_scores(data):
             "intelligence_index": _to_frac(d.get("intelligenceIndex")),
             "_parsed": {},
         }
+        scores_dict = d.get("scores") if isinstance(d.get("scores"), dict) else {}
         for key, aa_field in METRIC_FIELDS.items():
-            m["_parsed"][key] = _to_frac(d.get(aa_field))
+            val = d.get(aa_field)
+            if val is None:
+                for alt in FALLBACK_METRIC_KEYS.get(key, [aa_field]):
+                    if d.get(alt) is not None:
+                        val = d.get(alt)
+                        break
+                    if scores_dict.get(alt) is not None:
+                        val = scores_dict.get(alt)
+                        break
+            m["_parsed"][key] = _to_frac(val)
         models.append(m)
 
     print(f"Models loaded (Status: All, including {n_deprecated} deprecated): {len(models)}")

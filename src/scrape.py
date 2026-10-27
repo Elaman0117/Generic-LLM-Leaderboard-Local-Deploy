@@ -135,6 +135,43 @@ EXTRACT_FULL_JS = """
 """
 
 
+# Mapping from AA's nested 'scores' dict keys to canonical model field names
+SCORE_KEY_MAP = {
+    "humanitys-last-exam": "hle",
+    "gpqa-diamond": "gpqa",
+    "critpt": "critpt",
+    "omniscience-accuracy": "omniscienceAccuracy",
+    "omniscience-non-hallucination": "omniscienceNonHallucination",
+    "artificial-analysis-long-context-reasoning": "lcr",
+    "ifbench": "ifbench",
+    "tau2-bench": "tau2",
+    "terminalbench-hard": "terminalbenchHard",
+    "gdpval-aa-normalized": "gdpvalNormalized",
+    "mmmu-pro": "mmmuPro",
+    "scicode": "scicode",
+    "terminalbench-2-1": "terminalBench21",
+    "terminalbench-4-0": "terminalBench40",
+    "tau3-banking": "tauBanking",
+    "aa-analyst-agent": "analystAgent",
+    "itbench-aa": "itbenchSre",
+    "apex-agents-aa": "apexAgents",
+}
+
+
+def _unpack_scores(model):
+    """Unpack nested benchmark scores from 'scores' dict onto model object."""
+    if not isinstance(model, dict):
+        return
+    scores = model.get("scores")
+    if isinstance(scores, dict):
+        for k, v in scores.items():
+            mapped = SCORE_KEY_MAP.get(k)
+            if mapped and mapped not in model and v is not None:
+                model[mapped] = v
+            if k not in model and v is not None:
+                model[k] = v
+
+
 def scrape_leaderboard():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
@@ -156,6 +193,11 @@ def scrape_leaderboard():
         candidate_arrays = list(rsc_arrays)
         if table_models and isinstance(table_models, list):
             candidate_arrays.append(table_models)
+
+        # Unpack nested 'scores' dict on all candidate model items
+        for arr in candidate_arrays:
+            for item in arr:
+                _unpack_scores(item)
 
         print(f"  Arrays found: {len(candidate_arrays)} "
               f"(tableModels: {len(table_models) if table_models else 0}, "
@@ -209,17 +251,19 @@ def scrape_leaderboard():
                 n_dated += 1
 
         models_with_intel = sum(1 for m in models if m.get("intelligenceIndex") is not None)
+        models_with_benchmarks = sum(1 for m in models if m.get("hle") is not None or m.get("gpqa") is not None)
         deprecated_count = sum(1 for m in models if m.get("deprecated"))
 
-        if len(models) < MIN_MODELS_EXPECTED or models_with_intel < 50:
+        if len(models) < MIN_MODELS_EXPECTED or models_with_intel < 50 or models_with_benchmarks < 50:
             raise RuntimeError(
                 f"Extraction validation failed: {len(models)} models extracted "
                 f"(expected >= {MIN_MODELS_EXPECTED}), {models_with_intel} models with "
-                f"intelligenceIndex (expected >= 50). Available fields: "
+                f"intelligenceIndex (expected >= 50), {models_with_benchmarks} with benchmarks. Available fields: "
                 f"{list(models[0].keys()) if models else []}"
             )
 
         print(f"  Extracted {len(models)} models ({models_with_intel} with intelligenceIndex, "
+              f"{models_with_benchmarks} with benchmarks, "
               f"{deprecated_count} deprecated, {n_dated} with releaseDate)")
 
         if models and len(models) > 0:
