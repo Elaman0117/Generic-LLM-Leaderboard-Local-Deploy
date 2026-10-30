@@ -5758,5 +5758,13 @@
   "active_B": null,
   "source": "undisclosed",
   "fetched_at": "2026-10-29T10:42:05+00:00"
+ },
+ "mistral-large-4-medium": {
+  "slug": "mistral-large-4-medium",
+  "name": "Mistral Large 4 (Medium)",
+  "total_B": 1100.0,
+  "active_B": 52.0,
+  "source": "faq",
+  "fetched_at": "2026-10-30T10:42:28+00:00"
  }
 }
