@@ -4,7 +4,7 @@
     "model_status": "All (including deprecated models)",
     "methodology": "20 evaluation metrics normalized [0,1], averaged → composite ability, then re-normalized linearly so best model = 1 and worst = 0; Pareto = non-dominated by total params (models without param data excluded); chart Y-axis (V17): y = 0 at the FIRST (lowest) level of the overall Pareto frontier — models below it are excluded from the chart but kept in the table; chart_y = (ability-y0)/(1-y0); X-axis: linear total-params mapping x = raw/xmax (xmax = 11 brand-frontier max); left edge raw = 0; 10 brands get their own thin Pareto lines (brand theme colors, drawn above the solid gray overall Pareto line; vertices ordered by (axis_x, ability) so equal-cost points connect bottom-up); dark brand elements carry a narrow white outline on the black canvas; labels ride ON the Pareto lines when the adjacent segment allows (parallel to the line, mid-axis coincident, line gapped under the text, bare brand-colored text), else take the nearest free spot; every label = model family (brand-shared leading block stripped at the longest valid cut: ending at a separator, or at a letter followed by a digit in every name) plus thinking level, '(non-reasoning)' shortened to '(non)'; 2+ consecutive same-family vertices shorten to level-only labels after the run head (runs recomputed per brand; non-adjacent occurrences keep full labels)",
     "x_source": "AA model detail pages (FAQ text), model-name fallback; MoE keeps TOTAL; unit B",
-    "total_models": 343,
+    "total_models": 344,
     "pareto_count": 19,
     "x_axis_mapping": {
       "mapping": "log mapping X=A*ln(B*X+C)+D fitted on the 11 brand-frontier models, pins RAW (0,0)/(xmax,1), B=1, C=1/r",
@@ -28,8 +28,8 @@
       "left_edge_label": "0",
       "free_models": 0,
       "over_max_models": 0,
-      "plotted_models": 343,
-      "total_models": 343,
+      "plotted_models": 344,
+      "total_models": 344,
       "min_positive_cost": 0.268,
       "x_at_min_positive_cost": 0.07814466028363722,
       "max_cost": 2800.0,
@@ -57,35 +57,35 @@
         }
       ],
       "left_half_models": 115,
-      "right_half_models": 228,
+      "right_half_models": 229,
       "y_axis": {
         "baseline": 0.0,
         "baseline_model": "Gemma 3 270M",
-        "visible_models": 343,
-        "plotted_models": 343,
+        "visible_models": 344,
+        "plotted_models": 344,
         "no_x_visible": 0,
         "below_baseline": 0,
-        "total_models": 343,
+        "total_models": 344,
         "note": "chart y = (ability - baseline)/(1 - baseline); models below the first overall-Pareto level are excluded from the chart but kept in the README table"
       }
     },
     "y_axis": {
       "baseline": 0.0,
       "baseline_model": "Gemma 3 270M",
-      "visible_models": 343,
-      "plotted_models": 343,
+      "visible_models": 344,
+      "plotted_models": 344,
       "no_x_visible": 0,
       "below_baseline": 0,
-      "total_models": 343,
+      "total_models": 344,
       "note": "chart y = (ability - baseline)/(1 - baseline); models below the first overall-Pareto level are excluded from the chart but kept in the README table"
     },
     "x_axis_distribution": {
-      "plotted_models": 343,
+      "plotted_models": 344,
       "x_min": 0.07814466028363722,
       "x_max": 1.0,
-      "median": 0.5666480146140522,
+      "median": 0.5668655617507827,
       "left_half_models": 115,
-      "right_half_models": 228,
+      "right_half_models": 229,
       "decile_counts": [
         3,
         15,
@@ -95,7 +95,7 @@
         60,
         48,
         54,
-        56,
+        57,
         10
       ],
       "note": "log mapping x = A*ln(B*X+C)+D fitted on brand frontiers; pins (0,0)/(xmax,1)"
@@ -105,7 +105,7 @@
     "AA Intelligence Index": {
       "min": 1.81584603785463,
       "max": 59.425738829526,
-      "count": 86
+      "count": 89
     },
     "GPQA Diamond": {
       "min": 0.09797979797979799,
@@ -115,12 +115,12 @@
     "Humanity's Last Exam": {
       "min": 0.010658016682113068,
       "max": 0.6135310472659871,
-      "count": 676
+      "count": 677
     },
     "MMMU Pro": {
       "min": 0.14508670520231215,
       "max": 0.876878612716763,
-      "count": 297
+      "count": 298
     },
     "IFBench Instruction Following": {
       "min": 0.12108843537414966,
@@ -130,32 +130,32 @@
     "SciCode Coding": {
       "min": 0.06944444444444445,
       "max": 0.6689814814814815,
-      "count": 243
+      "count": 244
     },
     "CritPt Physics": {
       "min": 0.0,
       "max": 0.32857142857142857,
-      "count": 593
+      "count": 594
     },
     "AA-LCR Long Context": {
       "min": 0.0,
       "max": 0.8866666666666667,
-      "count": 588
+      "count": 589
     },
     "AA Omniscience Index": {
       "min": -71.16666666666667,
       "max": 53.5,
-      "count": 105
+      "count": 107
     },
     "AA-Omniscience Accuracy": {
       "min": 0.091,
       "max": 0.684,
-      "count": 105
+      "count": 107
     },
     "AA-Omniscience Non-Hallucination": {
       "min": 0.04354280059376546,
       "max": 0.9574468085106383,
-      "count": 105
+      "count": 107
     },
     "GDPval-AA Normalized": {
       "min": -402.18,
@@ -200,7 +200,7 @@
     "Terminal-Bench 4.0": {
       "min": 0.0,
       "max": 0.6717171717171717,
-      "count": 235
+      "count": 236
     }
   },
   "benchmark_calibration": {
@@ -214,7 +214,7 @@
         "upper": 1.0,
         "span": 0.8228308353794519,
         "metric_label": "AA Intelligence Index",
-        "model_count": 86
+        "model_count": 89
       },
       "gpqa": {
         "lower": 0.0,
@@ -228,14 +228,14 @@
         "upper": 0.9505891574897737,
         "span": 0.9505891574897737,
         "metric_label": "Humanity's Last Exam",
-        "model_count": 602
+        "model_count": 603
       },
       "mmmuPro": {
         "lower": 0.01682736843548892,
         "upper": 0.9505555030726828,
         "span": 0.9337281346371938,
         "metric_label": "MMMU Pro",
-        "model_count": 291
+        "model_count": 292
       },
       "ifbench": {
         "lower": 0.0,
@@ -249,42 +249,42 @@
         "upper": 0.9505555030726828,
         "span": 0.9099494507182477,
         "metric_label": "SciCode Coding",
-        "model_count": 243
+        "model_count": 244
       },
       "critpt": {
         "lower": 0.0,
         "upper": 0.9530539222850601,
         "span": 0.9530539222850601,
         "metric_label": "CritPt Physics",
-        "model_count": 590
+        "model_count": 591
       },
       "lcr": {
         "lower": 0.0,
         "upper": 1.0,
         "span": 1.0,
         "metric_label": "AA-LCR Long Context",
-        "model_count": 581
+        "model_count": 582
       },
       "omniscience": {
         "lower": 0.17716916462054808,
         "upper": 1.0,
         "span": 0.8228308353794519,
         "metric_label": "AA Omniscience Index",
-        "model_count": 105
+        "model_count": 107
       },
       "omniscienceAccuracy": {
         "lower": 0.17259084912092168,
         "upper": 1.0,
         "span": 0.8274091508790783,
         "metric_label": "AA-Omniscience Accuracy",
-        "model_count": 105
+        "model_count": 107
       },
       "omniscienceNonHallucination": {
         "lower": 0.1708518947083187,
         "upper": 1.0,
         "span": 0.8291481052916813,
         "metric_label": "AA-Omniscience Non-Hallucination",
-        "model_count": 105
+        "model_count": 107
       },
       "gdpvalNormalized": {
         "lower": 0.04060748190397053,
@@ -347,7 +347,7 @@
         "upper": 1.0,
         "span": 0.9592102164754154,
         "metric_label": "Terminal-Bench 4.0",
-        "model_count": 235
+        "model_count": 236
       }
     }
   },
@@ -1726,16 +1726,16 @@
         "is_open_weights": true,
         "is_pareto": true,
         "chart_label": "4.2 8B",
-        "composite_ability": 0.2563454116593868,
-        "composite_ability_calibrated": 0.2617461734459016,
+        "composite_ability": 0.2904175064380361,
+        "composite_ability_calibrated": 0.32336566286690815,
         "total_params_B": 8.0,
         "active_params_B": null,
         "param_source": "faq",
         "size_class": "small",
         "x_axis_position": 0.37502325130508307,
         "in_chart": true,
-        "chart_y": 0.2563454116593868,
-        "valid_metrics": 9
+        "chart_y": 0.2904175064380361,
+        "valid_metrics": 12
       },
       {
         "rank": 3,
@@ -1748,16 +1748,16 @@
         "is_open_weights": true,
         "is_pareto": true,
         "chart_label": "4.2 3B",
-        "composite_ability": 0.2223977680732177,
-        "composite_ability_calibrated": 0.2598273684492281,
+        "composite_ability": 0.20619043084282423,
+        "composite_ability_calibrated": 0.25525547031971973,
         "total_params_B": 3.0,
         "active_params_B": null,
         "param_source": "faq",
         "size_class": "tiny",
         "x_axis_position": 0.27511208425825856,
         "in_chart": true,
-        "chart_y": 0.2223977680732177,
-        "valid_metrics": 12
+        "chart_y": 0.20619043084282423,
+        "valid_metrics": 13
       },
       {
         "rank": 4,
@@ -3897,28 +3897,6 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Qwen3.8 27B (non-reasoning)",
-      "full_name": "Qwen3.8 27B (Non-reasoning)",
-      "creator": "Alibaba",
-      "creator_slug": "alibaba",
-      "creator_color": "#ff7018",
-      "creator_logo_url": "https://artificialanalysis.ai/img/logos/alibaba.svg",
-      "is_deprecated": false,
-      "composite_ability": 0.46960516174665173,
-      "composite_ability_calibrated": 0.4836471874964681,
-      "total_params_B": 27.0,
-      "active_params_B": null,
-      "param_source": "faq",
-      "size_class": "small",
-      "is_open_weights": true,
-      "is_reasoning": false,
-      "x_axis_position": 0.5031710363498676,
-      "in_chart": true,
-      "chart_y": 0.46960516174665173,
-      "is_pareto": false,
-      "brand_frontier_of": null
-    },
-    {
       "model": "GLM-4.7 (non-reasoning)",
       "full_name": "GLM-4.7 (Non-reasoning)",
       "creator": "Z AI",
@@ -4271,6 +4249,28 @@
       "brand_frontier_of": null
     },
     {
+      "model": "Qwen3.8 27B (non-reasoning)",
+      "full_name": "Qwen3.8 27B (Non-reasoning)",
+      "creator": "Alibaba",
+      "creator_slug": "alibaba",
+      "creator_color": "#ff7018",
+      "creator_logo_url": "https://artificialanalysis.ai/img/logos/alibaba.svg",
+      "is_deprecated": false,
+      "composite_ability": 0.4442387486830807,
+      "composite_ability_calibrated": 0.4693916422458212,
+      "total_params_B": 27.0,
+      "active_params_B": null,
+      "param_source": "faq",
+      "size_class": "small",
+      "is_open_weights": true,
+      "is_reasoning": false,
+      "x_axis_position": 0.5031710363498676,
+      "in_chart": true,
+      "chart_y": 0.4442387486830807,
+      "is_pareto": false,
+      "brand_frontier_of": null
+    },
+    {
       "model": "MiMo-V2-Flash (non-reasoning)",
       "full_name": "MiMo-V2-Flash (Non-reasoning)",
       "creator": "Xiaomi",
@@ -4597,6 +4597,28 @@
       "x_axis_position": 0.6106774666647948,
       "in_chart": true,
       "chart_y": 0.4131583295191286,
+      "is_pareto": false,
+      "brand_frontier_of": null
+    },
+    {
+      "model": "DeepSeek V4.1 Flash 1017 (non-reasoning)",
+      "full_name": "DeepSeek V4.1 Flash 1017 (Non-reasoning)",
+      "creator": "DeepSeek",
+      "creator_slug": "deepseek",
+      "creator_color": "#2243e6",
+      "creator_logo_url": "https://artificialanalysis.ai/img/logos/deepseek.svg",
+      "is_deprecated": false,
+      "composite_ability": 0.41280859538320286,
+      "composite_ability_calibrated": 0.45141001271058717,
+      "total_params_B": 552.0,
+      "active_params_B": 16.0,
+      "param_source": "faq",
+      "size_class": "large",
+      "is_open_weights": true,
+      "is_reasoning": false,
+      "x_axis_position": 0.8258826079284445,
+      "in_chart": true,
+      "chart_y": 0.41280859538320286,
       "is_pareto": false,
       "brand_frontier_of": null
     },
@@ -5811,6 +5833,28 @@
       "brand_frontier_of": null
     },
     {
+      "model": "Granite 4.2 8B",
+      "full_name": "Granite 4.2 8B",
+      "creator": "IBM",
+      "creator_slug": "ibm",
+      "creator_color": "#0f62fe",
+      "creator_logo_url": "https://artificialanalysis.ai/img/logos/ibm.svg",
+      "is_deprecated": false,
+      "composite_ability": 0.2904175064380361,
+      "composite_ability_calibrated": 0.32336566286690815,
+      "total_params_B": 8.0,
+      "active_params_B": null,
+      "param_source": "faq",
+      "size_class": "small",
+      "is_open_weights": true,
+      "is_reasoning": true,
+      "x_axis_position": 0.37502325130508307,
+      "in_chart": true,
+      "chart_y": 0.2904175064380361,
+      "is_pareto": false,
+      "brand_frontier_of": "IBM"
+    },
+    {
       "model": "Mistral Small 4",
       "full_name": "Mistral Small 4 (Reasoning)",
       "creator": "Mistral",
@@ -6141,28 +6185,6 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Granite 4.2 8B",
-      "full_name": "Granite 4.2 8B",
-      "creator": "IBM",
-      "creator_slug": "ibm",
-      "creator_color": "#0f62fe",
-      "creator_logo_url": "https://artificialanalysis.ai/img/logos/ibm.svg",
-      "is_deprecated": false,
-      "composite_ability": 0.2563454116593868,
-      "composite_ability_calibrated": 0.2617461734459016,
-      "total_params_B": 8.0,
-      "active_params_B": null,
-      "param_source": "faq",
-      "size_class": "small",
-      "is_open_weights": true,
-      "is_reasoning": true,
-      "x_axis_position": 0.37502325130508307,
-      "in_chart": true,
-      "chart_y": 0.2563454116593868,
-      "is_pareto": false,
-      "brand_frontier_of": "IBM"
-    },
-    {
       "model": "Qwen3 30B A3B 2507",
       "full_name": "Qwen3 30B A3B 2507 (Reasoning)",
       "creator": "Alibaba",
@@ -6449,28 +6471,6 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Granite 4.2 3B",
-      "full_name": "Granite 4.2 3B",
-      "creator": "IBM",
-      "creator_slug": "ibm",
-      "creator_color": "#0f62fe",
-      "creator_logo_url": "https://artificialanalysis.ai/img/logos/ibm.svg",
-      "is_deprecated": false,
-      "composite_ability": 0.2223977680732177,
-      "composite_ability_calibrated": 0.2598273684492281,
-      "total_params_B": 3.0,
-      "active_params_B": null,
-      "param_source": "faq",
-      "size_class": "tiny",
-      "is_open_weights": true,
-      "is_reasoning": true,
-      "x_axis_position": 0.27511208425825856,
-      "in_chart": true,
-      "chart_y": 0.2223977680732177,
-      "is_pareto": false,
-      "brand_frontier_of": "IBM"
-    },
-    {
       "model": "Ring-flash-2.0",
       "full_name": "Ring-flash-2.0",
       "creator": "InclusionAI",
@@ -6579,6 +6579,28 @@
       "chart_y": 0.2101561543904682,
       "is_pareto": false,
       "brand_frontier_of": "Alibaba"
+    },
+    {
+      "model": "Granite 4.2 3B",
+      "full_name": "Granite 4.2 3B",
+      "creator": "IBM",
+      "creator_slug": "ibm",
+      "creator_color": "#0f62fe",
+      "creator_logo_url": "https://artificialanalysis.ai/img/logos/ibm.svg",
+      "is_deprecated": false,
+      "composite_ability": 0.20619043084282423,
+      "composite_ability_calibrated": 0.25525547031971973,
+      "total_params_B": 3.0,
+      "active_params_B": null,
+      "param_source": "faq",
+      "size_class": "tiny",
+      "is_open_weights": true,
+      "is_reasoning": true,
+      "x_axis_position": 0.27511208425825856,
+      "in_chart": true,
+      "chart_y": 0.20619043084282423,
+      "is_pareto": false,
+      "brand_frontier_of": "IBM"
     },
     {
       "model": "Llama Nemotron Ultra",

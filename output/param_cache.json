@@ -5766,5 +5766,13 @@
   "active_B": 52.0,
   "source": "faq",
   "fetched_at": "2026-10-30T10:42:28+00:00"
+ },
+ "deepseek-v4-1-flash-1017-non-reasoning": {
+  "slug": "deepseek-v4-1-flash-1017-non-reasoning",
+  "name": "DeepSeek V4.1 Flash 1017 (Non-reasoning)",
+  "total_B": 552.0,
+  "active_B": 16.0,
+  "source": "faq",
+  "fetched_at": "2026-10-31T10:10:18+00:00"
  }
 }
