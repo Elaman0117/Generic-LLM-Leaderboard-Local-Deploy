@@ -5774,5 +5774,29 @@
   "active_B": 16.0,
   "source": "faq",
   "fetched_at": "2026-10-31T10:10:18+00:00"
+ },
+ "gemini-4-carbon-medium": {
+  "slug": "gemini-4-carbon-medium",
+  "name": "Gemini 4 Carbon (Medium)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-11-02T11:58:57+00:00"
+ },
+ "nanbeige4-3-33b": {
+  "slug": "nanbeige4-3-33b",
+  "name": "Nanbeige4.3-33B",
+  "total_B": 33.0,
+  "active_B": null,
+  "source": "faq",
+  "fetched_at": "2026-11-02T11:58:59+00:00"
+ },
+ "deepseek-v4-1-flash-1017-high": {
+  "slug": "deepseek-v4-1-flash-1017-high",
+  "name": "DeepSeek V4.1 Flash 1017 (High)",
+  "total_B": 552.0,
+  "active_B": 16.0,
+  "source": "faq",
+  "fetched_at": "2026-11-02T11:59:01+00:00"
  }
 }
