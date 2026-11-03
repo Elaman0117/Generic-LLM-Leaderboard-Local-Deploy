@@ -105,7 +105,7 @@
     "AA Intelligence Index": {
       "min": 1.81584603785463,
       "max": 59.425738829526,
-      "count": 92
+      "count": 94
     },
     "GPQA Diamond": {
       "min": 0.09797979797979799,
@@ -145,17 +145,17 @@
     "AA Omniscience Index": {
       "min": -71.16666666666667,
       "max": 53.5,
-      "count": 110
+      "count": 111
     },
     "AA-Omniscience Accuracy": {
       "min": 0.091,
       "max": 0.684,
-      "count": 110
+      "count": 111
     },
     "AA-Omniscience Non-Hallucination": {
       "min": 0.04354280059376546,
       "max": 0.9575718015665796,
-      "count": 110
+      "count": 111
     },
     "GDPval-AA Normalized": {
       "min": -402.18,
@@ -200,7 +200,7 @@
     "Terminal-Bench 4.0": {
       "min": 0.0,
       "max": 0.6717171717171717,
-      "count": 239
+      "count": 240
     }
   },
   "benchmark_calibration": {
@@ -214,7 +214,7 @@
         "upper": 1.0,
         "span": 0.822945963690177,
         "metric_label": "AA Intelligence Index",
-        "model_count": 92
+        "model_count": 94
       },
       "gpqa": {
         "lower": 0.0,
@@ -270,21 +270,21 @@
         "upper": 1.0,
         "span": 0.822945963690177,
         "metric_label": "AA Omniscience Index",
-        "model_count": 110
+        "model_count": 111
       },
       "omniscienceAccuracy": {
         "lower": 0.17188189647616875,
         "upper": 1.0,
         "span": 0.8281181035238312,
         "metric_label": "AA-Omniscience Accuracy",
-        "model_count": 110
+        "model_count": 111
       },
       "omniscienceNonHallucination": {
         "lower": 0.1707345512134656,
         "upper": 1.0,
         "span": 0.8292654487865344,
         "metric_label": "AA-Omniscience Non-Hallucination",
-        "model_count": 110
+        "model_count": 111
       },
       "gdpvalNormalized": {
         "lower": 0.040608255545109,
@@ -347,7 +347,7 @@
         "upper": 1.0,
         "span": 0.9592094350350655,
         "metric_label": "Terminal-Bench 4.0",
-        "model_count": 239
+        "model_count": 240
       }
     }
   },
@@ -1682,16 +1682,16 @@
         "is_open_weights": true,
         "is_pareto": true,
         "chart_label": "4.2 8B",
-        "composite_ability": 0.2904145180818364,
-        "composite_ability_calibrated": 0.3232645806699524,
+        "composite_ability": 0.26953442619002127,
+        "composite_ability_calibrated": 0.3142605637067838,
         "total_params_B": 8.0,
         "active_params_B": null,
         "param_source": "faq",
         "size_class": "small",
         "x_axis_position": 0.3824904046094545,
         "in_chart": true,
-        "chart_y": 0.2904145180818364,
-        "valid_metrics": 12
+        "chart_y": 0.26953442619002127,
+        "valid_metrics": 13
       },
       {
         "rank": 3,
@@ -3942,7 +3942,7 @@
     },
     {
       "model": "K-EXAONE 2.0",
-      "full_name": "K-EXAONE 2.0 0803",
+      "full_name": "K-EXAONE 2.0",
       "creator": "LG AI Research",
       "creator_slug": "lg-ai-research",
       "creator_color": "#df3b8a",
@@ -5833,28 +5833,6 @@
       "brand_frontier_of": null
     },
     {
-      "model": "Granite 4.2 8B",
-      "full_name": "Granite 4.2 8B",
-      "creator": "IBM",
-      "creator_slug": "ibm",
-      "creator_color": "#0f62fe",
-      "creator_logo_url": "https://artificialanalysis.ai/img/logos/ibm.svg",
-      "is_deprecated": false,
-      "composite_ability": 0.2904145180818364,
-      "composite_ability_calibrated": 0.3232645806699524,
-      "total_params_B": 8.0,
-      "active_params_B": null,
-      "param_source": "faq",
-      "size_class": "small",
-      "is_open_weights": true,
-      "is_reasoning": true,
-      "x_axis_position": 0.3824904046094545,
-      "in_chart": true,
-      "chart_y": 0.2904145180818364,
-      "is_pareto": false,
-      "brand_frontier_of": "IBM"
-    },
-    {
       "model": "Mistral Small 4",
       "full_name": "Mistral Small 4 (Reasoning)",
       "creator": "Mistral",
@@ -6007,6 +5985,28 @@
       "chart_y": 0.2696239181544984,
       "is_pareto": false,
       "brand_frontier_of": "Alibaba"
+    },
+    {
+      "model": "Granite 4.2 8B",
+      "full_name": "Granite 4.2 8B",
+      "creator": "IBM",
+      "creator_slug": "ibm",
+      "creator_color": "#0f62fe",
+      "creator_logo_url": "https://artificialanalysis.ai/img/logos/ibm.svg",
+      "is_deprecated": false,
+      "composite_ability": 0.26953442619002127,
+      "composite_ability_calibrated": 0.3142605637067838,
+      "total_params_B": 8.0,
+      "active_params_B": null,
+      "param_source": "faq",
+      "size_class": "small",
+      "is_open_weights": true,
+      "is_reasoning": true,
+      "x_axis_position": 0.3824904046094545,
+      "in_chart": true,
+      "chart_y": 0.26953442619002127,
+      "is_pareto": false,
+      "brand_frontier_of": "IBM"
     },
     {
       "model": "Qwen3 VL 8B",

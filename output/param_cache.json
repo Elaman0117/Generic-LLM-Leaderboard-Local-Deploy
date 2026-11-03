@@ -5798,5 +5798,13 @@
   "active_B": 16.0,
   "source": "faq",
   "fetched_at": "2026-11-02T11:59:01+00:00"
+ },
+ "gemini-4-carbon-low": {
+  "slug": "gemini-4-carbon-low",
+  "name": "Gemini 4 Carbon (Low)",
+  "total_B": null,
+  "active_B": null,
+  "source": "undisclosed",
+  "fetched_at": "2026-11-03T11:35:31+00:00"
  }
 }

@@ -193,14 +193,14 @@
 | 183 | Motif-2-12.7B | 0.2964 | 12.7B | — | small | ❌ | ✅ |
 | 184 | INTELLECT-3 | 0.2956 | 107B | 12B | medium | ✅ | ✅ |
 | 185 | gpt-oss-20b (high) | 0.2936 | 21B | 3.6B | small | ✅ | ✅ |
-| 186 | Granite 4.2 8B | 0.2904 | 8B | — | small | ✅ | ✅ |
-| 187 | Mistral Small 4 | 0.2855 | 119B | 6.5B | medium | ✅ | ✅ |
-| 188 | Ling-1T | 0.2840 | 1T | 50B | large | ✅ | ❌ |
-| 189 | gpt-oss-120b (low) | 0.2795 | 117B | 5.1B | medium | ✅ | ✅ |
-| 190 | Solar Pro 3 | 0.2783 | 102B | — | medium | ❌ | ✅ |
-| 191 | Step3 VL 10B | 0.2742 | 10.2B | — | small | ✅ | ✅ |
-| 192 | Qwen3 VL 30B A3B | 0.2730 | 30B | 3B | small | ✅ | ❌ |
-| 193 | Qwen3 4B 2507 | 0.2696 | 4.02B | — | tiny | ✅ | ✅ |
+| 186 | Mistral Small 4 | 0.2855 | 119B | 6.5B | medium | ✅ | ✅ |
+| 187 | Ling-1T | 0.2840 | 1T | 50B | large | ✅ | ❌ |
+| 188 | gpt-oss-120b (low) | 0.2795 | 117B | 5.1B | medium | ✅ | ✅ |
+| 189 | Solar Pro 3 | 0.2783 | 102B | — | medium | ❌ | ✅ |
+| 190 | Step3 VL 10B | 0.2742 | 10.2B | — | small | ✅ | ✅ |
+| 191 | Qwen3 VL 30B A3B | 0.2730 | 30B | 3B | small | ✅ | ❌ |
+| 192 | Qwen3 4B 2507 | 0.2696 | 4.02B | — | tiny | ✅ | ✅ |
+| 193 | Granite 4.2 8B | 0.2695 | 8B | — | small | ✅ | ✅ |
 | 194 | Qwen3 VL 8B | 0.2656 | 8.77B | — | small | ✅ | ✅ |
 | 195 | Mistral Large 3 | 0.2650 | 675B | 41B | large | ✅ | ❌ |
 | 196 | K2-V2 (medium) | 0.2628 | 70B | — | medium | ✅ | ✅ |
@@ -385,7 +385,7 @@
 
 | 基准测试项 | 英文标识 | 参测模型数 | 标定映射下界 | 标定映射上界 | 映射跨度 |
 | :--- | :--- | :---: | :---: | :---: | :---: |
-| AA Intelligence Index | `intelligenceIndex` | 92 | `0.1771` | `1.0000` | `0.8229` |
+| AA Intelligence Index | `intelligenceIndex` | 94 | `0.1771` | `1.0000` | `0.8229` |
 | GPQA Diamond | `gpqa` | 535 | `0.0000` | `0.9178` | `0.9178` |
 | Humanity's Last Exam | `hle` | 603 | `0.0000` | `0.9501` | `0.9501` |
 | MMMU Pro | `mmmuPro` | 294 | `0.0168` | `0.9667` | `0.9499` |
@@ -393,9 +393,9 @@
 | SciCode Coding | `scicode` | 244 | `0.0406` | `0.9501` | `0.9095` |
 | CritPt Physics | `critpt` | 591 | `0.0000` | `0.9526` | `0.9526` |
 | AA-LCR Long Context | `lcr` | 582 | `0.0000` | `1.0000` | `1.0000` |
-| AA Omniscience Index | `omniscience` | 110 | `0.1771` | `1.0000` | `0.8229` |
-| AA-Omniscience Accuracy | `omniscienceAccuracy` | 110 | `0.1719` | `1.0000` | `0.8281` |
-| AA-Omniscience Non-Hallucination | `omniscienceNonHallucination` | 110 | `0.1707` | `1.0000` | `0.8293` |
+| AA Omniscience Index | `omniscience` | 111 | `0.1771` | `1.0000` | `0.8229` |
+| AA-Omniscience Accuracy | `omniscienceAccuracy` | 111 | `0.1719` | `1.0000` | `0.8281` |
+| AA-Omniscience Non-Hallucination | `omniscienceNonHallucination` | 111 | `0.1707` | `1.0000` | `0.8293` |
 | GDPval-AA Normalized | `gdpvalNormalized` | 307 | `0.0406` | `1.0000` | `0.9594` |
 | AA Analyst Agent | `analystAgent` | 51 | `0.3326` | `0.9534` | `0.6209` |
 | APEX-Agents-AA | `apexAgents` | 33 | `0.3099` | `0.8183` | `0.5084` |
@@ -404,7 +404,7 @@
 | τ³-Bench Banking | `tauBanking` | 209 | `0.0306` | `0.9225` | `0.8919` |
 | Terminal-Bench Hard | `terminalbenchHard` | 431 | `0.0035` | `0.8847` | `0.8812` |
 | Terminal-Bench 2.1 | `terminalbenchV21` | 242 | `0.0393` | `0.9144` | `0.8751` |
-| Terminal-Bench 4.0 | `terminalbenchV40` | 239 | `0.0408` | `1.0000` | `0.9592` |
+| Terminal-Bench 4.0 | `terminalbenchV40` | 240 | `0.0408` | `1.0000` | `0.9592` |
 
 
 ## 评分方法
