@@ -5822,5 +5822,13 @@
   "active_B": null,
   "source": "undisclosed",
   "fetched_at": "2026-11-05T11:50:48+00:00"
+ },
+ "inkling-2-small": {
+  "slug": "inkling-2-small",
+  "name": "Inkling 2 Small",
+  "total_B": 594.0,
+  "active_B": null,
+  "source": "faq",
+  "fetched_at": "2026-11-06T11:58:34+00:00"
  }
 }

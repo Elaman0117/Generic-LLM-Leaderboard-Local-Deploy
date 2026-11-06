@@ -4,7 +4,7 @@
     "model_status": "All (including deprecated models)",
     "methodology": "20 evaluation metrics normalized [0,1], averaged → composite ability, then re-normalized linearly so best model = 1 and worst = 0; Pareto = non-dominated by total params (models without param data excluded); chart Y-axis (V17): y = 0 at the FIRST (lowest) level of the overall Pareto frontier — models below it are excluded from the chart but kept in the table; chart_y = (ability-y0)/(1-y0); X-axis: linear total-params mapping x = raw/xmax (xmax = 11 brand-frontier max); left edge raw = 0; 10 brands get their own thin Pareto lines (brand theme colors, drawn above the solid gray overall Pareto line; vertices ordered by (axis_x, ability) so equal-cost points connect bottom-up); dark brand elements carry a narrow white outline on the black canvas; labels ride ON the Pareto lines when the adjacent segment allows (parallel to the line, mid-axis coincident, line gapped under the text, bare brand-colored text), else take the nearest free spot; every label = model family (brand-shared leading block stripped at the longest valid cut: ending at a separator, or at a letter followed by a digit in every name) plus thinking level, '(non-reasoning)' shortened to '(non)'; 2+ consecutive same-family vertices shorten to level-only labels after the run head (runs recomputed per brand; non-adjacent occurrences keep full labels)",
     "x_source": "AA model detail pages (FAQ text), model-name fallback; MoE keeps TOTAL; unit B",
-    "total_models": 346,
+    "total_models": 347,
     "pareto_count": 18,
     "x_axis_mapping": {
       "mapping": "log mapping X=A*ln(B*X+C)+D fitted on the 11 brand-frontier models, pins RAW (0,0)/(xmax,1), B=1, C=1/r",
@@ -28,8 +28,8 @@
       "left_edge_label": "0",
       "free_models": 0,
       "over_max_models": 0,
-      "plotted_models": 346,
-      "total_models": 346,
+      "plotted_models": 347,
+      "total_models": 347,
       "min_positive_cost": 0.268,
       "x_at_min_positive_cost": 0.08382927002288985,
       "max_cost": 2800.0,
@@ -57,35 +57,35 @@
         }
       ],
       "left_half_models": 112,
-      "right_half_models": 234,
+      "right_half_models": 235,
       "y_axis": {
         "baseline": 0.0,
         "baseline_model": "Gemma 3 270M",
-        "visible_models": 346,
-        "plotted_models": 346,
+        "visible_models": 347,
+        "plotted_models": 347,
         "no_x_visible": 0,
         "below_baseline": 0,
-        "total_models": 346,
+        "total_models": 347,
         "note": "chart y = (ability - baseline)/(1 - baseline); models below the first overall-Pareto level are excluded from the chart but kept in the README table"
       }
     },
     "y_axis": {
       "baseline": 0.0,
       "baseline_model": "Gemma 3 270M",
-      "visible_models": 346,
-      "plotted_models": 346,
+      "visible_models": 347,
+      "plotted_models": 347,
       "no_x_visible": 0,
       "below_baseline": 0,
-      "total_models": 346,
+      "total_models": 347,
       "note": "chart y = (ability - baseline)/(1 - baseline); models below the first overall-Pareto level are excluded from the chart but kept in the README table"
     },
     "x_axis_distribution": {
-      "plotted_models": 346,
+      "plotted_models": 347,
       "x_min": 0.08382927002288985,
       "x_max": 1.0,
       "median": 0.5722294739554782,
       "left_half_models": 112,
-      "right_half_models": 234,
+      "right_half_models": 235,
       "decile_counts": [
         2,
         13,
@@ -95,7 +95,7 @@
         64,
         48,
         53,
-        58,
+        59,
         11
       ],
       "note": "log mapping x = A*ln(B*X+C)+D fitted on brand frontiers; pins (0,0)/(xmax,1)"
@@ -105,7 +105,7 @@
     "AA Intelligence Index": {
       "min": 1.81584603785463,
       "max": 60.025738829526,
-      "count": 106
+      "count": 108
     },
     "GPQA Diamond": {
       "min": 0.09797979797979799,
@@ -115,12 +115,12 @@
     "Humanity's Last Exam": {
       "min": 0.010658016682113068,
       "max": 0.6135310472659871,
-      "count": 677
+      "count": 678
     },
     "MMMU Pro": {
       "min": 0.14508670520231215,
       "max": 0.892485549132948,
-      "count": 301
+      "count": 302
     },
     "IFBench Instruction Following": {
       "min": 0.12108843537414966,
@@ -130,7 +130,7 @@
     "SciCode Coding": {
       "min": 0.06944444444444445,
       "max": 0.6689814814814815,
-      "count": 244
+      "count": 245
     },
     "CritPt Physics": {
       "min": 0.0,
@@ -140,32 +140,32 @@
     "AA-LCR Long Context": {
       "min": 0.0,
       "max": 0.8866666666666667,
-      "count": 589
+      "count": 590
     },
     "AA Omniscience Index": {
       "min": -71.16666666666667,
       "max": 53.5,
-      "count": 120
+      "count": 124
     },
     "AA-Omniscience Accuracy": {
       "min": 0.091,
       "max": 0.684,
-      "count": 120
+      "count": 124
     },
     "AA-Omniscience Non-Hallucination": {
       "min": 0.04354280059376546,
       "max": 0.9575718015665796,
-      "count": 120
+      "count": 124
     },
     "GDPval-AA Normalized": {
       "min": -402.18,
       "max": 1866.27,
-      "count": 308
+      "count": 309
     },
     "AA Analyst Agent": {
       "min": 0.0125,
       "max": 0.6,
-      "count": 51
+      "count": 52
     },
     "APEX-Agents-AA": {
       "min": 0.007374631268436578,
@@ -185,7 +185,7 @@
     "τ³-Bench Banking": {
       "min": 0.002061855670103093,
       "max": 0.51340206185567,
-      "count": 209
+      "count": 210
     },
     "Terminal-Bench Hard": {
       "min": 0.0,
@@ -195,12 +195,12 @@
     "Terminal-Bench 2.1": {
       "min": 0.0,
       "max": 0.9138576779026217,
-      "count": 242
+      "count": 243
     },
     "Terminal-Bench 4.0": {
       "min": 0.0,
       "max": 0.6717171717171717,
-      "count": 242
+      "count": 243
     }
   },
   "benchmark_calibration": {
@@ -214,7 +214,7 @@
         "upper": 1.0,
         "span": 0.8229632776153105,
         "metric_label": "AA Intelligence Index",
-        "model_count": 106
+        "model_count": 108
       },
       "gpqa": {
         "lower": 0.0,
@@ -228,14 +228,14 @@
         "upper": 0.9503108923511636,
         "span": 0.9503108923511636,
         "metric_label": "Humanity's Last Exam",
-        "model_count": 603
+        "model_count": 604
       },
       "mmmuPro": {
         "lower": 0.01681872316511821,
         "upper": 0.9666101577192493,
         "span": 0.9497914345541311,
         "metric_label": "MMMU Pro",
-        "model_count": 295
+        "model_count": 296
       },
       "ifbench": {
         "lower": 0.0,
@@ -249,7 +249,7 @@
         "upper": 0.9502769663185467,
         "span": 0.9096904055855471,
         "metric_label": "SciCode Coding",
-        "model_count": 244
+        "model_count": 245
       },
       "critpt": {
         "lower": 0.0,
@@ -263,42 +263,42 @@
         "upper": 1.0,
         "span": 1.0,
         "metric_label": "AA-LCR Long Context",
-        "model_count": 582
+        "model_count": 583
       },
       "omniscience": {
         "lower": 0.17703672238468948,
         "upper": 1.0,
         "span": 0.8229632776153105,
         "metric_label": "AA Omniscience Index",
-        "model_count": 120
+        "model_count": 124
       },
       "omniscienceAccuracy": {
         "lower": 0.1718842754359459,
         "upper": 1.0,
         "span": 0.8281157245640541,
         "metric_label": "AA-Omniscience Accuracy",
-        "model_count": 120
+        "model_count": 124
       },
       "omniscienceNonHallucination": {
         "lower": 0.17071734730716648,
         "upper": 1.0,
         "span": 0.8292826526928335,
         "metric_label": "AA-Omniscience Non-Hallucination",
-        "model_count": 120
+        "model_count": 124
       },
       "gdpvalNormalized": {
         "lower": 0.040588204790269276,
         "upper": 1.0,
         "span": 0.9594117952097307,
         "metric_label": "GDPval-AA Normalized",
-        "model_count": 307
+        "model_count": 308
       },
       "analystAgent": {
         "lower": 0.3325034629173094,
         "upper": 0.9536157955138579,
         "span": 0.6211123325965484,
         "metric_label": "AA Analyst Agent",
-        "model_count": 51
+        "model_count": 52
       },
       "apexAgents": {
         "lower": 0.3099099676004387,
@@ -326,7 +326,7 @@
         "upper": 0.9218328670873979,
         "span": 0.8912661677053026,
         "metric_label": "τ³-Bench Banking",
-        "model_count": 209
+        "model_count": 210
       },
       "terminalbenchHard": {
         "lower": 0.0035186828128350124,
@@ -340,14 +340,14 @@
         "upper": 0.9140668675617517,
         "span": 0.8747841049207642,
         "metric_label": "Terminal-Bench 2.1",
-        "model_count": 242
+        "model_count": 243
       },
       "terminalbenchV40": {
         "lower": 0.040770426670543716,
         "upper": 1.0,
         "span": 0.9592295733294562,
         "metric_label": "Terminal-Bench 4.0",
-        "model_count": 242
+        "model_count": 243
       }
     }
   },
@@ -360,7 +360,7 @@
       "creator_color": "#047AFE",
       "creator_logo_url": "https://artificialanalysis.ai/img/logos/kimi.jpg",
       "is_reasoning": true,
-      "is_open_weights": false,
+      "is_open_weights": true,
       "is_pareto": true,
       "chart_label": "K3.1 Pro",
       "composite_ability": 0.8774913909205496,
@@ -759,7 +759,7 @@
         "creator_color": "#047AFE",
         "creator_logo_url": "https://artificialanalysis.ai/img/logos/kimi.jpg",
         "is_reasoning": true,
-        "is_open_weights": false,
+        "is_open_weights": true,
         "is_pareto": true,
         "chart_label": "K3.1 Pro",
         "composite_ability": 0.8774913909205496,
@@ -1776,7 +1776,7 @@
       "active_params_B": null,
       "param_source": "faq",
       "size_class": "large",
-      "is_open_weights": false,
+      "is_open_weights": true,
       "is_reasoning": true,
       "x_axis_position": 1.0,
       "in_chart": true,
@@ -1829,28 +1829,6 @@
       "brand_frontier_of": "Z AI"
     },
     {
-      "model": "GLM-5.2 (max)",
-      "full_name": "GLM-5.2 (Max)",
-      "creator": "Z AI",
-      "creator_slug": "z-ai",
-      "creator_color": "#1c7ff8",
-      "creator_logo_url": "https://artificialanalysis.ai/img/logos/zai.svg",
-      "is_deprecated": true,
-      "composite_ability": 0.7733343327734943,
-      "composite_ability_calibrated": 0.726437357889594,
-      "total_params_B": 753.0,
-      "active_params_B": 40.0,
-      "param_source": "faq",
-      "size_class": "large",
-      "is_open_weights": true,
-      "is_reasoning": true,
-      "x_axis_position": 0.8609330423101396,
-      "in_chart": true,
-      "chart_y": 0.7733343327734943,
-      "is_pareto": false,
-      "brand_frontier_of": null
-    },
-    {
       "model": "Step 5 Preview",
       "full_name": "Step 5 Preview",
       "creator": "StepFun",
@@ -1893,6 +1871,28 @@
       "chart_y": 0.7540545444292328,
       "is_pareto": true,
       "brand_frontier_of": "InclusionAI"
+    },
+    {
+      "model": "Inkling 2 Small",
+      "full_name": "Inkling 2 Small",
+      "creator": "Thinking Machines",
+      "creator_slug": "thinking-machines",
+      "creator_color": "#676767",
+      "creator_logo_url": "https://artificialanalysis.ai/img/logos/thinking-machines.svg",
+      "is_deprecated": false,
+      "composite_ability": 0.7525349435642011,
+      "composite_ability_calibrated": 0.7574467520155109,
+      "total_params_B": 594.0,
+      "active_params_B": null,
+      "param_source": "faq",
+      "size_class": "large",
+      "is_open_weights": false,
+      "is_reasoning": true,
+      "x_axis_position": 0.8358215496731621,
+      "in_chart": true,
+      "chart_y": 0.7525349435642011,
+      "is_pareto": false,
+      "brand_frontier_of": null
     },
     {
       "model": "Qwen3.8 2.4T A95B",
@@ -1957,6 +1957,28 @@
       "x_axis_position": 0.8280582034220021,
       "in_chart": true,
       "chart_y": 0.7347543050560809,
+      "is_pareto": false,
+      "brand_frontier_of": null
+    },
+    {
+      "model": "GLM-5.2 (max)",
+      "full_name": "GLM-5.2 (Max)",
+      "creator": "Z AI",
+      "creator_slug": "z-ai",
+      "creator_color": "#1c7ff8",
+      "creator_logo_url": "https://artificialanalysis.ai/img/logos/zai.svg",
+      "is_deprecated": true,
+      "composite_ability": 0.7300885787625859,
+      "composite_ability_calibrated": 0.7074550539746804,
+      "total_params_B": 753.0,
+      "active_params_B": 40.0,
+      "param_source": "faq",
+      "size_class": "large",
+      "is_open_weights": true,
+      "is_reasoning": true,
+      "x_axis_position": 0.8609330423101396,
+      "in_chart": true,
+      "chart_y": 0.7300885787625859,
       "is_pareto": false,
       "brand_frontier_of": null
     },
@@ -3919,28 +3941,6 @@
       "brand_frontier_of": null
     },
     {
-      "model": "K-EXAONE 2.0",
-      "full_name": "K-EXAONE 2.0",
-      "creator": "LG AI Research",
-      "creator_slug": "lg-ai-research",
-      "creator_color": "#df3b8a",
-      "creator_logo_url": "https://artificialanalysis.ai/img/logos/lg.png",
-      "is_deprecated": false,
-      "composite_ability": 0.46083217140084587,
-      "composite_ability_calibrated": 0.4469509197090624,
-      "total_params_B": 750.0,
-      "active_params_B": 37.0,
-      "param_source": "faq",
-      "size_class": "large",
-      "is_open_weights": true,
-      "is_reasoning": true,
-      "x_axis_position": 0.860510380804623,
-      "in_chart": true,
-      "chart_y": 0.46083217140084587,
-      "is_pareto": false,
-      "brand_frontier_of": null
-    },
-    {
       "model": "Qwen3.5 35B A3B (non-reasoning)",
       "full_name": "Qwen3.5 35B A3B (Non-reasoning)",
       "creator": "Alibaba",
@@ -4047,6 +4047,28 @@
       "x_axis_position": 0.5365704379831571,
       "in_chart": true,
       "chart_y": 0.4538990198591035,
+      "is_pareto": false,
+      "brand_frontier_of": null
+    },
+    {
+      "model": "K-EXAONE 2.0",
+      "full_name": "K-EXAONE 2.0",
+      "creator": "LG AI Research",
+      "creator_slug": "lg-ai-research",
+      "creator_color": "#df3b8a",
+      "creator_logo_url": "https://artificialanalysis.ai/img/logos/lg.png",
+      "is_deprecated": false,
+      "composite_ability": 0.4531847405590181,
+      "composite_ability_calibrated": 0.4725442910375246,
+      "total_params_B": 750.0,
+      "active_params_B": 37.0,
+      "param_source": "faq",
+      "size_class": "large",
+      "is_open_weights": true,
+      "is_reasoning": true,
+      "x_axis_position": 0.860510380804623,
+      "in_chart": true,
+      "chart_y": 0.4531847405590181,
       "is_pareto": false,
       "brand_frontier_of": null
     },
@@ -5613,28 +5635,6 @@
       "brand_frontier_of": "OpenBMB"
     },
     {
-      "model": "North Mini Code",
-      "full_name": "North Mini Code",
-      "creator": "Cohere",
-      "creator_slug": "cohere",
-      "creator_color": "#D18EE2",
-      "creator_logo_url": "https://artificialanalysis.ai/img/logos/cohere.svg",
-      "is_deprecated": false,
-      "composite_ability": 0.3027411264159643,
-      "composite_ability_calibrated": 0.3232214431542249,
-      "total_params_B": 30.0,
-      "active_params_B": 3.0,
-      "param_source": "faq",
-      "size_class": "small",
-      "is_open_weights": true,
-      "is_reasoning": true,
-      "x_axis_position": 0.5203559057743989,
-      "in_chart": true,
-      "chart_y": 0.3027411264159643,
-      "is_pareto": false,
-      "brand_frontier_of": null
-    },
-    {
       "model": "Nemotron 3 Nano Omni 30B A3B",
       "full_name": "Nemotron 3 Nano Omni 30B A3B Reasoning",
       "creator": "NVIDIA",
@@ -5873,6 +5873,28 @@
       "x_axis_position": 0.8909703339862824,
       "in_chart": true,
       "chart_y": 0.2840320770111587,
+      "is_pareto": false,
+      "brand_frontier_of": null
+    },
+    {
+      "model": "North Mini Code",
+      "full_name": "North Mini Code",
+      "creator": "Cohere",
+      "creator_slug": "cohere",
+      "creator_color": "#D18EE2",
+      "creator_logo_url": "https://artificialanalysis.ai/img/logos/cohere.svg",
+      "is_deprecated": false,
+      "composite_ability": 0.2829606978361979,
+      "composite_ability_calibrated": 0.31424245713549176,
+      "total_params_B": 30.0,
+      "active_params_B": 3.0,
+      "param_source": "faq",
+      "size_class": "small",
+      "is_open_weights": true,
+      "is_reasoning": true,
+      "x_axis_position": 0.5203559057743989,
+      "in_chart": true,
+      "chart_y": 0.2829606978361979,
       "is_pareto": false,
       "brand_frontier_of": null
     },
